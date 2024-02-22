@@ -1,0 +1,91 @@
+    
+
+<BoxLayout>:        #Main layout. Contains TextLayout and ButtonLayout and it is embedded in the ScrollView
+
+    orientation: "vertical"
+
+    size_hint: 1, None
+
+    height: self.minimum_height
+
+    
+
+<TextLayout>:     #Contains text Labels
+
+    padding: '25dp', '50dp','25dp','40dp'         # left, top, right, and bottom. If only one value, same for all
+
+
+
+<ButtonLayout>:     #Contains buttons
+
+    spacing: '10dp'         #space between widgets
+
+    padding: '0dp', '0dp','0dp','55dp'
+
+
+
+<ImageLayout>:      #Contain pictures
+
+    padding: '0dp', '0dp','0dp','25dp'
+        
+
+
+################################### LABELS #######################################################
+
+
+
+<Label>:        #default text label
+
+    font_name: 'Vollkorn'
+    
+    font_size: '21sp'                             #sp, scale independent pixels, better deployment of fonts in different devices
+
+    markup: True
+    
+    size_hint: 1, None                  #the widget (Label) is using the whole width of its container (BoxLayout)
+    
+    text_size: self.width, None         #the text_size is bound to the width of the widget, thus whole width of BoxLayout
+        
+    height: self.texture_size[1]        #self.texture_size represents the size of the rendered texture.
+                                                # It is a tuple containing the width and height of the texture. 
+                                                #self.texture_size[1], retrieves the height component of that tuple.
+
+
+<TitleLabel>:       #displays title. Different fond and font size than normal Labels
+
+    font_name: 'Chiller'
+
+    padding: '25dp', '50dp','25dp','80dp'
+
+    halign: 'center'
+
+    font_size: '120sp'
+
+
+
+<Image>:
+
+    halign: 'center'
+    
+    size_hint: 1, None
+
+    size: self.texture_size
+
+    
+
+######################################################## BUTTONS ##################################################
+
+
+
+<NieblaButton>:
+
+    font_name: 'CreteRound'
+    
+    font_size: '21sp'
+    
+    padding: '25dp', '15dp', '25dp', '15dp'
+
+    background_color: 1, 1, 1, 0.45
+
+
+
