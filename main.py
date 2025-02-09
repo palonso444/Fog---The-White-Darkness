@@ -1,4 +1,5 @@
-
+from os import path
+import sys
 
 from kivy.app import App    # type: ignore
 from kivy.uix.boxlayout import BoxLayout    # type: ignore
@@ -8,19 +9,27 @@ from kivy.uix.button import Button  # type: ignore
 from kivy.core.text import LabelBase    # type: ignore
 from kivy.uix.image import Image    # type: ignore
 
-
 import autorol_utils    # type: ignore
 
+# this is needed to set the correct path to resources when compiling with Pyinstaller
+def get_resource_path(relative_path):
+
+    if getattr(sys, 'frozen', True) and hasattr(sys, '_MEIPASS'):
+        base_path = sys._MEIPASS
+    else:
+        base_path = path.abspath(".")
+
+    return path.join(base_path, relative_path)
 
 LabelBase.register(name = 'Vollkorn',
-                   fn_regular= 'fonts/Vollkorn-Regular.ttf',
-                   fn_italic='fonts/Vollkorn-Italic.ttf')
+                   fn_regular= get_resource_path('fonts/Vollkorn-Regular.ttf'),
+                   fn_italic=get_resource_path('fonts/Vollkorn-Italic.ttf'))
 
 LabelBase.register(name = 'CreteRound',
-                   fn_regular= 'fonts/CreteRound-Regular.ttf')
+                   fn_regular= get_resource_path('fonts/CreteRound-Regular.ttf'))
 
 LabelBase.register(name = 'Chiller',
-                   fn_regular= 'fonts/Chiller.ttf')
+                   fn_regular= get_resource_path('fonts/Chiller.ttf'))
 
 
 
@@ -56,7 +65,7 @@ class NieblaButton(Button):
 
 class NieblaApp(App):
 
-    story = autorol_utils.read_json('Niebla.json')   
+    story = autorol_utils.read_json(get_resource_path('Niebla.json'))   
 
     scenes = autorol_utils.get_scenes(story, format=True)  #Format True removes html tags and introduces kivy markups
 
@@ -127,7 +136,7 @@ class NieblaApp(App):
                     
                     display = ImageLayout()             #images must be embedded in BoxLayouts in order to specify padding
                     
-                    image_path = 'pics/'+ text['texto'][8:]     #image folder must be named 'pics'
+                    image_path = get_resource_path('pics/'+ text['texto'][8:])     #image folder must be named 'pics'
 
                     image_display = Image(source = image_path)  #create Image label
 
