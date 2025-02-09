@@ -14,7 +14,7 @@ import autorol_utils    # type: ignore
 # this is needed to set the correct path to resources when compiling with Pyinstaller
 def get_resource_path(relative_path):
 
-    if getattr(sys, 'frozen', True) and hasattr(sys, '_MEIPASS'):
+    if getattr(sys, 'frozen', False) and hasattr(sys, '_MEIPASS'):
         base_path = sys._MEIPASS
     else:
         base_path = path.abspath(".")
