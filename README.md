@@ -7,6 +7,7 @@ Juego de terror basado en texto. Sólo tus decisiones determinarán tu salvació
 Links para descargarte el juego
 ------------------------------
 https://play.google.com/store/apps/details?id=com.appsbrivalles.niebla&hl=es_NI
+
 https://palonso444.itch.io/niebla
 
 
