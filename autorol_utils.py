@@ -286,7 +286,7 @@ def get_all_links (scenes):
 
 def get_links(text):
 
-    links = list ()
+    links = list()
         
     for link in text ['enlaces']:
 
