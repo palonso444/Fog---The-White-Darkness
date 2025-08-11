@@ -23,10 +23,8 @@ def get_resource_path(relative_path):
 LabelBase.register(name = 'Vollkorn',
                    fn_regular= get_resource_path('fonts/Vollkorn-Regular.ttf'),
                    fn_italic=get_resource_path('fonts/Vollkorn-Italic.ttf'))
-
 LabelBase.register(name = 'CreteRound',
                    fn_regular= get_resource_path('fonts/CreteRound-Regular.ttf'))
-
 LabelBase.register(name = 'Chiller',
                    fn_regular= get_resource_path('fonts/Chiller.ttf'))
 
@@ -34,14 +32,11 @@ LabelBase.register(name = 'Chiller',
 class ImageLayout(BoxLayout):   #defined in the kv file
     pass
 
-
 class TextLayout(BoxLayout):    #defined in the kv file
     pass
 
-
 class ButtonLayout(BoxLayout):  #defined in the kv file
     pass
-
 
 class TitleLabel(Label):        #defined in the kv file
     pass
@@ -58,11 +53,11 @@ class NieblaButton(Button):
 
 class NieblaApp(App):
 
-    story = autorol_utils.read_json(get_resource_path('Niebla.json'))
-    scenes = autorol_utils.get_scenes(story, format=True)  #Format True removes html tags and introduces kivy markups
+    story = json_utils.read_json(get_resource_path('Niebla.json'))
+    scenes = json_utils.get_scenes(story, format=True)  #Format True removes html tags and introduces kivy markups
     title = story['titulo']
-    all_variables = autorol_utils.get_variables(scenes)
-    current_scene = autorol_utils.get_intro(scenes)
+    all_variables = json_utils.get_variables(scenes)
+    current_scene = json_utils.get_intro(scenes)
     scroll = ScrollView()
 
 
@@ -88,16 +83,16 @@ class NieblaApp(App):
 
     def place_text(self, layout):
 
-        if self.current_scene['id'] == autorol_utils.get_intro(self.scenes, id_only=True): #if start of the game, add title
+        if self.current_scene['id'] == json_utils.get_intro(self.scenes, id_only=True): #if start of the game, add title
             titledisplay = TitleLabel(text = self.title)
             layout.add_widget(titledisplay)
 
-        text_object = autorol_utils.get_text(self.current_scene)
+        text_object = json_utils.get_text(self.current_scene)
 
         for text in text_object:
-            conditions = autorol_utils.get_conditions(text)
+            conditions = json_utils.get_conditions(text)
 
-            if autorol_utils.compare_conditions(self.all_variables, conditions):
+            if json_utils.compare_conditions(self.all_variables, conditions):
 
                 if text['texto'][:8] == '[$image]':  # if text is an image
                     display = ImageLayout()  # images must be embedded in BoxLayouts in order to specify padding
@@ -106,10 +101,10 @@ class NieblaApp(App):
                     display.add_widget(image_display)  # embed Image label in BoxLayout
 
                 else:  # if text is a text
-                    display = Label(text = autorol_utils.align(text['texto'])[0],
-                                    halign = autorol_utils.align(text['texto'])[1])
+                    display = Label(text=json_utils.align(text['texto'])[0],
+                                    halign=json_utils.align(text['texto'])[1])
                 
-                consequences = autorol_utils.get_consequences(text)  # consequences are checked for both texts and images
+                consequences = json_utils.get_consequences(text)  # consequences are checked for both texts and images
                 self.all_variables.update(consequences)
                 layout.add_widget(display)
 
@@ -119,11 +114,11 @@ class NieblaApp(App):
     
     def place_buttons (self, layout):
 
-        text_object = autorol_utils.get_text(self.current_scene)
-        links = autorol_utils.get_links(text_object[-1])  # links are always in last section of text
+        text_object = json_utils.get_text(self.current_scene)
+        links = json_utils.get_links(text_object[-1])  # links are always in last section of text
 
         if len(links) == 0:
-            intro_id = autorol_utils.get_intro(self.scenes, id_only=True)
+            intro_id = json_utils.get_intro(self.scenes, id_only=True)
             links = [{'texto': 'Volver a empezar',
                           'destinoExito': intro_id,
                           'consecuencias': [],
@@ -131,10 +126,10 @@ class NieblaApp(App):
             self.all_variables = {key: 0 for key in self.all_variables}  # sets to 0 all variables of the game
 
         for link in links:
-            conditions = autorol_utils.get_conditions(link)
-            if autorol_utils.compare_conditions(self.all_variables, conditions):    #place button if conditions are met
+            conditions = json_utils.get_conditions(link)
+            if json_utils.compare_conditions(self.all_variables, conditions):    #place button if conditions are met
                 button = NieblaButton(text=link['texto'], fate=link['destinoExito'],
-                                      consequences=autorol_utils.get_consequences(link))
+                                      consequences=json_utils.get_consequences(link))
                 button.bind(on_release=self.on_button_release)
                 layout.add_widget(button)
 
@@ -144,7 +139,7 @@ class NieblaApp(App):
     def on_button_release(self, button):
 
         self.all_variables.update(button.consequences)
-        self.current_scene = autorol_utils.get_scene(int(button.fate), self.scenes)
+        self.current_scene = json_utils.get_scene(int(button.fate), self.scenes)
         self.rebuild()
 
     def rebuild(self):
