@@ -9,7 +9,7 @@ from kivy.uix.button import Button  # type: ignore
 from kivy.core.text import LabelBase    # type: ignore
 from kivy.uix.image import Image    # type: ignore
 
-import autorol_utils    # type: ignore
+import json_utils    # type: ignore
 
 # this is needed to set the correct path to resources when compiling with Pyinstaller
 def get_resource_path(relative_path):
@@ -18,7 +18,6 @@ def get_resource_path(relative_path):
         base_path = sys._MEIPASS
     else:
         base_path = path.abspath(".")
-
     return path.join(base_path, relative_path)
 
 LabelBase.register(name = 'Vollkorn',
@@ -30,7 +29,6 @@ LabelBase.register(name = 'CreteRound',
 
 LabelBase.register(name = 'Chiller',
                    fn_regular= get_resource_path('fonts/Chiller.ttf'))
-
 
 
 class ImageLayout(BoxLayout):   #defined in the kv file
@@ -68,7 +66,7 @@ class NieblaApp(App):
     scroll = ScrollView()
 
 
-####################################################### MAIN 'LOOP' #############################################################
+    ####################################################### MAIN 'LOOP' ###############################################
 
 
     def build (self):
@@ -85,10 +83,8 @@ class NieblaApp(App):
         return self.scroll
     
 
+    ############################################### PLACE TEXT AND IMAGES #############################################
 
-    ############################################### PLACE TEXT AND IMAGES #####################################################
-
-    
 
     def place_text(self, layout):
 
@@ -114,11 +110,11 @@ class NieblaApp(App):
                                     halign = autorol_utils.align(text['texto'])[1])
                 
                 consequences = autorol_utils.get_consequences(text)  # consequences are checked for both texts and images
-                self.all_variables.update (consequences)
+                self.all_variables.update(consequences)
                 layout.add_widget(display)
 
 
-    ################################################ PLACE BUTTONS ############################################################## 
+    ################################################ PLACE BUTTONS ####################################################
 
     
     def place_buttons (self, layout):
@@ -132,18 +128,18 @@ class NieblaApp(App):
                           'destinoExito': intro_id,
                           'consecuencias': [],
                           'condiciones': []}]
-            self.all_variables = {key: 0 for key in self.all_variables}     #sets to 0 all variables of the game
+            self.all_variables = {key: 0 for key in self.all_variables}  # sets to 0 all variables of the game
 
         for link in links:
             conditions = autorol_utils.get_conditions(link)
             if autorol_utils.compare_conditions(self.all_variables, conditions):    #place button if conditions are met
-                button = NieblaButton(text=link['texto'], fate = link['destinoExito'],
+                button = NieblaButton(text=link['texto'], fate=link['destinoExito'],
                                       consequences=autorol_utils.get_consequences(link))
-                button.bind(on_release = self.on_button_release)
+                button.bind(on_release=self.on_button_release)
                 layout.add_widget(button)
 
 
-    ######################################## DEFINE BUTTON PRESS ####################################################################
+    ######################################## DEFINE BUTTON PRESS ######################################################
 
     def on_button_release(self, button):
 
@@ -158,7 +154,7 @@ class NieblaApp(App):
         self.scroll.scroll_y = 1.0  # brings scroll back to the top
 
 
-######################################################### START APP ##########################################################
+######################################################### START APP ###################################################
 
 
 if __name__ == '__main__':
