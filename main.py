@@ -168,12 +168,18 @@ class NieblaApp(App):
             if json_utils.compare_conditions(self.all_variables, conditions):    #place button if conditions are met
                 button = GameButton(text=link['texto'], fate=link['destinoExito'],
                                     consequences=json_utils.get_consequences(link))
-                button.bind(on_release=self.on_button_release)
+                button.bind(on_release=self.on_gamebutton_release)
                 button_layout.add_widget(button)
 
         screen.layout.add_widget(button_layout)
 
-    def on_button_release(self, button: GameButton) -> None:
+    def on_gamebutton_release(self, button: GameButton) -> None:
+        """
+        Controls what happens when a GameButton is activated. Must be implemented here within NieblaApp class because
+        it needs to NieblaApp.all_variables and NieblaApp.current_scene.
+        :param button: instance of the button activated
+        :return: None
+        """
         self.all_variables.update(button.consequences)
         self.current_scene = json_utils.get_scene(int(button.fate), self.scenes)
         self._generate_screen()
