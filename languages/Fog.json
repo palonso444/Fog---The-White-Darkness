@@ -707,7 +707,7 @@
               "ancho": 12,
               "extra": "",
               "frame": "ppal",
-              "texto": "<p>Take the north road</p>",
+              "texto": "<p>Take the road to the north</p>",
               "destinoFallo": 0,
               "destinoExito": 19626,
               "consecuencias": [],
@@ -1034,7 +1034,7 @@
               "ancho": 12,
               "extra": "",
               "frame": "ppal",
-              "texto": "<p>Take the north road</p>",
+              "texto": "<p>Take the road to the north</p>",
               "destinoFallo": 0,
               "destinoExito": 19626,
               "consecuencias": [],
@@ -1101,7 +1101,7 @@
               "ancho": 12,
               "extra": "",
               "frame": "ppal",
-              "texto": "<p>Take the north road</p>",
+              "texto": "<p>Take the road to the north</p>",
               "destinoFallo": 0,
               "destinoExito": 19626,
               "consecuencias": [],
@@ -1135,7 +1135,7 @@
               "ancho": 12,
               "extra": "",
               "frame": "ppal",
-              "texto": "<p>Take the north road</p>",
+              "texto": "<p>Take the road to the north</p>",
               "destinoFallo": 0,
               "destinoExito": 19626,
               "consecuencias": [],
@@ -2669,7 +2669,7 @@
           "posicion": 2,
           "titulo": "",
           "enlaces": [],
-          "texto": "<p style=\"text-align: justify;\">Cuando viertes el vino que te queda en el cuenco te invade una absoluta oscuridad. Tanteas la negrura y te das cuenta que te encuentras en un espacio muy peque\u00f1o, bajo lo que parecen tablones de madera.</p><p style=\"text-align: justify;\">Escuchas crujidos, pasos, como si alguien caminara por encima de los tablones.&nbsp;<span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">Gritas pidiendo auxilio pero pronto tus chillidos se</span><span style=\"color: var(--text-color); font-size: 1rem; background-color: var(--widget-background);\">&nbsp;ahogan en una violenta n\u00e1usea. Un hedor asfixiante, de sangre, carne y muerte, inunda tu nariz y tu boca. Toses, te mareas. Sientes que la consciencia se te escapa.</span></p><p style=\"text-align: justify;\"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">Vuelve la luz. Est\u00e1s en el suelo de las ruinas, con la capa cubierta de barro&nbsp;</span><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">y los ojos anegados de l\u00e1grimas.&nbsp;</span><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">L</span><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">a peque\u00f1a estatua parece escrutarte con sus ojos sin vida. </span></p><p style=\"text-align: justify;\"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">Incapaz de soportar su semblante, te marchas.</span></p>"
+          "texto": "<p style=\"text-align: justify;\">When you pour the remaining wine into the bowl, absolute darkness engulfs you. You feel your way through the blackness and realize you are in a very small space, beneath what seem to be wooden planks.</p><p style=\"text-align: justify;\">You hear creaks, footsteps, as if someone were walking above the planks.&nbsp;<span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">You scream for help, but soon your voice </span><span style=\"color: var(--text-color); font-size: 1rem; background-color: var(--widget-background);\">&nbsp;is choked by a violent nausea. A suffocating stench of blood, flesh, and death floods your nose and mouth. You cough, grow dizzy. You feel consciousness slipping away.</span></p><p style=\"text-align: justify;\"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">The light returns. You are on the ground amid the ruins, your cloak covered in mud&nbsp;</span><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">and your eyes flooded with tears.&nbsp;</span><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">The </span><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">small statue seems to scrutinize you with its lifeless eyes. </span></p><p style=\"text-align: justify;\"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">Unable to bear its gaze, you leave.</span></p>"
         },
         {
           "test": false,
@@ -2741,7 +2741,7 @@
           "posicion": 3,
           "titulo": "",
           "enlaces": [],
-          "texto": "<p style=\"text-align: justify;\">Viertes lo que te queda de vino en el cuenco y te quedas observando sus hipn\u00f3ticos remolinos carmes\u00edes.</p><p style=\"text-align: justify;\">Das un respingo cuando en tu cabeza nace un pensamiento; de la nada, como si alguien lo hubiera puesto ah\u00ed.</p><p style=\"text-align: justify;\"><i>Tienes que volver a Huesos. Encuentra el coraz\u00f3n del guardi\u00e1n y devu\u00e9lvelo ad\u00f3nde pertenece.</i></p><p style=\"text-align: justify;\">Abres la boca de estupefacci\u00f3n y miras a la virgen, como pidiendo explicaciones. Pero ella tan s\u00f3lo te observa con sus ojos de piedra inerte.</p>"
+          "texto": "<p style=\"text-align: justify;\">You pour what remains of the wine into the bowl and watch its hypnotic crimson swirls.</p><p style=\"text-align: justify;\">You give a start when a thought is born in your mind —out of nowhere, as if someone had placed it there.</p><p style=\"text-align: justify;\"><i>You must return to Bones. Find the heart of the guardian and bring it back to where it belongs.</i></p><p style=\"text-align: justify;\">You open your mouth in astonishment and look at the Virgin, as if asking for an explanation. But she only gazes at you with her timeless stone eyes.</p>"
         },
         {
           "test": false,
@@ -2783,7 +2783,7 @@
           "posicion": 5,
           "titulo": " (copia)",
           "enlaces": [],
-          "texto": "<p style=\"text-align: justify;\">Viertes el vino que te queda en el cuenco pero no ocurre nada.</p>"
+          "texto": "<p style=\"text-align: justify;\">You pour the wine you have left into the bowl, but nothing happens.</p>"
         },
         {
           "test": false,
@@ -2797,7 +2797,7 @@
               "ancho": 12,
               "extra": "",
               "frame": "ppal",
-              "texto": "<p>Investigas el hueco del muro</p>",
+              "texto": "<p>Examine the hollow in the wall</p>",
               "destinoFallo": 0,
               "destinoExito": 19714,
               "consecuencias": [],
@@ -2839,7 +2839,7 @@
               "ancho": 12,
               "extra": "",
               "frame": "ppal",
-              "texto": "<p>Vuelves a Huesos</p>",
+              "texto": "<p>Go back to Bones</p>",
               "destinoFallo": 0,
               "destinoExito": 19683,
               "consecuencias": [],
@@ -2867,7 +2867,7 @@
               "ancho": 12,
               "extra": "",
               "frame": "ppal",
-              "texto": "<p>Retomas el camino del norte</p>",
+              "texto": "<p>Continue along the road to the north</p>",
               "destinoFallo": 0,
               "destinoExito": 19653,
               "consecuencias": [],
@@ -2880,7 +2880,7 @@
           "texto": ""
         }
       ],
-      "titulo": "Dar vino como ofrenda",
+      "titulo": "Offer wine",
       "codigo": "0042",
       "estado": "L",
       "id": 19680
@@ -2901,7 +2901,7 @@
               "ancho": 12,
               "extra": "",
               "frame": "ppal",
-              "texto": "<p>La niebla se cierne sobre ti</p>",
+              "texto": "<p>The fog closes in around you</p>",
               "destinoFallo": 0,
               "destinoExito": 19692,
               "consecuencias": [],
@@ -2911,7 +2911,7 @@
               "test": false
             }
           ],
-          "texto": "<p style=\"text-align: justify;\">El interior de la posada es un amasijo de polvo y ceniza. Una ojeada r\u00e1pida basta para cerciorarte de que en la sala principal no hay m\u00e1s que mesas y montones de paja podrida.</p><p style=\"text-align: justify;\"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">En una peque\u00f1a estancia contigua topas con un lecho de paja fresca y los remanentes de una vieja cocina. Hurgas hasta en el \u00faltimo recoveco, pero a pesar de tu esmero s\u00f3lo hallas hogazas de pan seco y unas botellas de vino que ahora no te apetecen nada.</span></p><p style=\"text-align: justify;\"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">Sales a la calle. Huesos te aparece ahora inmenso, extendi\u00e9ndose hasta una infinidad blanca. \u00bfD\u00f3nde buscar?\u00bfLa iglesia? \u00bfLas casas? Es demasiado para un par de manos desorientadas.</span></p>"
+          "texto": "<p style=\"text-align: justify;\">The inside of the inn is a jumble of dust and ash. A quick glance is enough to confirm that the main room contains nothing but tables and heaps of rotting straw.</p><p style=\"text-align: justify;\"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">In a small adjoining room, you come across a bed of fresh straw and the remnants of an old kitchen. You search every last nook, but despite your thoroughness, you find only loaves of dry bread and a few bottles of wine, which you have no desire for now.</span></p><p style=\"text-align: justify;\"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">You step out into the street. Bones now appears immense, stretching into a white infinity. Where to search? The church? The houses? It is too much for a pair of disoriented hands.</span></p>"
         }
       ],
       "titulo": "Posada",
@@ -2935,7 +2935,7 @@
               "ancho": 12,
               "extra": "",
               "frame": "ppal",
-              "texto": "<p>La niebla se cierne sobre ti</p>",
+              "texto": "<p>The fog closes in around you</p>",
               "destinoFallo": 0,
               "destinoExito": 19692,
               "consecuencias": [],
@@ -2945,7 +2945,7 @@
               "test": false
             }
           ],
-          "texto": "<p style=\"text-align: justify; \">Las puertas de la iglesia est\u00e1n cerradas. Las golpeas con todas tus fuerzas pero la madera es tan gruesa que dudas de que nada pueda o\u00edrse en el otro lado. Un rodeo al edificio no revela ninguna otra posibilidad de acceso. Encuentras una portezuela de metal en la parte posterior, pero est\u00e1 tan cerrada como el portal principal. A pesar de que esta vez escuchas tu llamada resonar en el interior, no obtienes respuesta alguna.</p><p style=\"text-align: justify;\">Consideras las ventanas pero los muros son demasiado lisos para trepar hasta ellas. Adem\u00e1s, tienes la certeza de que en caso de que pudieras alcanzarlas, resultar\u00edan demasiado estrechas.</p><p style=\"text-align: justify;\">Lo \u00fanico que puedes hacer recostar la espalda en los viejos muros y contemplar la lenta pero inexorable expansi\u00f3n de la niebla. Huesos es, simplemente, demasiado grande.</p>"
+          "texto": "<p style=\"text-align: justify; \">The church doors are shut. You pound on them with all your strength, but the wood is so thick you doubt anything could be heard on the other side. A circuit around the building reveals no other possible way in. You find a small metal door at the back, but it is as locked as the main entrance. This time, though, you hear your call echo inside —yet you receive no reply.</p><p style=\"text-align: justify;\">ChatGPT ha dit:\n\nYou consider the windows, but the walls are too smooth to climb. Besides, you are certain that even if you could reach them, they would be far too narrow for you to pass through.</p><p style=\"text-align: justify;\">The only thing you can do is rest your back against the old walls and watch the slow yet inexorable spread of the fog. Bones is, simply put, far too large.</p>"
         }
       ],
       "titulo": "Iglesia",
@@ -2965,7 +2965,7 @@
           "posicion": 1,
           "titulo": "",
           "enlaces": [],
-          "texto": "<p style=\"text-align: justify; \">Deshaces el trecho hasta Huesos tan r\u00e1pido como te permiten tus botas cargadas de barro. La niebla es ahora omnipresente, un espeso muro que tu lumbre apenas alcanza a horadar. \"S\u00f3lo es niebla\", te dices entre resuellos, \"s\u00f3lo es niebla\", te repites mientras corres atravesando la blanca cortina y en tus o\u00eddos resuena, incesante, el coro enloquecedor de mil voces imposibles.</p><p style=\"text-align: justify;\">Las primeras casas aparecen de sopet\u00f3n entre la bruma. Te detienes al inicio de la calle mayor y te esfuerzas por apaciguar tu respiraci\u00f3n desaforada. Huesos es s\u00f3lo una aldea pero no dejan de ser demasiadas casas, decenas de rostros que te observan con sus ventanas sombr\u00edas y parecen re\u00edrse con sus bocas hechas de puerta.</p>"
+          "texto": "<p style=\"text-align: justify; \">You make your way back to Bones as fast as your mud-laden boots will carry you. The fog is now everywhere, a thick wall that your torch barely manages to pierce. “It’s only fog,” you tell yourself between gasps. “It’s only fog,” you repeat as you run through the white curtain, while in your ears echoes, unceasing, the maddening chorus of a thousand impossible voices.</p><p style=\"text-align: justify;\">The first houses suddenly emerge from the mist. You stop at the beginning of the main street and struggle to calm your ragged breathing. Bones is only a village, yet there are still too many houses—dozens of faces watching you through their shadowed windows, seeming to mock you with mouths made of doors.</p>"
         },
         {
           "test": false,
@@ -2990,7 +2990,7 @@
           "posicion": 2,
           "titulo": "",
           "enlaces": [],
-          "texto": "<p style=\"text-align: justify; \">Aunque puede que la b\u00fasqueda sea m\u00e1s sencilla de lo que parece. La agitaci\u00f3n del carnicero cuando lo sorprendiste en su casa, sus esfuerzos por esbozar una sonrisa... \u00bfactitud sospechosa o s\u00f3lo imaginaciones tuyas?</p>"
+          "texto": "<p style=\"text-align: justify; \">Although the search might be easier than it seems. The butcher’s agitation when you caught him in his house, his efforts to force a smile… suspicious behavior, or merely your imagination?</p>"
         },
         {
           "test": false,
@@ -3004,7 +3004,7 @@
               "ancho": 12,
               "extra": "",
               "frame": "ppal",
-              "texto": "<p>En la posada</p>",
+              "texto": "<p>At the inn</p>",
               "destinoFallo": 0,
               "destinoExito": 19685,
               "consecuencias": [],
@@ -3017,7 +3017,7 @@
               "ancho": 12,
               "extra": "",
               "frame": "ppal",
-              "texto": "<p>En la iglesia</p>",
+              "texto": "<p>At the church</p>",
               "destinoFallo": 0,
               "destinoExito": 19686,
               "consecuencias": [],
@@ -3030,7 +3030,7 @@
               "ancho": 12,
               "extra": "",
               "frame": "ppal",
-              "texto": "<p>En las casas</p>",
+              "texto": "<p>At the houses</p>",
               "destinoFallo": 0,
               "destinoExito": 19687,
               "consecuencias": [],
@@ -3040,10 +3040,10 @@
               "test": false
             }
           ],
-          "texto": "<p style=\"text-align: justify; \"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">\u00bfD\u00f3nde buscar\u00e1s?</span><br></p>"
+          "texto": "<p style=\"text-align: justify; \"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">Where will you search?</span><br></p>"
         }
       ],
-      "titulo": "Volver a Rostoc",
+      "titulo": "Back to Bones",
       "codigo": "0045",
       "estado": "L",
       "id": 19683
@@ -3064,7 +3064,7 @@
               "ancho": 12,
               "extra": "",
               "frame": "ppal",
-              "texto": "<p>En casa del sepulturero</p>",
+              "texto": "<p>At the grave digger’s house</p>",
               "destinoFallo": 0,
               "destinoExito": 19691,
               "consecuencias": [],
@@ -3077,7 +3077,7 @@
               "ancho": 12,
               "extra": "",
               "frame": "ppal",
-              "texto": "<p>En casa del cirujano</p>",
+              "texto": "<p>At the surgeon’s house</p>",
               "destinoFallo": 0,
               "destinoExito": 19688,
               "consecuencias": [],
@@ -3090,7 +3090,7 @@
               "ancho": 12,
               "extra": "",
               "frame": "ppal",
-              "texto": "<p>En casa del carnicero</p>",
+              "texto": "<p>At the butcher’s house</p>",
               "destinoFallo": 0,
               "destinoExito": 19689,
               "consecuencias": [],
@@ -3103,7 +3103,7 @@
               "ancho": 12,
               "extra": "",
               "frame": "ppal",
-              "texto": "<p>En casa del herbolario</p>",
+              "texto": "<p>At the herbalist’s house</p>",
               "destinoFallo": 0,
               "destinoExito": 19690,
               "consecuencias": [],
@@ -3113,10 +3113,10 @@
               "test": false
             }
           ],
-          "texto": "<p style=\"text-align: justify; \">Recorres con pasos precipitados las calles anegadas de bruma. Ni aunque dispusieras de varias noches podr\u00edas registrar todas las casas.</p><p style=\"text-align: justify;\">Al lado del peque\u00f1o cementerio se alza una caseta con salida directa a \u00e9l; supones que ah\u00ed debe vivir el sepulturero. Justo al lado, como si dependieran la una de la otra, se alza una casa algo m\u00e1s ufana con un b\u00e1culo de Asclepio, el s\u00edmbolo de la medicina, pintado encima de la entrada. Debe tratarse de la vivienda del cirujano, a juzgar por el sinn\u00famero de utensilios filosos alineados en las paredes que vislumbras por las ventanas de la planta baja. La carnicer\u00eda se encuentra en una calleja secundaria; su amplio ventanal exhibe un mostrador mugriento y una hilera de reses descuartizados colgando detr\u00e1s. Al final de esta misma calleja hay<span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">&nbsp;una casa rodeada por una \u00e1mplia franja de jard\u00edn. Un letrero de madera colgado de un poste al lado del camino de entrada reza: <i>herborister\u00eda</i>.</span></p><p style=\"text-align: justify;\">\u00bfD\u00f3nde buscar\u00e1s?</p>"
+          "texto": "<p style=\"text-align: justify; \">You hurry through the streets soaked in fog. Even if you had several nights, you couldn’t search every house.</p><p style=\"text-align: justify;\">Next to the small cemetery stands a hut with direct access to it; you assume this must be where the grave digger lives. Right beside it, as if they depended on each other, rises a slightly grander house with a staff of Asclepius—the symbol of medicine—painted above the entrance. This must be the surgeon’s home, judging by the countless sharp instruments lined up on the walls that you catch glimpses of through the ground-floor windows. The butcher’s shop is located on a side alley; its large window displays a filthy counter and a row of dismembered carcasses hanging behind it. <span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">&nbsp;ChatGPT ha dit:\n\nAt the end of this same alley stands a house surrounded by a wide strip of garden. A wooden sign hanging from a post beside the entrance path reads: <i>herbalist’s shop</i>.</span></p><p style=\"text-align: justify;\">Where will you search?</p>"
         }
       ],
-      "titulo": "Casas",
+      "titulo": "Houses",
       "codigo": "0046",
       "estado": "L",
       "id": 19687
@@ -3137,7 +3137,7 @@
               "ancho": 12,
               "extra": "",
               "frame": "ppal",
-              "texto": "<p>La niebla se cierne sobre ti</p>",
+              "texto": "<p>The fog closes in around you</p>",
               "destinoFallo": 0,
               "destinoExito": 19692,
               "consecuencias": [],
@@ -3147,10 +3147,10 @@
               "test": false
             }
           ],
-          "texto": "<p style=\"text-align: justify;\">La puerta de la casa del cirujano est\u00e1 cerrada con llave; por suerte, consigues entrar por una ventana.</p><p style=\"text-align: justify;\">Dentro se respira el orden propio de alguien dedicado a una profesi\u00f3n m\u00e9dica. A pesar de que la casa es grande y por lo visto ocupada tambi\u00e9n por su familia, c<span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">ada objeto parece ocupar el lugar apropiado.\u00a0</span><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">Procedes a inspeccionar cada rinc\u00f3n; cajones, armarios, vitrinas se abren a tus fren\u00e9ticas manos pero no hallas nada que no deber\u00eda estar all\u00ed. En el quir\u00f3fano tampoco encuentras m\u00e1s que una aseada mesa de madera, hileras de todo tipo de utensilios afilados colgando de las paredes, estanter\u00edas llenas de trapos limpios y un hogar con una marmita de metal puesta sobre un mont\u00f3n de cenizas fr\u00edas.</span></p><p style=\"text-align: justify;\">Te llevas las manos en la cabeza con desesperaci\u00f3n cuando te das cuenta de que nunca encontrar\u00e1s lo que buscas. Tal vez si dispusieras de veinte personas o de todo el tiempo del mundo; pero no es el caso.</p>"
+          "texto": "<p style=\"text-align: justify;\">The door of the surgeon’s house is locked; fortunately, you manage to get in through a window.</p><p style=\"text-align: justify;\">Inside, the air carries the orderliness typical of someone devoted to a medical profession. Although the house is large <span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">and apparently also occupied by his family, every object seems to be in its proper place.</span><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">You proceed to inspect every corner; drawers, cabinets, and display cases yield to your frantic hands, but you find nothing out of place. In the operating room, you encounter nothing more than a tidy wooden table, rows of all kinds of sharp instruments hanging on the walls, shelves filled with clean cloths, and a hearth with a metal pot resting on a pile of cold ashes.</span></p><p style=\"text-align: justify;\">You clutch your head in despair when you realize that you will never find what you’re looking for. Perhaps if you had twenty people or all the time in the world it would be possible —but that is not the case.</p>"
         }
       ],
-      "titulo": "Casa del cirujano",
+      "titulo": "Surgeron house",
       "codigo": "0047",
       "estado": "L",
       "id": 19688
@@ -3171,7 +3171,7 @@
               "ancho": 12,
               "extra": "",
               "frame": "ppal",
-              "texto": "<p>Descuelgas el cuadro</p>",
+              "texto": "<p>Take the painting down</p>",
               "destinoFallo": 0,
               "destinoExito": 19693,
               "consecuencias": [],
@@ -3184,7 +3184,7 @@
               "ancho": 12,
               "extra": "",
               "frame": "ppal",
-              "texto": "<p>Levantas los tablones del suelo</p>",
+              "texto": "<p>Lift the floorboards</p>",
               "destinoFallo": 0,
               "destinoExito": 19694,
               "consecuencias": [],
@@ -3197,7 +3197,7 @@
               "ancho": 12,
               "extra": "",
               "frame": "ppal",
-              "texto": "<p>Miras detr\u00e1s del armario</p>",
+              "texto": "<p>Look behind the wardrobe</p>",
               "destinoFallo": 0,
               "destinoExito": 19695,
               "consecuencias": [],
@@ -3210,7 +3210,7 @@
               "ancho": 12,
               "extra": "",
               "frame": "ppal",
-              "texto": "<p>Levantas el colch\u00f3n de paja</p>",
+              "texto": "<p>Lift the straw mattress</p>",
               "destinoFallo": 0,
               "destinoExito": 19696,
               "consecuencias": [],
@@ -3220,10 +3220,10 @@
               "test": false
             }
           ],
-          "texto": "<p style=\"text-align: justify;\">Cuando entras en la carnicer\u00eda te golpea el hedor c\u00e1lido y pegajoso de la sangre y la carne poco fresca. No pasas mucho tiempo rebuscando en la maloliente tienda: es improbable que nadie esconda nada en un espacio p\u00fablico. Decides centrarte en el piso superior; s<span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">ubes los escalones de dos en dos y corres hasta la estancia del fondo del pasillo. Los tablones de madera del pasillo crujen y se bambolean bajo tus pies. </span></p><p style=\"text-align: justify;\"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">Paseas tu farol por la oscuridad para desenmascarar las diferentes piezas de mobiliario:&nbsp;</span><span style=\"color: var(--text-color); font-size: 1rem; background-color: var(--widget-background);\">un caballete de pintor con un lienzo en blanco, una cama con colch\u00f3n de paja, un pesado armario, oblicuo respecto a la pared, y una mesa encima de la cual a cuelga el retrato de una joven mujer, con una expresi\u00f3n a medio camino entre la dulzura y la tristeza.</span></p>"
+          "texto": "<p style=\"text-align: justify;\">When you enter the butcher’s shop, you are struck by the warm, clinging stench of blood and not-so-fresh meat. You don’t spend much time rummaging through the foul-smelling store: it’s unlikely that anyone would hide anything in a public space. You decide to focus on the upper floor; <span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">You climb the stairs two at a time and run down the hallway to the room at the far end. The wooden floorboards creak and wobble beneath your feet. </span></p><p style=\"text-align: justify;\"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">You sweep your lantern across the darkness, revealing the different pieces of furniture:&nbsp;</span><span style=\"color: var(--text-color); font-size: 1rem; background-color: var(--widget-background);\">A painter's easel holds a blank canvas, a bed with a straw mattress rests nearby, a heavy wardrobe leans askew against the wall, and a table bears a portrait of a young woman, her expression somewhere between sweetness and sorrow.</span></p>"
         }
       ],
-      "titulo": "Casa del carnicero",
+      "titulo": "Butcher's house",
       "codigo": "0048",
       "estado": "L",
       "id": 19689
@@ -3244,7 +3244,7 @@
               "ancho": 12,
               "extra": "",
               "frame": "ppal",
-              "texto": "<p>La niebla se cierne sobre ti</p>",
+              "texto": "<p>The fog closes in around you</p>",
               "destinoFallo": 0,
               "destinoExito": 19692,
               "consecuencias": [],
@@ -3254,10 +3254,10 @@
               "test": false
             }
           ],
-          "texto": "<p style=\"text-align: justify; \">Cruzas el jard\u00edn y compruebas la puerta de la herborister\u00eda. Est\u00e1 cerrada. Por fortuna, en la parte trasera encuentras una portezuela mal cerrada que te permite entrar.</p><p style=\"text-align: justify; \">La puerta da a un laboratorio d\u00f3nde se amontonan vol\u00famenes de bot\u00e1nica, vasos, tubos, botellas y otros instrumentos de uso incomprensible para ti. Ramilletes secos de diferentes plantas cuelgan en cuerdas tendidas cerca del techo y frascos con pu\u00f1ados de hojas y polvos se alinean en interminables estanter\u00edas. Es una estancia peque\u00f1a, pero debido al desorden tardas mucho en registrarla. No hallas nada.</p><p style=\"text-align: justify; \"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">Te paras a considerar si deber\u00edas mirar en el resto de la casa o tal vez probar en otra, cuando te das cuenta de que no importa. No tienes ni idea de d\u00f3nde buscar. Hagas lo que hagas, tus probabilidades de \u00e9xito son virtualmente nulas.</span></p>"
+          "texto": "<p style=\"text-align: justify; \">You cross the garden and check the door of the herbalist’s shop. It’s locked. Fortunately, at the back you find a poorly latched little door that lets you slip inside.</p><p style=\"text-align: justify; \">ChatGPT ha dit:\n\nThe door opens into a laboratory where volumes on botany, glassware, tubes, bottles, and other instruments of incomprehensible use for you are heaped in disorder. Bundles of dried plants hang from ropes stretched near the ceiling, and jars containing handfuls of leaves and powders line endless shelves. It’s a small room, but due to the clutter it takes you a long time to search it. You find nothing.</p><p style=\"text-align: justify; \"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">You pause to consider whether you should search the rest of the house or perhaps try another, when you realize it doesn’t matter. You have no idea where to look. Whatever you do, your chances of success are virtually nil.</span></p>"
         }
       ],
-      "titulo": "Casa del herbolario",
+      "titulo": "Herbalist",
       "codigo": "0049",
       "estado": "L",
       "id": 19690
@@ -3278,7 +3278,7 @@
               "ancho": 12,
               "extra": "",
               "frame": "ppal",
-              "texto": "<p>La niebla se cierne sobre ti</p>",
+              "texto": "<p>The fog closes in around you</p>",
               "destinoFallo": 0,
               "destinoExito": 19692,
               "consecuencias": [],
@@ -3288,10 +3288,10 @@
               "test": false
             }
           ],
-          "texto": "<p style=\"text-align: justify; \">Empujas la puerta de la casa del sepulturero pero est\u00e1 firmemente cerrada; sin embargo, encuentras abierta la puerta que da al cementerio.&nbsp;</p><p style=\"text-align: justify;\">En el interior de la peque\u00f1a vivienda reina la austeridad de alguien que vive solo.<span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">&nbsp;No parece haber ning\u00fan objeto que no cumpla una funci\u00f3n pr\u00e1ctica; ning\u00fan adorno, ning\u00fan toque que altere la imperante sobriedad. No tardas mucho en comprobar el comedor y el dormitorio, sin \u00e9xito.</span></p><p style=\"text-align: justify;\">Te lleva algo m\u00e1s de tiempo buscar en el taller. Est\u00e1 repleto de tablones de varios tama\u00f1os, sacos de serr\u00edn, herramientas de carpinter\u00eda y picos, palas y cubos con incrustaciones de barro. Sin embargo, tampoco hallas lo que buscas en esta antesala del camposanto.</p><p style=\"text-align: justify;\">El infructuoso escrutinio te ha minado la moral. Tratas de ordenar tus pensamientos pero las ideas se te amontonan en la cabeza sin ton ni son. Huesos se te antoja, de repente, inmenso.</p>"
+          "texto": "<p style=\"text-align: justify; \">You push the gravedigger’s house door, but it’s firmly shut; however, you find the door leading to the cemetery open.&nbsp;</p><p style=\"text-align: justify;\">Inside the small house, the austerity of someone who lives alone prevails.<span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">&nbsp;There doesn’t seem to be a single object that doesn’t serve a practical purpose; no decoration, no detail that disrupts the prevailing sobriety. It doesn’t take long for you to check the dining room and the bedroom, unsuccessfully.</span></p><p style=\"text-align: justify;\">ChatGPT ha dit:\n\nIt takes you a bit longer to search the workshop. It’s filled with planks of various sizes, bags of sawdust, carpentry tools, and picks, shovels, and buckets encrusted with mud. Still, you don’t find what you’re looking for in this antechamber to the graveyard either.</p><p style=\"text-align: justify;\">The fruitless search has undermined your morale. You try to organize your thoughts, but ideas pile up in your head in chaotic disarray. Suddenly, Bones seems impossibly vast.</p>"
         }
       ],
-      "titulo": "Casa del sepultero",
+      "titulo": "Grave digger's house",
       "codigo": "0050",
       "estado": "L",
       "id": 19691
@@ -3308,7 +3308,7 @@
           "posicion": 1,
           "titulo": "",
           "enlaces": [],
-          "texto": "<p style=\"text-align: justify; \">El dolor es breve. Cuando tu cuerpo se disuelve en una mara\u00f1a deshilachada de vapor, el ignominioso grito de la bruma deja de lacerarte. Te elevas junto a las mil y una almas que murieron antes; tus posesiones, tus afanes y tus inquietudes terrenales quedan atr\u00e1s. Eres niebla. Ahora, su conocimiento y sus anhelos son tambi\u00e9n los tuyos.</p><p style=\"text-align: justify; \">Sin embargo, vuestra dicha es incompleta. Hay un objeto que, puesto en su debido lugar, a\u00fan puede devolveros a la abyecta prisi\u00f3n de entremundos donde hab\u00e9is languidecido durante siglos.&nbsp;<span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">El coraz\u00f3n del guardi\u00e1n.</span></p><p style=\"text-align: justify; \">Te unes a la b\u00fasqueda que iniciaron tus hermanas. Seguir\u00e9is barriendo la tierra, palmo a palmo, con fervor incansable, noche tras noche; cuando os falten las fuerzas, los cuerpos que consum\u00e1is os las devolver\u00e1n. No cesar\u00e9is hasta encontrarlo.&nbsp;</p><p style=\"text-align: justify; \"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">El coraz\u00f3n del guardi\u00e1n. H</span>asta que no sea vuestra salvaci\u00f3n, ser\u00e1 vuestra condena.</p>"
+          "texto": "<p style=\"text-align: justify; \">The pain is brief. As your body dissolves into a frayed, tangled cloud of vapor, the ignominious wail of the fog ceases to tear at you. You rise alongside the thousand and one souls who died before; your possessions, your concerns, your worldly worries are left behind. You are fog. Now, their knowledge and their longings are yours as well.</p><p style=\"text-align: justify; \">However, your bliss is incomplete. There is an object which, placed in its rightful place, can still return you to the abject prison between worlds where you have languished for centuries.&nbsp;<span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">The heart of the guardian.</span></p><p style=\"text-align: justify; \">You join the search your sisters began. Together, you will scour the land, inch by inch, with tireless fervor, night after night; when your strength falters, the bodies you consume will restore it. You will not cease until you find it.&nbsp;</p><p style=\"text-align: justify; \"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">The heart of the guardian. </span>Until it becomes your salvation, it will remain your curse.</p>"
         },
         {
           "test": false,
@@ -3321,7 +3321,7 @@
           "texto": "<p style=\"text-align: center; \"><b style=\"color: var(--text-color); font-size: 1rem; background-color: var(--widget-background);\"><br></b></p><p style=\"text-align: center; \"><b style=\"color: var(--text-color); font-size: 1rem; background-color: var(--widget-background);\">FIN?</b><br></p><p style=\"text-align: center; \"><br></p>"
         }
       ],
-      "titulo": "Muerte sin amuleto",
+      "titulo": "Death without amulet",
       "codigo": "0051",
       "estado": "L",
       "id": 19692
@@ -3338,7 +3338,7 @@
           "posicion": 1,
           "titulo": "",
           "enlaces": [],
-          "texto": "<p style=\"text-align: justify; \">Descuelgas el cuadro y detr\u00e1s encuentras un compartimento excavado en la pared que contiene un saquito de arpillera. Lo agarras con un movimiento \u00e1vido, como queriendo arrancarlo del sitio. </p><p style=\"text-align: justify; \">Al abrirlo, la decepci\u00f3n te golpea.&nbsp;<span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">Dentro s\u00f3lo hay pu\u00f1ado de monedas de oro que tintinean al caer de tu mano. Los ahorros del carnicero.</span></p>"
+          "texto": "<p style=\"text-align: justify; \">ChatGPT ha dit:\n\nYou take down the painting, and behind it you find a compartment carved into the wall containing a small burlap sack. You grab it with eager hands, as if trying to wrench it from its place. </p><p style=\"text-align: justify; \">When you open it, disappointment hits you.&nbsp;<span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">Inside, there is only a handful of gold coins, jingling as they slip through your fingers —the butcher’s savings.</span></p>"
         },
         {
           "test": false,
@@ -3363,7 +3363,7 @@
           "posicion": 4,
           "titulo": " (copia) (copia)",
           "enlaces": [],
-          "texto": "<p style=\"text-align: justify; \">Nada que te pueda salvar; nada que, al menos, te indique d\u00f3nde seguir buscando en una aldea tan peque\u00f1a, y a la vez tan grande, como Huesos.<br></p>"
+          "texto": "<p style=\"text-align: justify; \">Nothing that can save you; nothing that, at least, hints at where to continue your search in a village as small, and yet as vast, as Bones.<br></p>"
         },
         {
           "test": false,
@@ -3388,7 +3388,7 @@
           "posicion": 5,
           "titulo": " (copia) (copia)",
           "enlaces": [],
-          "texto": "<p style=\"text-align: justify; \"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">Sin embargo, te niegas a rendirte a\u00fan.</span><br></p>"
+          "texto": "<p style=\"text-align: justify; \"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">Yet you refuse to give up.</span><br></p>"
         },
         {
           "test": false,
@@ -3402,7 +3402,7 @@
               "ancho": 12,
               "extra": "",
               "frame": "ppal",
-              "texto": "<p>Levantas los tablones del suelo</p>",
+              "texto": "<p>Lift the floorboards</p>",
               "destinoFallo": 0,
               "destinoExito": 19694,
               "consecuencias": [],
@@ -3430,7 +3430,7 @@
               "ancho": 12,
               "extra": "",
               "frame": "ppal",
-              "texto": "<p>Miras detr\u00e1s del armario</p>",
+              "texto": "<p>Look behind the wardrobe</p>",
               "destinoFallo": 0,
               "destinoExito": 19695,
               "consecuencias": [
@@ -3475,7 +3475,7 @@
               "ancho": 12,
               "extra": "",
               "frame": "ppal",
-              "texto": "<p>Levantas el colch\u00f3n de paja</p>",
+              "texto": "<p>Lift the straw mattress</p>",
               "destinoFallo": 0,
               "destinoExito": 19696,
               "consecuencias": [
@@ -3520,7 +3520,7 @@
               "ancho": 12,
               "extra": "",
               "frame": "ppal",
-              "texto": "<p>La niebla se cierne sobre ti</p>",
+              "texto": "<p>The fog closes in around you</p>",
               "destinoFallo": 0,
               "destinoExito": 19692,
               "consecuencias": [],
@@ -3548,7 +3548,7 @@
           "texto": ""
         }
       ],
-      "titulo": "Descolgar el cuadro",
+      "titulo": "Take painting down",
       "codigo": "0052",
       "estado": "L",
       "id": 19693
@@ -3602,7 +3602,7 @@
               "ancho": 12,
               "extra": "",
               "frame": "ppal",
-              "texto": "<p>Corres hacia el norte</p>",
+              "texto": "<p>Run toward the north</p>",
               "destinoFallo": 0,
               "destinoExito": 19700,
               "consecuencias": [],
@@ -3612,10 +3612,10 @@
               "test": false
             }
           ],
-          "texto": "<p style=\"text-align: justify;\">Cuando levantas el primero de los tablones, el resplandor rojizo que emana de debajo te hace pensar que hay brasas ardiendo en el subsuelo. Tardas un instante en reparar que en realidad se trata de una brillante gema ovalada.</p><p style=\"text-align: justify;\">La coges para inspeccionarla. Se trata de un \u00f3valo tan pulido como una gota de agua, refulgente como carbones encendidos. Esta surcada por vetas de vivo rojo cuyo fulgor inunda la estancia de danzantes e hipn\u00f3ticos claroscuros.</p><p style=\"text-align: justify;\">Tienes la certeza tan pronto como lo ves. \u00a1Has encontrado el coraz\u00f3n del guardi\u00e1n!</p>"
+          "texto": "<p style=\"text-align: justify;\">When you lift the first of the floorboards, the reddish glow emanating from beneath makes you think there are burning embers underground. It takes a moment to realize that it is actually a brilliant oval gem.</p><p style=\"text-align: justify;\">You pick it up to inspect it. It is an oval as smooth as a drop of water, glowing like burning embers. It is streaked with veins of vivid red, whose brilliance fills the room with a dance of light and shadow.</p><p style=\"text-align: justify;\">You know it the moment you see it. You’ve found the heart of the guardian!</p>"
         }
       ],
-      "titulo": "Levantar las maderas del suelo",
+      "titulo": "Lift the floorboards",
       "codigo": "0053",
       "estado": "L",
       "id": 19694
@@ -3632,7 +3632,7 @@
           "posicion": 1,
           "titulo": "",
           "enlaces": [],
-          "texto": "<p style=\"text-align: justify; \">Apartas el pesado armario. Detr\u00e1s hallas media docena de lienzos; repeticiones enfermizas de la mujer del cuadro, misma postura, misma expresi\u00f3n triste en los ojos. Todas te miran de frente, como si se apenaran por ti.</p>"
+          "texto": "<p style=\"text-align: justify; \">You push aside the heavy wardrobe. Behind it, you find half a dozen canvases—sickly repetitions of the woman from the painting, same posture, same sad expression in her eyes. They all stare at you head-on, as if pitying you.</p>"
         },
         {
           "test": false,
@@ -3657,7 +3657,7 @@
           "posicion": 2,
           "titulo": " (copia) (copia)",
           "enlaces": [],
-          "texto": "<p style=\"text-align: justify; \"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">Por tus intentos f\u00fatiles de dar con algo que nunca encontrar\u00e1s.</span><br></p>"
+          "texto": "<p style=\"text-align: justify; \"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">For your futile attempts to search for something you will never find.</span><br></p>"
         },
         {
           "test": false,
@@ -3682,7 +3682,7 @@
           "posicion": 3,
           "titulo": " (copia) (copia)",
           "enlaces": [],
-          "texto": "<p style=\"text-align: justify; \"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">Sin embargo, te niegas a rendirte a\u00fan.</span><br></p>"
+          "texto": "<p style=\"text-align: justify; \"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">Yet you refuse to give up.</span><br></p>"
         },
         {
           "test": false,
@@ -3696,7 +3696,7 @@
               "ancho": 12,
               "extra": "",
               "frame": "ppal",
-              "texto": "<p>Descuelgas el cuadro</p>",
+              "texto": "<p>Take the painting down</p>",
               "destinoFallo": 0,
               "destinoExito": 19693,
               "consecuencias": [
@@ -3741,7 +3741,7 @@
               "ancho": 12,
               "extra": "",
               "frame": "ppal",
-              "texto": "<p>Levantas los tablones del suelo</p>",
+              "texto": "<p>Lift the floorboards</p>",
               "destinoFallo": 0,
               "destinoExito": 19694,
               "consecuencias": [],
@@ -3769,7 +3769,7 @@
               "ancho": 12,
               "extra": "",
               "frame": "ppal",
-              "texto": "<p>Levantas el colch\u00f3n de paja</p>",
+              "texto": "<p>Lift the straw mattress</p>",
               "destinoFallo": 0,
               "destinoExito": 19696,
               "consecuencias": [
@@ -3814,7 +3814,7 @@
               "ancho": 12,
               "extra": "",
               "frame": "ppal",
-              "texto": "<p>La niebla se cierne sobre ti</p>",
+              "texto": "<p>The fog closes in around you</p>",
               "destinoFallo": 0,
               "destinoExito": 19692,
               "consecuencias": [],
@@ -3842,7 +3842,7 @@
           "texto": ""
         }
       ],
-      "titulo": "Miras detr\u00e1s del armario",
+      "titulo": "Look behind the wardrobe",
       "codigo": "0054",
       "estado": "L",
       "id": 19695
@@ -3859,7 +3859,7 @@
           "posicion": 1,
           "titulo": "",
           "enlaces": [],
-          "texto": "<p style=\"text-align: justify; \">Cuando levantas el colch\u00f3n cae un pedazo de papel de unos de los listones del somier. Lo recoges. Se trata de una fotograf\u00eda de la mujer del cuadro,&nbsp; misma postura, misma expresi\u00f3n en el rostro, tal vez un poco m\u00e1s jovial.</p>"
+          "texto": "<p style=\"text-align: justify; \">When you lift the mattress, a piece of paper falls from one of the slats of the bed frame. You pick it up. It's a photograph of the woman from the painting—same pose, same expression on her face, perhaps a little more cheerful.</p>"
         },
         {
           "test": false,
@@ -3884,7 +3884,7 @@
           "posicion": 4,
           "titulo": " (copia) (copia)",
           "enlaces": [],
-          "texto": "<p style=\"text-align: justify; \"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">Un rostro que se emborrona tras el velo de tu desesperaci\u00f3n al darte cuenta de que vas dando tumbos y que la niebla crece mucho m\u00e1s r\u00e1pido de lo que una sola persona puede buscar.</span><br></p>"
+          "texto": "<p style=\"text-align: justify; \"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">A face that blurs behind the veil of your despair as you realize you are stumbling blindly, and the fog spreads far faster than a single person can search.</span><br></p>"
         },
         {
           "test": false,
@@ -3909,7 +3909,7 @@
           "posicion": 5,
           "titulo": " (copia) (copia)",
           "enlaces": [],
-          "texto": "<p style=\"text-align: justify; \"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">Sin embargo, te niegas a rendirte a\u00fan.</span><br></p>"
+          "texto": "<p style=\"text-align: justify; \"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">Yet you refuse to give up.</span><br></p>"
         },
         {
           "test": false,
@@ -3923,7 +3923,7 @@
               "ancho": 12,
               "extra": "",
               "frame": "ppal",
-              "texto": "<p>Descuelgas el cuadro</p>",
+              "texto": "<p>Take the painting down</p>",
               "destinoFallo": 0,
               "destinoExito": 19693,
               "consecuencias": [
@@ -3968,7 +3968,7 @@
               "ancho": 12,
               "extra": "",
               "frame": "ppal",
-              "texto": "<p>Levantas los tablones del suelo</p>",
+              "texto": "<p>Lift the floorboards</p>",
               "destinoFallo": 0,
               "destinoExito": 19694,
               "consecuencias": [],
@@ -3996,7 +3996,7 @@
               "ancho": 12,
               "extra": "",
               "frame": "ppal",
-              "texto": "<p>Miras detr\u00e1s del armario</p>",
+              "texto": "<p>Look behind the wardrobe</p>",
               "destinoFallo": 0,
               "destinoExito": 19695,
               "consecuencias": [
@@ -4041,7 +4041,7 @@
               "ancho": 12,
               "extra": "",
               "frame": "ppal",
-              "texto": "<p>La niebla se cierne sobre ti</p>",
+              "texto": "<p>The fog closes in around you</p>",
               "destinoFallo": 0,
               "destinoExito": 19692,
               "consecuencias": [],
@@ -4069,7 +4069,7 @@
           "texto": ""
         }
       ],
-      "titulo": "Miras en el lecho",
+      "titulo": "Look at the bed",
       "codigo": "0055",
       "estado": "L",
       "id": 19696
@@ -4090,7 +4090,7 @@
               "ancho": 12,
               "extra": "",
               "frame": "ppal",
-              "texto": "<p>Tomas el camino del norte</p>",
+              "texto": "<p>Take the road to the north</p>",
               "destinoFallo": 0,
               "destinoExito": 19626,
               "consecuencias": [],
@@ -4748,7 +4748,7 @@
               "ancho": 12,
               "extra": "",
               "frame": "ppal",
-              "texto": "<p>Retomas el camino del norte</p>",
+              "texto": "<p>Continue along the road to the north</p>",
               "destinoFallo": 0,
               "destinoExito": 19653,
               "consecuencias": [],
@@ -4905,7 +4905,7 @@
               "ancho": 12,
               "extra": "",
               "frame": "ppal",
-              "texto": "<p>Retomas el camino del norte</p>",
+              "texto": "<p>Continue along the road to the north</p>",
               "destinoFallo": 0,
               "destinoExito": 19653,
               "consecuencias": [],
@@ -4939,7 +4939,7 @@
               "ancho": 12,
               "extra": "",
               "frame": "ppal",
-              "texto": "<p>La niebla se cierne sobre ti</p>",
+              "texto": "<p>The fog closes in around you</p>",
               "destinoFallo": 0,
               "destinoExito": 19692,
               "consecuencias": [],
@@ -4967,7 +4967,7 @@
               "ancho": 12,
               "extra": "",
               "frame": "ppal",
-              "texto": "<p>La niebla se cierne sobre ti</p>",
+              "texto": "<p>The fog closes in around you</p>",
               "destinoFallo": 0,
               "destinoExito": 20265,
               "consecuencias": [],
@@ -5016,7 +5016,7 @@
               "ancho": 12,
               "extra": "",
               "frame": "ppal",
-              "texto": "<p>La niebla se cierne sobre ti</p>",
+              "texto": "<p>The fog closes in around you</p>",
               "destinoFallo": 0,
               "destinoExito": 19692,
               "consecuencias": [],
@@ -5044,7 +5044,7 @@
               "ancho": 12,
               "extra": "",
               "frame": "ppal",
-              "texto": "<p>La niebla se cierne sobre ti</p>",
+              "texto": "<p>The fog closes in around you</p>",
               "destinoFallo": 0,
               "destinoExito": 20265,
               "consecuencias": [],
@@ -5643,7 +5643,7 @@
               "ancho": 12,
               "extra": "",
               "frame": "ppal",
-              "texto": "<p>Retomas el camino del norte</p>",
+              "texto": "<p>Continue along the road to the north</p>",
               "destinoFallo": 0,
               "destinoExito": 19653,
               "consecuencias": [],
@@ -6130,7 +6130,7 @@
               "ancho": 12,
               "extra": "",
               "frame": "ppal",
-              "texto": "<p>La niebla se cierne sobre ti</p>",
+              "texto": "<p>The fog closes in around you</p>",
               "destinoFallo": 0,
               "destinoExito": 20265,
               "consecuencias": [],
@@ -6490,7 +6490,7 @@
               "ancho": 12,
               "extra": "",
               "frame": "ppal",
-              "texto": "La niebla se cierne sobre ti",
+              "texto": "The fog closes in around you",
               "destinoFallo": 0,
               "destinoExito": 19692,
               "consecuencias": [],
@@ -6518,7 +6518,7 @@
               "ancho": 12,
               "extra": "",
               "frame": "ppal",
-              "texto": "<p>La niebla se cierne sobre ti</p>",
+              "texto": "<pThe fog closes in around you</p>",
               "destinoFallo": 0,
               "destinoExito": 20265,
               "consecuencias": [],
