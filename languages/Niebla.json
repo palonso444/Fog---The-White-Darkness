@@ -1554,7 +1554,7 @@
           "posicion": 2,
           "titulo": "",
           "enlaces": [],
-          "texto": "<p style=\"text-align: justify;\">Piensas en el p\u00e1rroco de Huesos y las palabras garabateadas en su cuaderno. <i>Alguien lo ha robado</i>. <i>\u00a1Que Dios nos ampare!</i>\u00a0Se refer\u00eda, sin duda, al coraz\u00f3n del guardi\u00e1n. Sea lo que sea, presientes que es la respuesta a todos estos fen\u00f3menos que desaf\u00edan tu raz\u00f3n. Tal vez tendr\u00edas que buscar en Huesos. \u00bfD\u00f3nde sino?</p>"
+          "texto": "<p style=\"text-align: justify;\">Piensas en el p\u00e1rroco de Huesos y las palabras garabateadas en su cuaderno. <i>Alguien lo ha robado.</i> <i>\u00a1Que Dios nos ampare!</i>\u00a0Se refer\u00eda, sin duda, al coraz\u00f3n del guardi\u00e1n. Sea lo que sea, presientes que es la respuesta a todos estos fen\u00f3menos que desaf\u00edan tu raz\u00f3n. Tal vez tendr\u00edas que buscar en Huesos. \u00bfD\u00f3nde sino?</p>"
         },
         {
           "test": false,
