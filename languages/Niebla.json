@@ -3318,7 +3318,7 @@
           "posicion": 2,
           "titulo": "",
           "enlaces": [],
-          "texto": "<p style=\"text-align: center; \"><b style=\"color: var(--text-color); font-size: 1rem; background-color: var(--widget-background);\"><br></b></p><p style=\"text-align: center; \"><b style=\"color: var(--text-color); font-size: 1rem; background-color: var(--widget-background);\">FIN?</b><br></p><p style=\"text-align: center; \"><br></p>"
+          "texto": "<p style=\"text-align: center; \"><b style=\"color: var(--text-color); font-size: 1rem; background-color: var(--widget-background);\"><br></b></p><p style=\"text-align: center; \"><b style=\"color: var(--text-color); font-size: 1rem; background-color: var(--widget-background);\">¿FIN?</b><br></p><p style=\"text-align: center; \"><br></p>"
         }
       ],
       "titulo": "Muerte sin amuleto",
@@ -4100,7 +4100,7 @@
               "test": false
             }
           ],
-          "texto": "<p style=\"text-align: justify;\">Al levantar al colch\u00f3n cae de los listones del somier una peque\u00f1a fotograf\u00eda. Muestra la misma mujer del cuadro, pero en la fotograf\u00eda su expresi\u00f3n es algo m\u00e1s jovial. \u00bfUn amor secreto del carnicero, tal vez? \u00bfUn ser querido al que la niebla ya se llev\u00f3?&nbsp;</p><p style=\"text-align: justify;\"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">Sientes que est\u00e1s fisgoneando d\u00f3nde no te corresponde. D</span>ejas la fotograf\u00eda en su lugar y sales de la casa.</p>"
+          "texto": "<p style=\"text-align: justify;\">Al levantar al colch\u00f3n cae de los listones del somier una peque\u00f1a fotograf\u00eda. Muestra la misma mujer del cuadro, pero en la fotograf\u00eda su expresi\u00f3n es algo m\u00e1s jovial. \u00bf¿Un amor secreto del carnicero, tal vez? \u00bf¿Un ser querido al que la niebla ya se llev\u00f3?&nbsp;</p><p style=\"text-align: justify;\"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">Sientes que est\u00e1s fisgoneando d\u00f3nde no te corresponde. D</span>ejas la fotograf\u00eda en su lugar y sales de la casa.</p>"
         }
       ],
       "titulo": "Miras entre la paja del lecho",
