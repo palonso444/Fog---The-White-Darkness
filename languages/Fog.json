@@ -9,7 +9,7 @@
     }
   ],
   "titulo": "Fog",
-  "sinopsis": "<p style=\"text-align: justify; \">Walking in the middle of the night, you come upon a lost village you had never heard of before: Bones.</p><p style=\"text-align: justify; \">Soon you will discover that the fate of the villagers will also be your own—unless you manage to change it…</p>",
+  "sinopsis": "<p style=\"text-align: justify; \">Walking in the middle of the night, you come upon a lost village you had never heard of before: Bones.</p><p style=\"text-align: justify; \">Soon you will discover that the fate of the villagers will also be your own —unless you manage to change it...</p>",
   "observaciones": "<p style=\"text-align: justify; \">This story contains no sex scenes, no violence, and no foul language.</p><p style=\"text-align: justify; \">However, due to its fantasy/horror theme, it may not be suitable for very young children.</p>",
   "escenas": [
     {
@@ -38,7 +38,7 @@
               "test": false
             }
           ],
-          "texto": "<p style=\"text-align: justify; \">Your feet splash through the sodden earth; it is pitch-dark, and your travel lantern casts only a feeble light.<span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">&nbsp;S</span><span style=\"color: var(--text-color); font-size: 1rem; background-color: var(--widget-background);\">You’ve run out of provisions, and you have barely any coins left.</span><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">&nbsp;You curse under your breath. You should have reached somewhere a while ago.</span></p><p style=\"text-align: justify;\"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">You follow a muddy path that sinks deeper and deeper into the valley. On either side stretches a moor dotted with shrubs whose long, thin branches resemble spider legs. You will find no shelter here. You huddle in your cloak, shuddering at the thought of sleeping in the open and waking at dawn shivering, your clothes soaked through.</span></p><p style=\"text-align: justify;\">Then you see it —a crooked sign, eaten away by damp. You step closer and raise your lantern to read it. A single word: Huesos. Not far ahead, you glimpse the broken silhouettes of the first houses.<span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">Jagged outlines etched against the dark curtain of the night.</span><span style=\"color: var(--text-color); font-size: 1rem; background-color: var(--widget-background);\">&nbsp;Pointed rooftops like teeth, chimneys gone cold. Bones. It’s the first time you’ve come across this name. You must have strayed far from your route.</span></p><p style=\"text-align: justify;\">Your hand<span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">&nbsp;closes around the crucifix hanging from your neck. The feel of the ancient, weathered wood soothes you; it always has.</span></p><p style=\"text-align: justify; \"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">You fill your lungs with the moor’s cold air and walk toward the houses. A damp, foggy night, is coming…</span><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\"></span></p>"
+          "texto": "<p style=\"text-align: justify; \">Your feet splash through the sodden earth; it is pitch-dark, and your travel lantern casts only a feeble light.<span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">&nbsp;S</span><span style=\"color: var(--text-color); font-size: 1rem; background-color: var(--widget-background);\">You have run out of provisions, and you have barely any coins left.</span><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">&nbsp;You curse under your breath. You should have reached somewhere a while ago.</span></p><p style=\"text-align: justify;\"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">You follow a muddy path that sinks deeper and deeper into the valley. On either side stretches a moor dotted with shrubs whose long, thin branches resemble spider legs. You will find no shelter here. You huddle in your cloak, shuddering at the thought of sleeping in the open and waking at dawn shivering, your clothes soaked through.</span></p><p style=\"text-align: justify;\">Then you see it —a crooked sign, eaten away by damp. You step closer and raise your lantern to read it. A single word: Bones. Not far ahead, you glimpse the broken silhouettes of the first houses.<span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">Jagged outlines etched against the dark curtain of the night.</span><span style=\"color: var(--text-color); font-size: 1rem; background-color: var(--widget-background);\">&nbsp;Pointed rooftops like teeth, chimneys gone cold. Bones. It is the first time come across this name. You must have strayed far from your route.</span></p><p style=\"text-align: justify;\">Your hand<span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">&nbsp;closes around the crucifix hanging from your neck. The feel of the ancient, weathered wood soothes you; it always has.</span></p><p style=\"text-align: justify; \"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">You fill your lungs with the moor’s cold air and walk towards the houses. A damp, foggy night, is coming...</span><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\"></span></p>"
         }
       ],
       "titulo": "Introduction",
@@ -75,7 +75,7 @@
               "ancho": 12,
               "extra": "",
               "frame": "ppal",
-              "texto": "<p>Step out into the street</p>",
+              "texto": "<p>Go out into the street</p>",
               "destinoFallo": 0,
               "destinoExito": 19556,
               "consecuencias": [],
@@ -103,7 +103,7 @@
               "ancho": 12,
               "extra": "",
               "frame": "ppal",
-              "texto": "<p>Step out into the street</p>",
+              "texto": "<p>Go out into the street</p>",
               "destinoFallo": 0,
               "destinoExito": 19730,
               "consecuencias": [],
@@ -152,7 +152,7 @@
               "ancho": 12,
               "extra": "",
               "frame": "ppal",
-              "texto": "<p>You go with him</p>",
+              "texto": "<p>Go with him</p>",
               "destinoFallo": 0,
               "destinoExito": 19516,
               "consecuencias": [],
@@ -162,7 +162,7 @@
               "test": false
             }
           ],
-          "texto": "<p style=\"text-align: justify;\">When you call out, <span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">the creaking of the ceiling stops abruptly. Then the footsteps resume, and through the stairwell appears a gaunt man with a long, drawn face. In one hand he holds a lantern; in the other, an iron crowbar.</span></p><p style=\"text-align: justify;\">\"Well, well\" he tries to smile, \"I wasn’t expecting visitors, precisely <i>tonight</i>. I see… you’re not from around here, are you? Please, come with me. There's fog outside...\".</p><p style=\"text-align: justify;\">The man steps out into the street and urges you to do the same.</p>"
+          "texto": "<p style=\"text-align: justify;\">When you call out, <span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">the creaking of the ceiling stops abruptly. Then the footsteps resume, and through the stairwell appears a gaunt man with a long, drawn face. In one hand he holds a lantern; in the other, an iron crowbar.</span></p><p style=\"text-align: justify;\">\"Well, well\" he tries to smile, \"I wasn’t expecting visitors, precisely <i>tonight</i>. I see... you’re not from around here, are you? Please, come with me. There's fog outside...\".</p><p style=\"text-align: justify;\">The man steps out into the street and urges you to do the same.</p>"
         }
       ],
       "titulo": "Announce your presence",
@@ -203,7 +203,7 @@
               "ancho": 12,
               "extra": "",
               "frame": "ppal",
-              "texto": "<p>You go with him</p>",
+              "texto": "<p>Go with him</p>",
               "destinoFallo": 0,
               "destinoExito": 19516,
               "consecuencias": [],
@@ -213,7 +213,7 @@
               "test": false
             }
           ],
-          "texto": "<p style=\"text-align: justify; \">The staircase opens onto a narrow hallway. A wavering reddish glow seeps through the crack of a half-open door at the far end.</p><p style=\"text-align: justify;\">The wooden floor creaks, giving you away. You sense hurried movement behind the door: a shadow darts quickly across the strip of light, and you hear the clatter of wood striking wood.</p><p style=\"text-align: justify;\">Then the door bursts open, and a tall man with <span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">sharp features and sunken eyes appears.</span></p><p style=\"text-align: justify;\">\"\u00a1You scared me!\"&nbsp; he says forcing a smile. \"I wasn’t expecting visitors, least of all <i>tonight</i>. <span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">I see... You’re not from around here.\".</span></p><p style=\"text-align: justify;\">You step aside to let him go down the stairs. In one hand he carries a lantern; in the other, an iron crowbar.</p><p style=\"text-align: justify;\">\"Please, come with me. There's fog outside...\".<br></p>"
+          "texto": "<p style=\"text-align: justify; \">The staircase opens onto a narrow hallway. A wavering reddish glow seeps through the crack of a half-open door at the far end.</p><p style=\"text-align: justify;\">The wooden floor creaks, giving you away. You sense hurried movement behind the door: a shadow darts quickly across the strip of light, and you hear the clatter of wood striking wood.</p><p style=\"text-align: justify;\">Then the door bursts open, and a tall man with <span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">sharp features and sunken eyes appears.</span></p><p style=\"text-align: justify;\">\"You scared me!\"&nbsp; he says forcing a smile. \"I wasn’t expecting visitors, least of all <i>tonight</i>. <span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">I see... You’re not from around here\".</span></p><p style=\"text-align: justify;\">You step aside to let him go down the stairs. In one hand he carries a lantern; in the other, an iron crowbar.</p><p style=\"text-align: justify;\">\"Please, come with me. There's fog outside...\".<br></p>"
         }
       ],
       "titulo": "Subir",
@@ -237,7 +237,7 @@
               "ancho": 12,
               "extra": "",
               "frame": "ppal",
-              "texto": "<p>You follow him into the crypt</p>",
+              "texto": "<p>Follow him into the crypt</p>",
               "destinoFallo": 0,
               "destinoExito": 19559,
               "consecuencias": [],
@@ -247,7 +247,7 @@
               "test": false
             }
           ],
-          "texto": "<p style=\"text-align: justify;\">You move along the street through tatters of fog that seem to crawl over the ground like fingers trying to touch everything.</p><p style=\"text-align: justify;\">\"From the clothes you’re wearing, I’d say you’ve traveled a lot\" says the man, without taking his eyes off the road ahead. \"But I assure you, this fog is nothing like you’ve ever seen before\".</p><p style=\"text-align: justify;\">\"Why is that?\" you ask.</p><p style=\"text-align: justify;\">The man doesn’t slow down as he turns onto the main street.</p><p style=\"text-align: justify;\">\"It takes the people away\".</p><p style=\"text-align: justify;\">You’ve reached the church. The man goes inside and heads for one of the crypts lining the side wall. With a sharp blow of the crowbar, he pries away the slab that seals the entrance.</p><p style=\"text-align: justify;\"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">\"We’ll talk downstairs. Please, come in. We don’t have much time!\".</span><br></p>"
+          "texto": "<p style=\"text-align: justify;\">You move along the street through tatters of fog that seem to crawl over the ground like fingers trying to touch everything.</p><p style=\"text-align: justify;\">\"From the clothes you’re wearing, I’d say you’ve traveled a lot\" says the man, without taking his eyes off the road ahead. \"But I assure you, this fog is nothing like you’ve ever seen before\".</p><p style=\"text-align: justify;\">\"Why is that?\" you ask.</p><p style=\"text-align: justify;\">The man does not slow down as he turns onto the main street.</p><p style=\"text-align: justify;\">\"It takes the people away\".</p><p style=\"text-align: justify;\">You have reached the church. The man goes inside and heads for one of the crypts lining the side wall. With a sharp blow of the crowbar, he pries away the slab that seals the entrance.</p><p style=\"text-align: justify;\"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">\"We’ll talk downstairs. Please, come in. We don’t have much time!\".</span><br></p>"
         }
       ],
       "titulo": "Accompany him to the church",
@@ -297,7 +297,7 @@
               "ancho": 12,
               "extra": "",
               "frame": "ppal",
-              "texto": "<p>Go up to the bell tower</p>",
+              "texto": "<p>Go up the bell tower</p>",
               "destinoFallo": 0,
               "destinoExito": 19723,
               "consecuencias": [],
@@ -310,7 +310,7 @@
               "ancho": 12,
               "extra": "",
               "frame": "ppal",
-              "texto": "<p>Step out into the street</p>",
+              "texto": "<p>Go out into the street</p>",
               "destinoFallo": 0,
               "destinoExito": 19556,
               "consecuencias": [],
@@ -338,7 +338,7 @@
               "ancho": 12,
               "extra": "",
               "frame": "ppal",
-              "texto": "<p>Step out into the street</p>",
+              "texto": "<p>Go out into the street</p>",
               "destinoFallo": 0,
               "destinoExito": 19730,
               "consecuencias": [],
@@ -424,7 +424,7 @@
               "ancho": 12,
               "extra": "",
               "frame": "ppal",
-              "texto": "<p>Step out into the street</p>",
+              "texto": "<p>Go out into the street</p>",
               "destinoFallo": 0,
               "destinoExito": 19556,
               "consecuencias": [],
@@ -452,7 +452,7 @@
               "ancho": 12,
               "extra": "",
               "frame": "ppal",
-              "texto": "<p>Step out into the street</p>",
+              "texto": "<p>Go out into the street</p>",
               "destinoFallo": 0,
               "destinoExito": 19730,
               "consecuencias": [],
@@ -477,7 +477,7 @@
               "test": false
             }
           ],
-          "texto": "<p style=\"text-align: justify;\">At the bottom of the page, scribbled in hurried handwriting, is the following note:</p><p style=\"text-align: justify;\"><i>Someone has stolen it. God have mercy on us!</i></p><p style=\"text-align: justify;\">Then you step on something that squeaks. You look down and discover a bloodstained cilice beneath your sole. A shiver runs through you; suddenly, the air in the sacristy feels tainted. The cilice —proof of the penance of someone whose faith has been shaken to its foundations. Your hand, trembling, reaches for the crucifix on your chest; it finds it, but that’s not enough. You feel suddenly sick —you need air!</p>"
+          "texto": "<p style=\"text-align: justify;\">At the bottom of the page, scribbled in hurried handwriting, is the following note:</p><p style=\"text-align: justify;\"><i>Someone has stolen it. God have mercy on us!</i></p><p style=\"text-align: justify;\">Then you step on something that squeaks. You look down and discover a bloodstained cilicium beneath your sole. A shiver runs through you; suddenly, the air in the sacristy feels tainted. The cilicium —proof of the penance of someone whose faith has been shaken to its foundations. Your hand, trembling, reaches for the crucifix on your chest; it finds it, but that is not enough. You feel suddenly sick —you need air!</p>"
         }
       ],
       "titulo": "Sacristy",
@@ -601,7 +601,7 @@
               "test": false
             }
           ],
-          "texto": "<p style=\"text-align: justify; \">You find yourself on the main street of Bones. The most prominent building is a church with a small cemetery beside it and a crumbling bell tower that points toward the moon like a clenched finger. On the opposite side of the street, above a broken-down door flanked by dark windows, the word <i>inn</i> can be read, written directly on the stone.</p><p style=\"text-align: justify;\">The street stretches on until it disappears into the darkness. No light can be seen in any of the houses.</p>"
+          "texto": "<p style=\"text-align: justify; \">You find yourself on the main street of Bones. The most prominent building is a church with a small cemetery beside it and a crumbling bell tower that points towards the moon like a clenched finger. On the opposite side of the street, above a broken-down door flanked by dark windows, the word <i>inn</i> can be read, written directly on the stone.</p><p style=\"text-align: justify;\">The street stretches on until it disappears into the darkness. No light can be seen in any of the houses.</p>"
         }
       ],
       "titulo": "Main street",
@@ -625,7 +625,7 @@
               "ancho": 12,
               "extra": "",
               "frame": "ppal",
-              "texto": "<p>I’ll help you. Tell me how I can do it</p>",
+              "texto": "<p>I will help you. Tell me how I can do it</p>",
               "destinoFallo": 0,
               "destinoExito": 19618,
               "consecuencias": [],
@@ -638,7 +638,7 @@
               "ancho": 12,
               "extra": "",
               "frame": "ppal",
-              "texto": "<p>Let’s stay here. In the house of God, our faith is at its strongest</p>",
+              "texto": "<p>Let us stay here. In the house of God, our faith is at its strongest</p>",
               "destinoFallo": 0,
               "destinoExito": 19620,
               "consecuencias": [],
@@ -648,7 +648,7 @@
               "test": false
             }
           ],
-          "texto": "<p style=\"text-align: justify;\">You descend the tattered steps leading to the church’s basement. It smells of centuries of dust, and the walls crumble from damp. <span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">Below, a dozen people are huddled under blankets and threadbare coats—men, women, and children, their faces shadowed by fear and bewilderment.</span></p><p style=\"text-align: justify;\">The gaunt man introduces himself. He is the village butcher. The other men in the crypt are the surgeon, the gravedigger, and the herbalist. They all say their names, but you forget them immediately—you’ve never had a good memory for names. Their families remain silent, as does a long-haired individual huddled in a corner, introduced to you as a vagabond who lives in the old inn.</p><p style=\"text-align: justify;\">\"Are you hiding?\" you ask.</p><p style=\"text-align: justify;\">The silence that follows your question makes you shiver.</p><p style=\"text-align: justify; \">\"From the fog\" says, finally, the gravedigger. \"It takes the people away. We’re the only ones left.\".</p><p style=\"text-align: justify;\">\"The priest was the last to leave,” adds the herbalist. “He ended up going mad. Have you noticed the altar’s cross is missing? He took it two nights ago, the last time the fog rose. He tore the cross from the wall and left the church as if driven by the devil. He never came back. He left without a scream\".</p><p style=\"text-align: justify;\"><span style=\"font-variant-ligatures: none; letter-spacing: 0.1px; white-space-collapse: preserve; color: rgb(32, 33, 36); background-color: var(--widget-background); font-size: 1rem;\">A child coughs, another sobs quietly. The butcher approaches you. </span></p><p style=\"text-align: justify;\"><span style=\"font-variant-ligatures: none; letter-spacing: 0.1px; white-space-collapse: preserve; color: rgb(32, 33, 36); background-color: var(--widget-background); font-size: 1rem;\">\"I’ve noticed the pendant you’re wearing,” he says, pointing to the crucifix on your chest. “You are a person of faith. </span><span style=\"color: rgb(32, 33, 36); font-variant-ligatures: none; letter-spacing: 0.1px; white-space-collapse: preserve; background-color: var(--widget-background); font-size: 1rem;\">Help us, for the love of God. </span><span style=\"background-color: var(--widget-background); color: rgb(32, 33, 36); font-size: 1rem; font-variant-ligatures: none; letter-spacing: 0.1px; white-space-collapse: preserve;\">Only faith can save us\".</span></p><p style=\"text-align: justify;\"><span style=\"font-variant-ligatures: none; letter-spacing: 0.1px; white-space-collapse: preserve; color: rgb(32, 33, 36); background-color: var(--widget-background); font-size: 1rem;\">\"Wasn’t the priest a man of faith?\" you say.</span></p><p style=\"text-align: justify;\"><span style=\"font-size: 1rem; font-variant-ligatures: none; letter-spacing: 0.1px; white-space-collapse: preserve; color: rgb(32, 33, 36); background-color: var(--widget-background);\">\"The priest was afraid. We are all afraid. Fear condemns us, makes us doubt. </span><span style=\"font-size: 1rem; color: rgb(32, 33, 36); font-variant-ligatures: none; letter-spacing: 0.1px; white-space-collapse: preserve; background-color: var(--widget-background);\">On the other hand, you’ve only just arrived. To you, the fog is nothing more than that: fog.\".</span></p><p style=\"text-align: justify;\"><span style=\"font-variant-ligatures: none; letter-spacing: 0.1px; white-space-collapse: preserve; color: rgb(32, 33, 36); background-color: var(--widget-background); font-size: 1rem;\">\"We are already part of it,\" adds the gravedigger. \"Help us before it’s too late for you as well\".</span></p>"
+          "texto": "<p style=\"text-align: justify;\">You descend the tattered steps leading to the church’s basement. It smells of centuries of dust, and the walls crumble from damp. <span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">Below, a dozen people are huddled under blankets and threadbare coats —men, women, and children, their faces shadowed by fear and bewilderment.</span></p><p style=\"text-align: justify;\">The gaunt man introduces himself. He is the village butcher. The other men in the crypt are the surgeon, the gravedigger, and the herbalist. They all say their names, but you forget them immediately —you have never had a good memory for names. Their families remain silent, as does a long-haired individual huddled in a corner, introduced to you as a vagabond who lives in the old inn.</p><p style=\"text-align: justify;\">\"Are you hiding?\" you ask.</p><p style=\"text-align: justify;\">The silence that follows your question makes you shiver.</p><p style=\"text-align: justify; \">\"From the fog\" says, finally, the gravedigger. \"It takes the people away. We’re the only ones left\".</p><p style=\"text-align: justify;\">\"The priest was the last to leave,” adds the herbalist. “He ended up going mad. Have you noticed the altar’s cross is missing? He took it two nights ago, the last time the fog rose. He tore the cross from the wall and left the church as if driven by the devil. He never came back. He left without a scream\".</p><p style=\"text-align: justify;\"><span style=\"font-variant-ligatures: none; letter-spacing: 0.1px; white-space-collapse: preserve; color: rgb(32, 33, 36); background-color: var(--widget-background); font-size: 1rem;\">A child coughs, another sobs quietly. The butcher approaches you. </span></p><p style=\"text-align: justify;\"><span style=\"font-variant-ligatures: none; letter-spacing: 0.1px; white-space-collapse: preserve; color: rgb(32, 33, 36); background-color: var(--widget-background); font-size: 1rem;\">\"I’ve noticed the pendant you’re wearing,” he says, pointing to the crucifix on your chest. “You are a person of faith. </span><span style=\"color: rgb(32, 33, 36); font-variant-ligatures: none; letter-spacing: 0.1px; white-space-collapse: preserve; background-color: var(--widget-background); font-size: 1rem;\">Help us, for the love of God. </span><span style=\"background-color: var(--widget-background); color: rgb(32, 33, 36); font-size: 1rem; font-variant-ligatures: none; letter-spacing: 0.1px; white-space-collapse: preserve;\">Only faith can save us\".</span></p><p style=\"text-align: justify;\"><span style=\"font-variant-ligatures: none; letter-spacing: 0.1px; white-space-collapse: preserve; color: rgb(32, 33, 36); background-color: var(--widget-background); font-size: 1rem;\">\"Wasn’t the priest a man of faith?\" you say.</span></p><p style=\"text-align: justify;\"><span style=\"font-size: 1rem; font-variant-ligatures: none; letter-spacing: 0.1px; white-space-collapse: preserve; color: rgb(32, 33, 36); background-color: var(--widget-background);\">\"The priest was afraid. We are all afraid. Fear condemns us, makes us doubt. </span><span style=\"font-size: 1rem; color: rgb(32, 33, 36); font-variant-ligatures: none; letter-spacing: 0.1px; white-space-collapse: preserve; background-color: var(--widget-background);\">On the other hand, you’ve only just arrived. To you, the fog is nothing more than that: fog\".</span></p><p style=\"text-align: justify;\"><span style=\"font-variant-ligatures: none; letter-spacing: 0.1px; white-space-collapse: preserve; color: rgb(32, 33, 36); background-color: var(--widget-background); font-size: 1rem;\">\"We are already part of it\", adds the gravedigger. \"Help us before it’s too late for you as well\".</span></p>"
         }
       ],
       "titulo": "You enter the crypt",
@@ -668,7 +668,7 @@
           "posicion": 9,
           "titulo": " (copia)",
           "enlaces": [],
-          "texto": "<p style=\"text-align: justify; \">The men thank you for your decision with an enthusiasm not mirrored in the gloomy faces of their families.</p><p style=\"text-align: justify; \">The gravedigger accompanies you upstairs. </p><p style=\"text-align: justify; \">\"“Leave the village by the north road. The road of the fog. There you will find answers\".</p><p style=\"text-align: justify; \">You reach the church doorway, and the man wishes you luck; as you step outside, he bolts it shut behind you. </p><p style=\"text-align: justify; \">As if he didn’t expect you to come back.</p><p style=\"text-align: justify;\">Standing in the middle of the deserted street, you grip the crucifix once more and face the ominous road from which the fingers of fog stretch out like the strands of a ghostly spiderweb.</p>"
+          "texto": "<p style=\"text-align: justify; \">The men thank you for your decision with an enthusiasm not mirrored in the gloomy faces of their families.</p><p style=\"text-align: justify; \">The gravedigger accompanies you upstairs. </p><p style=\"text-align: justify; \">\"“Leave the village by the road leading to the north. The road of the fog. There you will find answers\".</p><p style=\"text-align: justify; \">You reach the church doorway, and the man wishes you luck; as you step outside, he bolts it shut behind you. </p><p style=\"text-align: justify; \">As if he did not expect you to come back.</p><p style=\"text-align: justify;\">Standing in the middle of the deserted street, you grip the crucifix once more and face the ominous road from which the fingers of fog stretch out like the strands of a ghostly spiderweb.</p>"
         },
         {
           "test": false,
@@ -693,7 +693,7 @@
           "posicion": 10,
           "titulo": " (copia) (copia)",
           "enlaces": [],
-          "texto": "<p style=\"text-align: justify; \">Then you recall the butcher’s flurry of movement when he heard you arrive, and his attempts to appear normal. That’s how someone who has something to hide would behave.</p>"
+          "texto": "<p style=\"text-align: justify; \">Then you recall the butcher’s flurry of movement when he heard you arrive, and his attempts to appear normal. That is how someone who has something to hide would behave.</p>"
         },
         {
           "test": false,
@@ -877,7 +877,7 @@
               "test": false
             }
           ],
-          "texto": "<p style=\"text-align: justify; \">You open your eyes somewhere. Your head throbs, you feel cold, and the mud has soaked you to the bone. You look around but find yourself in the midst of a white darkness. There’s no sign of your lantern.</p><p style=\"text-align: justify; \">In the depths of the void surrounding you, a distant clamor sounds. A lament of thousands of voices pierces your brain like needles, wrenching tears of pain from your eyes. You scream, but your cry dies almost immediately; only damp breath escapes your mouth. You rise and run blindly, hands pressed to your ears to block out the voices, which grow ever more numerous, closer, and more agonizing.</p><p style=\"text-align: justify; \">Your legs buckle; you fall once more. Your hand, as if guided by its own will, clutches the crucifix on your chest. You try to scream one last time.</p>"
+          "texto": "<p style=\"text-align: justify; \">You open your eyes somewhere. Your head throbs, you feel cold, and the mud has soaked you to the bone. You look around but find yourself in the midst of a white darkness. There is no sign of your lantern.</p><p style=\"text-align: justify; \">In the depths of the void surrounding you, a distant clamor sounds. A lament of thousands of voices pierces your brain like needles, wrenching tears of pain from your eyes. You scream, but your cry dies almost immediately; only damp breath escapes your mouth. You rise and run blindly, hands pressed to your ears to block out the voices, which grow ever more numerous, closer, and more agonizing.</p><p style=\"text-align: justify; \">Your legs buckle; you fall once more. Your hand, as if guided by its own will, clutches the crucifix on your chest. You try to scream one last time.</p>"
         }
       ],
       "titulo": "Regain consciousness...",
@@ -937,7 +937,7 @@
               "test": false
             }
           ],
-          "texto": "<p style=\"text-align: justify; \">When the roofs of Huesos, sharp as fangs, fall behind you, you can’t help but feel a certain relief. <span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">&nbsp;But soon, as you venture deeper into the moor and the only trace of human presence fades, </span><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">a vague sense of fear washes over you. The night is calm, bright, and still as ice; not a breeze stirs, and yet </span><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">&nbsp;the fog advances, diffuse and silent, dragging its tattered shreds toward the village like the arms of a dying man.</span></p><p style=\"text-align: justify; \">\"It’s just fog\", you tell yourself when you have no choice but to pass through one of its long, reaching fingers.<span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\"><br></span></p><p style=\"text-align: justify; \">You walk for what feels like a long while. Then you stop.</p><p style=\"text-align: justify; \"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">To one side of the path, you make out —at an impossible-to-judge distance— the dim glow of a fire shining through the strips of fog. From the opposite side comes the murmur of a stream, and you realize how parched your throat is.</span><br></p>"
+          "texto": "<p style=\"text-align: justify; \">When the buildings of Bones, sharp as fangs, disappear behind you, you cannot help but feel a certain relief. <span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">&nbsp;But soon, as you venture deeper into the moor and the only trace of human presence fades, </span><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">a vague sense of fear washes over you. The night is calm, bright, and still as ice; not a breeze stirs, and yet </span><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">&nbsp;the fog advances, diffuse and silent, dragging its tattered shreds towards the village like the arms of a dying man.</span></p><p style=\"text-align: justify; \">\"It’s just fog\", you tell yourself when you have no choice but to pass through one of its long, reaching fingers.<span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\"><br></span></p><p style=\"text-align: justify; \">You walk for what feels like a long while. Then you stop.</p><p style=\"text-align: justify; \"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">To one side of the path, you make out —at an impossible-to-judge distance— the dim glow of a fire shining through the strips of fog. From the opposite side comes the murmur of a stream, and you realize how parched your throat is.</span><br></p>"
         }
       ],
       "titulo": "Take the swamp road",
@@ -1111,7 +1111,7 @@
               "test": false
             }
           ],
-          "texto": "<p style=\"text-align: justify;\">The reddish glow emanating from beneath the floorboards makes you think that the butcher has hidden a brazier under the floor. Then you realize that it isn’t embers that are glowing, but a strange oval-shaped gem.</p><p style=\"text-align: justify;\">You pick it up to examine it. Beneath its crystalline surface, rivers of blood seem to flow, and its intense reddish glow casts a network of lights and shadows on the walls and ceiling that dance like tongues of fire.</p><p style=\"text-align: justify;\">You are certain that this is the object the priest wrote about in his notes: the heart of the guardian.</p><p style=\"text-align: justify;\">You decide to take it with you.</p>"
+          "texto": "<p style=\"text-align: justify;\">The reddish glow emanating from beneath the floorboards makes you think that the butcher has hidden a brazier under the floor. Then you realize that it is not embers that are glowing, but a strange oval-shaped gem.</p><p style=\"text-align: justify;\">You pick it up to examine it. Beneath its crystalline surface, rivers of blood seem to flow, and its intense reddish glow casts a network of lights and shadows on the walls and ceiling that dance like tongues of fire.</p><p style=\"text-align: justify;\">You are certain that this is the object the priest wrote about in his notes: the heart of the guardian.</p><p style=\"text-align: justify;\">You decide to take it with you.</p>"
         }
       ],
       "titulo": "Lift the floorboards",
@@ -1145,7 +1145,7 @@
               "test": false
             }
           ],
-          "texto": "<p style=\"text-align: justify; \">Behind the wardrobe, you find half a dozen canvases, all depicting the same woman from the painting, in the exact same angle and pose. An old love of the butcher? Or perhaps a shameful obsession? You lean toward the latter.</p><p style=\"text-align: justify; \">You leave the paintings as you found them and leave the house.</p>"
+          "texto": "<p style=\"text-align: justify; \">Behind the wardrobe, you find half a dozen canvases, all depicting the same woman from the painting, in the exact same angle and pose. An old love of the butcher? Or perhaps a shameful obsession? You lean towards the latter.</p><p style=\"text-align: justify; \">You leave the paintings as you found them and leave the house.</p>"
         }
       ],
       "titulo": "Look behind the wardrobe",
@@ -1222,7 +1222,7 @@
               "test": false
             }
           ],
-          "texto": "<p style=\"text-align: justify; \">You venture deeper into the inscrutable realms of the fog. Thousands of voices echo somewhere within the white darkness, stabbing into your brain like needles. Each step becomes a struggle against unconsciousness. You try to inhale, but the air —thick and putrid— clings to your throat. It reeks of stagnant, corrupt water.&nbsp;<span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">Of the rot of countless deaths, now claiming your own.</span></p><p style=\"text-align: justify; \">Your legs give way and you fall face-first into the mud. The perpetual wailing of the fog drowns your thoughts. Your hand, as if it were not your own, stretches forward, seeking a hold. Its skin is pale as marble, and countless wispy tendrils emanate from the fingers…</p>"
+          "texto": "<p style=\"text-align: justify; \">You venture deeper into the inscrutable realms of the fog. Thousands of voices echo somewhere within the white darkness, stabbing into your brain like needles. Each step becomes a struggle against unconsciousness. You try to inhale, but the air —thick and putrid— clings to your throat. It reeks of stagnant, corrupt water.&nbsp;<span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">Of the rot of countless deaths, now claiming your own.</span></p><p style=\"text-align: justify; \">Your legs give way and you fall face-first into the mud. The perpetual wailing of the fog drowns your thoughts. Your hand, as if it were not your own, stretches forward, seeking a hold. Its skin is pale as marble, and countless wispy tendrils emanate from the fingers...</p>"
         }
       ],
       "titulo": "Continue towards the swamp",
@@ -1269,7 +1269,7 @@
               "test": false
             }
           ],
-          "texto": "<p style=\"text-align: justify; \"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">You walk across the fog toward the firelight, trying not to make too much noise as you pass among the branches of the scraggly moorland shrubs.</span></p><p style=\"text-align: justify; \">You stop when, crouched by the fire, you make out the shapeless figure of what seems to be a man dressed in rags. You’re still too far away to make out more details, but if you get closer, he will see your light.</p>"
+          "texto": "<p style=\"text-align: justify; \"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">You walk across the fog towards the firelight, trying not to make too much noise as you pass among the branches of the scraggly moorland shrubs.</span></p><p style=\"text-align: justify; \">You stop when, crouched by the fire, you make out the shapeless figure of what seems to be a man dressed in rags. You are still too far away to make out more details, but if you get closer, he will see your light.</p>"
         }
       ],
       "titulo": "Investigate the fire",
@@ -1293,7 +1293,7 @@
               "ancho": 12,
               "extra": "",
               "frame": "ppal",
-              "texto": "<p>Move forward raising the crucifix in front of you</p>",
+              "texto": "<p>Move forward raising the crucifix</p>",
               "destinoFallo": 0,
               "destinoExito": 19657,
               "consecuencias": [],
@@ -1306,7 +1306,7 @@
               "ancho": 12,
               "extra": "",
               "frame": "ppal",
-              "texto": "<p>Move forward raising Saint Theresa's relic in front of you</p>",
+              "texto": "<p>Move forward raising the relic of Saint Theresa</p>",
               "destinoFallo": 0,
               "destinoExito": 19658,
               "consecuencias": [],
@@ -1344,7 +1344,7 @@
               "test": false
             }
           ],
-          "texto": "<p style=\"text-align: justify; \">You extinguish the flame of your lantern and <span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">manage to approach to just over a dozen paces from the fire. Now you can make out the figure clearly.</span><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">It is a man—or so you think. At least the shape of his body matches that of a human, and his tattered black clothing suggests traces of civilization.</span></p><p style=\"text-align: justify; \"><span style=\"color: var(--text-color); font-size: 1rem; background-color: var(--widget-background);\">But his skin is coming apart. </span></p><p style=\"text-align: justify; \"><span style=\"color: var(--text-color); font-size: 1rem; background-color: var(--widget-background);\">Without blood, without wounds.\u00a0</span><span style=\"color: var(--text-color); font-size: 1rem; background-color: var(--widget-background);\">It unravels into fine filaments that </span><span style=\"color: var(--text-color); font-size: 1rem; background-color: var(--widget-background);\">seep from the exposed parts of his body and drift around him, twisting like the dense smoke of incense.</span></p><p style=\"text-align: justify; \">Then the figure fixes its eyes on you. <span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">The sight of his face, pale as the moon, freezes you in place. </span><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">Perhaps he hasn’t seen you yet; maybe the nearby fire is blinding him.</span></p>"
+          "texto": "<p style=\"text-align: justify; \">You extinguish the flame of your lantern and <span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">manage to approach to just over a dozen paces from the fire. Now you can make out the figure clearly.</span><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">It is a man —or so you think. At least the shape of his body matches that of a human, and his tattered black clothing suggests traces of civilization.</span></p><p style=\"text-align: justify; \"><span style=\"color: var(--text-color); font-size: 1rem; background-color: var(--widget-background);\">But his skin is coming apart. </span></p><p style=\"text-align: justify; \"><span style=\"color: var(--text-color); font-size: 1rem; background-color: var(--widget-background);\">Without blood, without wounds.\u00a0</span><span style=\"color: var(--text-color); font-size: 1rem; background-color: var(--widget-background);\">It unravels into fine filaments that </span><span style=\"color: var(--text-color); font-size: 1rem; background-color: var(--widget-background);\">seep from the exposed parts of his body and drift around him, twisting like the dense smoke of incense.</span></p><p style=\"text-align: justify; \">Then the figure fixes its eyes on you. <span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">The sight of his face, pale as the moon, freezes you in place. </span><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">Perhaps he has not seen you yet; maybe the nearby fire is blinding him.</span></p>"
         }
       ],
       "titulo": "Extinguish the lantern and approach stealthily",
@@ -1391,7 +1391,7 @@
               "test": false
             }
           ],
-          "texto": "<p style=\"text-align: justify;\">You continue approaching with the lantern held high. The figure rises and turns toward you. Its ghostly face makes the words stick in your throat. Then it turns away and disappears into the darkness, leaving behind a trail of what seems like… fog.<span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\"><br></span></p><p style=\"text-align: justify;\"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">It’s pointless to chase it. You wait for a while, ears alert, but the silence of the night has closed in around you. </span><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">Only a distant wail can be heard, as if the wind —a wind you don't feel— sweeps across the moor.</span></p><p style=\"text-align: justify;\">Where the glow of the bonfire dies out, you make out the irregular outline of what appears to be some ruins.</p>"
+          "texto": "<p style=\"text-align: justify;\">You continue approaching with the lantern held high. The figure rises and turns towards you. Its ghostly face makes the words stick in your throat. Then it turns away and disappears into the darkness, leaving behind a trail of what seems like... fog.<span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\"><br></span></p><p style=\"text-align: justify;\"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">It is pointless to chase it. You wait for a while, ears alert, but the silence of the night has closed in around you. </span><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">Only a distant wail can be heard, as if the wind —a wind you do not feel— sweeps across the moor.</span></p><p style=\"text-align: justify;\">Where the glow of the bonfire dies out, you make out the irregular outline of what appears to be some ruins.</p>"
         }
       ],
       "titulo": "You continue with your lantern lit",
@@ -1425,7 +1425,7 @@
               "test": false
             }
           ],
-          "texto": "<p style=\"text-align: justify; \">With a trembling hand, you draw the cross from inside your cloak. The creature does not take its vacant gaze off you. Neither attacking nor fleeing. You must seize the moment, make the first move; yet, you hesitate. </p><p style=\"text-align: justify;\">The crucifix feels heavy in your hands; the wood is sturdy, sacred.&nbsp;<span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">You cannot hesitate forever. So you grit your teeth and step into the light of the bonfire.</span></p><p style=\"text-align: justify;\">\"Step back!\" you shout, <span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">raising the crucifix.</span></p><p style=\"text-align: justify; \">The creature recoils, raising its eyelids. Its eyes are colorless, as if bleached. Then it calms down.</p><p style=\"text-align: justify; \">\"Put that down\", it says sadly. \"That cross will be of no use against what we face\".<br></p><p style=\"text-align: justify; \"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">The words catch in your throat.&nbsp;</span>Its voice sounds inexplicably human coming from its ghostly mouth.</p><p style=\"text-align: justify;\"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">\"Come closer, do not be afraid,\" the figure continues. \"Have a seat. I am the parish priest of Bones. Well, I was. And soon, I will be nothing at all\".</span><br></p>"
+          "texto": "<p style=\"text-align: justify; \">With a trembling hand, you draw the cross from inside your cloak. The creature does not take its vacant gaze off you. Neither attacking nor fleeing. You must seize the moment, make the first move; yet, you hesitate. </p><p style=\"text-align: justify;\">The crucifix feels heavy in your hands; the wood is sturdy, sacred.&nbsp;<span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">You cannot hesitate forever. So you grit your teeth and step into the light of the bonfire.</span></p><p style=\"text-align: justify;\">\"Step back!\" you shout, <span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">raising the crucifix.</span></p><p style=\"text-align: justify; \">The creature recoils, raising its eyelids. Its eyes are colorless, as if bleached. Then it calms down.</p><p style=\"text-align: justify; \">\"Put that down\", it says sadly. \"That cross will be of no use against what we face\".<br></p><p style=\"text-align: justify; \"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">The words catch in your throat.&nbsp;</span>Its voice sounds inexplicably human coming from its ghostly mouth.</p><p style=\"text-align: justify;\"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">\"Come closer, do not be afraid\", the figure continues. \"Have a seat. I am the parish priest of Bones. Well, I was. And soon, I will be nothing at all\".</span><br></p>"
         }
       ],
       "titulo": "You leave your hiding place and hold the cross between yourself and the creature",
@@ -1492,7 +1492,7 @@
               "test": false
             }
           ],
-          "texto": "<p style=\"text-align: justify; \">Without taking your eyes off the misty figure, you pull from your pouch the rough, cracked box that holds the bone of Saint Theresa. The creature remains there, staring at you intently. If you don’t act, it will. You make up your mind.</p><p style=\"text-align: justify; \"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">\"Step back!\" you shout, revealing yourself and raising the relic.</span><br></p><p style=\"text-align: justify; \">The creature opens its milky eyes wide. It seems about to step back, but stops.</p><p style=\"text-align: justify; \">\"May I ask what this is?\" it asks,&nbsp;<span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">pointing to the little box you’re holding.&nbsp;</span><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">Its voice sounds deep and calm. Human.&nbsp;</span></p><p style=\"text-align: justify; \">The reaction throws you off. Words pile up in your throat.</p><p style=\"text-align: justify; \">\"It’s… it’s a bone of Saint Theresa!” you manage to stammer. “The most sacred relic of the church!\"</p><p style=\"text-align: justify; \">You catch a fleeting mocking smirk cross the creature’s lips. Then it rises and, with a swift motion, snatches the box from your hands. <span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">It opens it and unwraps the sacred bone.</span></p><p style=\"text-align: justify; \"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">\"This is a cat’s femur,\" it says before throwing it into the bonfire.</span></p><p style=\"text-align: justify;\"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">You gape, unable to put together any coherent sentence.</span></p><p style=\"text-align: justify; \"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">\"They have tricked you into walking into the wolf’s jaws of your own accord,\" says the creature, sitting down again. \"I don’t blame them… they believe that this way they can appease the fog.&nbsp;</span><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">\u00a1Poor devils!</span><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">&nbsp;</span><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">\". With a gesture, he indicates for you to sit. \"Do not be afraid. I am the parish priest of Bones. Well, I was. And soon, I will be nothing at all\".</span></p>"
+          "texto": "<p style=\"text-align: justify; \">Without taking your eyes off the misty figure, you pull from your pouch the rough, cracked box that holds the bone of Saint Theresa. The creature remains there, staring at you intently. If you do not act, it will. You make up your mind.</p><p style=\"text-align: justify; \"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">\"Step back!\" you shout, revealing yourself and raising the relic.</span><br></p><p style=\"text-align: justify; \">The creature opens its milky eyes wide. It seems about to step back, but stops.</p><p style=\"text-align: justify; \">\"May I ask what this is?\" it asks,&nbsp;<span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">pointing to the little box you are holding.&nbsp;</span><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">Its voice sounds deep and calm. Human.&nbsp;</span></p><p style=\"text-align: justify; \">The reaction throws you off. Words pile up in your throat.</p><p style=\"text-align: justify; \">\"It’s... it’s a bone of Saint Theresa!” you manage to stammer. “The most sacred relic of the church!\"</p><p style=\"text-align: justify; \">You catch a fleeting mocking smirk cross the creature’s lips. Then it rises and, with a swift motion, snatches the box from your hands. <span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">It opens it and unwraps the sacred bone.</span></p><p style=\"text-align: justify; \"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">\"This is a cat’s femur\", it says before throwing it into the bonfire.</span></p><p style=\"text-align: justify;\"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">You gape, unable to put together any coherent sentence.</span></p><p style=\"text-align: justify; \"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">\"They have tricked you into walking into the wolf’s jaws of your own accord\", says the creature, sitting down again. \"I don’t blame them... they believe that this way they can appease the fog.&nbsp;</span><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">Poor devils!</span><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">&nbsp;</span><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">\". With a gesture, he indicates for you to sit. \"Do not be afraid. I am the parish priest of Bones. Well, I was. And soon, I will be nothing at all\".</span></p>"
         }
       ],
       "titulo": "You step out of your hiding place and place the church relic between yourself and the creature",
@@ -1656,7 +1656,7 @@
               "ancho": 12,
               "extra": "",
               "frame": "ppal",
-              "texto": "<p>What is… that fog?</p>",
+              "texto": "<p>What is... that fog?</p>",
               "destinoFallo": 0,
               "destinoExito": 20019,
               "consecuencias": [],
@@ -1666,7 +1666,7 @@
               "test": false
             }
           ],
-          "texto": "<p style=\"text-align: justify;\"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">You take a seat and watch the priest on the other side of the flames. The black garments you saw are, indeed, a cassock, and on his throat you make out the white point of a clerical collar</span><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">You notice how the light seems to pass through his hands and face, as if his skin lacked the substance needed to reflect it.</span></p><p style=\"text-align: justify;\"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">\"You startled me; I thought you were one of my parishioners. I don’t want them to see me like this. That could shatter the little sanity they have left\".</span></p><p style=\"text-align: justify;\">As he speaks, he moves his hands, leaving a vaporous trail behind them.</p><p style=\"text-align: justify;\">\"Is it the fog that did this to you?\" you ask.</p><p style=\"text-align: justify;\">\"It didn’t do it. Is <i>is</i> dong it. I’m vaporizing. I’m becoming… part of it.\"\u00a0<span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">His white eyes look at you helplessly. \"\u00a1</span><span style=\"background-color: var(--widget-background);\">Foolish me! I trusted blindly that the Holy Cross would protect me. But this fog... </span><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">It is an evil that comes from an archaic and shadowy past. An evil that cannot be fought with modern... and hollow symbols\".</span></p>"
+          "texto": "<p style=\"text-align: justify;\"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">You take a seat and watch the priest on the other side of the flames. The black garments you saw are, indeed, a cassock, and on his throat you make out the white point of a clerical collar</span><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">You notice how the light seems to pass through his hands and face, as if his skin lacked the substance needed to reflect it.</span></p><p style=\"text-align: justify;\"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">\"You startled me; I thought you were one of my parishioners. I don’t want them to see me like this. That could shatter the little sanity they have left\".</span></p><p style=\"text-align: justify;\">As he speaks, he moves his hands, leaving a vaporous trail behind them.</p><p style=\"text-align: justify;\">\"Is it the fog that did this to you?\" you ask.</p><p style=\"text-align: justify;\">\"It didn’t do it. Is <i>is</i> dong it. I’m vaporizing. I’m becoming... part of it\".<span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\"> His white eyes look at you helplessly. \"</span><span style=\"background-color: var(--widget-background);\">Foolish me! I trusted blindly that the Holy Cross would protect me. But this fog... </span><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">It is an evil that comes from an archaic and shadowy past. An evil that cannot be fought with modern... and hollow symbols\".</span></p>"
         }
       ],
       "titulo": "You sit down",
@@ -1690,7 +1690,7 @@
               "ancho": 12,
               "extra": "",
               "frame": "ppal",
-              "texto": "<p>Try your luck on the side street</p>",
+              "texto": "<p>Try your luck on the side alley</p>",
               "destinoFallo": 0,
               "destinoExito": 19676,
               "consecuencias": [],
@@ -1832,7 +1832,7 @@
               "test": false
             }
           ],
-          "texto": "<p style=\"text-align: justify;\">You walk down the main street and knock on a few doors without success. The silence is so dense that you can feel your blood pulsing in your ears. Not a breeze, not a hint of life disturbs the stagnant calm of the night.</p><p style=\"text-align: justify;\">A few steps ahead, you make out a dark side street.</p>"
+          "texto": "<p style=\"text-align: justify;\">You walk down the main street and knock on a few doors without success. The silence is so dense that you can feel your blood pulsing in your ears. Not a breeze, not a hint of life disturbs the stagnant calm of the night.</p><p style=\"text-align: justify;\">A few steps ahead, you make out a dark side alley.</p>"
         }
       ],
       "titulo": "Knock on the houses",
@@ -1986,7 +1986,7 @@
               "test": false
             }
           ],
-          "texto": "<p style=\"text-align: justify;\">You show the gem to the priest. Its crimson veins seem to pulse beneath the flickering reflections of the flames.</p><p style=\"text-align: justify;\">The priest opens his eyes in surprise, but weakly. His head wobbles.&nbsp;</p><p style=\"text-align: justify; \">That is… put it in his hands\"<span style=\"color: var(--text-color); font-size: 1rem; background-color: var(--widget-background);\"><i>only</i> in his hands! Do not linger for anything!\", he manages to say&nbsp;</span><span style=\"color: var(--text-color); font-size: 1rem; background-color: var(--widget-background);\">just before&nbsp;</span><span style=\"color: var(--text-color); font-size: 1rem; background-color: var(--widget-background);\">vaporizing into a frayed cloud of mist. </span></p><p style=\"text-align: justify; \"><span style=\"color: var(--text-color); font-size: 1rem; background-color: var(--widget-background);\">All that remains of him is an empty cassock on the floor.</span></p><p style=\"text-align: justify; \"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">Terror leaves you breathless. You touch the cassock as if the truth weren’t obvious. Then, you struggle to stand. There is nothing of interest around the fire, but where the flame merges with the darkness, you make out the irregular outlines of some ruins.</span></p>"
+          "texto": "<p style=\"text-align: justify;\">You show the gem to the priest. Its crimson veins seem to pulse beneath the flickering reflections of the flames.</p><p style=\"text-align: justify;\">The priest opens his eyes in surprise, but weakly. His head wobbles.&nbsp;</p><p style=\"text-align: justify; \">That is... place it in his hand\"<span style=\"color: var(--text-color); font-size: 1rem; background-color: var(--widget-background);\"><i>only</i> in his hand! Do not linger for anything!\", he manages to say&nbsp;</span><span style=\"color: var(--text-color); font-size: 1rem; background-color: var(--widget-background);\">just before&nbsp;</span><span style=\"color: var(--text-color); font-size: 1rem; background-color: var(--widget-background);\">vaporizing into a frayed cloud of mist. </span></p><p style=\"text-align: justify; \"><span style=\"color: var(--text-color); font-size: 1rem; background-color: var(--widget-background);\">All that remains of him is an empty cassock on the floor.</span></p><p style=\"text-align: justify; \"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">Terror leaves you breathless. You touch the cassock as if the truth were not obvious. Then, you struggle to stand. There is nothing of interest around the fire, but where the flame merges with the darkness, you make out the irregular outlines of some ruins.</span></p>"
         }
       ],
       "titulo": "Show the amulet of the butcher",
@@ -2104,7 +2104,7 @@
               "ancho": 12,
               "extra": "",
               "frame": "ppal",
-              "texto": "<p>Step out into the street</p>",
+              "texto": "<p>Go out into the street</p>",
               "destinoFallo": 0,
               "destinoExito": 19556,
               "consecuencias": [],
@@ -2132,7 +2132,7 @@
               "ancho": 12,
               "extra": "",
               "frame": "ppal",
-              "texto": "<p>Step out into the street</p>",
+              "texto": "<p>Go out into the street</p>",
               "destinoFallo": 0,
               "destinoExito": 19730,
               "consecuencias": [],
@@ -2198,7 +2198,7 @@
               "ancho": 12,
               "extra": "",
               "frame": "ppal",
-              "texto": "<p>Step out into the street</p>",
+              "texto": "<p>Go out into the street</p>",
               "destinoFallo": 0,
               "destinoExito": 19556,
               "consecuencias": [],
@@ -2226,7 +2226,7 @@
               "ancho": 12,
               "extra": "",
               "frame": "ppal",
-              "texto": "<p>Step out into the street</p>",
+              "texto": "<p>Go out into the street</p>",
               "destinoFallo": 0,
               "destinoExito": 19730,
               "consecuencias": [],
@@ -2911,7 +2911,7 @@
               "test": false
             }
           ],
-          "texto": "<p style=\"text-align: justify;\">The inside of the inn is a jumble of dust and ash. A quick glance is enough to confirm that the main room contains nothing but tables and heaps of rotting straw.</p><p style=\"text-align: justify;\"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">In a small adjoining room, you come across a bed of fresh straw and the remnants of an old kitchen. You search every last nook, but despite your thoroughness, you find only loaves of dry bread and a few bottles of wine, which you have no desire for now.</span></p><p style=\"text-align: justify;\"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">You step out into the street. Bones now appears immense, stretching into a white infinity. Where to search? The church? The houses? It is too much for a pair of disoriented hands.</span></p>"
+          "texto": "<p style=\"text-align: justify;\">The inside of the inn is a jumble of dust and ash. A quick glance is enough to confirm that the main room contains nothing but tables and heaps of rotting straw.</p><p style=\"text-align: justify;\"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">In a small adjoining room, you come across a bed of fresh straw and the remnants of an old kitchen. You search every last nook, but despite your thoroughness, you find only loaves of dry bread and a few bottles of wine, which you have no desire for now.</span></p><p style=\"text-align: justify;\"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">Go out into the street. Bones now appears immense, stretching into a white infinity. Where to search? The church? The houses? It is too much for a pair of disoriented hands.</span></p>"
         }
       ],
       "titulo": "Posada",
@@ -2965,7 +2965,7 @@
           "posicion": 1,
           "titulo": "",
           "enlaces": [],
-          "texto": "<p style=\"text-align: justify; \">You make your way back to Bones as fast as your mud-laden boots will carry you. The fog is now everywhere, a thick wall that your torch barely manages to pierce. “It’s only fog,” you tell yourself between gasps. “It’s only fog,” you repeat as you run through the white curtain, while in your ears echoes, unceasing, the maddening chorus of a thousand impossible voices.</p><p style=\"text-align: justify;\">The first houses suddenly emerge from the mist. You stop at the beginning of the main street and struggle to calm your ragged breathing. Bones is only a village, yet there are still too many houses—dozens of faces watching you through their shadowed windows, seeming to mock you with mouths made of doors.</p>"
+          "texto": "<p style=\"text-align: justify; \">You make your way back to Bones as fast as your mud-laden boots will carry you. The fog is now everywhere, a thick wall that your torch barely manages to pierce. “It’s only fog,” you tell yourself between gasps. “It’s only fog,” you repeat as you run through the white curtain, while in your ears echoes, unceasing, the maddening chorus of a thousand impossible voices.</p><p style=\"text-align: justify;\">The first houses suddenly emerge from the mist. You stop at the beginning of the main street and struggle to calm your ragged breathing. Bones is only a village, yet there are still too many houses —dozens of faces watching you through their shadowed windows, seeming to mock you with mouths made of doors.</p>"
         },
         {
           "test": false,
@@ -2990,7 +2990,7 @@
           "posicion": 2,
           "titulo": "",
           "enlaces": [],
-          "texto": "<p style=\"text-align: justify; \">Although the search might be easier than it seems. The butcher’s agitation when you caught him in his house, his efforts to force a smile… suspicious behavior, or merely your imagination?</p>"
+          "texto": "<p style=\"text-align: justify; \">Although the search might be easier than it seems. The butcher’s agitation when you caught him in his house, his efforts to force a smile... suspicious behavior, or merely your imagination?</p>"
         },
         {
           "test": false,
@@ -3113,7 +3113,7 @@
               "test": false
             }
           ],
-          "texto": "<p style=\"text-align: justify; \">You hurry through the streets soaked in fog. Even if you had several nights, you couldn’t search every house.</p><p style=\"text-align: justify;\">Next to the small cemetery stands a hut with direct access to it; you assume this must be where the grave digger lives. Right beside it, as if they depended on each other, rises a slightly grander house with a staff of Asclepius—the symbol of medicine—painted above the entrance. This must be the surgeon’s home, judging by the countless sharp instruments lined up on the walls that you catch glimpses of through the ground-floor windows. The butcher’s shop is located on a side alley; its large window displays a filthy counter and a row of dismembered carcasses hanging behind it. <span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">&nbsp;ChatGPT ha dit:\n\nAt the end of this same alley stands a house surrounded by a wide strip of garden. A wooden sign hanging from a post beside the entrance path reads: <i>herbalist’s shop</i>.</span></p><p style=\"text-align: justify;\">Where will you search?</p>"
+          "texto": "<p style=\"text-align: justify; \">You hurry through the streets soaked in fog. Even if you had several nights, you could not search every house.</p><p style=\"text-align: justify;\">Next to the small cemetery stands a hut with direct access to it; you assume this must be where the grave digger lives. Right beside it, as if they depended on each other, rises a slightly grander house with a staff of Asclepius —the symbol of medicine— painted above the entrance. This must be the surgeon’s home, judging by the countless sharp instruments lined up on the walls that you catch glimpses of through the ground-floor windows. The butcher’s shop is located on a side alley; its large window displays a filthy counter and a row of dismembered carcasses hanging behind it. <span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">&nbsp;ChatGPT ha dit:\n\nAt the end of this same alley stands a house surrounded by a wide strip of garden. A wooden sign hanging from a post beside the entrance path reads: <i>herbalist’s shop</i>.</span></p><p style=\"text-align: justify;\">Where will you search?</p>"
         }
       ],
       "titulo": "Houses",
@@ -3147,7 +3147,7 @@
               "test": false
             }
           ],
-          "texto": "<p style=\"text-align: justify;\">The door of the surgeon’s house is locked; fortunately, you manage to get in through a window.</p><p style=\"text-align: justify;\">Inside, the air carries the orderliness typical of someone devoted to a medical profession. Although the house is large <span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">and apparently also occupied by his family, every object seems to be in its proper place.</span><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">You proceed to inspect every corner; drawers, cabinets, and display cases yield to your frantic hands, but you find nothing out of place. In the operating room, you encounter nothing more than a tidy wooden table, rows of all kinds of sharp instruments hanging on the walls, shelves filled with clean cloths, and a hearth with a metal pot resting on a pile of cold ashes.</span></p><p style=\"text-align: justify;\">You clutch your head in despair when you realize that you will never find what you’re looking for. Perhaps if you had twenty people or all the time in the world it would be possible —but that is not the case.</p>"
+          "texto": "<p style=\"text-align: justify;\">The door of the surgeon’s house is locked; fortunately, you manage to get in through a window.</p><p style=\"text-align: justify;\">Inside, the air carries the orderliness typical of someone devoted to a medical profession. Although the house is large <span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">and apparently also occupied by his family, every object seems to be in its proper place.</span><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">You proceed to inspect every corner; drawers, cabinets, and display cases yield to your frantic hands, but you find nothing out of place. In the operating room, you encounter nothing more than a tidy wooden table, rows of all kinds of sharp instruments hanging on the walls, shelves filled with clean cloths, and a hearth with a metal pot resting on a pile of cold ashes.</span></p><p style=\"text-align: justify;\">You clutch your head in despair when you realize that you will never find what you are looking for. Perhaps if you had twenty people or all the time in the world it would be possible —but that is not the case.</p>"
         }
       ],
       "titulo": "Surgeron house",
@@ -3220,7 +3220,7 @@
               "test": false
             }
           ],
-          "texto": "<p style=\"text-align: justify;\">When you enter the butcher’s shop, you are struck by the warm, clinging stench of blood and not-so-fresh meat. You don’t spend much time rummaging through the foul-smelling store: it’s unlikely that anyone would hide anything in a public space. You decide to focus on the upper floor; <span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">You climb the stairs two at a time and run down the hallway to the room at the far end. The wooden floorboards creak and wobble beneath your feet. </span></p><p style=\"text-align: justify;\"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">You sweep your lantern across the darkness, revealing the different pieces of furniture:&nbsp;</span><span style=\"color: var(--text-color); font-size: 1rem; background-color: var(--widget-background);\">A painter's easel holds a blank canvas, a bed with a straw mattress rests nearby, a heavy wardrobe leans askew against the wall, and a table bears a portrait of a young woman, her expression somewhere between sweetness and sorrow.</span></p>"
+          "texto": "<p style=\"text-align: justify;\">When you enter the butcher’s shop, you are struck by the warm, clinging stench of blood and not-so-fresh meat. You do not spend much time rummaging through the foul-smelling store: it is unlikely that anyone would hide anything in a public space. You decide to focus on the upper floor; <span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">You climb the stairs two at a time and run down the hallway to the room at the far end. The wooden floorboards creak and wobble beneath your feet. </span></p><p style=\"text-align: justify;\"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">You sweep your lantern across the darkness, revealing the different pieces of furniture:&nbsp;</span><span style=\"color: var(--text-color); font-size: 1rem; background-color: var(--widget-background);\">A painter's easel holds a blank canvas, a bed with a straw mattress rests nearby, a heavy wardrobe leans askew against the wall, and a table bears a portrait of a young woman, her expression somewhere between sweetness and sorrow.</span></p>"
         }
       ],
       "titulo": "Butcher's house",
@@ -3254,7 +3254,7 @@
               "test": false
             }
           ],
-          "texto": "<p style=\"text-align: justify; \">You cross the garden and check the door of the herbalist’s shop. It’s locked. Fortunately, at the back you find a poorly latched little door that lets you slip inside.</p><p style=\"text-align: justify; \">ChatGPT ha dit:\n\nThe door opens into a laboratory where volumes on botany, glassware, tubes, bottles, and other instruments of incomprehensible use for you are heaped in disorder. Bundles of dried plants hang from ropes stretched near the ceiling, and jars containing handfuls of leaves and powders line endless shelves. It’s a small room, but due to the clutter it takes you a long time to search it. You find nothing.</p><p style=\"text-align: justify; \"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">You pause to consider whether you should search the rest of the house or perhaps try another, when you realize it doesn’t matter. You have no idea where to look. Whatever you do, your chances of success are virtually nil.</span></p>"
+          "texto": "<p style=\"text-align: justify; \">You cross the garden and check the door of the herbalist’s shop. It is locked. Fortunately, at the back you find a poorly latched little door that lets you slip inside.</p><p style=\"text-align: justify; \">ChatGPT ha dit:\n\nThe door opens into a laboratory where volumes on botany, glassware, tubes, bottles, and other instruments of incomprehensible use for you are heaped in disorder. Bundles of dried plants hang from ropes stretched near the ceiling, and jars containing handfuls of leaves and powders line endless shelves. It is a small room, but due to the clutter it takes you a long time to search it. You find nothing.</p><p style=\"text-align: justify; \"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">You pause to consider whether you should search the rest of the house or perhaps try another, when you realize it does not matter. You have no idea where to look. Whatever you do, your chances of success are virtually nil.</span></p>"
         }
       ],
       "titulo": "Herbalist",
@@ -3288,7 +3288,7 @@
               "test": false
             }
           ],
-          "texto": "<p style=\"text-align: justify; \">You push the gravedigger’s house door, but it’s firmly shut; however, you find the door leading to the cemetery open.&nbsp;</p><p style=\"text-align: justify;\">Inside the small house, the austerity of someone who lives alone prevails.<span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">&nbsp;There doesn’t seem to be a single object that doesn’t serve a practical purpose; no decoration, no detail that disrupts the prevailing sobriety. It doesn’t take long for you to check the dining room and the bedroom, unsuccessfully.</span></p><p style=\"text-align: justify;\">ChatGPT ha dit:\n\nIt takes you a bit longer to search the workshop. It’s filled with planks of various sizes, bags of sawdust, carpentry tools, and picks, shovels, and buckets encrusted with mud. Still, you don’t find what you’re looking for in this antechamber to the graveyard either.</p><p style=\"text-align: justify;\">The fruitless search has undermined your morale. You try to organize your thoughts, but ideas pile up in your head in chaotic disarray. Suddenly, Bones seems impossibly vast.</p>"
+          "texto": "<p style=\"text-align: justify; \">You push the gravedigger’s house door, but it is firmly shut; however, you find the door leading to the cemetery open.&nbsp;</p><p style=\"text-align: justify;\">Inside the small house, the austerity of someone who lives alone prevails.<span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">&nbsp;There does not seem to be a single object without a practical purpose; no decoration, no detail that disrupts the prevailing sobriety. It does not take long for you to check the dining room and the bedroom, unsuccessfully.</span></p><p style=\"text-align: justify;\">ChatGPT ha dit:\n\nIt takes you a bit longer to search the workshop. It is filled with planks of various sizes, bags of sawdust, carpentry tools, and picks, shovels, and buckets encrusted with mud. Still, you do not find what you are looking for in this antechamber to the graveyard either.</p><p style=\"text-align: justify;\">The fruitless search has undermined your morale. You try to organize your thoughts, but ideas pile up in your head in chaotic disarray. Suddenly, Bones seems impossibly vast.</p>"
         }
       ],
       "titulo": "Grave digger's house",
@@ -3318,7 +3318,7 @@
           "posicion": 2,
           "titulo": "",
           "enlaces": [],
-          "texto": "<p style=\"text-align: center; \"><b style=\"color: var(--text-color); font-size: 1rem; background-color: var(--widget-background);\"><br></b></p><p style=\"text-align: center; \"><b style=\"color: var(--text-color); font-size: 1rem; background-color: var(--widget-background);\">FIN?</b><br></p><p style=\"text-align: center; \"><br></p>"
+          "texto": "<p style=\"text-align: center; \"><b style=\"color: var(--text-color); font-size: 1rem; background-color: var(--widget-background);\"><br></b></p><p style=\"text-align: center; \"><b style=\"color: var(--text-color); font-size: 1rem; background-color: var(--widget-background);\">THE END?</b><br></p><p style=\"text-align: center; \"><br></p>"
         }
       ],
       "titulo": "Death without amulet",
@@ -3602,7 +3602,7 @@
               "ancho": 12,
               "extra": "",
               "frame": "ppal",
-              "texto": "<p>Run toward the north</p>",
+              "texto": "<p>Run towards the north</p>",
               "destinoFallo": 0,
               "destinoExito": 19700,
               "consecuencias": [],
@@ -3612,7 +3612,7 @@
               "test": false
             }
           ],
-          "texto": "<p style=\"text-align: justify;\">When you lift the first of the floorboards, the reddish glow emanating from beneath makes you think there are burning embers underground. It takes a moment to realize that it is actually a brilliant oval gem.</p><p style=\"text-align: justify;\">You pick it up to inspect it. It is an oval as smooth as a drop of water, glowing like burning embers. It is streaked with veins of vivid red, whose brilliance fills the room with a dance of light and shadow.</p><p style=\"text-align: justify;\">You know it the moment you see it. You’ve found the heart of the guardian!</p>"
+          "texto": "<p style=\"text-align: justify;\">When you lift the first of the floorboards, the reddish glow emanating from beneath makes you think there are burning embers underground. It takes a moment to realize that it is actually a brilliant oval gem.</p><p style=\"text-align: justify;\">You pick it up to inspect it. It is an oval as smooth as a drop of water, glowing like burning embers. It is streaked with veins of vivid red, whose brilliance fills the room with a dance of light and shadow.</p><p style=\"text-align: justify;\">You know it the moment you see it. You have found the heart of the guardian!</p>"
         }
       ],
       "titulo": "Lift the floorboards",
@@ -3632,7 +3632,7 @@
           "posicion": 1,
           "titulo": "",
           "enlaces": [],
-          "texto": "<p style=\"text-align: justify; \">You push aside the heavy wardrobe. Behind it, you find half a dozen canvases—sickly repetitions of the woman from the painting, same posture, same sad expression in her eyes. They all stare at you head-on, as if pitying you.</p>"
+          "texto": "<p style=\"text-align: justify; \">You push aside the heavy wardrobe. Behind it, you find half a dozen canvases —obsessive repetitions of the woman from the painting, same posture, same sad expression in her eyes. They all stare at you head-on, as if pitying you.</p>"
         },
         {
           "test": false,
@@ -3859,7 +3859,7 @@
           "posicion": 1,
           "titulo": "",
           "enlaces": [],
-          "texto": "<p style=\"text-align: justify; \">When you lift the mattress, a piece of paper falls from one of the slats of the bed frame. You pick it up. It's a photograph of the woman from the painting—same pose, same expression on her face, perhaps a little more cheerful.</p>"
+          "texto": "<p style=\"text-align: justify; \">When you lift the mattress, a piece of paper falls from one of the slats of the bed frame. You pick it up. It is a photograph of the woman from the painting —same pose, same expression on her face, perhaps a little more cheerful.</p>"
         },
         {
           "test": false,
@@ -4100,10 +4100,10 @@
               "test": false
             }
           ],
-          "texto": "<p style=\"text-align: justify;\">Al levantar al colch\u00f3n cae de los listones del somier una peque\u00f1a fotograf\u00eda. Muestra la misma mujer del cuadro, pero en la fotograf\u00eda su expresi\u00f3n es algo m\u00e1s jovial. \u00bfUn amor secreto del carnicero, tal vez? \u00bfUn ser querido al que la niebla ya se llev\u00f3?&nbsp;</p><p style=\"text-align: justify;\"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">Sientes que est\u00e1s fisgoneando d\u00f3nde no te corresponde. D</span>ejas la fotograf\u00eda en su lugar y sales de la casa.</p>"
+          "texto": "<p style=\"text-align: justify;\">When you lift the mattress, a small photograph slips from the slats of the bedframe. It shows the same woman from the portrait, though here her expression is somewhat more cheerful. A secret love of the butcher, perhaps? Or a loved one already taken by the fog?&nbsp;</p><p style=\"text-align: justify;\"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">You feel like you’re snooping where you do not belong. </span>You leave the photograph in its place and walk out of the house.</p>"
         }
       ],
-      "titulo": "Miras entre la paja del lecho",
+      "titulo": "Lift the straw mattres",
       "codigo": "0056",
       "estado": "L",
       "id": 19697
@@ -4124,7 +4124,7 @@
               "ancho": 12,
               "extra": "",
               "frame": "ppal",
-              "texto": "<p>Te levantas</p>",
+              "texto": "<p>Stand up</p>",
               "destinoFallo": 0,
               "destinoExito": 19701,
               "consecuencias": [],
@@ -4134,7 +4134,7 @@
               "test": false
             }
           ],
-          "texto": "<p style=\"text-align: justify;\">Cierras los ojos y te abandonas a lo inevitable. </p><p style=\"text-align: justify;\">Entonces se levanta un viento repentino, y desde<span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">&nbsp;alg\u00fan lugar entre las tinieblas de tus p\u00e1rpados, se eleva una voz serena, andr\u00f3gina y atemporal:</span></p><p style=\"text-align: justify;\">\"Lev\u00e1ntate. Por tu ofrenda debes continuar\".</p><p style=\"text-align: justify;\">Notas tu cabeza m\u00e1s clara. El lamento infernal que te cizallaba ha enmudecido. Abres los ojos. Tu farol hace relucir el barro del sendero y da color a los arbustos que osan asomarse de la<span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">&nbsp;</span><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">oscuridad. La niebla se ha abierto y flota en jirones dispersos... por ahora.</span></p>"
+          "texto": "<p style=\"text-align: justify;\">You close your eyes and surrender to the inevitable. </p><p style=\"text-align: justify;\">Then a sudden wind rises, and <span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">from somewhere within the darkness of your eyelids, a serene, androgynous, and timeless voice emerges.&nbsp;:</span></p><p style=\"text-align: justify;\">\"Rise. For your offering, you must continue\".</p><p style=\"text-align: justify;\">You notice your head feels clearer. The infernal wail that was tearing at you has fallen silent. You open your eyes. <span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">&nbsp;</span><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\"> Your lantern makes the mud of the path glisten and gives color to the bushes that dare to peek out from the darkness. The fog has parted and drifts in scattered shreds... for now.</span></p>"
         }
       ],
       "titulo": "Escuchas una voz",
@@ -4158,7 +4158,7 @@
               "ancho": 12,
               "extra": "",
               "frame": "ppal",
-              "texto": "<p>Interpones el crucifijo</p>",
+              "texto": "<p>Raise the crucifix</p>",
               "destinoFallo": 0,
               "destinoExito": 20263,
               "consecuencias": [],
@@ -4171,7 +4171,7 @@
               "ancho": 12,
               "extra": "",
               "frame": "ppal",
-              "texto": "<p>Interpones la rel\u00edquia de Santa Teresa</p>",
+              "texto": "<p>Raise the relic of Saint Theresa</p>",
               "destinoFallo": 0,
               "destinoExito": 20264,
               "consecuencias": [],
@@ -4199,7 +4199,7 @@
               "ancho": 12,
               "extra": "",
               "frame": "ppal",
-              "texto": "<p>Interpones la cruz de bronce</p>",
+              "texto": "<p>Raise the bronze cross</p>",
               "destinoFallo": 0,
               "destinoExito": 19709,
               "consecuencias": [],
@@ -4224,10 +4224,10 @@
               "test": false
             }
           ],
-          "texto": "<div style=\"text-align: justify;\"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">Inspiras, y el aire viciado te concede un \u00faltimo soplo de fuerza antes de caer en el abismo de la nada.</span></div>"
+          "texto": "<div style=\"text-align: justify;\"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">You inhale, and the tainted air grants you one last breath of strength before you plunge into the abyss of nothingness.</span></div>"
         }
       ],
-      "titulo": "Se te nubla la vista...",
+      "titulo": "You feel dizzy...",
       "codigo": "0058",
       "estado": "L",
       "id": 19699
@@ -4248,7 +4248,7 @@
               "ancho": 12,
               "extra": "",
               "frame": "ppal",
-              "texto": "<p>Continuas adelante</p>",
+              "texto": "<p>Press on</p>",
               "destinoFallo": 0,
               "destinoExito": 19653,
               "consecuencias": [],
@@ -4258,10 +4258,10 @@
               "test": false
             }
           ],
-          "texto": "<p style=\"text-align: justify; \">Sales a la calle y te alejas por el camino del norte forzando tus piernas m\u00e1s all\u00e1 del agotamiento. La niebla cubre el sendero de s\u00f3lido blanco y el aire, pegajoso y h\u00famedo, te pesa en los pulmones. El farol refulge en tu mano y el coraz\u00f3n del guardi\u00e1n en tu zurr\u00f3n; sin embargo, su resplandor muere enseguida en la bruma \u00e1vida de luz y pre\u00f1ada de las voces infernales que se amontonan en tu cabeza y amenazan por hacerla estallar.</p>"
+          "texto": "<p style=\"text-align: justify; \">You step out into the street and move along the northern path, forcing your legs beyond exhaustion. The fog blankets the trail in solid white, and the sticky, humid air weighs heavily on your lungs. The lantern gleams in your hand, and the heart of the guardian rests in your pouch; yet its glow quickly dies in the fog, hungry for light and pregnant with the infernal voices that crowd your mind and threaten to make it explode.</p>"
         }
       ],
-      "titulo": "Corres hacia el pantano",
+      "titulo": "Run towards the lagoon",
       "codigo": "0059",
       "estado": "L",
       "id": 19700
@@ -4282,7 +4282,7 @@
               "ancho": 12,
               "extra": "",
               "frame": "ppal",
-              "texto": "<p>Investigas el hito</p>",
+              "texto": "<p>Examine the milestone</p>",
               "destinoFallo": 0,
               "destinoExito": 20269,
               "consecuencias": [],
@@ -4295,7 +4295,7 @@
               "ancho": 12,
               "extra": "",
               "frame": "ppal",
-              "texto": "<p>Continuas hacia el agua</p>",
+              "texto": "<p>Continue towards the water</p>",
               "destinoFallo": 0,
               "destinoExito": 20270,
               "consecuencias": [],
@@ -4305,10 +4305,10 @@
               "test": false
             }
           ],
-          "texto": "<p style=\"text-align: justify; \">La noche a tu alrededor vuelve a ser quieta. La luna creciente brilla en un cielo limpio y no escuchas m\u00e1s que el latido de tu sangre.</p><p style=\"text-align: justify; \">Levantas tu farol para escrutar el sendero; continua hasta perderse en la penumbra. En el aire percibes, muy tenue, el hedor p\u00fatrido de agua estancada. A un lado del camino, casi fuera del abasto de tu lumbre, distingues la silueta alargada de un hito de piedra clavado en el suelo.</p><p style=\"text-align: justify; \">Algo cruza por delante la luna y su claridad mengua por un instante. Un brazo de niebla.</p>"
+          "texto": "<p style=\"text-align: justify; \">The night around you becomes still again. The crescent moon shines in a clear sky, and you hear nothing but the beat of your blood.</p><p style=\"text-align: justify; \">You lift your lantern to scrutinize the path; it continues until it disappears into the gloom. In the air, you detect, faintly, the putrid stench of stagnant water. To one side of the road, almost beyond the reach of your light, you make out the elongated silhouette of a milestone embedded in the ground.</p><p style=\"text-align: justify; \">Something passes in front of the moon, and its light dims for a moment. A tendril of fog.</p>"
         }
       ],
-      "titulo": "Llegas al hito",
+      "titulo": "Reach the milestone",
       "codigo": "0060",
       "estado": "L",
       "id": 19701
@@ -4342,7 +4342,7 @@
           "posicion": 1,
           "titulo": "",
           "enlaces": [],
-          "texto": "<p style=\"text-align: justify; \">Tu mano rebusca a ciegas en tu zurr\u00f3n y se cierra alrededor de la cruz de bronce. Con tu \u00faltimo atisbo de voluntad, la alzas; abres la boca, pero tu voz es un gorgojeo ahogado. Finalmente, te desplomas.&nbsp;</p><p style=\"text-align: justify; \">Pero el silencio que sigue no es el de la inconsciencia.</p><p style=\"text-align: justify; \">Abres los ojos. El p\u00e1ramo est\u00e1 en completa quietud; de la niebla s\u00f3lo quedan algunos zarcillos que danzan y se enredan con los \u00faltimos soplos de una inesperada brisa, que dispersa tambi\u00e9n el polvo verdoso al que se ha reducido la cruz de bronce.</p>"
+          "texto": "<p style=\"text-align: justify; \">Your hand gropes blindly in your pouch and closes around the bronze cross. With your last glimpse of will, you raise it; you open your mouth, but your voice is a choked gurgle. Finally, you collapse.&nbsp;</p><p style=\"text-align: justify; \">But the silence that follows is not that of unconsciousness.</p><p style=\"text-align: justify; \">You open your eyes. The moor is completely still; only a few tendrils of fog remain, dancing and twisting with the last breaths of an unexpected breeze, which also scatters the greenish dust into which the bronze cross has crumbled.</p>"
         },
         {
           "test": false,
@@ -4381,7 +4381,7 @@
           "posicion": 2,
           "titulo": "",
           "enlaces": [],
-          "texto": "<p><span style=\"text-align: justify;\">En esta laguna s\u00f3lo hallar\u00e1s tu perdici\u00f3n. \u00bfQu\u00e9 puedes t\u00fa contra las incompresibles y oscuras fuerzas que laten bajo sus aguas?</span><br></p>"
+          "texto": "<p><span style=\"text-align: justify;\">In this lagoon, you will find only your doom. What can you do against the incomprehensible and dark forces that pulse beneath its waters?</span><br></p>"
         },
         {
           "test": false,
@@ -4395,7 +4395,7 @@
               "ancho": 12,
               "extra": "",
               "frame": "ppal",
-              "texto": "<p>Continuas andando</p>",
+              "texto": "<p>Press on</p>",
               "destinoFallo": 0,
               "destinoExito": 19701,
               "consecuencias": [],
@@ -4437,7 +4437,7 @@
               "ancho": 12,
               "extra": "",
               "frame": "ppal",
-              "texto": "<p>Continuas hacia el agua</p>",
+              "texto": "<p>Continue towards the water</p>",
               "destinoFallo": 0,
               "destinoExito": 20270,
               "consecuencias": [],
@@ -4465,7 +4465,7 @@
               "ancho": 12,
               "extra": "",
               "frame": "ppal",
-              "texto": "<p>Vuelves sobre tus pasos</p>",
+              "texto": "<p>Retrace your steps</p>",
               "destinoFallo": 0,
               "destinoExito": 20272,
               "consecuencias": [],
@@ -4507,7 +4507,7 @@
               "ancho": 12,
               "extra": "",
               "frame": "ppal",
-              "texto": "<p>Huyes de la laguna</p>",
+              "texto": "<p>Flee from the lagoon</p>",
               "destinoFallo": 0,
               "destinoExito": 20283,
               "consecuencias": [],
@@ -4552,7 +4552,7 @@
           "posicion": 1,
           "titulo": "",
           "enlaces": [],
-          "texto": "<p style=\"text-align: justify; \">Recorres las ruinas sumidas en una niebla cada vez m\u00e1s densa. En la lejan\u00eda resuena un lamento constante y mon\u00f3tono, como si un viento de mil voces acariciara la desolaci\u00f3n del p\u00e1ramo. Te esfuerzas por ignorarlo, porque no sopla nada de viento y la alternativa es demasiado aterradora.</p><p style=\"text-align: justify;\">Bajo la luz de tu linterna las ruinas aparecen como rect\u00e1ngulos de muros bajos y suavizados por siglos de lluvia. S\u00f3lo una construcci\u00f3n se alza todav\u00eda por encima de tu cabeza. Te asomas por la apertura d\u00f3nde tiempo atr\u00e1s deb\u00eda haber una puerta y el coraz\u00f3n te da un vuelco. </p><p style=\"text-align: justify;\">\u00a1Hay un ni\u00f1o en el interior!</p><p style=\"text-align: justify;\"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">Suspiras de alivio cuando te das cuenta de que s\u00f3lo es una estatua de unos seis palmos de altura, situada al fondo del edificio.</span></p><p style=\"text-align: justify;\"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">Te fijas que, adosada a un lado de la entrada, hay una bandeja con arena fina d\u00f3nde alguien ha dibujado un arco con el dedo:</span></p><p></p>"
+          "texto": "<p style=\"text-align: justify; \">You traverse the ruins shrouded in an ever-thickening fog. In the distance, a constant, monotonous wail resonates, as if a wind of a thousand voices were caressing the desolation of the moor. You struggle to ignore it, because no wind blows, and the alternative is far too terrifying.</p><p style=\"text-align: justify;\">Under the light of your lantern, the ruins appear as rectangles of low walls, softened by centuries of rain. Only one building still rises above your head. You peer through the opening where long ago there must have been a door, and your heart skips a beat. </p><p style=\"text-align: justify;\">There is a child inside!</p><p style=\"text-align: justify;\"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">You sigh in relief when you realize it is only a statue, about six spans tall, located at the back of the building.</span></p><p style=\"text-align: justify;\"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">You notice that, attached to one side of the entrance, there is a tray with fine sand where someone has drawn an arch with their finger:</span></p><p></p>"
         },
         {
           "test": false,
@@ -4576,7 +4576,7 @@
               "ancho": 12,
               "extra": "",
               "frame": "ppal",
-              "texto": "<p>Dibujas otro arco para formar una media luna</p>",
+              "texto": "<p>Draw another arch to form a crescent</p>",
               "destinoFallo": 0,
               "destinoExito": 19748,
               "consecuencias": [],
@@ -4589,7 +4589,7 @@
               "ancho": 12,
               "extra": "",
               "frame": "ppal",
-              "texto": "<p>Dibujas otro arco para formar una semilla</p>",
+              "texto": "<p>Draw another arch to form a seed</p>",
               "destinoFallo": 0,
               "destinoExito": 19750,
               "consecuencias": [],
@@ -4602,7 +4602,7 @@
               "ancho": 12,
               "extra": "",
               "frame": "ppal",
-              "texto": "<p>Dibujas otro arco para formar un pez</p>",
+              "texto": "<p>Draw another arch to form a fish</p>",
               "destinoFallo": 0,
               "destinoExito": 19751,
               "consecuencias": [],
@@ -4615,7 +4615,7 @@
               "ancho": 12,
               "extra": "",
               "frame": "ppal",
-              "texto": "<p>Entras sin dibujar nada</p>",
+              "texto": "<p>Enter without drawing anything</p>",
               "destinoFallo": 0,
               "destinoExito": 19743,
               "consecuencias": [],
@@ -4628,7 +4628,7 @@
           "texto": ""
         }
       ],
-      "titulo": "Bandeja de arena",
+      "titulo": "Sand tray",
       "codigo": "0069",
       "estado": "L",
       "id": 19713
@@ -4645,7 +4645,7 @@
           "posicion": 1,
           "titulo": "",
           "enlaces": [],
-          "texto": "<p style=\"text-align: justify;\">Dentro del hueco<span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">&nbsp;encuentras una peque\u00f1a cruz de bronce, carcomida por un \u00f3xido verdoso y apenas visible bajo los escombros. Tiene el brazo superior en forma de asa, lo cual llama tu atenci\u00f3n.</span></p>"
+          "texto": "<p style=\"text-align: justify;\">Inside the hollow, <span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">you find a small bronze cross, corroded by greenish rust and barely visible beneath the rubble. Its upper arm is shaped like a handle, which catches your attention.</span></p>"
         },
         {
           "test": false,
@@ -4665,7 +4665,7 @@
           "posicion": 3,
           "titulo": " (copia)",
           "enlaces": [],
-          "texto": "<p style=\"text-align: justify;\"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">Te apena verla abandonada as\u00ed y sientes el impulso de llev\u00e1rtela.</span><br></p>"
+          "texto": "<p style=\"text-align: justify;\"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">You feel sorry to see it abandoned like this, and an impulse stirs within to take it along.</span><br></p>"
         },
         {
           "test": false,
@@ -4679,7 +4679,7 @@
               "ancho": 12,
               "extra": "",
               "frame": "ppal",
-              "texto": "<p>Te llevas la cruz</p>",
+              "texto": "<p>Take the cross</p>",
               "destinoFallo": 0,
               "destinoExito": 19715,
               "consecuencias": [],
@@ -4692,7 +4692,7 @@
               "ancho": 12,
               "extra": "",
               "frame": "ppal",
-              "texto": "Investigas la estatua",
+              "texto": "Examine the statue",
               "destinoFallo": 0,
               "destinoExito": 19667,
               "consecuencias": [],
@@ -4720,7 +4720,7 @@
               "ancho": 12,
               "extra": "",
               "frame": "ppal",
-              "texto": "<p>Vuelves a Huesos</p>",
+              "texto": "<p>Go back to Bones</p>",
               "destinoFallo": 0,
               "destinoExito": 19683,
               "consecuencias": [],
@@ -4761,7 +4761,7 @@
           "texto": ""
         }
       ],
-      "titulo": "Examinas el hueco",
+      "titulo": "Examine the hollow",
       "codigo": "0071",
       "estado": "L",
       "id": 19714
@@ -4810,7 +4810,7 @@
           "posicion": 1,
           "titulo": "",
           "enlaces": [],
-          "texto": "<p style=\"text-align: justify;\">Agarras la cruz y te la guardas con cuidado en el zurr\u00f3n.</p>"
+          "texto": "<p style=\"text-align: justify;\">You take the cross and carefully tuck it into your pouch.</p>"
         },
         {
           "test": false,
@@ -4835,7 +4835,7 @@
           "posicion": 2,
           "titulo": "",
           "enlaces": [],
-          "texto": "<p style=\"text-align: justify;\">Cuando la sacas del hueco, la cruz se deshace y en tus manos no queda m\u00e1s que un mont\u00f3n de \u00f3xido.</p>"
+          "texto": "<p style=\"text-align: justify;\">When you take it out of the hollow, the cross crumbles, leaving nothing in your hands but a pile of greenish dust.</p>"
         },
         {
           "test": false,
@@ -4849,7 +4849,7 @@
               "ancho": 12,
               "extra": "",
               "frame": "ppal",
-              "texto": "<p>Investigas la estatua</p>",
+              "texto": "<p>Examine the statue</p>",
               "destinoFallo": 0,
               "destinoExito": 19667,
               "consecuencias": [],
@@ -4877,7 +4877,7 @@
               "ancho": 12,
               "extra": "",
               "frame": "ppal",
-              "texto": "<p>Vuelves a Huesos</p>",
+              "texto": "<p>Go back to Bones</p>",
               "destinoFallo": 0,
               "destinoExito": 19683,
               "consecuencias": [],
@@ -4918,7 +4918,7 @@
           "texto": ""
         }
       ],
-      "titulo": "Te llevas la cruz",
+      "titulo": "Take the cross",
       "codigo": "0072",
       "estado": "L",
       "id": 19715
@@ -4992,10 +4992,10 @@
               "test": false
             }
           ],
-          "texto": "<div style=\"text-align: justify;\"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">Con tu \u00faltimo suspiro encuentras el crucifijo bajo la camisa. Incapaz de alzarlo, lo aprietas contra tu pecho como si fuera este pedazo de madera sagrada tu \u00faltimo v\u00ednculo con este mundo. En tu boca toma forma un viejo salmo, que mantienes hasta que tu consciencia se disgrega y se pierde en un mar de voces infernales.</span></div>"
+          "texto": "<div style=\"text-align: justify;\"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">With your last breath, you find the crucifix beneath your shirt. Unable to raise it, you press it against your chest as if this piece of sacred wood were your final link to this world. An old psalm forms in your mouth, which you hold onto until your consciousness disintegrates and is lost in a sea of infernal voices.</span></div>"
         }
       ],
-      "titulo": "Cruz",
+      "titulo": "Cross",
       "codigo": "0073",
       "estado": "L",
       "id": 20263
@@ -5069,10 +5069,10 @@
               "test": false
             }
           ],
-          "texto": "<p style=\"text-align: justify; \">Tu mano se aferra a la tosca cajita que contiene el hueso de Santa Teresa y con tu \u00faltimo aliento la estiras fuera del zurr\u00f3n.</p><p style=\"text-align: justify; \">No sirve de nada.</p><p style=\"text-align: justify; \">La niebla continua estrechando su abrazo fantasmal y sus odiosos lamentos trepanan cada vez m\u00e1s profundamente en tu cabeza, ahogando tus pensamientos, engullendo lo que eres.&nbsp;<span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">Incapaz de sostenerla por m\u00e1s tiempo, dejas caer la reliquia. La cajita se abre contra el suelo y el hueso, envuelto en su ra\u00eddo pedazo de tela, rueda por el barro. Lo ves como a trav\u00e9s de una nube de colores y dedicas tu \u00faltimo pensamiento a preguntarte si llegar\u00e1 a com\u00e9rselo alguna alima\u00f1a antes de que llegue a pudrirse.</span></p>"
+          "texto": "<p style=\"text-align: justify; \">Your hand clings to the rough little box that contains the bone of Saint Theresa, and with your last breath you pull it out of the pouch.</p><p style=\"text-align: justify; \">It is useless.</p><p style=\"text-align: justify; \">The fog continues to tighten its ghostly embrace, and its hateful wails burrow ever deeper into your mind, choking your thoughts and devouring who you are.&nbsp;<span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">Unable to hold it any longer, you let the relic fall. The little box opens against the ground, and the bone, wrapped in its tattered piece of cloth, rolls through the mud. You see it as though through a cloud of colors, and your last thought is to wonder whether a rat or some other creature will consume it before it rots.</span></p>"
         }
       ],
-      "titulo": "Rel\u00edquia",
+      "titulo": "Relic",
       "codigo": "0074",
       "estado": "L",
       "id": 20264
@@ -5093,7 +5093,7 @@
               "ancho": 12,
               "extra": "",
               "frame": "ppal",
-              "texto": "<p>Tomas el pan</p>",
+              "texto": "<p>Take the bread</p>",
               "destinoFallo": 0,
               "destinoExito": 19678,
               "consecuencias": [],
@@ -5106,7 +5106,7 @@
               "ancho": 12,
               "extra": "",
               "frame": "ppal",
-              "texto": "<p>Tomas el vino</p>",
+              "texto": "<p>Take the wine</p>",
               "destinoFallo": 0,
               "destinoExito": 19677,
               "consecuencias": [],
@@ -5116,10 +5116,10 @@
               "test": false
             }
           ],
-          "texto": "<p style=\"text-align: justify; \">Apartas la puerta a un lado y con la linterna espantas la oscuridad.</p><p style=\"text-align: justify;\">La estancia es peque\u00f1a y al parecer est\u00e1 ocupada. Al fondo distingues un lecho de paja fresca y encima de los remanentes de una poyata de cocina encuentras unas hogazas de pan seco y media docena de botellas de cristal turbio. Vino.</p><p style=\"text-align: justify;\">Tienes hambre y sed despu\u00e9s de un largo d\u00eda de marcha y, al fin y al cabo, est\u00e1s en una posada. Sin embargo, tu honradez te impide llevarte nada sin pagar y s\u00f3lo tienes monedas para una de las dos cosas.</p>"
+          "texto": "<p style=\"text-align: justify; \">You push the door aside and use the lantern to drive back the darkness.</p><p style=\"text-align: justify;\">The room is small and apparently occupied. At the back, you make out a bed of fresh straw, and on top of the remnants of a kitchen shelf, you find some loaves of stale bread and half a dozen opaque bottles filled with wine.</p><p style=\"text-align: justify;\">You are hungry and thirsty after a long day’s march, and after all, you are in an inn. However, your honesty prevents you from taking anything without paying, and you only have coins for one of the two.</p>"
         }
       ],
-      "titulo": "Investigar la puerta",
+      "titulo": "Investigate the door",
       "codigo": "0075",
       "estado": "L",
       "id": 19720
@@ -5140,7 +5140,7 @@
               "ancho": 12,
               "extra": "",
               "frame": "ppal",
-              "texto": "<p>Subes al campanario</p>",
+              "texto": "<p>Go up the bell tower</p>",
               "destinoFallo": 0,
               "destinoExito": 19723,
               "consecuencias": [],
@@ -5168,7 +5168,7 @@
               "ancho": 12,
               "extra": "",
               "frame": "ppal",
-              "texto": "<p>Investigas la sacrist\u00eda</p>",
+              "texto": "<p>Search the sacristy</p>",
               "destinoFallo": 0,
               "destinoExito": 19555,
               "consecuencias": [],
@@ -5196,7 +5196,7 @@
               "ancho": 12,
               "extra": "",
               "frame": "ppal",
-              "texto": "<p>Sales a la calle</p>",
+              "texto": "<p>Go out into the street</p>",
               "destinoFallo": 0,
               "destinoExito": 19556,
               "consecuencias": [],
@@ -5224,7 +5224,7 @@
               "ancho": 12,
               "extra": "",
               "frame": "ppal",
-              "texto": "<p>Subes al campanario</p>",
+              "texto": "<p>Go up the bell tower</p>",
               "destinoFallo": 0,
               "destinoExito": 19730,
               "consecuencias": [],
@@ -5252,7 +5252,7 @@
               "ancho": 12,
               "extra": "",
               "frame": "ppal",
-              "texto": "<p>Investigas la sacrist\u00eda</p>",
+              "texto": "<p>Search the sacristy</p>",
               "destinoFallo": 0,
               "destinoExito": 19730,
               "consecuencias": [],
@@ -5280,7 +5280,7 @@
               "ancho": 12,
               "extra": "",
               "frame": "ppal",
-              "texto": "<p>Sales a la calle</p>",
+              "texto": "<p>Go out into the street</p>",
               "destinoFallo": 0,
               "destinoExito": 19730,
               "consecuencias": [],
@@ -5305,10 +5305,10 @@
               "test": false
             }
           ],
-          "texto": "<p style=\"text-align: justify; \">Observas las losas de piedra y sus gravados suavizados por los a\u00f1os. La mayor\u00eda contienen varias generaciones de la misma familia. Probablemente, sus nombres apenas legibles es todo lo que queda de su memoria.</p><p style=\"text-align: justify; \">En el suelo enfrente de una de las criptas detectas los rayones inconfundibles que ha dejado la losa al ser movida.</p>"
+          "texto": "<p style=\"text-align: justify; \">You examine the stone slabs and their engravings, worn smooth by the years. Most contain several generations of the same family. Their names, barely legible, are probably all that remains of their memory.</p><p style=\"text-align: justify; \">On the floor in front of one of the crypts, you notice the unmistakable scratches left by the slab when it was moved.</p>"
         }
       ],
-      "titulo": "Criptas",
+      "titulo": "Crypts",
       "codigo": "0076",
       "estado": "L",
       "id": 19722
@@ -5329,7 +5329,7 @@
               "ancho": 12,
               "extra": "",
               "frame": "ppal",
-              "texto": "Investigas el origen de la niebla",
+              "texto": "Investigate the source of the fog",
               "destinoFallo": 0,
               "destinoExito": 19626,
               "consecuencias": [],
@@ -5342,7 +5342,7 @@
               "ancho": 12,
               "extra": "",
               "frame": "ppal",
-              "texto": "<p>Te diriges hacia la luz</p>",
+              "texto": "<p>Head towards the light</p>",
               "destinoFallo": 0,
               "destinoExito": 19676,
               "consecuencias": [],
@@ -5352,10 +5352,10 @@
               "test": false
             }
           ],
-          "texto": "<p style=\"text-align: justify; \"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">El techo del campanario se ha derrumbado. La campana yace en el suelo como un mont\u00f3n de metal inerme entre pedazos de madera y piedra.</span></p><p style=\"text-align: justify; \"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">Te acercas a borde de la torre y observas los tejados de Huesos</span><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">&nbsp;bajo el cielo punteado de estrellas. M\u00e1s all\u00e1 de sus limites divisas como una</span><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">&nbsp;niebla muy baja despliega sus jirones como brazos intangibles por el p\u00e1ramo. Parece emanar de un lugar concreto no muy lejos de la aldea. Nunca hab\u00edas visto nada igual.</span></p><p style=\"text-align: justify; \"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">En una de las casas alejadas de la calle mayor titila una&nbsp;</span><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">luz.</span></p>"
+          "texto": "<p style=\"text-align: justify; \"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">The roof of the bell tower has collapsed. The bell lies on the ground like a lifeless heap of metal among pieces of wood and stone.</span></p><p style=\"text-align: justify; \"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">You approach the edge of the tower and observe the rooftops of Bones</span><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">&nbsp;beneath the star-studded sky. Beyond its limits you make out a very low fog, </span><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">&nbsp;spreading its wisps like intangible arms over the moor. It seems to emanate from a specific place not far from the village. You had never seen anything like it.</span></p><p style=\"text-align: justify; \"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">In one of the houses set back from the main street, a light </span><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">flickers.</span></p>"
         }
       ],
-      "titulo": "Campanario",
+      "titulo": "Bell tower",
       "codigo": "0077",
       "estado": "L",
       "id": 19723
@@ -5376,7 +5376,7 @@
               "ancho": 12,
               "extra": "",
               "frame": "ppal",
-              "texto": "<p>Lo sigues al interior de la cripta</p>",
+              "texto": "<p>Follow him into the crypt</p>",
               "destinoFallo": 0,
               "destinoExito": 19559,
               "consecuencias": [],
@@ -5386,10 +5386,10 @@
               "test": false
             }
           ],
-          "texto": "<p style=\"text-align: justify;\">Parado enfrente del portal de la iglesia te encuentras con un hombre enjuto, de rostro largo y anguloso, enfundado en una chaqueta ra\u00edda. Te mira con ojos sorprendidos desde el fondo de sus cuencas. En una mano lleva un farol, en la otra una palanca. D<span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">esv\u00eda los ojos hacia la calle, donde jirones de una niebla muy baja avanzan como arrastr\u00e1ndose.</span><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">&nbsp;</span></p><p style=\"text-align: justify;\"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">\"Venga conmigo\" dice,&nbsp; \"hay niebla\".</span></p><p style=\"text-align: justify;\">Sin esperar respuesta entra en la iglesia y se dirige a<span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">&nbsp;una de las criptas. Con un golpe seco de palanca, separa la losa de la pared.</span></p><p style=\"text-align: justify;\">\"Hablaremos abajo. \u00a1Pase, se lo ruego! No tenemos mucho tiempo\".<br></p>"
+          "texto": "<p style=\"text-align: justify;\">Standing in front of the church doorway, you encounter a lean man with a long, angular face, clad in a worn jacket. He looks at you with wide eyes from the depths of his sockets. In one hand he holds a lantern, in the other an iron crowbar. <span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">He turns his eyes towards the street, where wisps of very low fog creep forward as if dragging themselves along.</span><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">&nbsp;</span></p><p style=\"text-align: justify;\"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">\"Come with me\" he says,&nbsp; \"there's fog\".</span></p><p style=\"text-align: justify;\">Without waiting for a response, he enters the church and heads towards one of the crypts. <span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">&nbsp; With a solid blow from the crowbar, he pries the slab away from the wall.</span></p><p style=\"text-align: justify;\">\"We’ll talk downstairs. Please, come in! We don’t have much time\".<br></p>"
         }
       ],
-      "titulo": "Encuentro con carnicero",
+      "titulo": "Meet the butcher",
       "codigo": "0078",
       "estado": "L",
       "id": 19730
@@ -5410,7 +5410,7 @@
               "ancho": 12,
               "extra": "",
               "frame": "ppal",
-              "texto": "<p>Investigas la estatua</p>",
+              "texto": "<p>Examine the statue</p>",
               "destinoFallo": 0,
               "destinoExito": 19667,
               "consecuencias": [
@@ -5440,7 +5440,7 @@
               "ancho": 12,
               "extra": "",
               "frame": "ppal",
-              "texto": "<p>Investigas el hueco del muro</p>",
+              "texto": "<p>Examine the hollow in the wall</p>",
               "destinoFallo": 0,
               "destinoExito": 19714,
               "consecuencias": [
@@ -5467,10 +5467,10 @@
               "test": false
             }
           ],
-          "texto": "<p style=\"text-align: justify; \">Te paras en el centro del edificio y observas la niebla caer por la b\u00f3veda del techo derrumbado. A pesar del largo abandono y del musgo que se amontona en las grietas, percibes a\u00fan cierta solemnidad en la manera como los muros se alargan para converger en la peque\u00f1a estatua colocada en el extremo opuesto a la entrada.</p><p style=\"text-align: justify;\"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">En uno de los muros laterales observas que hay tallado un hueco de dos palmos de anchura, acabado en arco.</span></p>"
+          "texto": "<p style=\"text-align: justify; \">You stand in the center of the building and watch the fog fall through the vaulted ceiling of the collapsed roof. Despite the long abandonment and the moss piling up in the cracks, you still sense a certain solemnity in the way the walls stretch to converge on the small statue placed at the far end opposite the entrance.</p><p style=\"text-align: justify;\"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">On one of the side walls, you notice a hollow about two spans wide, finished in an arch.</span></p>"
         }
       ],
-      "titulo": "Iglesia paleocristiana interior",
+      "titulo": "Paleochristian church inside",
       "codigo": "0079",
       "estado": "L",
       "id": 19743
@@ -5491,7 +5491,7 @@
               "ancho": 12,
               "extra": "",
               "frame": "ppal",
-              "texto": "<p>\u00bfQu\u00e9 es... esa niebla?</p>",
+              "texto": "<p>What is... that fog?</p>",
               "destinoFallo": 0,
               "destinoExito": 20019,
               "consecuencias": [],
@@ -5501,10 +5501,10 @@
               "test": false
             }
           ],
-          "texto": "<p style=\"text-align: justify;\"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">El p\u00e1rroco te dirige una mirada triste pero de f\u00e9rrea convicci\u00f3n.</span></p><p style=\"text-align: justify; \"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">\"Yo s\u00f3lo me rindo a los hechos. Confi\u00e9 en la Cruz y la Cruz me fall\u00f3. Dios es d\u00e9bil en los s\u00edmbolos modernos.&nbsp;</span><span style=\"color: var(--text-color); font-size: 1rem; background-color: var(--widget-background);\">Nos hemos obsesionado con las formas y hemos olvidado lo que es \u00c9l de verdad, lo que realmente importa\". Calla, como si sus palabras le dolieran. \"Por suerte, consegu\u00ed arrastrarme hasta aqu\u00ed\".</span></p><p style=\"text-align: justify; \">\"\u00bfQu\u00e9 quiere decir?\"</p><p style=\"text-align: justify; \"><span style=\"color: var(--text-color); font-size: 1rem; background-color: var(--widget-background);\">\"Nos encontramos en lo que queda de un asentamiento de los primeros cristianos, lo que siglos despu\u00e9s se convirti\u00f3 en la aldea de Huesos\" dice el p\u00e1rroco. \"Aqu\u00ed, la niebla se debilita. Algo debe quedar de los s\u00edmbolos del cristianismo primigenio, remanentes de una fe m\u00e1s sencilla, m\u00e1s pura, que ejerce alg\u00fan tipo de protecci\u00f3n. Pero ni eso podr\u00e1 detener el avance de la niebla por mucho tiempo\".</span></p><p style=\"text-align: justify;\"><span style=\"color: var(--text-color); font-size: 1rem; background-color: var(--widget-background);\">Te gustar\u00eda dedicarle alguna palabra de aliento pero la verdad que revela su cuerpo evanescente es irrefutable. El crepitar de las llamas llena tu silencio.</span></p>"
+          "texto": "<p style=\"text-align: justify;\"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">The priest regards you with sadness, yet with steadfast conviction.</span></p><p style=\"text-align: justify; \"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">\"I only yield to the facts. I trusted in the Cross, and the Cross failed me. God is weak in modern symbols.&nbsp;</span><span style=\"color: var(--text-color); font-size: 1rem; background-color: var(--widget-background);\">We have become obsessed with forms and have forgotten what He truly is, what truly matters\". He falls silent, as if his own words hurt him. \"Luckily, I managed to drag myself here\".</span></p><p style=\"text-align: justify; \">\"What do you mean?\"</p><p style=\"text-align: justify; \"><span style=\"color: var(--text-color); font-size: 1rem; background-color: var(--widget-background);\">\"We are in what remains of a settlement of the earliest Christians, which centuries later became the village of Bones\" says the priest. \"Here, the fog is weaker. Something must remain of the symbols of early Christianity, remnants of a simpler, purer faith that still exerts some measure of protection. But even that will not be enough to halt the fog’s advance for long\".</span></p><p style=\"text-align: justify;\"><span style=\"color: var(--text-color); font-size: 1rem; background-color: var(--widget-background);\">You would like to offer a word of comfort, but the truth revealed by his evanescent body is irrefutable. The crackling of the flames fills your silence.</span></p>"
         }
       ],
-      "titulo": "\u00a1Impropio de un p\u00e1rroco blasfemar as\u00ed de la Santa Cruz!",
+      "titulo": "Do not blaspheme!",
       "codigo": "0080",
       "estado": "L",
       "id": 20018
@@ -5538,7 +5538,7 @@
           "posicion": 1,
           "titulo": "",
           "enlaces": [],
-          "texto": "<p>Dibujas otro arco para formar una media luna.</p>"
+          "texto": "<p>You draw another arch to form a crescent.</p>"
         },
         {
           "test": false,
@@ -5562,7 +5562,7 @@
               "ancho": 12,
               "extra": "",
               "frame": "ppal",
-              "texto": "<p>Entras en el edificio</p>",
+              "texto": "<p>Enter the building</p>",
               "destinoFallo": 0,
               "destinoExito": 19743,
               "consecuencias": [],
@@ -5575,7 +5575,7 @@
           "texto": ""
         }
       ],
-      "titulo": "Dibujas media luna",
+      "titulo": "Draw a crescent",
       "codigo": "0081",
       "estado": "L",
       "id": 19748
@@ -5596,7 +5596,7 @@
               "ancho": 12,
               "extra": "",
               "frame": "ppal",
-              "texto": "\u00bfC\u00f3mo podemos librarnos de este mal?",
+              "texto": "How can we defeat of this evil?",
               "destinoFallo": 0,
               "destinoExito": 20020,
               "consecuencias": [],
@@ -5606,10 +5606,10 @@
               "test": false
             }
           ],
-          "texto": "<p style=\"text-align: justify;\"><span style=\"color: var(--text-color); font-size: 1rem; background-color: var(--widget-background);\">\"Almas\" contesta el p\u00e1rroco con gravedad.</span></p><p style=\"text-align: justify;\"><span style=\"color: var(--text-color); font-size: 1rem; background-color: var(--widget-background);\">Notas como un fr\u00edo repentino recorre tus nervios.</span></p><p style=\"text-align: justify; \"><span style=\"background-color: var(--widget-background);\">\"\u00bfNo se le ha ocurrido preguntarse por qu\u00e9 la aldea se llama Huesos?\" prosigue el sacerdote con los ojos puestos en el fuego. \"Es por la laguna que hay cerca de aqu\u00ed, siguiendo el camino del norte. Est\u00e1 repleta de esqueletos. No es un cementerio; m\u00e1s bien es una fosa sin consagrar donde pueblos paganos anteriores al cristianismo arrojaban los cad\u00e1veres de esclavos, criminales y todos aquellos que no merec\u00edan un entierro digno. En sus aguas hay centenares de almas atrapadas entre dos mundos, carcomidas por la ira y el recelo de no poder pertenecer a ninguno\".&nbsp;</span></p><p style=\"text-align: justify; \">El sacerdote habla a trompicones, como esforz\u00e1ndose para empujar el aire. Su cuerpo se desangra en tirabuzones de vaho cada vez m\u00e1s numerosos.</p><p style=\"text-align: justify; \"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">\"En la orilla de la laguna hay un hito de piedra con unos s\u00edmbolos que me he esforzado en traducir. S\u00f3lo lo consegu\u00ed en parte, pero ahora que... me fundo con la niebla, tambi\u00e9n soy part\u00edcipe de todo lo que ella es\".</span></p><p style=\"text-align: justify; \"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">Su voz es poco m\u00e1s que un murmullo; l</span><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">a piel, l\u00edvido papel.</span></p><p style=\"text-align: justify; \"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">\"</span><span style=\"color: var(--text-color); font-size: 1rem; background-color: var(--widget-background);\">E</span><span style=\"color: var(--text-color); font-size: 1rem; background-color: var(--widget-background);\">xiste una manera de librarse de estas almas atormentadas. Pero a m\u00ed... se me acaba el tiempo\".</span></p>"
+          "texto": "<p style=\"text-align: justify;\"><span style=\"color: var(--text-color); font-size: 1rem; background-color: var(--widget-background);\">\"Souls\" answers the priest gravely.</span></p><p style=\"text-align: justify;\"><span style=\"color: var(--text-color); font-size: 1rem; background-color: var(--widget-background);\">You feel a sudden cold run through your nerves.</span></p><p style=\"text-align: justify; \"><span style=\"background-color: var(--widget-background);\">\"Have you never wondered why the village is called Bones?\" continues the priest, his eyes fixed on the fire. \"It is because of the lagoon near here, along the northern road. It is filled with skeletons. It is not a cemetery; rather, it is an unconsecrated pit where pagan peoples before Christianity cast the bodies of slaves, criminals, and all those deemed unworthy of a proper burial. In its waters are hundreds of souls trapped between two worlds, gnawed by the anger and resentment of not being able to belong to either\".&nbsp;</span></p><p style=\"text-align: justify; \">The priest speaks in broken words, as if struggling to push the air out. His body bleeds away in growing spirals of vapor.</p><p style=\"text-align: justify; \"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">\"On the shore of the lagoon there is a milestone with some symbols I strove to translate. I only managed it in part, but now that... I melt into the fog, I am also a participant in all that it is\".</span></p><p style=\"text-align: justify; \"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">\"His voice is little more than a murmur; </span><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">the skin, pale as paper.</span></p><p style=\"text-align: justify; \"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">\"</span><span style=\"color: var(--text-color); font-size: 1rem; background-color: var(--widget-background);\"></span><span style=\"color: var(--text-color); font-size: 1rem; background-color: var(--widget-background);\">\"There is a way to rid ourselves of these tormented souls. But for me... time is running out\".</span></p>"
         }
       ],
-      "titulo": "\u00bfDe d\u00f3nde viene esa niebla?",
+      "titulo": "Where that fog comes from?",
       "codigo": "0082",
       "estado": "L",
       "id": 20019
@@ -5630,7 +5630,7 @@
               "ancho": 12,
               "extra": "",
               "frame": "ppal",
-              "texto": "<p>Te acercas a la lumbre</p>",
+              "texto": "<p>Approach the fire</p>",
               "destinoFallo": 0,
               "destinoExito": 19654,
               "consecuencias": [],
@@ -5653,10 +5653,10 @@
               "test": false
             }
           ],
-          "texto": "<p style=\"text-align: justify;\"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">No tienes problema para encontrar el riachuelo. Sus aguas brillan, transparentes, bajo la luna creciente. Te agachas en la orilla musgosa y bebes con las manos. El agua es fresca y sabe a tierra limpia.</span><br></p><p style=\"text-align: justify;\">Delante de ti nada un grupo de pececillos. Se dispersan cuando metes las manos en el agua pero vuelven a congregarse tan pronto como las sacas. Eso te hace recordar un serm\u00f3n que dio en una ocasi\u00f3n el p\u00e1rroco de tu iglesia: \"Bienaventurados los peces, porque en ellos se encarna Jesucristo Salvador\".</p><p style=\"text-align: justify;\">Te incorporas con fuerzas y \u00e1nimos renovados.</p>"
+          "texto": "<p style=\"text-align: justify;\"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">You have no trouble finding the stream. Its waters shine, transparent, under the crescent moon. You crouch on the mossy bank and drink with your hands. The water is cool and tastes of clean earth.</span><br></p><p style=\"text-align: justify;\">In front of you swims a group of little fish. They scatter when you dip your hands into the water but gather again as soon as you pull them out. It reminds you of a sermon once given by the priest of your church: \"Blessed are the fish, for in them is incarnate Jesus Christ the Savior\".</p><p style=\"text-align: justify;\">You stand up, filled with renewed strength and vigor.</p>"
         }
       ],
-      "titulo": "Tratar de encontrar el r\u00edo",
+      "titulo": "Try to find the stream",
       "codigo": "0083",
       "estado": "L",
       "id": 19736
@@ -5690,7 +5690,7 @@
           "posicion": 1,
           "titulo": "",
           "enlaces": [],
-          "texto": "<p>Dibujas otro arco para formar una semilla.</p>"
+          "texto": "<p>You draw another arch to form a seed.</p>"
         },
         {
           "test": false,
@@ -5714,7 +5714,7 @@
               "ancho": 12,
               "extra": "",
               "frame": "ppal",
-              "texto": "<p>Entras en el edificio</p>",
+              "texto": "<p>Enter the building</p>",
               "destinoFallo": 0,
               "destinoExito": 19743,
               "consecuencias": [],
@@ -5727,7 +5727,7 @@
           "texto": ""
         }
       ],
-      "titulo": "Dibujas semilla",
+      "titulo": "Draw seed",
       "codigo": "0084",
       "estado": "L",
       "id": 19750
@@ -5761,7 +5761,7 @@
           "posicion": 1,
           "titulo": "",
           "enlaces": [],
-          "texto": "<p>Dibujas otro arco para formar un pez.</p>"
+          "texto": "<p>You draw another arch to form a fish.</p>"
         },
         {
           "test": false,
@@ -5785,7 +5785,7 @@
               "ancho": 12,
               "extra": "",
               "frame": "ppal",
-              "texto": "<p>Entras en el edificio</p>",
+              "texto": "<p>Enter the building</p>",
               "destinoFallo": 0,
               "destinoExito": 19743,
               "consecuencias": [],
@@ -5798,7 +5798,7 @@
           "texto": ""
         }
       ],
-      "titulo": "Dibujas pez",
+      "titulo": "Draw fish",
       "codigo": "0085",
       "estado": "L",
       "id": 19751
@@ -5815,7 +5815,7 @@
           "posicion": 1,
           "titulo": "",
           "enlaces": [],
-          "texto": "<p style=\"text-align: justify;\">\"Junto con esas almas tambi\u00e9n se enterr\u00f3 alguien...\" musita el p\u00e1rroco, \"alguien sacrificado para mantenerlas atrapadas entre este mundo y el M\u00e1s All\u00e1. Una especie de guardi\u00e1n... pero \u00e9ste nada puede sin su coraz\u00f3n, de la misma forma que el coraz\u00f3n nada puede sin el guardi\u00e1n\".</p><p style=\"text-align: justify;\"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">En alg\u00fan lugar del p\u00e1ramo suena un gemido apagado.</span><br></p><p style=\"text-align: justify;\">\"\u00bfEl coraz\u00f3n del guardi\u00e1n?\" mascullas.</p><p style=\"text-align: justify;\">\"U<span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">na piedra impregnada con sangre manando directamente de su coraz\u00f3n; pulida como una gota de agua, brillante como ascuas.\"</span></p><p style=\"text-align: justify;\"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">El p\u00e1rroco calla un instante. Su rostro se contorsiona en una mueca de dolor.</span></p><p style=\"text-align: justify;\">\"L<span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">os muertos... recorren nuestro mundo, siembran desdicha a su paso. S\u00f3lo puede significar que alguien ha robado el coraz\u00f3n... \u00a1Debe e</span><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">ncontrarlo!\"</span></p>"
+          "texto": "<p style=\"text-align: justify;\">\"Along with those souls, someone else was also buried...\" the priest murmurs, \"someone sacrificed to keep them trapped between this world and the Afterlife. A sort of guardian... but he can do nothing without his heart, just as the heart can do nothing without the guardian\".</p><p style=\"text-align: justify;\"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">A muffled moan echoes somewhere across the moor.</span><br></p><p style=\"text-align: justify;\">\"The heart of the guardian?\" you ask.</p><p style=\"text-align: justify;\">\"<span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">A stone imbued with blood streaming from his heart; smooth as a droplet of water, radiant as embers\".</span></p><p style=\"text-align: justify;\"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">The priest falls silent for a moment. His face twists in a grimace of pain.</span></p><p style=\"text-align: justify;\">\"<span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">The dead... walk our world, spreading misery in their wake. It can only mean that someone has stolen the heart... </span><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">You must find it!\"</span></p>"
         },
         {
           "test": false,
@@ -5840,7 +5840,7 @@
           "posicion": 2,
           "titulo": "",
           "enlaces": [],
-          "texto": "<p style=\"text-align: justify;\">Recuerdas la gema que encontraste bajo el suelo de la alcoba del carnicero.<br></p>"
+          "texto": "<p style=\"text-align: justify;\">You recall the gem you discovered under the butcher’s chamber floorboards.<br></p>"
         },
         {
           "test": false,
@@ -5854,7 +5854,7 @@
               "ancho": 12,
               "extra": "",
               "frame": "ppal",
-              "texto": "<p>Le muestras la gema</p>",
+              "texto": "<p>Show the gem to the priest</p>",
               "destinoFallo": 0,
               "destinoExito": 19663,
               "consecuencias": [],
@@ -5882,7 +5882,7 @@
               "ancho": 12,
               "extra": "",
               "frame": "ppal",
-              "texto": "<p>\u00bfD\u00f3nde puedo encontrarlo?</p>",
+              "texto": "<p>Where can I find it?</p>",
               "destinoFallo": 0,
               "destinoExito": 19664,
               "consecuencias": [],
@@ -5910,7 +5910,7 @@
           "texto": ""
         }
       ],
-      "titulo": "\u00a1D\u00edgame lo que tengo que hacer!",
+      "titulo": "Tell me what I have to do!",
       "codigo": "0086",
       "estado": "L",
       "id": 20020
@@ -5927,7 +5927,7 @@
           "posicion": 1,
           "titulo": "",
           "enlaces": [],
-          "texto": "<p style=\"text-align: justify; \">El dolor es ef\u00edmero. Tu cuerpo no tarda en descomponerse en una mir\u00edada de filamentos vaporosos que se fusionan con la niebla; l<span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">o \u00faltimo que ves con tus ojos mortales es el coraz\u00f3n del guardi\u00e1n estallando en mil ascuas diminutas.</span><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">&nbsp;Deber\u00eda apenarte, pero no lo hace. Ahora todo carece de importancia: tus preocupaciones, tus anhelos, tus penas. Todo es insignificante en comparaci\u00f3n con lo que te has convertido.</span></p><p style=\"text-align: justify; \"><span style=\"color: var(--text-color); font-size: 1rem; background-color: var(--widget-background);\">Te unes a los renegados, a los que murieron rechazados; sus almas resentidas son ahora tus hermanas. Eres parte de un ser inmortal cuya \u00fanica amenaza, el&nbsp;</span><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">objeto que&nbsp;</span><span style=\"color: var(--text-color); font-size: 1rem; background-color: var(--widget-background);\">podr\u00eda confinaros de nuevo a la no existencia entre el mundo de los vivos y el de los muertos, se ha desintegrado. </span></p><p style=\"text-align: justify; \"><span style=\"color: var(--text-color); font-size: 1rem; background-color: var(--widget-background);\">Eres libre. Sois libres. Y gracias a ti, imparables.</span></p>"
+          "texto": "<p style=\"text-align: justify; \">The pain is brief. Your body quickly breaks down into countless vaporous threads, fusing with the fog; <span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\"lhe last thing you see with your mortal eyes is the heart of the guardian bursting into a thousand tiny embers.</span><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">&nbsp;You should feel sorrow, but you do not. All your concerns, desires, and pains are meaningless in comparison to what you have become. </span></p><p style=\"text-align: justify; \"><span style=\"color: var(--text-color); font-size: 1rem; background-color: var(--widget-background);\">You join the renegades, those who died rejected; their bitter souls are now your sisters. </span><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">You belong to an immortal entity </span><span style=\"color: var(--text-color); font-size: 1rem; background-color: var(--widget-background);\">whose sole threat —the object that might have bound you again to nonexistence between the living and the dead— has crumbled. </span></p><p style=\"text-align: justify; \"><span style=\"color: var(--text-color); font-size: 1rem; background-color: var(--widget-background);\">You are free. You are all free. And thanks to you, unstoppable.</span></p>"
         },
         {
           "test": false,
@@ -5937,10 +5937,10 @@
           "posicion": 2,
           "titulo": "",
           "enlaces": [],
-          "texto": "<p style=\"text-align: center; \"><b style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\"><br></b></p><p style=\"text-align: center; \"><b style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">FIN</b></p><p style=\"text-align: center; \"><br></p>"
+          "texto": "<p style=\"text-align: center; \"><b style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\"><br></b></p><p style=\"text-align: center; \"><b style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">THE END</b></p><p style=\"text-align: center; \"><br></p>"
         }
       ],
-      "titulo": "Muerte con amuleto",
+      "titulo": "Death with amulet",
       "codigo": "0087",
       "estado": "L",
       "id": 20265
@@ -5978,7 +5978,7 @@
               "ancho": 12,
               "extra": "",
               "frame": "ppal",
-              "texto": "<p>Interpones el crucifijo</p>",
+              "texto": "<p>Raise the crucifix</p>",
               "destinoFallo": 0,
               "destinoExito": 20263,
               "consecuencias": [],
@@ -5991,7 +5991,7 @@
               "ancho": 12,
               "extra": "",
               "frame": "ppal",
-              "texto": "<p>Interpones la rel\u00edquia de Santa Teresa</p>",
+              "texto": "<p>Raise the relic of Saint Theresa</p>",
               "destinoFallo": 0,
               "destinoExito": 20264,
               "consecuencias": [],
@@ -6019,7 +6019,7 @@
               "ancho": 12,
               "extra": "",
               "frame": "ppal",
-              "texto": "<p>Interpones la cruz de bronce</p>",
+              "texto": "<p>Raise the bronze cross</p>",
               "destinoFallo": 0,
               "destinoExito": 19709,
               "consecuencias": [],
@@ -6044,10 +6044,10 @@
               "test": false
             }
           ],
-          "texto": "<p style=\"text-align: justify; \">Te acercas al hito. Ya a primera vista te das cuenta de que lleva clavado ah\u00ed mucho tiempo.</p><p style=\"text-align: justify;\"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">Manchas de musgo y l\u00edquenes tapizan la piedra vetusta y</span>, a pesar de que su secci\u00f3n se adivina cuadrada cerca de la base, el viento y la lluvia han desgatado su parte superior hasta despojarle de cualquier simetr\u00eda. Inspeccionas el hito buscando alg\u00fan tipo de inscripci\u00f3n, aunque dudas de que puedas ver nada bajo la espesura que lo recubre.\u00a0</p><p style=\"text-align: justify;\">Entonces te das cuenta de que alguien ha rasgado una cara entera de la piedra para descubrir los s\u00edmbolos que los l\u00edquenes ocultaban. Acercas tu linterna para tratar de leerlos pero no estan escritos ni siquiera en un alfabeto que te resulte familiar. Te esmeras, en vano, en extraer de ellos alg\u00fan sentido, hasta que reaparece la niebla para emborronarlos y su gemido atroz vuelve a golpearte.</p><p style=\"text-align: justify;\">Presa de un p\u00e1nico repentino arrancas a correr, pero no llegas lejos. Cada una de las mil voces de la niebla es una pu\u00f1alada hundida en tu cerebro.\u00a0<span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">Te desplomas en el fango, llev\u00e1ndote las manos a la cabeza, como si as\u00ed pudieras mantenerla de una sola pieza; tratas de gritar pero de tu boca s\u00f3lo emanan hilachas vaporosas. Como humo sin fuego, tu cuerpo se volatiliza y tu mente se hace a\u00f1icos con \u00e9l.</span></p>"
+          "texto": "<p style=\"text-align: justify; \">You approach the milestone. You can tell at first glance that it has been there for a very long time.</p><p style=\"text-align: justify;\"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">Moss and lichen cover its weathered surface, </span>and although its base is roughly square, wind and rain have worn away the upper portion, stripping it of any symmetry. You inspect the marker for some kind of inscription, though you doubt you will be able to see anything beneath the thick growth that covers it.</p><p style=\"text-align: justify;\">Then you realize that someone has scrapped away an entire face of the stone to reveal the symbols hidden beneath the lichens. You bring your latern closer to try to read them, but they are not written in any alphabet you recognize. You try, in vain, to make sense of them —until the fog returns, blurring the symbols once more, and its dreadful wail strikes you again.</p><p style=\"text-align: justify;\">Seized by sudden panic, you run away —but you do not get far. Each of the thousand voices in the fog drives a dagger into your brain. <span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">You collapse into the mud, clutching your head as if that could hold it together; you try to scream, but only wisps of vapor escape your mouth. Like smoke without fire, your body vanishes, and your mind shatters along with it.</span></p>"
         }
       ],
-      "titulo": "Investigas el hito",
+      "titulo": "Examine the milestone",
       "codigo": "0088",
       "estado": "L",
       "id": 20269
@@ -6068,7 +6068,7 @@
               "ancho": 12,
               "extra": "",
               "frame": "ppal",
-              "texto": "<p>Arrojas la gema al agua</p>",
+              "texto": "<p>Throw the gem into the water</p>",
               "destinoFallo": 0,
               "destinoExito": 20271,
               "consecuencias": [],
@@ -6096,7 +6096,7 @@
               "ancho": 12,
               "extra": "",
               "frame": "ppal",
-              "texto": "<p>Continuas andando por la orilla</p>",
+              "texto": "<p>Continue walking along the shore</p>",
               "destinoFallo": 0,
               "destinoExito": 20272,
               "consecuencias": [],
@@ -6106,10 +6106,10 @@
               "test": false
             }
           ],
-          "texto": "<p style=\"text-align: justify; \">Llegas a una laguna quieta y oscura; sus aguas parecen extenderse sin fin en las negras profundidades de la noche. Sobre los guijarros de la orilla<span style=\"color: var(--text-color); font-size: 1rem; background-color: var(--widget-background);\">&nbsp;se amontonan conglomerados de algas negras que no sabr\u00edas decir si est\u00e1n vivas o muertas.&nbsp;</span><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">E</span><span style=\"color: var(--text-color); font-size: 1rem; background-color: var(--widget-background);\">l hedor a descomposici\u00f3n es casi insoportable; n</span><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">i los resecos arbustos del p\u00e1ramo osan crecer aqu\u00ed.</span></p><p style=\"text-align: justify; \">Acercas el farol al agua, pero \u00e9sta rechaza tu luz como un espejo de basalto. Lo \u00fanico que logras ver son los jirones de la niebla reptando por la negra superficie, extendiendo sus retorcidos dedos hacia ti.</p>"
+          "texto": "<p style=\"text-align: justify; \">You arrive at a still, dark lagoon; its waters seem to stretch endlessly into the black depths of the night. <span style=\"color: var(--text-color); font-size: 1rem; background-color: var(--widget-background);\"> Along the shore, clusters of black algae pile up; you cannot tell whether they are alive or dead. </span><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\"></span><span style=\"color: var(--text-color); font-size: 1rem; background-color: var(--widget-background);\">The stench of decay is almost unbearable; </span><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">not even the withered shrubs of the moor dare to grow here.</span></p><p style=\"text-align: justify; \">You bring the lantern close to the water, but it rejects your light like a basalt mirror. The only thing you manage to see are shreds of fog crawling across the black surface, extending their twisted fingers towards you.</p>"
         }
       ],
-      "titulo": "Continuas hacia el agua",
+      "titulo": "Continue towards the water",
       "codigo": "0089",
       "estado": "L",
       "id": 20270
@@ -6140,10 +6140,10 @@
               "test": false
             }
           ],
-          "texto": "<p style=\"text-align: justify; \">El coraz\u00f3n del guardi\u00e1n resplandece en tu mano como un faro en medio de un oc\u00e9ano de tinieblas. Lo arrojas con todas tus fuerzas al centro de la laguna; la gema corta la negrura como un cometa hasta finalmente hundirse con un chapoteo en alg\u00fan lugar de la oscuridad.</p><p style=\"text-align: justify; \">Esperas en silencio. Te parece ver como si durante un instante las aguas resplandecieran con un leve tono rojizo, pero eso es todo. La niebla continua engros\u00e1ndose, acercando sus tent\u00e1culos a ti. No tan lejos esta vez vuelve a resonar su odioso lamento.</p>"
+          "texto": "<p style=\"text-align: justify; \">The heart of the guardian glows in your hand like a lighthouse in the middle of an ocean of darkness. You throw it with all your strength into the center of the lagoon; the gem cuts through the blackness like a comet, until it finally sinks with a splash somewhere into the darkness.</p><p style=\"text-align: justify; \">You wait in silence. For a moment, it seems as if the waters glimmer with a faint reddish hue, but that is all. The fog continues to thicken, drawing its tendrils closer to you. Not far away this time, its hateful wail echoes again.</p>"
         }
       ],
-      "titulo": "Arrojas la gema al agua",
+      "titulo": "Throw gem into water",
       "codigo": "0090",
       "estado": "L",
       "id": 20271
@@ -6164,7 +6164,7 @@
               "ancho": 12,
               "extra": "",
               "frame": "ppal",
-              "texto": "<p>Investigas la construcci\u00f3n</p>",
+              "texto": "<p>Investigate the structure</p>",
               "destinoFallo": 0,
               "destinoExito": 20273,
               "consecuencias": [],
@@ -6177,7 +6177,7 @@
               "ancho": 12,
               "extra": "",
               "frame": "ppal",
-              "texto": "<p>Continuas andando por la orilla</p>",
+              "texto": "<p>Continue walking along the shore</p>",
               "destinoFallo": 0,
               "destinoExito": 20274,
               "consecuencias": [],
@@ -6202,10 +6202,10 @@
               "test": false
             }
           ],
-          "texto": "<p style=\"text-align: justify; \">Caminas a cierta distancia de la orilla para evitar los repulsivos montones de descomposici\u00f3n. Las algas crujen, secas, bajo tus suelas. Parece que el nivel del agua es m\u00e1s bajo de lo que sol\u00eda ser.</p><p style=\"text-align: justify; \">La niebla se ha elevado como un miasma y flota a tu alrededor enganchando sus zarcillos a tu ropa. No es a\u00fan muy espesa <span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">pero su gemido ominoso resuena ya en la oscuridad. Te tapas un o\u00eddo con una mano; con la otra, sin embargo, debes sostener la linterna.</span></p><p style=\"text-align: justify; \">Entonces reparas en una construcci\u00f3n de color claro alz\u00e1ndose en las tinieblas que inundan la laguna, a un tiro de piedra de la orilla. Si quisieras investigarla tendr\u00edas que entrar en el agua.</p>"
+          "texto": "<p style=\"text-align: justify; \">You walk a short distance from the shore to avoid the repulsive piles of decay. The algae crunch, dry, beneath your soles. It seems the water level is lower than it used to be.</p><p style=\"text-align: justify; \">The fog has risen like a miasma, floating around you and snagging its tendrils on your clothing. <span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">It is not very thick yet, but its ominous moan already echoes through the darkness. You cover one ear with a hand; with the other, however, you must hold the lantern.</span></p><p style=\"text-align: justify; \">Then you notice a pale structure rising from the darkness that floods the lagoon, just a stone’s throw from the shore. If you wanted to investigate it, you would have to enter the water.</p>"
         }
       ],
-      "titulo": "Orilla laguna",
+      "titulo": "Lagoon shore",
       "codigo": "0091",
       "estado": "L",
       "id": 20272
@@ -6226,7 +6226,7 @@
               "ancho": 12,
               "extra": "",
               "frame": "ppal",
-              "texto": "<p>Depositas la gema en la mano del esqueleto</p>",
+              "texto": "<p>Place the gem in the hand of the skeleton</p>",
               "destinoFallo": 0,
               "destinoExito": 20276,
               "consecuencias": [],
@@ -6254,7 +6254,7 @@
               "ancho": 12,
               "extra": "",
               "frame": "ppal",
-              "texto": "<p>Vuelves y continuas andando por la orilla</p>",
+              "texto": "<p>Turn back and continue walking along the shore</p>",
               "destinoFallo": 0,
               "destinoExito": 20274,
               "consecuencias": [],
@@ -6279,10 +6279,10 @@
               "test": false
             }
           ],
-          "texto": "<p style=\"text-align: justify;\">Te adentras en las aguas turbias y malolientes, hundi\u00e9ndote hasta los tobillos en el inmundo colch\u00f3n de algas y barro que tapiza el fondo.&nbsp;<span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">Por suerte, la laguna no es muy profunda y</span><span style=\"color: var(--text-color); font-size: 1rem; background-color: var(--widget-background);\">&nbsp;cuando alcanzas tu objetivo apenas te cubre hasta la cintura.</span></p><p style=\"text-align: justify; \">Paseas tu lumbre por encima de la construcci\u00f3n para revelar que se trata de un t\u00famulo alargado, construido con piedras claras que obviamente no pertenecen a la laguna. Marcas de agua y mechones de algas colgando por doquier evidencian que estaba sumergido.</p><p style=\"text-align: justify; \">Alguien ha apartado una de las tres losas que lo tapaban. En su interior, medio cubierto por el lodo, descansa un esqueleto con una mano encima del pecho.</p>"
+          "texto": "<p style=\"text-align: justify;\">You wade into the murky, foul-smelling waters, sinking ankle-deep into the filthy mat of algae and mud that covers the bottom.&nbsp;<span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">Fortunately, the lagoon is not deep, </span><span style=\"color: var(--text-color); font-size: 1rem; background-color: var(--widget-background);\">and when you reach your goal, the water barely reaches your waist.</span></p><p style=\"text-align: justify; \">You sweep your light over the structure, revealing that it is an elongated mound, built from pale stones that clearly do not belong to the lagoon. Water stains and tufts of algae hanging everywhere show that it had been submerged.</p><p style=\"text-align: justify; \">Someone has moved one of the three slabs that covered it. Inside, half-buried in the mud, rests a skeleton with one hand placed on its chest.</p>"
         }
       ],
-      "titulo": "T\u00famulo",
+      "titulo": "Burrow",
       "codigo": "0092",
       "estado": "L",
       "id": 20273
@@ -6320,7 +6320,7 @@
               "ancho": 12,
               "extra": "",
               "frame": "ppal",
-              "texto": "<p>Interpones el crucifijo</p>",
+              "texto": "<p>Raise the crucifix</p>",
               "destinoFallo": 0,
               "destinoExito": 20263,
               "consecuencias": [],
@@ -6333,7 +6333,7 @@
               "ancho": 12,
               "extra": "",
               "frame": "ppal",
-              "texto": "<p>Interpones la rel\u00edquia de Santa Teresa</p>",
+              "texto": "<p>Raise the relic of Saint Theresa</p>",
               "destinoFallo": 0,
               "destinoExito": 20264,
               "consecuencias": [],
@@ -6361,7 +6361,7 @@
               "ancho": 12,
               "extra": "",
               "frame": "ppal",
-              "texto": "<p>Interpones la cruz de bronce</p>",
+              "texto": "<p>Raise the bronze cross</p>",
               "destinoFallo": 0,
               "destinoExito": 19709,
               "consecuencias": [],
@@ -6386,10 +6386,10 @@
               "test": false
             }
           ],
-          "texto": "<p style=\"text-align: justify; \">Contin\u00faas recorriendo la orilla de la laguna, aunque no llegas muy lejos.</p><p style=\"text-align: justify; \">Gritos agudos, graves, lamentos, risas, chillidos, un pandem\u00f3nium de voces retumba en tu cr\u00e1neo como un saco de guijarros. No puedes ver, no puedes sentir, las voces te llenan, te desbordan; en vano gritas y sacudes la cabeza para ahuyentarlas. Caes de bruces en el barro; tu mano, guiada por el \u00faltimo remanente de consciencia, busca una salvaci\u00f3n.</p>"
+          "texto": "<p style=\"text-align: justify; \">You continue along the shore of the lagoon, though you do not get far.</p><p style=\"text-align: justify; \">Shrill screams, deep moans, wails, laughter, shrieks —a pandemonium of voices pounds in your skull like a sack of pebbles. You cannot see, you cannot feel; the voices fill you, overwhelm you. You scream and shake your head in vain to drive them away. You fall face-first into the mud; your hand, guided by the last remnants of consciousness, reaches for salvation.</p>"
         }
       ],
-      "titulo": "Continuas andando por la orilla",
+      "titulo": "Continue walking along the shore",
       "codigo": "0093",
       "estado": "L",
       "id": 20274
@@ -6406,7 +6406,7 @@
           "posicion": 1,
           "titulo": "",
           "enlaces": [],
-          "texto": "<p style=\"text-align: justify; \">Extraes del zurr\u00f3n el coraz\u00f3n del guardi\u00e1n; sientes la gema c\u00e1lida en tu mano y sus vetas parecen fluir como r\u00edos carmes\u00edes bajo su superficie pulida.</p><p style=\"text-align: justify; \">La depositas, temblando, en la mano del esqueleto, bajo el lodo. Justo cuando la sueltas escuchas un crujir de huesos. El esqueleto <i>\u00bfse ha movido?</i></p><p style=\"text-align: justify; \">Pero no tienes tiempo para cavilaciones. De repente una cegadora deflagraci\u00f3n escarlata estalla en el t\u00famulo y se expande por la laguna, iluminando la noche de sangre. Despu\u00e9s, el viento. Una brutal fuerza de succi\u00f3n devuelve la niebla al limbo donde pertenece; los jirones pasan por tu lado a velocidad vertiginosa, sus gritos no son lamentos ahora, sino chillidos de rabia. </p><p style=\"text-align: justify; \">Te tapas los o\u00eddos pero a\u00fan as\u00ed sientes que la cabeza te va a estallar. Por suerte, todo acaba r\u00e1pido.</p><p style=\"text-align: justify; \">La noche vuelve a brillar fr\u00eda y limpia. En el aire fresco no hay rastro del hedor putrefacto que emanaba de la laguna. Recolocas las losas encima del t\u00famulo y recoges la linterna del agua. La soltaste cuando tu mano prefiri\u00f3 aferrarse al crucifijo.</p>"
+          "texto": "<p style=\"text-align: justify; \"You pull the heart of the guardian from your pouch; you feel the gem warm in your hand, its veins seeming to flow like crimson rivers beneath its polished surface.</p><p style=\"text-align: justify; \">You place it, trembling, in the skeleton’s hand, beneath the mud. Just as you let go, you hear a crack of bones. Has the skeleton <i>moved?</i></p><p style=\"text-align: justify; \">But there is no time for pondering. Suddenly, a blinding scarlet explosion erupts from the mound and spreads across the lagoon, bathing the night in blood-red light. Then, the wind —a brutal suction force pulls the fog back to the limbo where it belongs; the shreds whip past you at dizzying speed, their cries no longer laments, but screams of rage. </p><p style=\"text-align: justify; \">You cover your ears, yet you still feel as if your head is about to explode. Fortunately, it all ends quickly.</p><p style=\"text-align: justify; \">The night shines cold and clear once more. In the fresh air, there is no trace of the putrid stench that had risen from the lagoon. You replace the slabs over the mound and retrieve the lantern from the water. You had dropped it when your hand instinctively clutched the crucifix.</p>"
         },
         {
           "test": false,
@@ -6431,7 +6431,7 @@
           "posicion": 2,
           "titulo": "",
           "enlaces": [],
-          "texto": "<p style=\"text-align: justify;\">Te planteas si deber\u00edas volver a Huesos a pesar de que los lugare\u00f1os decidieron mandarte a una muerte segura. Sabes que obraron impelidos por el miedo y el af\u00e1n de proteger su vida y la de sus familias, pero a\u00fan as\u00ed lo \u00faltimo que deseas es<span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">&nbsp;encontrarte de nuevo con ellos.</span></p><p style=\"text-align: justify;\">Has devuelto el coraz\u00f3n a su lugar. Si vuelven a robarlo, las consecuencias ser\u00e1n un justo castigo para su avaricia. A ti te queda un largo camino por delante y te llevas la certeza de haber obrado bien.</p><p style=\"text-align: justify;\">As\u00ed que, sin perder ni un instante m\u00e1s, escurres como puedes tus ropas empapadas y emprendes la marcha dej\u00e1ndote guiar por la luna.</p><p style=\"text-align: justify;\">Tal vez ahora encuentres el camino correcto.</p><p><i>\u00a1BIEN HECHO!</i></p>"
+          "texto": "<p style=\"text-align: justify;\">You wonder whether you should return to Bones, even though the villagers had decided to send you to certain death. You know they acted out of fear and a desire to protect their lives and those of their families, yet the last thing you want is to face <span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">them again. </span></p><p style=\"text-align: justify;\">You have returned the heart to its rightful place. If it is ever stolen again, the consequences will be a just punishment for their greed. For you, a long journey lies ahead, and you carry with you the certainty of having done what was right.</p><p style=\"text-align: justify;\">So, without wasting another moment, you wring out your soaked clothes as best you can and set off, letting the moon guide you.</p><p style=\"text-align: justify;\">Perhaps now you will find the right path.</p><p><i>WELL DONE!</i></p>"
         },
         {
           "test": false,
@@ -6456,7 +6456,7 @@
           "posicion": 3,
           "titulo": "",
           "enlaces": [],
-          "texto": "<p><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">Deshaces el trecho hasta Huesos, tiritando bajo tus ropas empapadas, para</span>\u00a0avisar a los lugare\u00f1os de que sellen el t\u00famulo. Nadie, nunca m\u00e1s, debe perturbar el descanso de los muertos. </p><p>Aceptar\u00e1s, si te lo ofrecen, un taz\u00f3n de caldo para entrar tu calor.\u00a0<span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">Despu\u00e9s, seguir\u00e1s tu camino.</span></p><p><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">Tal vez ahora encuentres el correcto.</span></p><p><i>\u00a1BIEN HECHO!</i></p><p></p>"
+          "texto": "<p><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">You make your way back to Bones, shivering in your soaked clothes, to warn the villagers to seal the mound. No one, ever again, must disturb the rest of the dead. </p><p>You will accept, if offered, a warm bowl of broth.<span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">Afterwards, you continue on your way.</span></p><p><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">Perhaps now you will find the right path.</span></p><p><i>WELL DONE!</i></p><p></p>"
         },
         {
           "test": false,
@@ -6466,10 +6466,10 @@
           "posicion": 4,
           "titulo": "",
           "enlaces": [],
-          "texto": "<p style=\"text-align: center; \"><b style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\"><br></b></p><p style=\"text-align: center; \"><b style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">FIN</b></p><p style=\"text-align: center; \"><br></p>"
+          "texto": "<p style=\"text-align: center; \"><b style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\"><br></b></p><p style=\"text-align: center; \"><b style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">THE END</b></p><p style=\"text-align: center; \"><br></p>"
         }
       ],
-      "titulo": "Depositas la gema encima del esqueleto",
+      "titulo": "Place gem in skeleton's hand",
       "codigo": "0094",
       "estado": "L",
       "id": 20276
@@ -6543,10 +6543,10 @@
               "test": false
             }
           ],
-          "texto": "<p style=\"text-align: justify;\"><span style=\"color: var(--text-color); font-size: 1rem; background-color: var(--widget-background);\">Arrancas a correr sin ninguna direcci\u00f3n en concreto, con el \u00fanico prop\u00f3sito de dejar atr\u00e1s este infame cenagal. Tu linterna tintinea delante de ti como la lumbre de un nav\u00edo en un mar de niebla; s\u00f3lo los impactos de tus suelas atestiguan que no est\u00e1s cayendo por un vac\u00edo infinito.&nbsp;</span><span style=\"color: var(--text-color); font-size: 1rem; background-color: var(--widget-background);\">Pero la bruma no acaba nunca; es como si se extendiera a la medida de tus pasos.</span><br></p><p style=\"text-align: justify;\"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">No hay manera de escapar de ella, ni de sus gritos.</span></p>"
+          "texto": "<p style=\"text-align: justify;\"><span style=\"color: var(--text-color); font-size: 1rem; background-color: var(--widget-background);\">You break into a run with no particular direction, driven only by the desire to leave this infamous quagmire behind. Your lantern jingles ahead of you like the light of a ship on a foggy sea; only the thuds of your footsteps bear witness that you are not falling into a bottomless void.&nbsp;</span><span style=\"color: var(--text-color); font-size: 1rem; background-color: var(--widget-background);\">But the mist never ends; it seems to stretch to match the pace of your steps.</span><br></p><p style=\"text-align: justify;\"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">There is no way to escape it, nor its screams.</span></p>"
         }
       ],
-      "titulo": "Huyes de la laguna",
+      "titulo": "Flee from the lagoon",
       "codigo": "0100",
       "estado": "L",
       "id": 20283
