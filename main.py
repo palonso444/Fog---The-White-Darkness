@@ -1,21 +1,24 @@
 from os import path
 import sys
-from typing import Optional
+from typing import Optional, LiteralString
 
-from kivy.app import App    # type: ignore
-from kivy.uix.boxlayout import BoxLayout    # type: ignore
-from kivy.uix.scrollview import ScrollView  # type: ignore
-from kivy.uix.label import Label    # type: ignore
-from kivy.uix.button import Button  # type: ignore
-from kivy.core.text import LabelBase    # type: ignore
-from kivy.uix.image import Image    # type: ignore
+from kivy.app import App
+from kivy.uix.boxlayout import BoxLayout
+from kivy.uix.scrollview import ScrollView
+from kivy.uix.label import Label
+from kivy.uix.button import Button
+from kivy.core.text import LabelBase
+from kivy.uix.image import Image
 from kivy.uix.screenmanager import ScreenManager, Screen
 
 import json_utils    # type: ignore
 
-# this is needed to set the correct path to resources when compiling with Pyinstaller
-def get_resource_path(relative_path):
-
+def get_resource_path(relative_path) -> LiteralString | str | bytes:
+    """
+    Method needed to set the correct path to resources when compiling the app with Pyinstaller
+    :param relative_path: relative path to the game file
+    :return: the path to the resources
+    """
     if getattr(sys, 'frozen', False) and hasattr(sys, '_MEIPASS'):
         base_path = sys._MEIPASS
     else:
@@ -31,42 +34,91 @@ LabelBase.register(name = 'Chiller',
                    fn_regular= get_resource_path('fonts/Chiller.ttf'))
 
 # ALL OF THOSE CLASSES ARE DEFINED IN THE KV FILE
-class BaseTextLayout(BoxLayout):
+class BaseTextImageLayout(BoxLayout):
+    """
+    Base Layout for texts and images
+    """
     pass
 
 class BaseButtonLayout(BoxLayout):
+    """
+    Base Layout buttons
+    """
     pass
 
 class BaseTextLabel(Label):
+    """
+    Base Label for texts
+    """
     pass
 
 class BaseButton(Button):
+    """
+    Base Label for buttons
+    """
     pass
 
 class TitleLabel(Label):
+    """
+    Special Label for displaying the title of the Game in the StartMenu
+    """
+    pass
+
+class GameImage(Image):
+    """
+    Displays in-game images
+    """
     pass
 
 class ImageLayout(BoxLayout):
+    """
+    Layout for embedding individual in-game images
+    """
     pass
 
 class ScreenLayout(BoxLayout):
+    """
+    General Layout for GameScreens, contains GameTextImageLayout and GameButtonLayout
+    """
     pass
 
-class GameTextLayout(BaseTextLayout):
+class GameTextImageLayout(BaseTextImageLayout):
+    """
+    Layout for in-game texts and images, adapted to ScrollView
+    """
     pass
 
 class GameButtonLayout(BaseButtonLayout):
+    """
+    Layout for in-game buttons, adapted to ScrollView
+    """
     pass
 
-class GameLabel(BaseTextLabel):
+class GameText(BaseTextLabel):
+    """
+    Label for in-game texts
+    """
     pass
+
+class GameButton(BaseButton):
+    """
+    Buttons displayed during the game, not in the Menus
+    """
+    def __init__(self, fate: int, consequences: dict, **kwargs):
+        super().__init__(**kwargs)
+        self.fate: int = fate
+        self.consequences: dict = consequences
 
 class LanguageMenu(Screen):
+    """
+    Screen displaying the language selection menu
+    """
     pass
 
-
 class GameScreen(Screen):  # defined in the kv file
-
+    """
+    Class defining the Screes of the game, consisting of a ScreenLayout embedded in an ScrollView
+    """
     def __init__(self,**kwargs):
         super().__init__(**kwargs)
         self.layout: ScreenLayout = ScreenLayout()  # contains text and button layouts added by place_text() and place_buttons()
@@ -74,23 +126,17 @@ class GameScreen(Screen):  # defined in the kv file
         scroll.add_widget(self.layout)
         self.add_widget(scroll)
 
-
-class GameButton(BaseButton):
-
-    def __init__(self, fate: int, consequences: dict, **kwargs):
-        super().__init__(**kwargs)
-        self.fate: int = fate
-        self.consequences: dict = consequences
-
 class NieblaApp(App):
-
+    """
+    Class defining the game
+    """
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
         self.game_filename: Optional[str] = None
         self.story: Optional[dict] = None
         self.title: Optional[str] = None
         self.scenes: Optional[list[dict]] = None
-        self.all_variables: Optional[dict[str,int]] = None
+        self.variables: Optional[dict[str,int]] = None
         self.current_scene: Optional[dict] = None
         self.sm: Optional[ScreenManager] = None
 
@@ -101,92 +147,135 @@ class NieblaApp(App):
         return self.sm
 
     def start_game(self, rel_path: str) -> None:
+        """
+        Sets up App attributes and generates the first screen of the game
+        :param rel_path: relative path to the JSON containing the game
+        :return: None
+        """
         self.story = json_utils.read_json(get_resource_path(rel_path))
         self.title = self.story["titulo"]
         self.scenes = json_utils.get_scenes(self.story,
                                             formatted=True)  # removes html tags and introduces kivy markups
-        self.all_variables = json_utils.get_variables(self.scenes)
+        self.variables = json_utils.get_variables(self.scenes)
         self.current_scene = json_utils.get_intro(self.scenes)
         self._generate_screen()
 
-    def _generate_screen(self) -> None:
-
-        new_screen = GameScreen(name="current_screen")
-        self.place_text_and_images(new_screen)
-        self.place_buttons(new_screen)
-        self.sm.remove_widget(self.sm.get_screen(self.sm.current))
-        self.sm.add_widget(new_screen)
-
     def place_text_and_images(self, screen: Screen) -> None:
-
-        text_layout = GameTextLayout()
+        """
+        Wrapper to generate GameText and GameImage and organize them in their GameTextImageLayout
+        :param screen: Screen in which the text and images must be placed
+        :return: None
+        """
+        layout = GameTextImageLayout()
 
         if self.current_scene['id'] == json_utils.get_intro(self.scenes, id_only=True): #if start of the game, add title
             titledisplay = TitleLabel(text = self.title)
-            text_layout.add_widget(titledisplay)
+            layout.add_widget(titledisplay)
 
-        text_object = json_utils.get_text(self.current_scene)
+        game_obj: dict = json_utils.get_text(self.current_scene)
 
-        for text in text_object:
-            conditions = json_utils.get_conditions(text)
+        for obj in game_obj:
+            conditions: dict = json_utils.get_conditions(obj)
 
-            if json_utils.compare_conditions(self.all_variables, conditions):
+            if json_utils.compare_conditions(self.variables, conditions):
 
-                if text['texto'][:8] == '[$image]':  # if text is an image
-                    display = ImageLayout()  # images must be embedded in BoxLayouts in order to specify padding
-                    image_path = get_resource_path('pics/'+ text['texto'][8:])  # image folder must be named 'pics'
-                    image_display = Image(source = image_path)  # create Image label
-                    display.add_widget(image_display)  # embed Image label in BoxLayout
+                if obj["texto"][:8] == "[$image]":  # if image
+                    game_resource:ImageLayout = self._assemble_gameimage(img_path="pics/" + obj["texto"][8:])
 
-                else:  # if text is a text
-                    display = GameLabel(text=json_utils.align(text['texto'])[0],
-                                        halign=json_utils.align(text['texto'])[1])
+                else:  # if text
+                    game_resource:GameText = self._assemble_gametext(json_utils.align(obj["texto"]))
                 
-                consequences = json_utils.get_consequences(text)  # consequences are checked for both texts and images
-                self.all_variables.update(consequences)
-                text_layout.add_widget(display)
+                consequences: dict = json_utils.get_consequences(obj)  # consequences are checked for both texts and images
+                self.variables.update(consequences)
+                layout.add_widget(game_resource)
 
-        screen.layout.add_widget(text_layout)
+        screen.layout.add_widget(layout)
 
-    def place_buttons (self, screen: Screen) -> None:
-
-        button_layout = GameButtonLayout()
-
-        text_object = json_utils.get_text(self.current_scene)
-        links = json_utils.get_links(text_object[-1])  # links are always in last section of text
+    def place_gamebuttons (self, screen: Screen) -> None:
+        """
+        Wrapper method to generate GameButtons and organize them in their GameButtonLayout
+        :param screen: Screen in which the GameButtons must be placed
+        :return: None
+        """
+        layout = GameButtonLayout()
+        game_obj: dict = json_utils.get_text(self.current_scene)
+        links: list[dict] = json_utils.get_links(game_obj[-1])  # links are always found in last index of game_obj
 
         if len(links) == 0:
             intro_id = json_utils.get_intro(self.scenes, id_only=True)
-            links = [{'texto': 'Volver a empezar',
-                          'destinoExito': intro_id,
-                          'consecuencias': [],
-                          'condiciones': []}]
-            self.all_variables = {key: 0 for key in self.all_variables}  # sets to 0 all variables of the game
+            links = [{"texto":  "Volver a empezar",
+                                "destinoExito": intro_id,
+                                "consecuencias": [],
+                                "condiciones": []}]
+            self.variables = {key: 0 for key in self.variables}  # sets to 0 all variables of the game
 
         for link in links:
-            conditions = json_utils.get_conditions(link)
-            if json_utils.compare_conditions(self.all_variables, conditions):    #place button if conditions are met
-                button = GameButton(text=link['texto'], fate=link['destinoExito'],
-                                    consequences=json_utils.get_consequences(link))
-                button.bind(on_release=self.on_gamebutton_release)
-                button_layout.add_widget(button)
+            conditions:dict = json_utils.get_conditions(link)
 
-        screen.layout.add_widget(button_layout)
+            if json_utils.compare_conditions(self.variables, conditions):    #place button if conditions are met
+                gamebutton: GameButton = self._assemble_gamebutton(text=link["texto"], fate=link["destinoExito"],
+                                                      consequences=json_utils.get_consequences(link))
+                layout.add_widget(gamebutton)
+
+        screen.layout.add_widget(layout)
 
     def on_gamebutton_release(self, button: GameButton) -> None:
         """
         Controls what happens when a GameButton is activated. Must be implemented here within NieblaApp class because
-        it needs to NieblaApp.all_variables and NieblaApp.current_scene.
+        it needs to NieblaApp.variables and NieblaApp.current_scene.
         :param button: instance of the button activated
         :return: None
         """
-        self.all_variables.update(button.consequences)
-        self.current_scene = json_utils.get_scene(int(button.fate), self.scenes)
+        self.variables.update(button.consequences)
+        self.current_scene: dict = json_utils.get_scene(int(button.fate), self.scenes)
         self._generate_screen()
 
+    def _generate_screen(self) -> None:
+        """
+        Generates a new game screen and places it to the ScreenManager
+        :return: None
+        """
+        new_screen = GameScreen(name="current_screen")
+        self.place_text_and_images(new_screen)
+        self.place_gamebuttons(new_screen)
+        self.sm.remove_widget(self.sm.get_screen(self.sm.current))
+        self.sm.add_widget(new_screen)
+
+    @staticmethod
+    def _assemble_gametext(game_obj_section: dict) -> GameText:
+        """
+        Assembles a TextLabel with the game text at leaves it ready to place in the GameLayout
+        :param game_obj_section: section from the game_obj the text to display
+        :return: GameLabel instance containing the text
+        """
+        return GameText(text=game_obj_section[0], halign=game_obj_section[1])
+
+    def _assemble_gamebutton(self, text: str, fate: int, consequences: dict) -> GameButton:
+        """
+        Assembles a GameButton at leaves it ready to place in the ButtonLayout
+        :param text: text of the GameButton
+        :param fate: section id where GameButton leads when pressed
+        :param consequences: consequences of the pressing of the GameButton
+        :return: GameButton instance
+        """
+        gamebutton = GameButton(text=text, fate=fate, consequences=consequences)
+        gamebutton.bind(on_release=self.on_gamebutton_release)
+        return gamebutton
+
+    @staticmethod
+    def _assemble_gameimage(img_path: str) -> ImageLayout:
+        """
+        Assembles a GameImage at leaves it ready to place in the GameLayout
+        :param img_path: path to the png image
+        :return: the Image embedded in its own ImageLayout
+        """
+        layout = ImageLayout()  # images must be embedded in BoxLayouts in order to specify padding
+        image_path = get_resource_path(img_path)  # image folder must be named "pics"
+        gameimage = GameImage(source=image_path)
+        layout.add_widget(gameimage)
+        return layout
 
 ######################################################### START APP ###################################################
-
 
 if __name__ == '__main__':
     NieblaApp().run()

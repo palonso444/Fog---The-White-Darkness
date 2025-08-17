@@ -1,5 +1,5 @@
     
-<BaseTextLayout>:
+<BaseTextImageLayout>:
     orientation: "vertical"
     padding: "25dp", "50dp","25dp","40dp"  # left, top, right, and bottom. If only one value, same for all
 
@@ -31,7 +31,7 @@
     size_hint: 1, None
     height: self.minimum_height
 
-<GameTextLayout>:  # layout for organizing text and images (GameLabel)
+<GameTextImageLayout>:  # layout for organizing text and images (GameLabel)
     size_hint: 1, None
     height: self.minimum_height
 
@@ -39,16 +39,18 @@
     size_hint: 1, None
     height: self.minimum_height
 
-<ImageLayout>:  # layout for organizing in-game pictures
+<ImageLayout>:  # layout for organizing individual in-game pictures
     padding: "0dp", "0dp","0dp","25dp"
+    size_hint: 1, None
+    height: self.minimum_height
 
-<GameLabel>:  # displays in-game text and pictures
+<GameText>:  # displays in-game text
     markup: True
     size_hint: 1, None
     text_size: self.width, None
     height: self.texture_size[1]
 
-<ImageLabel>:  # displays in-game pictures
+<GameImage>:  # displays in-game pictures
     halign: "center"
     size_hint: 1, None
     size: self.texture_size
@@ -61,7 +63,7 @@
 <LanguageMenu>
     BoxLayout:
         orientation: "vertical"
-        BaseTextLayout:
+        BaseTextImageLayout:
             BaseTextLabel:
                 font_name: "Vollkorn"
                 font_size: "40sp"
