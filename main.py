@@ -1,6 +1,7 @@
 from os import path
 import sys
 from typing import Optional, LiteralString
+from json import dump, load
 
 from kivy.app import App
 from kivy.uix.boxlayout import BoxLayout
@@ -11,7 +12,7 @@ from kivy.core.text import LabelBase
 from kivy.uix.image import Image
 from kivy.uix.screenmanager import ScreenManager, Screen
 
-import json_utils    # type: ignore
+import json_utils
 
 def get_resource_path(relative_path) -> LiteralString | str | bytes:
     """
@@ -54,7 +55,7 @@ class BaseTextLabel(Label):
 
 class BaseButton(Button):
     """
-    Base Label for buttons
+    Base Button
     """
     pass
 
@@ -100,6 +101,59 @@ class GameText(BaseTextLabel):
     """
     pass
 
+class MenuButton(BaseButton):
+    """
+    Base Class for Buttons shown in menus
+    """
+    def __init__(self, **kwargs):
+        super().__init__(**kwargs)
+        if not callable(getattr(self, "get_text", None)):
+            raise NotImplementedError("All MenuButton child classes must implement 'get_text' method")
+
+    @staticmethod
+    def get_text(language: str) -> str:
+        """
+        Method returning the text of the MenuButton based on the language argument
+        (language selected in the LanguageMenu). Must be implemented in all child classes
+        :param language: selected language
+        :return: the text of the button
+        """
+        pass
+
+class StartGameButton(MenuButton):
+    """
+    Button stating (or restarting) the game
+    """
+    @staticmethod
+    def get_text(language: str) -> str:
+        """
+        See parent method docstring
+        """
+        match language:
+            case "english":
+                return "Start"
+            case "spanish":
+                return "Empezar"
+            case _:
+                raise ValueError(f"Invalid language argument '{language}'")
+
+class ContinueGameButton(MenuButton):
+    """
+    Button loading previous game
+    """
+    @staticmethod
+    def get_text(language: str) -> str:
+        """
+        See parent method docstring
+        """
+        match language:
+            case "english":
+                return "Continue"
+            case "spanish":
+                return "Continuar"
+            case _:
+                raise ValueError(f"Invalid language argument '{language}'")
+
 class GameButton(BaseButton):
     """
     Buttons displayed during the game, not in the Menus
@@ -110,6 +164,12 @@ class GameButton(BaseButton):
         self.consequences: dict = consequences
 
 class LanguageMenu(Screen):
+    """
+    Screen displaying the language selection menu
+    """
+    pass
+
+class StartMenu(Screen):
     """
     Screen displaying the language selection menu
     """
@@ -133,6 +193,7 @@ class NieblaApp(App):
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
         self.game_filename: Optional[str] = None
+        self.language: Optional[str] = None
         self.story: Optional[dict] = None
         self.title: Optional[str] = None
         self.scenes: Optional[list[dict]] = None
@@ -146,9 +207,58 @@ class NieblaApp(App):
         self.sm.current = "current_screen"
         return self.sm
 
-    def start_game(self, rel_path: str) -> None:
+    @property
+    def check_if_saved_game(self)->bool:
         """
-        Sets up App attributes and generates the first screen of the game
+        Checks if there is a saved game
+        :return: True if saved game, else False
+        """
+        return path.exists("saved_game.json")
+
+    def save_game(self) -> None:
+        """
+        Gets the game state and saves the game
+        :return: None
+        """
+        game_state = dict()
+
+        # Scenes in both languages must be saved in case the language is changed before loading game
+        match self.language:
+            case "english":
+                game_state["current_scene_english"] = self.current_scene
+                game_state["current_scene_spanish"] = json_utils.get_scene(self.current_scene["id"],
+                                                                           json_utils.read_json(get_resource_path
+                                                                                                ("languages/Niebla.json"))["escenas"])
+            case "spanish":
+                game_state["current_scene_spanish"] = self.current_scene
+                game_state["current_scene_english"] = json_utils.get_scene(self.current_scene["id"],
+                                                                           json_utils.read_json(get_resource_path
+                                                                                                ("languages/Fog.json"))["escenas"])
+
+        game_state["variables"] = self.variables
+        with open("saved_game.json", "w") as f:
+            dump(game_state, f, indent=4)
+
+    def load_game(self) -> None:
+        """
+        Overwrites the game state according to the saved_game.json file and generates the first screen of loaded game
+        :return: None
+        """
+        with open("saved_game.json","r") as f:
+            game_state: dict = load(f)
+
+        match self.language:
+            case "english":
+                self.current_scene = game_state["current_scene_english"]
+            case "spanish":
+                self.current_scene = game_state["current_scene_spanish"]
+
+        self.variables = game_state["variables"]
+        self._generate_screen()
+
+    def setup_game(self, rel_path) -> None:
+        """
+        Sets up App (game) attributes
         :param rel_path: relative path to the JSON containing the game
         :return: None
         """
@@ -157,6 +267,21 @@ class NieblaApp(App):
         self.scenes = json_utils.get_scenes(self.story,
                                             formatted=True)  # removes html tags and introduces kivy markups
         self.variables = json_utils.get_variables(self.scenes)
+
+    def show_start_menu(self) -> None:
+        """
+        Shows the game Start Menu
+        :return: None
+        """
+        new_screen = StartMenu(name="current_screen")
+        self.sm.remove_widget(self.sm.get_screen(self.sm.current))
+        self.sm.add_widget(new_screen)
+
+    def start_game(self) -> None:
+        """
+        Sets up App attributes and generates the first screen of the game
+        :return: None
+        """
         self.current_scene = json_utils.get_intro(self.scenes)
         self._generate_screen()
 
@@ -167,11 +292,6 @@ class NieblaApp(App):
         :return: None
         """
         layout = GameTextImageLayout()
-
-        if self.current_scene['id'] == json_utils.get_intro(self.scenes, id_only=True): #if start of the game, add title
-            titledisplay = TitleLabel(text = self.title)
-            layout.add_widget(titledisplay)
-
         game_obj: dict = json_utils.get_text(self.current_scene)
 
         for obj in game_obj:
@@ -185,7 +305,7 @@ class NieblaApp(App):
                 else:  # if text
                     game_resource:GameText = self._assemble_gametext(json_utils.align(obj["texto"]))
                 
-                consequences: dict = json_utils.get_consequences(obj)  # consequences are checked for both texts and images
+                consequences: dict = json_utils.get_consequences(obj)  # consequences checked for both texts and images
                 self.variables.update(consequences)
                 layout.add_widget(game_resource)
 
@@ -203,18 +323,23 @@ class NieblaApp(App):
 
         if len(links) == 0:
             intro_id = json_utils.get_intro(self.scenes, id_only=True)
-            links = [{"texto":  "Volver a empezar",
-                                "destinoExito": intro_id,
-                                "consecuencias": [],
-                                "condiciones": []}]
+            links = [
+                {
+                    "texto":  "Volver a empezar",
+                    "destinoExito": intro_id,
+                    "consecuencias": [],
+                    "condiciones": []
+                }
+            ]
             self.variables = {key: 0 for key in self.variables}  # sets to 0 all variables of the game
 
         for link in links:
             conditions:dict = json_utils.get_conditions(link)
 
             if json_utils.compare_conditions(self.variables, conditions):    #place button if conditions are met
-                gamebutton: GameButton = self._assemble_gamebutton(text=link["texto"], fate=link["destinoExito"],
-                                                      consequences=json_utils.get_consequences(link))
+                gamebutton: GameButton = self._assemble_gamebutton(text=link["texto"],
+                                                                   fate=link["destinoExito"],
+                                                                   consequences=json_utils.get_consequences(link))
                 layout.add_widget(gamebutton)
 
         screen.layout.add_widget(layout)
@@ -228,6 +353,7 @@ class NieblaApp(App):
         """
         self.variables.update(button.consequences)
         self.current_scene: dict = json_utils.get_scene(int(button.fate), self.scenes)
+        self.save_game()
         self._generate_screen()
 
     def _generate_screen(self) -> None:
