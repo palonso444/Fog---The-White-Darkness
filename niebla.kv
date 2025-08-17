@@ -18,7 +18,7 @@
     padding: '25dp', '15dp', '25dp', '15dp'
     background_color: 1, 1, 1, 0.45
     size_hint: 1, None
-    height: "60sp"
+    height: "60dp"
 
 <TitleLabel>:  # displays the title of the game
     font_name: "Chiller"
@@ -56,7 +56,7 @@
 
 <MenuButton@BaseButton>:
     font_size: "30sp"
-    height: "100sp"
+    height: "100dp"
 
 <LanguageMenu>
     BoxLayout:
@@ -69,6 +69,7 @@
         BaseButtonLayout:
             MenuButton:
                 text: "English"
+                on_release: app.start_game("languages/Fog.json")
             MenuButton:
                 text: "Español"
-                on_release: app.start_game("Niebla.json")
+                on_release: app.start_game("languages/Niebla.json")
