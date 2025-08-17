@@ -246,7 +246,7 @@ class NieblaApp(App):
         """
         Assembles a TextLabel with the game text at leaves it ready to place in the GameLayout
         :param game_obj_section: section from the game_obj the text to display
-        :return: GameLabel instance containing the text
+        :return: GameText instance containing the text
         """
         return GameText(text=game_obj_section[0], halign=game_obj_section[1])
 
