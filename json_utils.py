@@ -8,7 +8,7 @@ import json
 import re
 
 
-def read_json(path: str):
+def read_json(path):
 
     with open(path, 'r') as file:       #open json in read ('r') mode.
         jsonfile = json.load(file)
