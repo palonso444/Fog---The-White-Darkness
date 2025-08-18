@@ -1,4 +1,6 @@
-    
+#:import StartGameButton main.StartGameButton
+#:import ContinueGameButton main.ContinueGameButton
+
 <BaseTextImageLayout>:
     orientation: "vertical"
     padding: "25dp", "50dp","25dp","40dp"  # left, top, right, and bottom. If only one value, same for all
@@ -13,18 +15,17 @@
     font_size: "21sp"
 
 <BaseButton>:
-    font_name: 'CreteRound'
-    font_size: '21sp'
-    padding: '25dp', '15dp', '25dp', '15dp'
+    font_name: "CreteRound"
+    font_size: "21sp"
+    padding: "25dp", "15dp", "25dp", "15dp"
     background_color: 1, 1, 1, 0.45
     size_hint: 1, None
     height: "60dp"
 
 <TitleLabel>:  # displays the title of the game
     font_name: "Chiller"
-    padding: "25dp", "50dp","25dp","80dp"
     halign: "center"
-    font_size: "120sp"
+    font_size: "200sp"
 
 <ScreenLayout>:  # main layout of the screen. Contains TextLayout and ButtonLayout and it is embedded in the ScrollView
     orientation: "vertical"
@@ -55,23 +56,46 @@
     size_hint: 1, None
     size: self.texture_size
 
-
-<MenuButton@BaseButton>:
+<MenuButton>:
     font_size: "30sp"
-    height: "100dp"
+    height: "80dp"
 
 <LanguageMenu>
     BoxLayout:
         orientation: "vertical"
         BaseTextImageLayout:
+            padding: "0dp", "75dp","0dp","0dp"
             BaseTextLabel:
                 font_name: "Vollkorn"
                 font_size: "40sp"
-                text: "Choose the language"
+                text: "Select language"
         BaseButtonLayout:
             MenuButton:
                 text: "English"
-                on_release: app.start_game("languages/Fog.json")
+                on_release:
+                    app.language = "english"
+                    app.setup_game("languages/Fog.json")
+                    app.show_start_menu()
             MenuButton:
                 text: "Español"
-                on_release: app.start_game("languages/Niebla.json")
+                on_release:
+                    app.language = "spanish"
+                    app.setup_game("languages/Niebla.json")
+                    app.show_start_menu()
+
+<StartMenu>
+    BoxLayout:
+        orientation: "vertical"
+        BaseTextImageLayout:
+            padding: "0dp", "70dp","0dp","0dp"
+            TitleLabel:
+                text: app.title
+        BaseButtonLayout:
+            StartGameButton:
+                text: self.get_text(app.language)
+                on_release: app.start_game()
+            ContinueGameButton:
+                disabled: False if app.check_if_saved_game else True
+                text: self.get_text(app.language)
+                on_release:
+                    app.load_game()
