@@ -21,6 +21,9 @@
     background_color: 1, 1, 1, 0.45
     size_hint: 1, None
     height: "60dp"
+    text_size: self.size  # needed to align the text in Buttons
+    valign: "middle"
+    halign: "left"
 
 <TitleLabel>:  # displays the title of the game
     font_name: "Chiller"
@@ -58,7 +61,12 @@
 
 <MenuButton>:
     font_size: "30sp"
+    halign: "center"
     height: "80dp"
+
+<StartMenuButton>:
+    height: "60dp"
+    font_size: "21sp"
 
 <LanguageMenu>
     BoxLayout:

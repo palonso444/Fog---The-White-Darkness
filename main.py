@@ -3,7 +3,10 @@ import sys
 from typing import Optional, LiteralString
 from json import dump, load
 
+from kivy.input.providers.mouse import MouseMotionEvent
+
 from kivy.app import App
+from kivy.clock import Clock
 from kivy.uix.boxlayout import BoxLayout
 from kivy.uix.scrollview import ScrollView
 from kivy.uix.label import Label
@@ -224,9 +227,23 @@ class NieblaApp(App):
 
     def build(self) -> ScreenManager:
         self.sm = ScreenManager()
+        return self.sm
+
+    def on_start(self) -> None:
+        """
+        Schedules delayed start
+        :return: None
+        """
+        Clock.schedule_once(self.after_start, 1)
+
+    def after_start(self, dt) -> None:
+        """
+        This delayed start ensures no frozen black screen when launching the app
+        :param dt: delta time
+        :return: None
+        """
         self.sm.add_widget(LanguageMenu(name="current_screen"))
         self.sm.current = "current_screen"
-        return self.sm
 
     @property
     def check_if_saved_game(self)->bool:
