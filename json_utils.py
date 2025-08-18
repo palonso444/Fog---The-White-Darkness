@@ -36,14 +36,6 @@ def format_kivy_all(jsonfile):
 
     return jsonfile
 
-
-def get_scene(id, scenes):
-
-    for scene in scenes:
-        if scene['id'] == id:
-            return scene
-        
-
 def get_intro(scenes, id_only = False):
 
     links = get_all_links(scenes)
