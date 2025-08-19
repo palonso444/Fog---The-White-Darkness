@@ -3,8 +3,6 @@ import sys
 from typing import Optional, LiteralString
 from json import dump, load
 
-from kivy.input.providers.mouse import MouseMotionEvent
-
 from kivy.app import App
 from kivy.clock import Clock
 from kivy.uix.boxlayout import BoxLayout
@@ -231,12 +229,13 @@ class NieblaApp(App):
 
     def on_start(self) -> None:
         """
-        Schedules delayed start
+        Schedules app launch (works even at 0 seconds) to avoid black screen issue during app launching on Android.
+        See the following GitHub issue for more info: https://github.com/kivy/python-for-android/issues/2720
         :return: None
         """
-        Clock.schedule_once(self.after_start, 1)
+        Clock.schedule_once(self.launch_app, 0)
 
-    def after_start(self, dt) -> None:
+    def launch_app(self, dt) -> None:
         """
         This delayed start ensures no frozen black screen when launching the app
         :param dt: delta time

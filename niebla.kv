@@ -15,20 +15,21 @@
     font_size: "21sp"
 
 <BaseButton>:
+    adapt_to_text_height: True
     font_name: "CreteRound"
-    font_size: "21sp"
-    padding: "25dp", "15dp", "25dp", "15dp"
+    font_size: "20sp"
+    padding: "25dp", "17dp", "25dp", "17dp"
     background_color: 1, 1, 1, 0.45
     size_hint: 1, None
-    height: "60dp"
-    text_size: self.size  # needed to align the text in Buttons
+    height: self.texture_size[1] if self.adapt_to_text_height else self.height
+    text_size: self.width, None  # needed to align the text in Buttons. No y_hint to make it adapt to te text
     valign: "middle"
     halign: "left"
 
 <TitleLabel>:  # displays the title of the game
     font_name: "Chiller"
     halign: "center"
-    font_size: "200sp"
+    font_size: "150sp"
 
 <ScreenLayout>:  # main layout of the screen. Contains TextLayout and ButtonLayout and it is embedded in the ScrollView
     orientation: "vertical"
@@ -60,13 +61,15 @@
     size: self.texture_size
 
 <MenuButton>:
-    font_size: "30sp"
+    adapt_to_text_height: False  # allows overwriting height: self.texture_size[1] of BaseButton
+    font_size: "27sp"
+    size_hint_y: None
     halign: "center"
     height: "80dp"
 
 <StartMenuButton>:
-    height: "60dp"
-    font_size: "21sp"
+    adapt_to_text_height: True
+    font_size: "20sp"
 
 <LanguageMenu>
     BoxLayout:
