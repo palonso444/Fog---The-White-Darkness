@@ -229,11 +229,11 @@ class NieblaApp(App):
 
     def on_start(self) -> None:
         """
-        Schedules app launch (works even at 0 seconds) to avoid black screen issue during app launching on Android.
+        Schedules app launch in 1 second to avoid black screen issue during app launching on Android.
         See the following GitHub issue for more info: https://github.com/kivy/python-for-android/issues/2720
         :return: None
         """
-        Clock.schedule_once(self.launch_app, 0)
+        Clock.schedule_once(self.launch_app, 1)
 
     def launch_app(self, dt) -> None:
         """
