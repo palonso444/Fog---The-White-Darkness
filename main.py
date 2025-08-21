@@ -208,7 +208,7 @@ class GameScreen(Screen):  # defined in the kv file
         scroll.add_widget(self.layout)
         self.add_widget(scroll)
 
-class NieblaApp(App):
+class FogApp(App):
     """
     Class defining the game
     """
@@ -233,9 +233,9 @@ class NieblaApp(App):
         See the following GitHub issue for more info: https://github.com/kivy/python-for-android/issues/2720
         :return: None
         """
-        Clock.schedule_once(self.launch_app, 1)
+        Clock.schedule_once(self._launch_app, 1)
 
-    def launch_app(self, dt) -> None:
+    def _launch_app(self, dt) -> None:
         """
         This delayed start ensures no frozen black screen when launching the app
         :param dt: delta time
@@ -384,8 +384,8 @@ class NieblaApp(App):
 
     def on_gamebutton_release(self, button: GameButton) -> None:
         """
-        Controls what happens when a GameButton is activated. Must be implemented here within NieblaApp class because
-        it needs to NieblaApp.variables and NieblaApp.current_scene.
+        Controls what happens when a GameButton is activated. Must be implemented here within FogApp class because
+        it needs to FogApp.variables and FogApp.current_scene.
         :param button: instance of the button activated
         :return: None
         """
@@ -396,8 +396,8 @@ class NieblaApp(App):
 
     def on_startmenubutton_release(self, button: GameButton) -> None:
         """
-        Controls what happens when a StartMenuButton is activated. Must be implemented here within NieblaApp
-        class because it needs to NieblaApp.variables and NieblaApp.current_scene.
+        Controls what happens when a StartMenuButton is activated. Must be implemented here within FogApp
+        class because it needs to FogApp.variables and FogApp.current_scene.
         :param button: instance of the button activated
         :return: None
         """
@@ -463,4 +463,4 @@ class NieblaApp(App):
 ######################################################### START APP ###################################################
 
 if __name__ == '__main__':
-    NieblaApp().run()
+    FogApp().run()

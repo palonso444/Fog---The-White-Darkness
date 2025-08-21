@@ -6,7 +6,7 @@
 [app]
 
 # (str) Title of your application
-title = Niebla
+title = Fog
 
 # (str) Package name
 package.name = niebla
