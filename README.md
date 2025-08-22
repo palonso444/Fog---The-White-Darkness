@@ -1,14 +1,19 @@
-# Niebla - Viaje a la Oscuridad
+# Fog - The White Darkness
 
-Después de caminar casi toda la noche, presa del cansancio y tiritando de frío, llegas a una aldea desolada en medio del páramo oscuro... Una aldea dónde la niebla parece extenderse por las calles como dedos fantasmales.
+After walking almost all night, exhausted and shivering from the cold, you arrive at a desolate village in the middle of the dark moor... A village where the fog seems to stretch across the streets like ghostly fingers.
 
-Juego de terror basado en texto. Sólo tus decisiones determinarán tu salvación o tu condena
+A text-based horror game. Only your choices will determine your salvation or your doom.
 
-Links para descargarte el juego
-------------------------------
+Available in
+-------------
+English
+Spanish
+
+Download links
+---------------
 https://play.google.com/store/apps/details?id=com.appsbrivalles.niebla&hl=es_NI
 
-https://palonso444.itch.io/niebla
+https://palonso444.itch.io/fog
 
 
 ![XA3H9R](https://github.com/user-attachments/assets/67132481-8e31-4355-a434-2365674be8e5)
