@@ -7,6 +7,7 @@ A text-based horror game. Only your choices will determine your salvation or you
 Available in
 -------------
 English
+
 Spanish
 
 Download links
