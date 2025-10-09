@@ -53,7 +53,7 @@ def get_intro(scenes, id_only = False):
 
 def get_variables(scenes):
 
-    variables = dict()
+    variables: dict = {}
 
     for scene in scenes:
         for text in scene ['textos']:
@@ -78,7 +78,7 @@ def compare_conditions(variables, conditions):
 
 def get_conditions(item):
 
-    item_conditions = dict()
+    item_conditions: dict = {}
     for condition in item['condiciones']:
         item_conditions.update({condition['variable']: int(condition['valorComparar'])})
     return item_conditions
@@ -86,7 +86,7 @@ def get_conditions(item):
 
 def get_consequences(item):
 
-    item_consequences = dict()
+    item_consequences: dict = {}
     for consequence in item['consecuencias']:
         item_consequences.update({consequence['variable']: int(consequence['valor'])})
     return item_consequences
@@ -97,7 +97,7 @@ def get_consequences(item):
 
 def get_text(scene):
     
-    texts = list()
+    texts: list = []
     for text in scene ['textos']:
         texts.append(text)
     return texts
@@ -181,7 +181,7 @@ def get_all_links(scenes):
 
 def get_links(text):
 
-    links = list()
+    links: list = []
         
     for link in text['enlaces']:
         links.append(link)
@@ -191,7 +191,7 @@ def get_links(text):
 
 def get_links_fates(text):
 
-    links = dict()
+    links: dict = {}
     
     for link in text ['enlaces']:
         links.update({link['texto']: link['destinoExito']})

@@ -274,7 +274,7 @@ class FogApp(App):
         Gets the game state and saves the game
         :return: None
         """
-        game_state = dict()
+        game_state: dict ={}
         game_state["variables"] = self.variables
         game_state["current_scene_id"] = self.current_scene["id"]
         with open("saved_game.json", "w") as f:
@@ -299,7 +299,7 @@ class FogApp(App):
 
         self.variables = game_state["variables"]
         self.current_scene = self.get_scene(game_state["current_scene_id"])
-        self._generate_screen()
+        self.show_gamescreen()
 
     def setup_game(self, rel_path) -> None:
         """
@@ -313,22 +313,40 @@ class FogApp(App):
                                             formatted=True)  # removes html tags and introduces kivy markups
         self.variables = json_utils.get_variables(self.scenes)
 
-    def show_start_menu(self) -> None:
-        """
-        Shows the game Start Menu
-        :return: None
-        """
-        new_screen = StartMenu(name="current_screen")
-        self.sm.remove_widget(self.sm.get_screen(self.sm.current))
-        self.sm.add_widget(new_screen)
-
     def start_game(self) -> None:
         """
         Sets up App attributes and generates the first screen of the game
         :return: None
         """
         self.current_scene = json_utils.get_intro(self.scenes)
-        self._generate_screen()
+        self.show_gamescreen()
+
+    def show_start_menu(self) -> None:
+        """
+        Assembles the game start menu and places it to the ScreenManager
+        :return: None
+        """
+        new_screen = StartMenu(name="current_screen")
+        self._show_screen(new_screen)
+
+    def show_gamescreen(self) -> None:
+        """
+        Assembles a new game screen and places it to the ScreenManager
+        :return: None
+        """
+        new_screen = GameScreen(name="current_screen")
+        self.place_text_and_images(new_screen)
+        self.place_gamebuttons(new_screen)
+        self._show_screen(new_screen)
+
+    def _show_screen(self, new_screen: Screen) -> None:
+        """
+        Clears device screen and displays a new one
+        :param new_screen: new screen to display
+        :return: None
+        """
+        self.sm.remove_widget(self.sm.get_screen(self.sm.current))
+        self.sm.add_widget(new_screen)
 
     def place_text_and_images(self, screen: Screen) -> None:
         """
@@ -392,7 +410,7 @@ class FogApp(App):
         self.variables.update(button.consequences)
         self.current_scene: dict = self.get_scene(int(button.fate))
         self.save_game()
-        self._generate_screen()
+        self.show_gamescreen()
 
     def on_startmenubutton_release(self, button: GameButton) -> None:
         """
@@ -404,17 +422,6 @@ class FogApp(App):
         self.reset_variables()
         self.delete_saved_game()
         self.show_start_menu()
-
-    def _generate_screen(self) -> None:
-        """
-        Generates a new game screen and places it to the ScreenManager
-        :return: None
-        """
-        new_screen = GameScreen(name="current_screen")
-        self.place_text_and_images(new_screen)
-        self.place_gamebuttons(new_screen)
-        self.sm.remove_widget(self.sm.get_screen(self.sm.current))
-        self.sm.add_widget(new_screen)
 
     @staticmethod
     def _assemble_gametext(game_obj_section: dict) -> GameText:
