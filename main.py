@@ -5,15 +5,11 @@ from json import dump, load
 
 from kivy.app import App
 from kivy.clock import Clock
-from kivy.uix.boxlayout import BoxLayout
-from kivy.uix.scrollview import ScrollView
-from kivy.uix.label import Label
-from kivy.uix.button import Button
 from kivy.core.text import LabelBase
-from kivy.uix.image import Image
-from kivy.uix.screenmanager import ScreenManager, Screen
+from kivy.uix.screenmanager import ScreenManager
 
 import json_utils
+import widgets as wdg
 
 def get_resource_path(relative_path) -> LiteralString | str | bytes:
     """
@@ -34,179 +30,6 @@ LabelBase.register(name = 'CreteRound',
                    fn_regular= get_resource_path('fonts/CreteRound-Regular.ttf'))
 LabelBase.register(name = 'Chiller',
                    fn_regular= get_resource_path('fonts/Chiller.ttf'))
-
-# ALL OF THOSE CLASSES ARE DEFINED IN THE KV FILE
-class BaseTextImageLayout(BoxLayout):
-    """
-    Base Layout for texts and images
-    """
-    pass
-
-class BaseButtonLayout(BoxLayout):
-    """
-    Base Layout buttons
-    """
-    pass
-
-class BaseTextLabel(Label):
-    """
-    Base Label for texts
-    """
-    pass
-
-class BaseButton(Button):
-    """
-    Base Button
-    """
-    pass
-
-class TitleLabel(Label):
-    """
-    Special Label for displaying the title of the Game in the StartMenu
-    """
-    pass
-
-class GameImage(Image):
-    """
-    Displays in-game images
-    """
-    pass
-
-class ImageLayout(BoxLayout):
-    """
-    Layout for embedding individual in-game images
-    """
-    pass
-
-class ScreenLayout(BoxLayout):
-    """
-    General Layout for GameScreens, contains GameTextImageLayout and GameButtonLayout
-    """
-    pass
-
-class GameTextImageLayout(BaseTextImageLayout):
-    """
-    Layout for in-game texts and images, adapted to ScrollView
-    """
-    pass
-
-class GameButtonLayout(BaseButtonLayout):
-    """
-    Layout for in-game buttons, adapted to ScrollView
-    """
-    pass
-
-class GameText(BaseTextLabel):
-    """
-    Label for in-game texts
-    """
-    pass
-
-class MenuButton(BaseButton):
-    """
-    Base Class for Buttons shown in menus
-    """
-    def __init__(self, **kwargs):
-        super().__init__(**kwargs)
-        if not callable(getattr(self, "get_text", None)):
-            raise NotImplementedError("All MenuButton child classes must implement 'get_text' method")
-
-    @staticmethod
-    def get_text(language: str) -> str:
-        """
-        Method returning the text of the MenuButton based on the language argument
-        (language selected in the LanguageMenu). Must be implemented in all child classes
-        :param language: selected language
-        :return: the text of the button
-        """
-        pass
-
-class StartGameButton(MenuButton):
-    """
-    Button stating (or restarting) the game
-    """
-    @staticmethod
-    def get_text(language: str) -> str:
-        """
-        See parent method docstring
-        """
-        match language:
-            case "english":
-                return "Start"
-            case "spanish":
-                return "Empezar"
-            case _:
-                raise ValueError(f"Invalid language argument '{language}'")
-
-class ContinueGameButton(MenuButton):
-    """
-    Button loading previous game
-    """
-    @staticmethod
-    def get_text(language: str) -> str:
-        """
-        See parent method docstring
-        """
-        match language:
-            case "english":
-                return "Continue"
-            case "spanish":
-                return "Continuar"
-            case _:
-                raise ValueError(f"Invalid language argument '{language}'")
-
-class StartMenuButton(MenuButton):
-    """
-    Button leading to StartMenu
-    """
-    def __init__(self, language: str, **kwargs):
-        super().__init__(**kwargs)
-        self.text: str = self.get_text(language)
-
-    @staticmethod
-    def get_text(language: str) -> str:
-        """
-        See parent method docstring
-        """
-        match language:
-            case "english":
-                return "Restart"
-            case "spanish":
-                return "Volver a empezar"
-            case _:
-                raise ValueError(f"Invalid language argument '{language}'")
-
-class GameButton(BaseButton):
-    """
-    Buttons displayed during the game, not in the Menus
-    """
-    def __init__(self, fate: int, consequences: dict, **kwargs):
-        super().__init__(**kwargs)
-        self.fate: int = fate
-        self.consequences: dict = consequences
-
-class LanguageMenu(Screen):
-    """
-    Screen displaying the language selection menu
-    """
-    pass
-
-class StartMenu(Screen):
-    """
-    Screen displaying the language selection menu
-    """
-    pass
-
-class GameScreen(Screen):  # defined in the kv file
-    """
-    Class defining the Screes of the game, consisting of a ScreenLayout embedded in an ScrollView
-    """
-    def __init__(self,**kwargs):
-        super().__init__(**kwargs)
-        self.layout: ScreenLayout = ScreenLayout()  # contains text and button layouts added by place_text() and place_buttons()
-        scroll: ScrollView = ScrollView()
-        scroll.add_widget(self.layout)
-        self.add_widget(scroll)
 
 class FogApp(App):
     """
@@ -241,7 +64,7 @@ class FogApp(App):
         :param dt: delta time
         :return: None
         """
-        self.sm.add_widget(LanguageMenu(name="current_screen"))
+        self.sm.add_widget(wdg.LanguageMenu(name="current_screen"))
         self.sm.current = "current_screen"
 
     @property
@@ -274,9 +97,8 @@ class FogApp(App):
         Gets the game state and saves the game
         :return: None
         """
-        game_state: dict ={}
-        game_state["variables"] = self.variables
-        game_state["current_scene_id"] = self.current_scene["id"]
+        game_state: dict = {"variables": self.variables,
+                            "current_scene_id": self.current_scene["id"]}
         with open("saved_game.json", "w") as f:
             dump(game_state, f, indent=4)
 
@@ -326,7 +148,7 @@ class FogApp(App):
         Assembles the game start menu and places it to the ScreenManager
         :return: None
         """
-        new_screen = StartMenu(name="current_screen")
+        new_screen = wdg.StartMenu(name="current_screen")
         self._show_screen(new_screen)
 
     def show_gamescreen(self) -> None:
@@ -334,12 +156,12 @@ class FogApp(App):
         Assembles a new game screen and places it to the ScreenManager
         :return: None
         """
-        new_screen = GameScreen(name="current_screen")
+        new_screen = wdg.GameScreen(name="current_screen")
         self.place_text_and_images(new_screen)
         self.place_gamebuttons(new_screen)
         self._show_screen(new_screen)
 
-    def _show_screen(self, new_screen: Screen) -> None:
+    def _show_screen(self, new_screen: wdg.Screen) -> None:
         """
         Clears device screen and displays a new one
         :param new_screen: new screen to display
@@ -348,13 +170,13 @@ class FogApp(App):
         self.sm.remove_widget(self.sm.get_screen(self.sm.current))
         self.sm.add_widget(new_screen)
 
-    def place_text_and_images(self, screen: Screen) -> None:
+    def place_text_and_images(self, screen: wdg.Screen) -> None:
         """
         Wrapper to generate GameText and GameImage and organize them in their GameTextImageLayout
         :param screen: Screen in which the text and images must be placed
         :return: None
         """
-        layout = GameTextImageLayout()
+        layout = wdg.GameTextImageLayout()
         game_obj: dict = json_utils.get_text(self.current_scene)
 
         for obj in game_obj:
@@ -363,10 +185,10 @@ class FogApp(App):
             if json_utils.compare_conditions(self.variables, conditions):
 
                 if obj["texto"][:8] == "[$image]":  # if image
-                    game_resource:ImageLayout = self._assemble_gameimage(img_path="pics/" + obj["texto"][8:])
+                    game_resource: wdg.ImageLayout = self._assemble_gameimage(img_path="pics/" + obj["texto"][8:])
 
                 else:  # if text
-                    game_resource:GameText = self._assemble_gametext(json_utils.align(obj["texto"]))
+                    game_resource: wdg.GameText = self._assemble_gametext(json_utils.align(obj["texto"]))
                 
                 consequences: dict = json_utils.get_consequences(obj)  # consequences checked for both texts and images
                 self.variables.update(consequences)
@@ -374,13 +196,13 @@ class FogApp(App):
 
         screen.layout.add_widget(layout)
 
-    def place_gamebuttons (self, screen: Screen) -> None:
+    def place_gamebuttons (self, screen: wdg.Screen) -> None:
         """
         Wrapper method to generate GameButtons and organize them in their GameButtonLayout
         :param screen: Screen in which the GameButtons must be placed
         :return: None
         """
-        layout = GameButtonLayout()
+        layout = wdg.GameButtonLayout()
         game_obj: dict = json_utils.get_text(self.current_scene)
         links: list[dict] = json_utils.get_links(game_obj[-1])  # links are always found in last index of game_obj
 
@@ -393,14 +215,14 @@ class FogApp(App):
             conditions:dict = json_utils.get_conditions(link)
 
             if json_utils.compare_conditions(self.variables, conditions):    #place button if conditions are met
-                gamebutton: GameButton = self._assemble_gamebutton(text=link["texto"],
+                gamebutton: wdg.GameButton = self._assemble_gamebutton(text=link["texto"],
                                                                    fate=link["destinoExito"],
                                                                    consequences=json_utils.get_consequences(link))
                 layout.add_widget(gamebutton)
 
         screen.layout.add_widget(layout)
 
-    def on_gamebutton_release(self, button: GameButton) -> None:
+    def on_gamebutton_release(self, button: wdg.GameButton) -> None:
         """
         Controls what happens when a GameButton is activated. Must be implemented here within FogApp class because
         it needs to FogApp.variables and FogApp.current_scene.
@@ -412,7 +234,7 @@ class FogApp(App):
         self.save_game()
         self.show_gamescreen()
 
-    def on_startmenubutton_release(self, button: GameButton) -> None:
+    def on_startmenubutton_release(self, button: wdg.GameButton) -> None:
         """
         Controls what happens when a StartMenuButton is activated. Must be implemented here within FogApp
         class because it needs to FogApp.variables and FogApp.current_scene.
@@ -424,15 +246,15 @@ class FogApp(App):
         self.show_start_menu()
 
     @staticmethod
-    def _assemble_gametext(game_obj_section: dict) -> GameText:
+    def _assemble_gametext(game_obj_section: dict) -> wdg.GameText:
         """
         Assembles a TextLabel with the game text at leaves it ready to place in the GameLayout
         :param game_obj_section: section from the game_obj the text to display
         :return: GameText instance containing the text
         """
-        return GameText(text=game_obj_section[0], halign=game_obj_section[1])
+        return wdg.GameText(text=game_obj_section[0], halign=game_obj_section[1])
 
-    def _assemble_gamebutton(self, text: str, fate: int, consequences: dict) -> GameButton:
+    def _assemble_gamebutton(self, text: str, fate: int, consequences: dict) -> wdg.GameButton:
         """
         Assembles a GameButton and leaves it ready to place in the ButtonLayout
         :param text: text of the GameButton
@@ -440,30 +262,30 @@ class FogApp(App):
         :param consequences: consequences of the pressing of the GameButton
         :return: GameButton instance
         """
-        gamebutton = GameButton(text=text, fate=fate, consequences=consequences)
+        gamebutton = wdg.GameButton(text=text, fate=fate, consequences=consequences)
         gamebutton.bind(on_release=self.on_gamebutton_release)
         return gamebutton
 
-    def _assemble_startmenubutton(self, language: str) -> StartMenuButton:
+    def _assemble_startmenubutton(self, language: str) -> wdg.StartMenuButton:
         """
         Assembles a StartMenuButton at leaves it ready to place in the ButtonLayout
         :param language: language of the StartMenuButton text
         :return: StartMenuButton instance
         """
-        startmenubutton = StartMenuButton(language)
+        startmenubutton = wdg.StartMenuButton(language)
         startmenubutton.bind(on_release=self.on_startmenubutton_release)
         return startmenubutton
 
     @staticmethod
-    def _assemble_gameimage(img_path: str) -> ImageLayout:
+    def _assemble_gameimage(img_path: str) -> wdg.ImageLayout:
         """
         Assembles a GameImage at leaves it ready to place in the GameLayout
         :param img_path: path to the png image
         :return: the Image embedded in its own ImageLayout
         """
-        layout = ImageLayout()  # images must be embedded in BoxLayouts in order to specify padding
+        layout = wdg.ImageLayout()  # images must be embedded in BoxLayouts in order to specify padding
         image_path = get_resource_path(img_path)  # image folder must be named "pics"
-        gameimage = GameImage(source=image_path)
+        gameimage = wdg.GameImage(source=image_path)
         layout.add_widget(gameimage)
         return layout
 
