@@ -6,7 +6,7 @@ from json import dump, load
 from kivy.app import App
 from kivy.clock import Clock
 from kivy.core.text import LabelBase
-from kivy.uix.screenmanager import ScreenManager
+from kivy.uix.screenmanager import ScreenManager, FadeTransition
 
 import json_utils
 import widgets as wdg
@@ -47,7 +47,7 @@ class FogApp(App):
         self.sm: Optional[ScreenManager] = None
 
     def build(self) -> ScreenManager:
-        self.sm = ScreenManager()
+        self.sm = ScreenManager(transition=FadeTransition(duration=0.4))
         return self.sm
 
     def on_start(self) -> None:
@@ -145,30 +145,32 @@ class FogApp(App):
 
     def show_start_menu(self) -> None:
         """
-        Assembles the game start menu and places it to the ScreenManager
+        Assembles the game start menu and displays it
         :return: None
         """
-        new_screen = wdg.StartMenu(name="current_screen")
-        self._show_screen(new_screen)
+        next_screen = wdg.StartMenu(name="next_screen")
+        self._transition_screen(next_screen)
 
     def show_gamescreen(self) -> None:
         """
-        Assembles a new game screen and places it to the ScreenManager
+        Assembles the next game screen and displays it
         :return: None
         """
-        new_screen = wdg.GameScreen(name="current_screen")
-        self.place_text_and_images(new_screen)
-        self.place_gamebuttons(new_screen)
-        self._show_screen(new_screen)
+        next_screen = wdg.GameScreen(name="next_screen")
+        self.place_text_and_images(next_screen)
+        self.place_gamebuttons(next_screen)
+        self._transition_screen(next_screen)
 
-    def _show_screen(self, new_screen: wdg.Screen) -> None:
+    def _transition_screen(self, next_screen: wdg.Screen) -> None:
         """
-        Clears device screen and displays a new one
-        :param new_screen: new screen to display
+        Transitions softly from the current screen to the next screen
+        :param next_screen: next screen to be displayed
         :return: None
         """
-        self.sm.remove_widget(self.sm.get_screen(self.sm.current))
-        self.sm.add_widget(new_screen)
+        self.sm.add_widget(next_screen)
+        self.sm.current = "next_screen"
+        self.sm.remove_widget(self.sm.get_screen("current_screen"))
+        self.sm.get_screen("next_screen").name = "current_screen"
 
     def place_text_and_images(self, screen: wdg.Screen) -> None:
         """
