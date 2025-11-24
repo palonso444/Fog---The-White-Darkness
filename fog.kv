@@ -26,13 +26,14 @@
     font_name: "Chiller"
     halign: "center"
     font_size: "150sp"
+    text: app.title
 
 <ScreenLayout>:  # main layout of the screen. Contains TextLayout and ButtonLayout and it is embedded in the ScrollView
     orientation: "vertical"
     size_hint: 1, None
     height: self.minimum_height
 
-<GameTextImageLayout>:  # layout for organizing text and images (GameText and ImageLayout)
+<GameTextImageLayout>:  # layout for organizing text and images (GameTextLabel and ImageLayout)
     size_hint: 1, None
     height: self.minimum_height
 
@@ -45,7 +46,7 @@
     size_hint: 1, None
     height: self.minimum_height
 
-<GameText>:  # displays in-game text
+<GameTextLabel>:  # displays in-game text
     font_name: "Vollkorn"
     font_size: "21sp"
     markup: True
@@ -69,6 +70,16 @@
     adapt_to_text_height: True
     font_size: "20sp"
 
+<StartGameButton>
+    text: self.get_text(app.language)
+    on_release: app.start_game()
+
+<ContinueGameButton>
+    disabled: False if app.check_if_saved_game else True
+    text: self.get_text(app.language)
+    on_release:
+        app.load_game()
+
 <LanguageMenu>
     BoxLayout:
         orientation: "vertical"
@@ -91,20 +102,3 @@
                     app.language = "spanish"
                     app.setup_game("languages/Niebla.json")
                     app.show_start_menu()
-
-<StartMenu>
-    BoxLayout:
-        orientation: "vertical"
-        BaseTextImageLayout:
-            padding: "0dp", "70dp","0dp","0dp"
-            TitleLabel:
-                text: app.title
-        BaseButtonLayout:
-            StartGameButton:
-                text: self.get_text(app.language)
-                on_release: app.start_game()
-            ContinueGameButton:
-                disabled: False if app.check_if_saved_game else True
-                text: self.get_text(app.language)
-                on_release:
-                    app.load_game()

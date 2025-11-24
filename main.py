@@ -11,7 +11,7 @@ from kivy.uix.screenmanager import ScreenManager, FadeTransition
 import json_utils
 import widgets as wdg
 
-def get_resource_path(relative_path) -> LiteralString | str | bytes:
+def get_resource_path(relative_path: str) -> LiteralString | str | bytes:
     """
     Method needed to set the correct path to resources when compiling the app with Pyinstaller
     :param relative_path: relative path to the game file
@@ -47,7 +47,7 @@ class FogApp(App):
         self.sm: Optional[ScreenManager] = None
 
     def build(self) -> ScreenManager:
-        self.sm = ScreenManager(transition=FadeTransition(duration=0.4))
+        self.sm = ScreenManager(transition=FadeTransition(duration=0.35))
         return self.sm
 
     def on_start(self) -> None:
@@ -123,7 +123,7 @@ class FogApp(App):
         self.current_scene = self.get_scene(game_state["current_scene_id"])
         self.show_gamescreen()
 
-    def setup_game(self, rel_path) -> None:
+    def setup_game(self, rel_path: str) -> None:
         """
         Sets up App (game) attributes
         :param rel_path: relative path to the JSON containing the game
@@ -174,7 +174,7 @@ class FogApp(App):
 
     def place_text_and_images(self, screen: wdg.Screen) -> None:
         """
-        Wrapper to generate GameText and GameImage and organize them in their GameTextImageLayout
+        Wrapper to generate GameTextLabel and GameImage and organize them in their GameTextImageLayout
         :param screen: Screen in which the text and images must be placed
         :return: None
         """
@@ -190,7 +190,7 @@ class FogApp(App):
                     game_resource: wdg.ImageLayout = self._assemble_gameimage(img_path="pics/" + obj["texto"][8:])
 
                 else:  # if text
-                    game_resource: wdg.GameText = self._assemble_gametext(json_utils.align(obj["texto"]))
+                    game_resource: wdg.GameTextLabel = self._assemble_gametext(json_utils.align(obj["texto"]))
                 
                 consequences: dict = json_utils.get_consequences(obj)  # consequences checked for both texts and images
                 self.variables.update(consequences)
@@ -248,13 +248,13 @@ class FogApp(App):
         self.show_start_menu()
 
     @staticmethod
-    def _assemble_gametext(game_obj_section: dict) -> wdg.GameText:
+    def _assemble_gametext(game_obj_section: dict) -> wdg.GameTextLabel:
         """
         Assembles a TextLabel with the game text at leaves it ready to place in the GameLayout
         :param game_obj_section: section from the game_obj the text to display
-        :return: GameText instance containing the text
+        :return: GameTextLabel instance containing the text
         """
-        return wdg.GameText(text=game_obj_section[0], halign=game_obj_section[1])
+        return wdg.GameTextLabel(text=game_obj_section[0], halign=game_obj_section[1])
 
     def _assemble_gamebutton(self, text: str, fate: int, consequences: dict) -> wdg.GameButton:
         """
