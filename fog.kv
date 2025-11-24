@@ -10,10 +10,6 @@
     spacing: "10dp"  # space between widgets
     padding: "0dp", "0dp","0dp","55dp"
 
-<BaseTextLabel>:
-    font_name: "Vollkorn"
-    font_size: "21sp"
-
 <BaseButton>:
     adapt_to_text_height: True
     font_name: "CreteRound"
@@ -50,6 +46,8 @@
     height: self.minimum_height
 
 <GameText>:  # displays in-game text
+    font_name: "Vollkorn"
+    font_size: "21sp"
     markup: True
     size_hint: 1, None
     text_size: self.width, None
@@ -76,7 +74,7 @@
         orientation: "vertical"
         BaseTextImageLayout:
             padding: "0dp", "75dp","0dp","0dp"
-            BaseTextLabel:
+            Label:
                 font_name: "Vollkorn"
                 font_size: "40sp"
                 text: "Select language"

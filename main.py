@@ -148,8 +148,8 @@ class FogApp(App):
         Assembles the game start menu and displays it
         :return: None
         """
-        next_screen = wdg.StartMenu(name="next_screen")
-        self._transition_screen(next_screen)
+        self.sm.remove_widget(self.sm.get_screen("current_screen"))
+        self.sm.add_widget(wdg.StartMenu(name="current_screen"))
 
     def show_gamescreen(self) -> None:
         """
