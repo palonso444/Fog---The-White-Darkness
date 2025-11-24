@@ -168,6 +168,7 @@ class FogApp(App):
         :return: None
         """
         self.sm.add_widget(next_screen)
+        # self.sm.get_screen("current_screen").opacity = 0  # uncomment this to supress fading out of current_screen
         self.sm.current = "next_screen"
         self.sm.remove_widget(self.sm.get_screen("current_screen"))
         self.sm.get_screen("next_screen").name = "current_screen"
