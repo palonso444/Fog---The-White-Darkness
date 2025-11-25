@@ -29,36 +29,39 @@ class BaseButton(Button):
     """
     pass
 
-class FadingLabel(Label):
+class FadingMixin:
     """
-    Label that fades in. Event may be bound on_complete (when fading is completed)
-    :return: None
+    Mixin class that adds fading capabilities to Widget subclasses.
+    Event may be bound on_fading_complete. Usage example -> class TitleLabel(FadingMixin, Label):
     """
-    def __init__(self, on_complete: Optional[callable] = None, **kwargs):
+    def __init__(self, **kwargs):
         super().__init__(**kwargs)
-        self.opacity: float = 0.0  # start invisible
-        self.on_complete: Optional[callable] = on_complete
+        self.on_fading_complete = None
         if getattr(self, "duration", None) is None:
-            raise NotImplementedError("All FadingLabel child classes must define 'duration' attribute")
+            raise AttributeError("All FadingMixin child classes must define 'duration' attribute "
+                                 "before calling super()")
 
-    def _fade_in(self) -> None:
+    def _fade_in(self, duration: float) -> None:
         """
         Handles the fading in of the FadingLabel
+        :param duration: duration in seconds of the fading
         :return: None
         """
-        fading = Animation(opacity=1.0, duration=self.duration, transition="in_quad")
-        if self.on_complete is not None:
-            fading.bind(on_complete=self.on_complete)
+        fading = Animation(opacity=1.0, duration=duration, transition="in_quad")
+        if self.on_fading_complete is not None:
+            fading.bind(on_complete=self.on_fading_complete)
         fading.start(self)
 
-class TitleLabel(FadingLabel):
+class TitleLabel(FadingMixin, Label):
     """
     Special Label for displaying the title of the Game in the StartMenu
     """
-    def __init__(self, **kwargs):
-        self.duration: float = 4.0  # must be defined before super() to avoid NotImplementedError
+    def __init__(self, on_fading_complete: Optional[callable] = None, **kwargs):
+        self.duration: float = 4.0  # must be defined before super() to avoid AttributeError
         super().__init__(**kwargs)
-        self._fade_in()
+        self.opacity: float = 0.0  # start invisible
+        self.on_fading_complete = on_fading_complete
+        self._fade_in(self.duration)
 
 class GameImage(Image):
     """
@@ -197,7 +200,7 @@ class StartMenu(Screen):
         self.main_layout.add_widget(self.text_image_layout)
         self.main_layout.add_widget(self.button_layout)
         self.add_widget(self.main_layout)
-        self.text_image_layout.add_widget(TitleLabel(on_complete=self._show_buttons))
+        self.text_image_layout.add_widget(TitleLabel(on_fading_complete=self._show_buttons))
 
     def _show_buttons(self, animation: Animation, title_label: TitleLabel) -> None:
         """
