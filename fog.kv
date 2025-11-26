@@ -1,10 +1,6 @@
 #:import StartGameButton widgets.StartGameButton
 #:import ContinueGameButton widgets.ContinueGameButton
 
-<BaseTextImageLayout>:
-    orientation: "vertical"
-    padding: "25dp", "50dp","25dp","40dp"  # left, top, right, and bottom. If only one value, same for all
-
 <BaseButtonLayout>:
     orientation: "vertical"
     spacing: "10dp"  # space between widgets
@@ -22,6 +18,15 @@
     valign: "middle"
     halign: "left"
 
+<TitleLayout>:
+    orientation: "vertical"
+    padding: "0dp", "70dp","0dp","0dp"
+    size_hint: 1, 0.5
+
+<StartMenuButtonLayout>:
+    padding: "0dp", "70dp","0dp","0dp"
+    size_hint: 1, 0.5
+
 <TitleLabel>:  # displays the title of the game
     font_name: "Chiller"
     halign: "center"
@@ -35,6 +40,8 @@
     height: self.minimum_height
 
 <GameTextImageLayout>:  # layout for organizing text and images (GameTextLabel and ImageLayout)
+    orientation: "vertical"
+    padding: "25dp", "50dp","25dp","40dp"
     size_hint: 1, None
     height: self.minimum_height
 
@@ -71,20 +78,32 @@
     adapt_to_text_height: True
     font_size: "20sp"
 
+<StartMenuLayout>:
+    padding: "0dp", "0dp","0dp","5dp"
+
 <StartGameButton>
     text: self.get_text(app.language)
+    size_hint: 1, 0.4
     on_release: app.start_game()
 
 <ContinueGameButton>
     disabled: False if app.check_if_saved_game else True
     text: self.get_text(app.language)
+    size_hint: 1, 0.4
     on_release:
         app.load_game()
+
+<CopyrightLabel>
+    font_name: "Vollkorn"
+    font_size: "15sp"
+    text: "(c) AppsBrivalles 2025"
+    size_hint: 1, 0.2
 
 <LanguageMenu>
     BoxLayout:
         orientation: "vertical"
-        BaseTextImageLayout:
+        BoxLayout:
+            orientation: "vertical"
             padding: "0dp", "75dp","0dp","0dp"
             Label:
                 font_name: "Vollkorn"
