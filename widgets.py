@@ -59,7 +59,6 @@ class TitleLabel(FadingMixin, Label):
     def __init__(self, on_fading_complete: Optional[callable] = None, **kwargs):
         self.duration: float = 4.0  # must be defined before super() to avoid AttributeError
         super().__init__(**kwargs)
-        self.opacity: float = 0.0  # start invisible
         self.on_fading_complete = on_fading_complete
         self._fade_in(self.duration)
 
