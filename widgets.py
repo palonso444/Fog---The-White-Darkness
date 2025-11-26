@@ -7,16 +7,10 @@ from kivy.uix.button import Button
 from kivy.uix.image import Image
 from kivy.uix.screenmanager import Screen
 from kivy.animation import Animation
-from kivy.metrics import dp
 
 
 # ALL EMPTY CLASSES ARE DEFINED IN THE KV FILE. THE OTHERS MAY BE EXTENDED THERE AS WELL
-class BaseTextImageLayout(BoxLayout):
-    """
-    Base Layout for texts and images
-    """
-    pass
-
+# BASE CLASSES SHOULD NOT BE INSTANTIATED
 class BaseButtonLayout(BoxLayout):
     """
     Base Layout buttons
@@ -68,6 +62,24 @@ class GameImage(Image):
     """
     pass
 
+class StartMenuLayout(BoxLayout):
+    """
+    General layout for StartMenu
+    """
+    pass
+
+class TitleLayout(BoxLayout):
+    """
+    Layout for game title in StartMenu
+    """
+    pass
+
+class StartMenuButtonLayout(BaseButtonLayout):
+    """
+    Layout for buttons of StartMenu
+    """
+    pass
+
 class ImageLayout(BoxLayout):
     """
     Layout for embedding individual in-game images
@@ -80,7 +92,7 @@ class ScreenLayout(BoxLayout):
     """
     pass
 
-class GameTextImageLayout(BaseTextImageLayout):
+class GameTextImageLayout(BoxLayout):
     """
     Layout for in-game texts and images, adapted to ScrollView
     """
@@ -97,6 +109,21 @@ class GameTextLabel(Label):
     Label for in-game texts
     """
     pass
+
+class CopyrightLabel(Label):
+    """
+    Label for displaying copyright message at StartMenu
+    """
+    pass
+
+class GameButton(BaseButton):
+    """
+    Buttons displayed during the game, not in the Menus
+    """
+    def __init__(self, fate: int, consequences: dict, **kwargs):
+        super().__init__(**kwargs)
+        self.fate: int = fate
+        self.consequences: dict = consequences
 
 class MenuButton(BaseButton):
     """
@@ -172,15 +199,6 @@ class StartMenuButton(MenuButton):
             case _:
                 raise ValueError(f"Invalid language argument '{language}'")
 
-class GameButton(BaseButton):
-    """
-    Buttons displayed during the game, not in the Menus
-    """
-    def __init__(self, fate: int, consequences: dict, **kwargs):
-        super().__init__(**kwargs)
-        self.fate: int = fate
-        self.consequences: dict = consequences
-
 class LanguageMenu(Screen):
     """
     Screen displaying the language selection menu
@@ -193,13 +211,13 @@ class StartMenu(Screen):
     """
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
-        self.main_layout = BoxLayout(orientation="vertical")
-        self.text_image_layout = BaseTextImageLayout(padding=(dp(0), dp(70), dp(0), dp(0)))
-        self.button_layout = BaseButtonLayout()
-        self.main_layout.add_widget(self.text_image_layout)
+        self.main_layout = StartMenuLayout(orientation="vertical")
+        self.title_layout = TitleLayout()
+        self.button_layout = StartMenuButtonLayout()
+        self.main_layout.add_widget(self.title_layout)
         self.main_layout.add_widget(self.button_layout)
         self.add_widget(self.main_layout)
-        self.text_image_layout.add_widget(TitleLabel(on_fading_complete=self._show_buttons))
+        self.title_layout.add_widget(TitleLabel(on_fading_complete=self._show_buttons))
 
     def _show_buttons(self, animation: Animation, title_label: TitleLabel) -> None:
         """
@@ -210,6 +228,7 @@ class StartMenu(Screen):
         """
         self.button_layout.add_widget(StartGameButton())
         self.button_layout.add_widget(ContinueGameButton())
+        self.button_layout.add_widget(CopyrightLabel())
 
 class GameScreen(Screen):  # defined in the kv file
     """
