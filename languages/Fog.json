@@ -5145,22 +5145,7 @@
               "destinoExito": 19723,
               "consecuencias": [],
               "posicion": 1,
-              "condiciones": [
-                {
-                  "control": "==",
-                  "enlaceId": 31389,
-                  "textoId": 0,
-                  "descripcion": "posada_explorada=0",
-                  "escenaCodigo": "0076",
-                  "variable": "posada_explorada",
-                  "slug": "posada_explorada",
-                  "valorComparar": "0",
-                  "tipo": "",
-                  "tipoId": 0,
-                  "escenaId": 19722,
-                  "valor": "0"
-                }
-              ],
+              "condiciones": [],
               "siempreVisible": false,
               "test": false
             },
@@ -5173,22 +5158,7 @@
               "destinoExito": 19555,
               "consecuencias": [],
               "posicion": 2,
-              "condiciones": [
-                {
-                  "control": "==",
-                  "enlaceId": 31390,
-                  "textoId": 0,
-                  "descripcion": "posada_explorada=0",
-                  "escenaCodigo": "0076",
-                  "variable": "posada_explorada",
-                  "slug": "posada_explorada",
-                  "valorComparar": "0",
-                  "tipo": "",
-                  "tipoId": 0,
-                  "escenaId": 19722,
-                  "valor": "0"
-                }
-              ],
+              "condiciones": [],
               "siempreVisible": false,
               "test": false
             },
@@ -5215,62 +5185,6 @@
                   "tipoId": 0,
                   "escenaId": 19722,
                   "valor": "0"
-                }
-              ],
-              "siempreVisible": false,
-              "test": false
-            },
-            {
-              "ancho": 12,
-              "extra": "",
-              "frame": "ppal",
-              "texto": "<p>Go up the bell tower</p>",
-              "destinoFallo": 0,
-              "destinoExito": 19730,
-              "consecuencias": [],
-              "posicion": 4,
-              "condiciones": [
-                {
-                  "control": "==",
-                  "enlaceId": 31430,
-                  "textoId": 0,
-                  "descripcion": "posada_explorada=1",
-                  "escenaCodigo": "0076",
-                  "variable": "posada_explorada",
-                  "slug": "posada_explorada",
-                  "valorComparar": "1",
-                  "tipo": "",
-                  "tipoId": 0,
-                  "escenaId": 19722,
-                  "valor": "1"
-                }
-              ],
-              "siempreVisible": false,
-              "test": false
-            },
-            {
-              "ancho": 12,
-              "extra": "",
-              "frame": "ppal",
-              "texto": "<p>Search the sacristy</p>",
-              "destinoFallo": 0,
-              "destinoExito": 19730,
-              "consecuencias": [],
-              "posicion": 5,
-              "condiciones": [
-                {
-                  "control": "==",
-                  "enlaceId": 31432,
-                  "textoId": 0,
-                  "descripcion": "posada_explorada=1",
-                  "escenaCodigo": "0076",
-                  "variable": "posada_explorada",
-                  "slug": "posada_explorada",
-                  "valorComparar": "1",
-                  "tipo": "",
-                  "tipoId": 0,
-                  "escenaId": 19722,
-                  "valor": "1"
                 }
               ],
               "siempreVisible": false,
