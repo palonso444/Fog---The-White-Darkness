@@ -128,7 +128,7 @@
               "test": false
             }
           ],
-          "texto": "<p style=\"text-align: justify; \">La posada est\u00e1 abandonada. Consta de una \u00fanica sala que,\u00a0<span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">a juzgar por las mesas cubiertas de polvo y por la paja podrida que se amontona en los rincones, </span><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">serv\u00eda a la vez de comedor y dormitorio.\u00a0</span><span style=\"color: var(--text-color); font-size: 1rem; background-color: var(--widget-background);\">El hogar est\u00e1 apagado desde hace mucho tiempo; las cenizas fr\u00edas resplandecen plateadas bajo los rayos de luna que se cuelan por las ventanas.</span></p><p style=\"text-align: justify;\"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">Detr\u00e1s de una barra destartalada, una puerta cuelga de un solo gozne.</span></p>"
+          "texto": "<p style=\"text-align: justify; \">La posada consta de una \u00fanica sala que,\u00a0<span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">a juzgar por las mesas cubiertas de polvo y por la paja podrida que se amontona en los rincones, </span><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">serv\u00eda a la vez de comedor y dormitorio.\u00a0</span><span style=\"color: var(--text-color); font-size: 1rem; background-color: var(--widget-background);\">El hogar est\u00e1 apagado desde hace mucho tiempo; las cenizas fr\u00edas resplandecen plateadas bajo los rayos de luna que se cuelan por las ventanas.</span></p><p style=\"text-align: justify;\"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">Detr\u00e1s de una barra destartalada, una puerta cuelga de un solo gozne.</span></p>"
         }
       ],
       "titulo": "Entrar en la posada",
@@ -601,7 +601,7 @@
               "test": false
             }
           ],
-          "texto": "<p style=\"text-align: justify; \">Te encuentras en la calle mayor de Huesos. El edificio m\u00e1s notorio es una iglesia con un peque\u00f1o cementerio al lado y un ruinoso campanario que apunta hacia la luna como un dedo crispado. En el lado opuesto de la calle, sobre el umbral de una puerta derribada y flanqueada por ventanas oscuras, puede leerse la palabra <i>posada</i> escrita directamente sobre la piedra.</p><p style=\"text-align: justify;\">La calle se extiende hasta perderse en la oscuridad. En ninguna de las casas se aprecia luz.</p>"
+          "texto": "<p style=\"text-align: justify; \">Te encuentras en la calle mayor de Huesos. El edificio m\u00e1s notorio es una iglesia con un peque\u00f1o cementerio al lado y un ruinoso campanario que apunta hacia la luna como un dedo crispado. En el lado opuesto de la calle puede leerse la palabra <i>posada</i> escrita directamente sobre el umbral de una puerta derribada, flanqueada por ventanas oscuras donde telarañas cuelgan como cortinas fantasmales.</p><p style=\"text-align: justify;\">La calle se extiende hasta perderse en la oscuridad. En ninguna de las casas se aprecia luz.</p>"
         }
       ],
       "titulo": "Calle principal pueblo",

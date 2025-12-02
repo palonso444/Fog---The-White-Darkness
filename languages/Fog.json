@@ -128,7 +128,7 @@
               "test": false
             }
           ],
-          "texto": "<p style=\"text-align: justify; \">The inn is abandoned. It consists of a single room which, <span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">judging by the dust-covered tables and the rotting straw piled in the corners, </span><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">once served as both dining room and sleeping quarters. </span><span style=\"color: var(--text-color); font-size: 1rem; background-color: var(--widget-background);\">The hearth went cold long ago; the ashes gleam silver under the shafts of moonlight filtering through the windows.</span></p><p style=\"text-align: justify;\"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">Behind a decayed counter, a door hangs from a single hinge.</span></p>"
+          "texto": "<p style=\"text-align: justify; \">The inn consists of a single room which, <span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">judging by the dust-covered tables and the rotting straw piled in the corners, </span><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">once served as both dining room and sleeping quarters. </span><span style=\"color: var(--text-color); font-size: 1rem; background-color: var(--widget-background);\">The hearth went cold long ago; the ashes gleam silver under the shafts of moonlight filtering through the windows.</span></p><p style=\"text-align: justify;\"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">Behind a decayed counter, a door hangs from a single hinge.</span></p>"
         }
       ],
       "titulo": "Enter the inn",
@@ -601,7 +601,7 @@
               "test": false
             }
           ],
-          "texto": "<p style=\"text-align: justify; \">You find yourself on the main street of Bones. The most prominent building is a church with a small cemetery beside it and a crumbling bell tower that points towards the moon like a clenched finger. On the opposite side of the street, above a broken-down door flanked by dark windows, the word <i>inn</i> can be read, written directly on the stone.</p><p style=\"text-align: justify;\">The street stretches on until it disappears into the darkness. No light can be seen in any of the houses.</p>"
+          "texto": "<p style=\"text-align: justify; \">You find yourself on the main street of Bones. The most prominent building is a church with a small cemetery beside it and a crumbling bell tower that points towards the moon like a clenched finger. On the opposite side of the street, the word <i>inn</i> can be read written directly on the stone above a broken-down door, flanked by dark windows where cobwebs cling like ghostly curtains.</p><p style=\"text-align: justify;\">The street stretches on until it disappears into the darkness. No light can be seen in any of the houses.</p>"
         }
       ],
       "titulo": "Main street",
