@@ -1869,7 +1869,7 @@
               "ancho": 12,
               "extra": "",
               "frame": "ppal",
-              "texto": "<p>Go upstairs</p>",
+              "texto": "<p>Go upstairs to investigate</p>",
               "destinoFallo": 0,
               "destinoExito": 19511,
               "consecuencias": [
@@ -1914,7 +1914,7 @@
               "ancho": 12,
               "extra": "",
               "frame": "ppal",
-              "texto": "<p>Go upstairs</p>",
+              "texto": "<p>Go upstairs to investigate</p>",
               "destinoFallo": 0,
               "destinoExito": 19511,
               "consecuencias": [],
@@ -1939,7 +1939,7 @@
               "test": false
             }
           ],
-          "texto": "<p style=\"text-align: justify; \">Light, at last! </p><p style=\"text-align: justify; \">A flickering reddish glow escapes from the upper windows of a distant house.</p><p style=\"text-align: justify;\">The door is not locked. When you push it open, the sour stench of spoiled flesh assaults you. The light of your lantern reveals lifeless bodies hanging behind a counter stained with blotches. <span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\"></p><p>You find yourself in a butcher shop.</p></span></p><p style=\"text-align: justify;\">A narrow wooden staircase leads to the upper floor. The ceiling creaks under the footsteps of someone walking.</p>"
+          "texto": "<p style=\"text-align: justify; \">Light, at last! </p><p style=\"text-align: justify; \">A flickering reddish glow escapes from the upper windows of a distant house.</p><p style=\"text-align: justify;\">The door is not locked. When you push it open, the sour stench of spoiled flesh assaults you. The light of your lantern reveals lifeless bodies hanging behind a counter stained with blotches. <span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\"></p><p>You find yourself in a butcher shop.</p></span></p><p style=\"text-align: justify;\">A narrow wooden staircase leads to the upper floor. The ceiling creaks under the footsteps of someone walking slowly, as if that someone wanted to go unnoticed.</p>"
         }
       ],
       "titulo": "Butcher's house",

@@ -1869,7 +1869,7 @@
               "ancho": 12,
               "extra": "",
               "frame": "ppal",
-              "texto": "<p>Subes</p>",
+              "texto": "<p>Subes a investigar</p>",
               "destinoFallo": 0,
               "destinoExito": 19511,
               "consecuencias": [
@@ -1914,7 +1914,7 @@
               "ancho": 12,
               "extra": "",
               "frame": "ppal",
-              "texto": "<p>Subes</p>",
+              "texto": "<p>Subes a investigar</p>",
               "destinoFallo": 0,
               "destinoExito": 19511,
               "consecuencias": [],
@@ -1939,7 +1939,7 @@
               "test": false
             }
           ],
-          "texto": "<p style=\"text-align: justify; \">\u00a1Al fin luz! </p><p style=\"text-align: justify; \">De las ventanas superiores de una casa alejada se escapa un titilante resplandor rojizo.</p><p style=\"text-align: justify;\">La puerta no est\u00e1 cerrada y cuando la empujas te invade el hedor agrio de la carne pasada. Tu linterna revela los cuerpos sin vida que cuelgan detr\u00e1s de un mostrador cubierto de manchas.</p><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\"><p>Te encuentras en una carnicer\u00eda.</p></span></p><p style=\"text-align: justify;\">Una estrecha escalera de madera conduce al piso superior. El techo cruje bajo el caminar de alguien.</p>"
+          "texto": "<p style=\"text-align: justify; \">\u00a1Al fin luz! </p><p style=\"text-align: justify; \">De las ventanas superiores de una casa alejada se escapa un titilante resplandor rojizo.</p><p style=\"text-align: justify;\">La puerta no est\u00e1 cerrada y cuando la empujas te invade el hedor agrio de la carne pasada. Tu linterna revela los cuerpos sin vida que cuelgan detr\u00e1s de un mostrador cubierto de manchas.</p><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\"><p>Te encuentras en una carnicer\u00eda.</p></span></p><p style=\"text-align: justify;\">Una estrecha escalera de madera conduce al piso superior. El techo cruje bajo los pasos de alguien que camina lentamente, como si quisiera pasar desapercibido.</p>"
         }
       ],
       "titulo": "Casa del carnicero",
