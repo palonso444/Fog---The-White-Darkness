@@ -44,10 +44,13 @@ class FogApp(App):
         self.scenes: Optional[list[dict]] = None
         self.variables: Optional[dict[str,int]] = None
         self.current_scene: Optional[dict] = None
+
         self.sm: Optional[ScreenManager] = None
+        self.start_game_transition_time: float = 1.4  # transition duration to the first screen of the game
+        self.in_game_transition_time: float = 0.4  # transition duration between screens during game
 
     def build(self) -> ScreenManager:
-        self.sm = ScreenManager(transition=FadeTransition(duration=0.35))
+        self.sm = ScreenManager(transition=FadeTransition())
         return self.sm
 
     def on_start(self) -> None:
@@ -121,7 +124,7 @@ class FogApp(App):
 
         self.variables = game_state["variables"]
         self.current_scene = self.get_scene(game_state["current_scene_id"])
-        self.show_gamescreen()
+        self.show_gamescreen(self.start_game_transition_time)
 
     def setup_game(self, rel_path: str) -> None:
         """
@@ -141,7 +144,7 @@ class FogApp(App):
         :return: None
         """
         self.current_scene = json_utils.get_intro(self.scenes)
-        self.show_gamescreen()
+        self.show_gamescreen(self.start_game_transition_time)
 
     def show_start_menu(self) -> None:
         """
@@ -151,22 +154,25 @@ class FogApp(App):
         self.sm.remove_widget(self.sm.get_screen("current_screen"))
         self.sm.add_widget(wdg.StartMenu(name="current_screen"))
 
-    def show_gamescreen(self) -> None:
+    def show_gamescreen(self, transition_duration: float) -> None:
         """
         Assembles the next game screen and displays it
+        :param transition_duration: duration in seconds of the transition
         :return: None
         """
         next_screen = wdg.GameScreen(name="next_screen")
         self.place_text_and_images(next_screen)
         self.place_gamebuttons(next_screen)
-        self._transition_screen(next_screen)
+        self._transition_screen(next_screen, transition_duration)
 
-    def _transition_screen(self, next_screen: wdg.Screen) -> None:
+    def _transition_screen(self, next_screen: wdg.Screen, duration: float) -> None:
         """
         Transitions softly from the current screen to the next screen
         :param next_screen: next screen to be displayed
+        :param duration: duration in seconds of the transition
         :return: None
         """
+        self.sm.transition.duration = duration
         self.sm.add_widget(next_screen)
         # self.sm.get_screen("current_screen").opacity = 0  # uncomment this to supress fading out of current_screen
         self.sm.current = "next_screen"
@@ -235,7 +241,7 @@ class FogApp(App):
         self.variables.update(button.consequences)
         self.current_scene: dict = self.get_scene(int(button.fate))
         self.save_game()
-        self.show_gamescreen()
+        self.show_gamescreen(self.in_game_transition_time)
 
     def on_startmenubutton_release(self, button: wdg.GameButton) -> None:
         """
