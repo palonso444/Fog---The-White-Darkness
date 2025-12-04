@@ -38,7 +38,7 @@
               "test": false
             }
           ],
-          "texto": "<p style=\"text-align: justify; \">Your feet splash through the sodden earth; it is pitch-dark, and your travel lantern casts only a feeble light.<span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">&nbsp;</span><span style=\"color: var(--text-color); font-size: 1rem; background-color: var(--widget-background);\">You have run out of provisions, and have barely any coins left.</span><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">&nbsp;A curse slips out under your breath —by now, you should have reached somewhere.</span></p><p style=\"text-align: justify;\"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">You follow a muddy path that sinks into a valley. On either side stretches a moor dotted with shrubs whose long, thin branches, remind you of spider legs. You will find no shelter here. Huddling in your cloak, you shudder at the thought of sleeping in the open and waking at dawn shivering, your clothes soaked through.</span></p><p style=\"text-align: justify;\">Then you see it —a crooked sign, eaten away by moisture. You step closer and raise your lantern to read it. A single word: Bones. Not far ahead, you glimpse the broken silhouettes of the first houses. <span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">Jagged outlines etched against the dark curtain of the night.</span><span style=\"color: var(--text-color); font-size: 1rem; background-color: var(--widget-background);\">&nbsp;Pointed rooftops like teeth, chimneys gone cold. Bones. It is the first time come across this name. You must have strayed far from your route.</span></p><p style=\"text-align: justify;\">Your hand<span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">&nbsp;closes around the crucifix hanging from your neck. The feel of the ancient, weathered wood soothes you; it always has.</span></p><p style=\"text-align: justify; \"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">You fill your lungs with the cold air of the moor and walk towards the houses. A damp, foggy night, is coming...</span><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\"></span></p>"
+          "texto": "<p style=\"text-align: justify; \">Your feet splash through the sodden earth; it is pitch-dark, and your travel lantern casts only a feeble light.<span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">&nbsp;</span><span style=\"color: var(--text-color); font-size: 1rem; background-color: var(--widget-background);\">You have run out of provisions, and have barely any coins left.</span><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">&nbsp;A curse slips out under your breath —by now, you should have reached somewhere.</span></p><p style=\"text-align: justify;\"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">You follow a muddy path that sinks into a valley. On either side stretches a moor dotted with shrubs whose long, thin branches, remind you of spider legs. You will find no shelter here. Huddling in your cloak, you shudder at the thought of sleeping in the open and waking at dawn shivering, your clothes soaked through.</span></p><p style=\"text-align: justify;\">Then you see it —a crooked town sign, eaten away by moisture. You step closer and raise your lantern to read it. A single word: Bones. Not far ahead, you glimpse the broken silhouettes of the first houses. <span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">Jagged outlines etched against the dark curtain of the night.</span><span style=\"color: var(--text-color); font-size: 1rem; background-color: var(--widget-background);\">&nbsp;Pointed rooftops like teeth, chimneys gone cold. Bones. It is the first time come across this name. You must have strayed far from your route.</span></p><p style=\"text-align: justify;\">The town gives you a bad feeling, but where else can you go?</p><p style=\"text-align: justify;\">Your hand<span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">&nbsp;closes around the crucifix hanging from your neck. The feel of the ancient, weathered wood soothes you; it always has.</span></p><p style=\"text-align: justify; \"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">You fill your lungs with the cold air of the moor and walk towards the houses. A damp, foggy night, is coming...</span><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\"></span></p>"
         }
       ],
       "titulo": "Introduction",
@@ -128,7 +128,7 @@
               "test": false
             }
           ],
-          "texto": "<p style=\"text-align: justify; \">The inn is abandoned. It consists of a single room which, <span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">judging by the dust-covered tables and the rotting straw piled in the corners, </span><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">once served as both dining room and sleeping quarters. </span><span style=\"color: var(--text-color); font-size: 1rem; background-color: var(--widget-background);\">The hearth went cold long ago; the ashes gleam silver under the shafts of moonlight filtering through the windows.</span></p><p style=\"text-align: justify;\"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">Behind a decayed counter, a door hangs from a single hinge.</span></p>"
+          "texto": "<p style=\"text-align: justify; \">The inn consists of a single room which, <span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">judging by the dust-covered tables and the rotting straw piled in the corners, </span><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">once served as both dining room and sleeping quarters. </span><span style=\"color: var(--text-color); font-size: 1rem; background-color: var(--widget-background);\">The hearth went cold long ago; the ashes gleam silver under the shafts of moonlight filtering through the windows.</span></p><p style=\"text-align: justify;\"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">Behind a decayed counter, a door hangs from a single hinge.</span></p>"
         }
       ],
       "titulo": "Enter the inn",
@@ -601,7 +601,7 @@
               "test": false
             }
           ],
-          "texto": "<p style=\"text-align: justify; \">You find yourself on the main street of Bones. The most prominent building is a church with a small cemetery beside it and a crumbling bell tower that points towards the moon like a clenched finger. On the opposite side of the street, above a broken-down door flanked by dark windows, the word <i>inn</i> can be read, written directly on the stone.</p><p style=\"text-align: justify;\">The street stretches on until it disappears into the darkness. No light can be seen in any of the houses.</p>"
+          "texto": "<p style=\"text-align: justify; \">You find yourself on the main street of Bones. The most prominent building is a church with a small cemetery beside it and a crumbling bell tower that points towards the moon like a clenched finger. On the opposite side of the street, the word <i>inn</i> can be read written directly on the stone above a broken-down door, flanked by dark windows where cobwebs cling like ghostly curtains.</p><p style=\"text-align: justify;\">The street stretches on until it disappears into the darkness. No light can be seen in any of the houses.</p>"
         }
       ],
       "titulo": "Main street",
@@ -1643,7 +1643,7 @@
               "ancho": 12,
               "extra": "",
               "frame": "ppal",
-              "texto": "Do not blaspheme, Father. God has His reasons",
+              "texto": "Do not blaspheme, Father",
               "destinoFallo": 0,
               "destinoExito": 20018,
               "consecuencias": [],
@@ -1869,7 +1869,7 @@
               "ancho": 12,
               "extra": "",
               "frame": "ppal",
-              "texto": "<p>Go upstairs</p>",
+              "texto": "<p>Go upstairs to investigate</p>",
               "destinoFallo": 0,
               "destinoExito": 19511,
               "consecuencias": [
@@ -1914,7 +1914,7 @@
               "ancho": 12,
               "extra": "",
               "frame": "ppal",
-              "texto": "<p>Go upstairs</p>",
+              "texto": "<p>Go upstairs to investigate</p>",
               "destinoFallo": 0,
               "destinoExito": 19511,
               "consecuencias": [],
@@ -1939,7 +1939,7 @@
               "test": false
             }
           ],
-          "texto": "<p style=\"text-align: justify; \">Light, at last! </p><p style=\"text-align: justify; \">A flickering reddish glow escapes from the upper windows of a distant house.</p><p style=\"text-align: justify;\">The door is not locked. When you push it open, the sour stench of spoiled flesh assaults you. The light of your lantern reveals lifeless bodies hanging behind a counter stained with blotches. <span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\"></p><p>You find yourself in a butcher shop.</p></span></p><p style=\"text-align: justify;\">A narrow wooden staircase leads to the upper floor. The ceiling creaks under the footsteps of someone walking.</p>"
+          "texto": "<p style=\"text-align: justify; \">Light, at last! </p><p style=\"text-align: justify; \">A flickering reddish glow escapes from the upper windows of a distant house.</p><p style=\"text-align: justify;\">The door is not locked. When you push it open, the sour stench of spoiled flesh assaults you. The light of your lantern reveals lifeless bodies hanging behind a counter stained with blotches. <span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\"></p><p>You find yourself in a butcher shop.</p></span></p><p style=\"text-align: justify;\">A narrow wooden staircase leads to the upper floor. The ceiling creaks under the footsteps of someone walking slowly, as if that someone wanted to go unnoticed.</p>"
         }
       ],
       "titulo": "Butcher's house",
@@ -1986,7 +1986,7 @@
               "test": false
             }
           ],
-          "texto": "<p style=\"text-align: justify;\">You show the gem to the priest. Its crimson veins seem to pulse under the flickering light of the fire.</p><p style=\"text-align: justify;\">The priest opens his eyes in surprise, but weakly. His head wobbles.&nbsp;</p><p style=\"text-align: justify; \">\"That is... place it in his hand... <span style=\"color: var(--text-color); font-size: 1rem; background-color: var(--widget-background);\"><i>only</i> in his hand! Do not linger for anything!\", he manages to say&nbsp;</span><span style=\"color: var(--text-color); font-size: 1rem; background-color: var(--widget-background);\">just before&nbsp;</span><span style=\"color: var(--text-color); font-size: 1rem; background-color: var(--widget-background);\">vaporizing into a frayed cloud of mist. </span></p><p style=\"text-align: justify; \"><span style=\"color: var(--text-color); font-size: 1rem; background-color: var(--widget-background);\">All that remains of him is an empty cassock on the floor.</span></p><p style=\"text-align: justify; \"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">Terror leaves you breathless. You touch the cassock as if the truth were not obvious. Then, you struggle to stand. There is nothing of interest around the fire, but where the glow of the flame merges with the darkness, you make out the irregular outlines of some ruins.</span></p>"
+          "texto": "<p style=\"text-align: justify;\">You show the gem to the priest. Its crimson veins seem to pulse under the flickering light of the fire.</p><p style=\"text-align: justify;\">The priest opens his eyes in surprise, but weakly. His head wobbles.&nbsp;</p><p style=\"text-align: justify; \">\"That is... place it in his hand... <span style=\"color: var(--text-color); font-size: 1rem; background-color: var(--widget-background);\"><i>only</i> in his hand! But beware of the fog; the Cross is powerless against it. Now, go! Do not linger for anything!\", he says&nbsp;</span><span style=\"color: var(--text-color); font-size: 1rem; background-color: var(--widget-background);\">just before&nbsp;</span><span style=\"color: var(--text-color); font-size: 1rem; background-color: var(--widget-background);\">vaporizing into a frayed cloud of mist. </span></p><p style=\"text-align: justify; \"><span style=\"color: var(--text-color); font-size: 1rem; background-color: var(--widget-background);\">All that remains of him is an empty cassock on the floor.</span></p><p style=\"text-align: justify; \"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">Terror leaves you breathless. You touch the cassock as if the truth were not obvious. Then, you struggle to stand. There is nothing of interest around the fire, but where the glow of the flame merges with the darkness, you make out the irregular outlines of some ruins.</span></p>"
         }
       ],
       "titulo": "Show the amulet of the butcher",
@@ -2063,7 +2063,7 @@
               "test": false
             }
           ],
-          "texto": "<p style=\"text-align: justify; \">The priest’s glassy eyes look at you without seeing you.</p><p style=\"text-align: justify; \">\"Go back to Bones... search...\" he says a moment before&nbsp;<span style=\"color: var(--text-color); font-size: 1rem; background-color: var(--widget-background);\">dissolving into a tangle of whitish rags.&nbsp;</span></p><p style=\"text-align: justify; \"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">His crumpled cassock on the floor remains as the only proof of his existence.</span></p><p style=\"text-align: justify; \"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">Terror paralyzes you. But you must pull yourself together. Stand up. </span></p><p style=\"text-align: justify; \"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">You do it.</span></p><p style=\"text-align: justify; \"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">There is nothing left in the bonfire; a little farther away, shrouded in the veil of darkness, you make out the irregular outlines of what could be ruins.</span></p><p style=\"text-align: justify; \">In the distance you hear a wail that you would like to attribute to the wind... if it were blowing.<span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\"><br></span></p>"
+          "texto": "<p style=\"text-align: justify; \">The priest’s glassy eyes look at you without seeing you.</p><p style=\"text-align: justify; \">\"Go back to Bones... find it... and return it to where it belongs, without lingering for anything... for anything!\" he says a moment before&nbsp;<span style=\"color: var(--text-color); font-size: 1rem; background-color: var(--widget-background);\">dissolving into a tangle of whitish rags.&nbsp;</span></p><p style=\"text-align: justify; \"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">His crumpled cassock on the floor remains as the only proof of his existence.</span></p><p style=\"text-align: justify; \"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">Terror paralyzes you. But you must pull yourself together. Stand up. </span></p><p style=\"text-align: justify; \"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">You do it.</span></p><p style=\"text-align: justify; \"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">There is nothing left in the bonfire; a little farther away, shrouded in the veil of darkness, you make out the irregular outlines of what could be ruins.</span></p><p style=\"text-align: justify; \">In the distance you hear a wail that you would like to attribute to the wind... if it were blowing.<span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\"><br></span></p>"
         }
       ],
       "titulo": "Ask where is the amulet",
@@ -2669,7 +2669,7 @@
           "posicion": 2,
           "titulo": "",
           "enlaces": [],
-          "texto": "<p style=\"text-align: justify;\">When you pour the remaining wine into the bowl, absolute darkness engulfs you. You feel your way through the blackness and realize you are in a very small space, beneath what seem to be wooden planks.</p><p style=\"text-align: justify;\">You hear creaks, footsteps, as if someone were walking above the planks.&nbsp;<span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">You scream for help, but soon your voice </span><span style=\"color: var(--text-color); font-size: 1rem; background-color: var(--widget-background);\">&nbsp;is choked by a violent nausea. A suffocating stench of blood, flesh, and death floods your nose and mouth. You cough, grow dizzy. You feel consciousness slipping away.</span></p><p style=\"text-align: justify;\"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">The light returns. You are on the ground amid the ruins, your cloak covered in mud&nbsp;</span><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">and your eyes flooded with tears.&nbsp;</span><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">The </span><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">small statue seems to scrutinize you with its lifeless eyes.</span></p><p style=\"text-align: justify;\"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">Unable to bear its gaze, you leave.</span></p>"
+          "texto": "<p style=\"text-align: justify;\">When you pour the remaining wine into the bowl, absolute darkness engulfs you. You realize you are in a very small space, beneath what seem to be wooden planks. The air is heavy with the stench of spoiled meat.</p><p style=\"text-align: justify;\">You hear creaks, footsteps, as if someone were walking above the planks.&nbsp;<span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">Suddenly, the planks are lifted, and a monstrous hand appears, holding a jewel that glows with a bloody radiance. You scream for help, but soon your voice </span><span style=\"color: var(--text-color); font-size: 1rem; background-color: var(--widget-background);\">&nbsp;is choked by a violent nausea. A suffocating stench of meat floods your nose and mouth. You cough, grow dizzy. You feel consciousness slipping away.</span></p><p style=\"text-align: justify;\"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">The light returns. You are on the ground amid the ruins, your cloak covered in mud&nbsp;</span><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">and your eyes flooded with tears.&nbsp;</span><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">The </span><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">small statue seems to scrutinize you with its lifeless eyes.</span></p><p style=\"text-align: justify;\"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">Unable to bear its gaze, you leave.</span></p>"
         },
         {
           "test": false,
@@ -5145,22 +5145,7 @@
               "destinoExito": 19723,
               "consecuencias": [],
               "posicion": 1,
-              "condiciones": [
-                {
-                  "control": "==",
-                  "enlaceId": 31389,
-                  "textoId": 0,
-                  "descripcion": "posada_explorada=0",
-                  "escenaCodigo": "0076",
-                  "variable": "posada_explorada",
-                  "slug": "posada_explorada",
-                  "valorComparar": "0",
-                  "tipo": "",
-                  "tipoId": 0,
-                  "escenaId": 19722,
-                  "valor": "0"
-                }
-              ],
+              "condiciones": [],
               "siempreVisible": false,
               "test": false
             },
@@ -5173,22 +5158,7 @@
               "destinoExito": 19555,
               "consecuencias": [],
               "posicion": 2,
-              "condiciones": [
-                {
-                  "control": "==",
-                  "enlaceId": 31390,
-                  "textoId": 0,
-                  "descripcion": "posada_explorada=0",
-                  "escenaCodigo": "0076",
-                  "variable": "posada_explorada",
-                  "slug": "posada_explorada",
-                  "valorComparar": "0",
-                  "tipo": "",
-                  "tipoId": 0,
-                  "escenaId": 19722,
-                  "valor": "0"
-                }
-              ],
+              "condiciones": [],
               "siempreVisible": false,
               "test": false
             },
@@ -5215,62 +5185,6 @@
                   "tipoId": 0,
                   "escenaId": 19722,
                   "valor": "0"
-                }
-              ],
-              "siempreVisible": false,
-              "test": false
-            },
-            {
-              "ancho": 12,
-              "extra": "",
-              "frame": "ppal",
-              "texto": "<p>Go up the bell tower</p>",
-              "destinoFallo": 0,
-              "destinoExito": 19730,
-              "consecuencias": [],
-              "posicion": 4,
-              "condiciones": [
-                {
-                  "control": "==",
-                  "enlaceId": 31430,
-                  "textoId": 0,
-                  "descripcion": "posada_explorada=1",
-                  "escenaCodigo": "0076",
-                  "variable": "posada_explorada",
-                  "slug": "posada_explorada",
-                  "valorComparar": "1",
-                  "tipo": "",
-                  "tipoId": 0,
-                  "escenaId": 19722,
-                  "valor": "1"
-                }
-              ],
-              "siempreVisible": false,
-              "test": false
-            },
-            {
-              "ancho": 12,
-              "extra": "",
-              "frame": "ppal",
-              "texto": "<p>Search the sacristy</p>",
-              "destinoFallo": 0,
-              "destinoExito": 19730,
-              "consecuencias": [],
-              "posicion": 5,
-              "condiciones": [
-                {
-                  "control": "==",
-                  "enlaceId": 31432,
-                  "textoId": 0,
-                  "descripcion": "posada_explorada=1",
-                  "escenaCodigo": "0076",
-                  "variable": "posada_explorada",
-                  "slug": "posada_explorada",
-                  "valorComparar": "1",
-                  "tipo": "",
-                  "tipoId": 0,
-                  "escenaId": 19722,
-                  "valor": "1"
                 }
               ],
               "siempreVisible": false,
