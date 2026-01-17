@@ -1,0 +1,2989 @@
+{
+    "title": "Fog",
+    "scenes": [
+        {
+            "title": "Introduction",
+            "id": 19508,
+            "sections": [
+                {
+                    "consequences": [],
+                    "conditions": [],
+                    "text": "<p style=\"text-align: justify; \">Your feet splash through the sodden earth; it is pitch-dark, and your travel lantern casts only a feeble light.<span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">&nbsp;</span><span style=\"color: var(--text-color); font-size: 1rem; background-color: var(--widget-background);\">You have run out of provisions, and have barely any coins left.</span><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">&nbsp;A curse slips out under your breath \u2014by now, you should have reached somewhere.</span></p><p style=\"text-align: justify;\"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">You follow a muddy path that sinks into a valley. On either side stretches a moor dotted with shrubs whose long, thin branches, remind you of spider legs. You will find no shelter here. Huddling in your cloak, you shudder at the thought of sleeping in the open and waking at dawn shivering, your clothes soaked through.</span></p><p style=\"text-align: justify;\">Then you see it \u2014a crooked town sign, eaten away by moisture. You step closer and raise your lantern to read it. A single word: Bones. Not far ahead, you glimpse the broken silhouettes of the first houses. <span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">Jagged outlines etched against the dark curtain of the night.</span><span style=\"color: var(--text-color); font-size: 1rem; background-color: var(--widget-background);\">&nbsp;Pointed rooftops like teeth, chimneys gone cold. Bones. It is the first time come across this name. You must have strayed far from your route.</span></p><p style=\"text-align: justify;\">The town gives you a bad feeling, but where else can you go?</p><p style=\"text-align: justify;\">Your hand<span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">&nbsp;closes around the crucifix hanging from your neck. The feel of the ancient, weathered wood soothes you; it always has.</span></p><p style=\"text-align: justify; \"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">You fill your lungs with the cold air of the moor and walk towards the houses. A damp, foggy night, is coming...</span><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\"></span></p>",
+                    "links": [
+                        {
+                            "text": "<p>Enter Bones</p>",
+                            "destination_scene_id": 19556,
+                            "consequences": [],
+                            "conditions": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Enter the inn",
+            "id": 19509,
+            "sections": [
+                {
+                    "consequences": [],
+                    "conditions": [],
+                    "text": "<p style=\"text-align: justify; \">The inn consists of a single room which, <span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">judging by the dust-covered tables and the rotting straw piled in the corners, </span><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">once served as both dining room and sleeping quarters. </span><span style=\"color: var(--text-color); font-size: 1rem; background-color: var(--widget-background);\">The hearth went cold long ago; the ashes gleam silver under the shafts of moonlight filtering through the windows.</span></p><p style=\"text-align: justify;\"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">Behind a decayed counter, a door hangs from a single hinge.</span></p>",
+                    "links": [
+                        {
+                            "text": "<p>Look behind the door</p>",
+                            "destination_scene_id": 19720,
+                            "consequences": [],
+                            "conditions": []
+                        },
+                        {
+                            "text": "<p>Go out into the street</p>",
+                            "destination_scene_id": 19556,
+                            "consequences": [],
+                            "conditions": [
+                                {
+                                    "variable": "iglesia_explorada",
+                                    "compare_with_value": "0"
+                                }
+                            ]
+                        },
+                        {
+                            "text": "<p>Go out into the street</p>",
+                            "destination_scene_id": 19730,
+                            "consequences": [],
+                            "conditions": [
+                                {
+                                    "variable": "iglesia_explorada",
+                                    "compare_with_value": "1"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Announce your presence",
+            "id": 19510,
+            "sections": [
+                {
+                    "consequences": [],
+                    "conditions": [],
+                    "text": "<p style=\"text-align: justify;\">When you call out, <span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">the creaking of the ceiling stops abruptly. Then the footsteps resume, and through the stairwell appears a gaunt man with a long, drawn face. In one hand he holds a lantern; in the other, an iron crowbar.</span></p><p style=\"text-align: justify;\">\"Well, well\" he tries to smile, \"I wasn\u2019t expecting visitors, precisely <i>tonight</i>. I see... you\u2019re not from around here, are you? Please, come with me. There's fog outside...\".</p><p style=\"text-align: justify;\">The man steps out into the street and urges you to do the same.</p>",
+                    "links": [
+                        {
+                            "text": "<p>Go with him</p>",
+                            "destination_scene_id": 19516,
+                            "consequences": [],
+                            "conditions": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Subir",
+            "id": 19511,
+            "sections": [
+                {
+                    "consequences": [
+                        {
+                            "variable": "carnicero_sorprendido",
+                            "update_to_value": "1"
+                        }
+                    ],
+                    "conditions": [],
+                    "text": "<p style=\"text-align: justify; \">The staircase opens onto a narrow hallway. A wavering reddish glow seeps through the narrow gap of an ajar door at the far end.</p><p style=\"text-align: justify;\">The wooden floor creaks, giving you away. You sense hurried movement behind the door: a shadow darts quickly across the strip of light, and you hear the clatter of wood striking wood.</p><p style=\"text-align: justify;\">Then the door bursts open, and a tall man with <span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">sharp features and sunken eyes appears.</span></p><p style=\"text-align: justify;\">\"You scared me!\"&nbsp; he says, forcing a smile. \"I wasn\u2019t expecting visitors, least of all <i>tonight</i>. <span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">I see... You\u2019re not from around here\".</span></p><p style=\"text-align: justify;\">You step aside to let him go down the stairs. In one hand he carries a lantern; in the other, an iron crowbar.</p><p style=\"text-align: justify;\">\"Please, come with me. There's fog outside...\".<br></p>",
+                    "links": [
+                        {
+                            "text": "<p>Go with him</p>",
+                            "destination_scene_id": 19516,
+                            "consequences": [],
+                            "conditions": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Accompany him to the church",
+            "id": 19516,
+            "sections": [
+                {
+                    "consequences": [],
+                    "conditions": [],
+                    "text": "<p style=\"text-align: justify;\">You move along the street through tatters of fog that seem to crawl over the ground like fingers trying to touch everything.</p><p style=\"text-align: justify;\">\"From the clothes you\u2019re wearing, I\u2019d say you\u2019ve traveled a lot\" says the man, without taking his eyes off the road ahead. \"But I assure you, this fog is nothing like you\u2019ve ever seen before\".</p><p style=\"text-align: justify;\">\"Why is that?\" you ask.</p><p style=\"text-align: justify;\">The man does not slow down as he turns onto the main street.</p><p style=\"text-align: justify;\">\"It takes the people away\".</p><p style=\"text-align: justify;\">You have reached the church. The man goes inside and heads for one of the crypts lining the side wall. With a sharp blow of the crowbar, he pries away the slab that seals the entrance.</p><p style=\"text-align: justify;\"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">\"We\u2019ll talk downstairs. Please, come in. We don\u2019t have much time!\".</span><br></p>",
+                    "links": [
+                        {
+                            "text": "<p>Follow him into the crypt</p>",
+                            "destination_scene_id": 19559,
+                            "consequences": [],
+                            "conditions": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Iglesia",
+            "id": 19517,
+            "sections": [
+                {
+                    "consequences": [],
+                    "conditions": [],
+                    "text": "<p style=\"text-align: justify; \">The church, vast under the cover of darkness, seems to breathe over the echo of your footsteps.</p><p style=\"text-align: justify; \"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">Slivers of silvery light slant through the narrow windows, falling on two rows of pews </span><span style=\"color: var(--text-color); font-size: 1rem; background-color: var(--widget-background);\">that lead up to an altar. You notice the cross is missing. To one side of the altar, a small door leads to the sacristy. On the other side, a worn spiral staircase leads to the top of the bell tower. On one of the walls, you make out the rectangular outlines of the slabs that seal the crypts.</span><br></p>",
+                    "links": [
+                        {
+                            "text": "<p>Search the sacristy</p>",
+                            "destination_scene_id": 19555,
+                            "consequences": [],
+                            "conditions": []
+                        },
+                        {
+                            "text": "<p>Examine the crypts</p>",
+                            "destination_scene_id": 19722,
+                            "consequences": [],
+                            "conditions": []
+                        },
+                        {
+                            "text": "<p>Go up the bell tower</p>",
+                            "destination_scene_id": 19723,
+                            "consequences": [],
+                            "conditions": []
+                        },
+                        {
+                            "text": "<p>Go out into the street</p>",
+                            "destination_scene_id": 19556,
+                            "consequences": [],
+                            "conditions": [
+                                {
+                                    "variable": "posada_explorada",
+                                    "compare_with_value": "0"
+                                }
+                            ]
+                        },
+                        {
+                            "text": "<p>Go out into the street</p>",
+                            "destination_scene_id": 19730,
+                            "consequences": [],
+                            "conditions": [
+                                {
+                                    "variable": "posada_explorada",
+                                    "compare_with_value": "1"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Sacristy",
+            "id": 19555,
+            "sections": [
+                {
+                    "consequences": [
+                        {
+                            "variable": "amuleto_robado",
+                            "update_to_value": "1"
+                        }
+                    ],
+                    "conditions": [],
+                    "text": "<p style=\"text-align: justify;\"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">The sacristy door squeaks as you push it open.</span></p><p style=\"text-align: justify;\">A bookcase dominates the room, stretching along an entire wall. You bring your light closer to the spines of the volumes that fill the shelves:<span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\"> there are titles in Latin, a language of which you have some knowledge, others in Greek, and still others in scripts unfamiliar to you.</span></p><p style=\"text-align: justify; \">The books are piled on top of the desk as well. You take a look and see that they are mainly treatises on the interpretation of dead languages. It seems the priest has been busy translating some symbols noted on a notebook, also on the desk. His work, however, seems unfinished:</p>",
+                    "links": []
+                },
+                {
+                    "consequences": [],
+                    "conditions": [],
+                    "text": "<p style=\"text-align: center;\"><i style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">In this ...</i><br></p><p style=\"text-align: center;\"><i>lie the unworthy souls</i></p><p style=\"text-align: center;\"><i>... the heart </i></p><p style=\"text-align: center;\"><i style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">of the guardian ...</i></p><p style=\"text-align: center;\"><i>... to seal them</i></p><p style=\"text-align: center;\"><i>...</i></p><p style=\"text-align: center;\"><i>...</i></p><p style=\"text-align: center;\"><i style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">... in a vile fog</i></p>",
+                    "links": []
+                },
+                {
+                    "consequences": [],
+                    "conditions": [],
+                    "text": "<p style=\"text-align: justify;\">At the bottom of the page, scribbled in hurried handwriting, you see the following note:</p><p style=\"text-align: justify;\"><i>Someone has stolen it. God have mercy on us!</i></p><p style=\"text-align: justify;\">Suddenly you step on something that creaks under your feet. You look down and discover a bloodstained cilicium beneath your sole. A shiver runs through you; suddenly, the air in the sacristy feels tainted. The cilicium. Proof of the penance of someone whose faith has been shaken to its foundations. Your hand, trembling, reaches for the crucifix on your chest; it finds it, but that is not enough. You feel suddenly sick \u2014you need air!</p>",
+                    "links": [
+                        {
+                            "text": "<p>Go out into the street</p>",
+                            "destination_scene_id": 19556,
+                            "consequences": [],
+                            "conditions": [
+                                {
+                                    "variable": "posada_explorada",
+                                    "compare_with_value": "0"
+                                }
+                            ]
+                        },
+                        {
+                            "text": "<p>Go out into the street</p>",
+                            "destination_scene_id": 19730,
+                            "consequences": [],
+                            "conditions": [
+                                {
+                                    "variable": "posada_explorada",
+                                    "compare_with_value": "1"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Main street",
+            "id": 19556,
+            "sections": [
+                {
+                    "consequences": [],
+                    "conditions": [],
+                    "text": "<p style=\"text-align: justify; \">You find yourself on the main street of Bones. The most prominent building is a church with a small cemetery beside it and a crumbling bell tower that points towards the moon like a clenched finger. On the opposite side of the street, the word <i>inn</i> can be read written directly on the stone above a broken-down door, flanked by dark windows where cobwebs cling like ghostly curtains.</p><p style=\"text-align: justify;\">The street stretches on until it disappears into the darkness. No light can be seen in any of the houses.</p>",
+                    "links": [
+                        {
+                            "text": "<p>Enter the church</p>",
+                            "destination_scene_id": 19517,
+                            "consequences": [
+                                {
+                                    "variable": "iglesia_explorada",
+                                    "update_to_value": "1"
+                                }
+                            ],
+                            "conditions": [
+                                {
+                                    "variable": "iglesia_explorada",
+                                    "compare_with_value": "0"
+                                }
+                            ]
+                        },
+                        {
+                            "text": "Go knocking on the houses",
+                            "destination_scene_id": 19675,
+                            "consequences": [],
+                            "conditions": []
+                        },
+                        {
+                            "text": "<p>Enter the inn</p>",
+                            "destination_scene_id": 19509,
+                            "consequences": [
+                                {
+                                    "variable": "posada_explorada",
+                                    "update_to_value": "1"
+                                }
+                            ],
+                            "conditions": [
+                                {
+                                    "variable": "posada_explorada",
+                                    "compare_with_value": "0"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "You enter the crypt",
+            "id": 19559,
+            "sections": [
+                {
+                    "consequences": [],
+                    "conditions": [],
+                    "text": "<p style=\"text-align: justify;\">You descend the tattered steps leading to the depths of the crypt. It smells of centuries of dust, and the walls crumble from damp. <span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">At the end of the stairs you find a dozen people huddled under blankets and threadbare coats \u2014men, women, and children, their faces shadowed by fear and bewilderment.</span></p><p style=\"text-align: justify;\">The gaunt man introduces himself. He is the village butcher. The other men are the surgeon, the gravedigger, and the herbalist. They all say their names, but you forget them immediately \u2014you have never had a good memory for names. Their families remain silent, as does a long-haired individual huddled in a corner, introduced to you as a vagabond who lives in the old inn.</p><p style=\"text-align: justify;\">\"Are you hiding?\" you ask.</p><p style=\"text-align: justify;\">The silence that follows your question makes you shiver.</p><p style=\"text-align: justify; \">\"From the fog\" says, finally, the gravedigger. \"It takes the people away. We\u2019re the only ones left\".</p><p style=\"text-align: justify;\">\"The priest was the last to disappear\u201d adds the herbalist. \u201cHe ended up going mad. Have you noticed the cross is missing from the altar? He took it two nights ago, the last time the fog rose. He tore the cross from the wall and left the church as if driven by the devil. He never came back. He left without a scream\".</p><p style=\"text-align: justify;\"><span style=\"font-variant-ligatures: none; letter-spacing: 0.1px; white-space-collapse: preserve; color: rgb(32, 33, 36); background-color: var(--widget-background); font-size: 1rem;\">A child coughs, another sobs quietly. The butcher approaches you. </span></p><p style=\"text-align: justify;\"><span style=\"font-variant-ligatures: none; letter-spacing: 0.1px; white-space-collapse: preserve; color: rgb(32, 33, 36); background-color: var(--widget-background); font-size: 1rem;\">\"I\u2019ve noticed the pendant you\u2019re wearing\u201d he says, pointing to the crucifix on your chest. \u201cYou are a person of faith. </span><span style=\"color: rgb(32, 33, 36); font-variant-ligatures: none; letter-spacing: 0.1px; white-space-collapse: preserve; background-color: var(--widget-background); font-size: 1rem;\">Help us, for the love of God. </span><span style=\"background-color: var(--widget-background); color: rgb(32, 33, 36); font-size: 1rem; font-variant-ligatures: none; letter-spacing: 0.1px; white-space-collapse: preserve;\">Only faith can save us\".</span></p><p style=\"text-align: justify;\"><span style=\"font-variant-ligatures: none; letter-spacing: 0.1px; white-space-collapse: preserve; color: rgb(32, 33, 36); background-color: var(--widget-background); font-size: 1rem;\">\"Wasn\u2019t the priest a man of faith?\" you say.</span></p><p style=\"text-align: justify;\"><span style=\"font-size: 1rem; font-variant-ligatures: none; letter-spacing: 0.1px; white-space-collapse: preserve; color: rgb(32, 33, 36); background-color: var(--widget-background);\">\"The priest was afraid. We are all afraid. Fear condemns us, makes us doubt. </span><span style=\"font-size: 1rem; color: rgb(32, 33, 36); font-variant-ligatures: none; letter-spacing: 0.1px; white-space-collapse: preserve; background-color: var(--widget-background);\">However, you\u2019ve just arrived. To you, the fog is nothing more than that: fog\".</span></p><p style=\"text-align: justify;\"><span style=\"font-variant-ligatures: none; letter-spacing: 0.1px; white-space-collapse: preserve; color: rgb(32, 33, 36); background-color: var(--widget-background); font-size: 1rem;\">\"We are already part of it\" adds the gravedigger. \"Help us before it\u2019s too late for you as well\".</span></p>",
+                    "links": [
+                        {
+                            "text": "<p>I will help you. Tell me how I can do it</p>",
+                            "destination_scene_id": 19618,
+                            "consequences": [],
+                            "conditions": []
+                        },
+                        {
+                            "text": "<p>Let us stay here. In the house of God, our faith is at its strongest</p>",
+                            "destination_scene_id": 19620,
+                            "consequences": [],
+                            "conditions": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Help",
+            "id": 19618,
+            "sections": [
+                {
+                    "consequences": [],
+                    "conditions": [],
+                    "text": "<p style=\"text-align: justify; \">The men thank you for your decision with an enthusiasm not mirrored in the gloomy faces of their families.</p><p style=\"text-align: justify; \">The gravedigger accompanies you upstairs. </p><p style=\"text-align: justify; \">\"Leave the village by the road leading to the north. The road of the fog. There you will find answers\".</p><p style=\"text-align: justify; \">You reach the church doorway, and the man wishes you luck. As you step outside, he bolts the door shut behind you. </p><p style=\"text-align: justify; \">As if he did not expect you to come back.</p><p style=\"text-align: justify;\">Standing in the middle of the deserted street, you grip the crucifix once more and face the ominous road from which the fingers of fog stretch out like the strands of a ghostly spiderweb.</p>",
+                    "links": []
+                },
+                {
+                    "consequences": [],
+                    "conditions": [
+                        {
+                            "variable": "sospechas_carnicero",
+                            "compare_with_value": "1"
+                        }
+                    ],
+                    "text": "<p style=\"text-align: justify; \">Then you recall the butcher\u2019s flurry of movement when he heard you arrive, and his attempts to appear normal. That is how someone who has something to hide would behave...</p>",
+                    "links": []
+                },
+                {
+                    "consequences": [],
+                    "conditions": [],
+                    "text": "",
+                    "links": [
+                        {
+                            "text": "<p>Take the road to the north</p>",
+                            "destination_scene_id": 19626,
+                            "consequences": [],
+                            "conditions": []
+                        },
+                        {
+                            "text": "Head for the butcher\u2019s house",
+                            "destination_scene_id": 19627,
+                            "consequences": [],
+                            "conditions": [
+                                {
+                                    "variable": "sospechas_carnicero",
+                                    "compare_with_value": "1"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Let us stay here. This is the house of God, and His presence is strong. Let us pray to drive away all evil.",
+            "id": 19620,
+            "sections": [
+                {
+                    "consequences": [],
+                    "conditions": [],
+                    "text": "<p style=\"text-align: justify; \">A grimace of fear seizes the gravedigger\u2019s face for the briefest instant. Then he regains his composure, goes to a small niche at the back of the crypt, and takes from it a rough wooden box. He hands it to you. Inside lies a bone a span long \u2014perhaps an ulna\u2014 wrapped in frayed cloth.&nbsp;</p><p style=\"text-align: justify; \">\"This is a bone from Saint Theresa\u2019s arm. It is our most precious relic. Take it with you. It will protect you\".</p>",
+                    "links": [
+                        {
+                            "text": "Take the relic and agree to help them",
+                            "destination_scene_id": 19618,
+                            "consequences": [
+                                {
+                                    "variable": "reliquia_iglesia",
+                                    "update_to_value": "1"
+                                }
+                            ],
+                            "conditions": []
+                        },
+                        {
+                            "text": "<p>Insist on staying in the crypt and praying to drive the fog away</p>",
+                            "destination_scene_id": 19622,
+                            "consequences": [],
+                            "conditions": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "We must stay. And pray. Prayer is a powerful invocation, and if it comes from our united voices, its power will destroy any evil.",
+            "id": 19622,
+            "sections": [
+                {
+                    "consequences": [],
+                    "conditions": [],
+                    "text": "<div style=\"text-align: justify;\"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">You clasp your hands, close your eyes, and urge everyone else to do the same. For a few moments, the prayers of a dozen people rise like a unified chant in the silence of the crypt. </span></div><div style=\"text-align: justify;\"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\"><br></span></div><div style=\"text-align: justify;\"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">Then, something heavy strikes your head, and you lose consciousness.</span></div>",
+                    "links": [
+                        {
+                            "text": "<p>Regain consciousness</p>",
+                            "destination_scene_id": 19623,
+                            "consequences": [],
+                            "conditions": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Regain consciousness...",
+            "id": 19623,
+            "sections": [
+                {
+                    "consequences": [],
+                    "conditions": [],
+                    "text": "<p style=\"text-align: justify; \">You open your eyes somewhere. Your head throbs, you feel cold, and the mud has soaked you to the bone. You look around but find yourself in the midst of a white darkness. There is no sign of your lantern.</p><p style=\"text-align: justify; \">In the depths of the void surrounding you, a distant clamor sounds. A lament of thousands of voices pierces your brain like needles, wrenching tears of pain from your eyes. You scream, but your cry dies almost immediately; only damp breath escapes your mouth. You rise and run blindly, hands pressed to your ears to block out the voices, which grow ever more numerous, closer, and more agonizing.</p><p style=\"text-align: justify; \">Your legs buckle; you fall once more. Your hand, as if guided by its own will, clutches the crucifix on your chest. You try to scream one last time.</p>",
+                    "links": [
+                        {
+                            "text": "<p>The fog closes in around you</p>",
+                            "destination_scene_id": 19692,
+                            "consequences": [],
+                            "conditions": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Take the swamp road",
+            "id": 19626,
+            "sections": [
+                {
+                    "consequences": [],
+                    "conditions": [],
+                    "text": "<p style=\"text-align: justify; \">When the buildings of Bones, sharp as fangs, disappear behind you, you cannot help but feel a certain relief. <span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">&nbsp;But soon, as you venture deeper into the moor and all trace of human presence fades away, </span><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">a vague sense of fear washes over you. The night is calm, bright, and still as ice; not a breeze stirs, and yet</span><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">&nbsp;the fog advances, diffuse and silent, dragging its tattered shreds towards the village like the arms of a dying man.</span></p><p style=\"text-align: justify; \">\"It\u2019s just fog\", you tell yourself when you have no choice but to pass through one of its long, reaching fingers.<span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\"><br></span></p><p style=\"text-align: justify; \">You walk for what feels like a long while. Then you stop.</p><p style=\"text-align: justify; \"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">To one side of the path, you make out \u2014at an impossible-to-judge distance\u2014 the dim glow of a fire shining through the strips of fog. From the opposite side comes the murmur of a stream, and you realize how dry your throat is.</span><br></p>",
+                    "links": [
+                        {
+                            "text": "<p>Continue along the road</p>",
+                            "destination_scene_id": 19653,
+                            "consequences": [],
+                            "conditions": []
+                        },
+                        {
+                            "text": "<p>Approach the fire</p>",
+                            "destination_scene_id": 19654,
+                            "consequences": [],
+                            "conditions": []
+                        },
+                        {
+                            "text": "<p>Try to find the river</p>",
+                            "destination_scene_id": 19736,
+                            "consequences": [],
+                            "conditions": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Head for the butcher's house",
+            "id": 19627,
+            "sections": [
+                {
+                    "consequences": [],
+                    "conditions": [],
+                    "text": "<p style=\"text-align: justify;\">When you arrive at the butcher\u2019s house, you cross the foul-smelling shop and head straight upstairs. The floorboards creak and wobble beneath your feet. </p><p style=\"text-align: justify;\">The back room is a small chamber with sparse furnishings: a table, a painter\u2019s easel, a simple bed with a straw mattress, and a heavy wardrobe set slightly askew against the wall. Above the table hangs a muted-toned painting depicting a young woman with eyes that seem made for sorrow.</p>",
+                    "links": [
+                        {
+                            "text": "<p>Take the painting down</p>",
+                            "destination_scene_id": 19628,
+                            "consequences": [],
+                            "conditions": []
+                        },
+                        {
+                            "text": "<p>Lift the floorboards</p>",
+                            "destination_scene_id": 19629,
+                            "consequences": [],
+                            "conditions": []
+                        },
+                        {
+                            "text": "<p>Look behind the wardrobe</p>",
+                            "destination_scene_id": 19632,
+                            "consequences": [],
+                            "conditions": []
+                        },
+                        {
+                            "text": "<p>Lift the straw mattress</p>",
+                            "destination_scene_id": 19697,
+                            "consequences": [],
+                            "conditions": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Take the painting down",
+            "id": 19628,
+            "sections": [
+                {
+                    "consequences": [],
+                    "conditions": [],
+                    "text": "<p style=\"text-align: justify; \">Behind the painting, you find a small compartment containing a burlap pouch filled with gold coins. You suspect the butcher must have been counting \u2014or perhaps recounting\u2014 his savings when he heard you approaching.<span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">&nbsp;That would explain his alarm.</span></p><p style=\"text-align: justify;\">You leave the pouch where you found it and walk out of the house.</p>",
+                    "links": [
+                        {
+                            "text": "<p>Take the road to the north</p>",
+                            "destination_scene_id": 19626,
+                            "consequences": [],
+                            "conditions": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Lift the floorboards",
+            "id": 19629,
+            "sections": [
+                {
+                    "consequences": [
+                        {
+                            "variable": "amuleto",
+                            "update_to_value": "1"
+                        },
+                        {
+                            "variable": "amuleto_robado",
+                            "update_to_value": "0"
+                        }
+                    ],
+                    "conditions": [],
+                    "text": "<p style=\"text-align: justify;\">When you lift the floorboards, the reddish glow emanating from beneath makes you think that the butcher has hidden a brazier under the floor. Then you realize that it is not embers that are glowing, but a strange oval-shaped gem.</p><p style=\"text-align: justify;\">You pick it up to examine it. Beneath its crystalline surface, rivers of blood seem to flow, and its intense crimson glow casts a network of lights and shadows that dance on the walls like tongues of fire.</p><p style=\"text-align: justify;\">You are certain that this is the object the priest wrote about in his notes: the heart of the guardian.</p><p style=\"text-align: justify;\">You decide to take it with you.</p>",
+                    "links": [
+                        {
+                            "text": "<p>Take the road to the north</p>",
+                            "destination_scene_id": 19626,
+                            "consequences": [],
+                            "conditions": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Look behind the wardrobe",
+            "id": 19632,
+            "sections": [
+                {
+                    "consequences": [],
+                    "conditions": [],
+                    "text": "<p style=\"text-align: justify; \">Behind the wardrobe you find half a dozen canvases, all depicting the same woman from the painting, in the exact same angle and pose. An old love of the butcher? Or perhaps a shameful obsession? You lean towards the latter.</p><p style=\"text-align: justify; \">You leave the paintings as you found them and walk out of the house.</p>",
+                    "links": [
+                        {
+                            "text": "<p>Take the road to the north</p>",
+                            "destination_scene_id": 19626,
+                            "consequences": [],
+                            "conditions": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Continue towards the swamp",
+            "id": 19653,
+            "sections": [
+                {
+                    "consequences": [],
+                    "conditions": [],
+                    "text": "<p style=\"text-align: justify; \">You venture deeper into the inscrutable realms of the fog. Thousands of voices echo somewhere within the white darkness, stabbing into your brain like needles. Each step becomes a struggle against unconsciousness. You try to inhale, but the air \u2014thick and putrid\u2014 clings to your throat. It reeks of stagnant, corrupt water.&nbsp;<span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">Of the rot of countless deaths, now claiming your own.</span></p><p style=\"text-align: justify; \">Your legs give way and you fall face-first into the mud. The perpetual wailing of the fog drowns your thoughts. Your hand, as if it were not your own, stretches forward, seeking a hold. Its skin is pale as marble, and countless wispy tendrils emanate from the fingers...</p>",
+                    "links": [
+                        {
+                            "text": "<p>The fog closes in around you</p>",
+                            "destination_scene_id": 19698,
+                            "consequences": [],
+                            "conditions": [
+                                {
+                                    "variable": "ofrenda_pan",
+                                    "compare_with_value": "1"
+                                }
+                            ]
+                        },
+                        {
+                            "text": "<p>The fog closes in around you</p>",
+                            "destination_scene_id": 19699,
+                            "consequences": [],
+                            "conditions": [
+                                {
+                                    "variable": "ofrenda_pan",
+                                    "compare_with_value": "0"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Investigate the fire",
+            "id": 19654,
+            "sections": [
+                {
+                    "consequences": [],
+                    "conditions": [],
+                    "text": "<p style=\"text-align: justify; \"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">You walk across the fog towards the firelight, trying not to make too much noise as you pass among the branches of the scraggly moorland shrubs.</span></p><p style=\"text-align: justify; \">You stop when, crouched by the fire, you make out the shapeless figure of what seems to be a man dressed in rags. You are still too far away to make out more details, but if you get closer, the figure will see your light.</p>",
+                    "links": [
+                        {
+                            "text": "<p>Extinguish the lantern and approach stealthily</p>",
+                            "destination_scene_id": 19655,
+                            "consequences": [],
+                            "conditions": []
+                        },
+                        {
+                            "text": "<p>Continue with the lantern lit</p>",
+                            "destination_scene_id": 19656,
+                            "consequences": [],
+                            "conditions": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Extinguish the lantern and approach stealthily",
+            "id": 19655,
+            "sections": [
+                {
+                    "consequences": [],
+                    "conditions": [],
+                    "text": "<p style=\"text-align: justify; \">You extinguish the flame of your lantern and <span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">manage to approach to just over a dozen paces from the fire. Now you can make out the figure clearly. </span><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">It is a man \u2014or so you think. At least the shape of the body matches that of a human, and the tattered black clothing suggests traces of civilization.</span></p><p style=\"text-align: justify; \"><span style=\"color: var(--text-color); font-size: 1rem; background-color: var(--widget-background);\">But the skin... is coming apart. </span></p><p style=\"text-align: justify; \"><span style=\"color: var(--text-color); font-size: 1rem; background-color: var(--widget-background);\">Without blood, without wounds.\u00a0</span><span style=\"color: var(--text-color); font-size: 1rem; background-color: var(--widget-background);\">It unravels into fine filaments that </span><span style=\"color: var(--text-color); font-size: 1rem; background-color: var(--widget-background);\">seep from the exposed parts of the body and drift around it, twisting like the dense smoke of incense.</span></p><p style=\"text-align: justify; \">Then the figure fixes the eyes on you. <span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">The sight of its face, pale as the moon, freezes you in place. </span><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">Perhaps it has not seen you yet; maybe it is blinded by the nearby fire.</span></p>",
+                    "links": [
+                        {
+                            "text": "<p>Move forward raising the crucifix</p>",
+                            "destination_scene_id": 19657,
+                            "consequences": [],
+                            "conditions": []
+                        },
+                        {
+                            "text": "<p>Move forward raising the relic of Saint Theresa</p>",
+                            "destination_scene_id": 19658,
+                            "consequences": [],
+                            "conditions": [
+                                {
+                                    "variable": "reliquia_iglesia",
+                                    "compare_with_value": "1"
+                                }
+                            ]
+                        },
+                        {
+                            "text": "<p>Back away slowly</p>",
+                            "destination_scene_id": 19659,
+                            "consequences": [],
+                            "conditions": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "You continue with your lantern lit",
+            "id": 19656,
+            "sections": [
+                {
+                    "consequences": [],
+                    "conditions": [],
+                    "text": "<p style=\"text-align: justify;\">You continue approaching with the lantern held high. The figure rises and turns towards you. Its ghostly face makes the words stick in your throat. Then it turns away and disappears into the darkness, leaving behind a trail of what seems like... fog.<span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\"><br></span></p><p style=\"text-align: justify;\"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">It is pointless to chase it. You wait for a while, ears alert, but the silence of the night has closed in around you. </span><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">Only a distant wail can be heard, as if the wind \u2014a wind you do not feel\u2014 were sweeping across the moor.</span></p><p style=\"text-align: justify;\">Where the glow of the bonfire dies out, you make out the irregular outline of what appears to be some ruins.</p>",
+                    "links": [
+                        {
+                            "text": "<p>Explore the ruins</p>",
+                            "destination_scene_id": 19713,
+                            "consequences": [],
+                            "conditions": []
+                        },
+                        {
+                            "text": "<p>Continue along the road to the north</p>",
+                            "destination_scene_id": 19653,
+                            "consequences": [],
+                            "conditions": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "You leave your hiding place and hold the cross between yourself and the creature",
+            "id": 19657,
+            "sections": [
+                {
+                    "consequences": [],
+                    "conditions": [],
+                    "text": "<p style=\"text-align: justify; \">With a trembling hand, you draw the cross from under your shirt. The creature does not take its gaze off you. Neither attacks nor flees. You must seize the moment, make the first move; yet, you hesitate. </p><p style=\"text-align: justify;\">The crucifix feels heavy in your hands; the wood is sturdy, sacred.&nbsp;<span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">You cannot hesitate forever. So you grit your teeth and step into the light of the bonfire.</span></p><p style=\"text-align: justify;\">\"Step back!\" you shout, <span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">raising the crucifix.</span></p><p style=\"text-align: justify; \">The creature recoils, raising its eyelids. Its eyes are colorless, as if bleached. Then it calms down.</p><p style=\"text-align: justify; \">\"Put that down\", it says sadly. \"That cross will be of no use against what we face\".<br></p><p style=\"text-align: justify; \"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">The words catch in your throat.&nbsp;</span>Its voice sounds inexplicably human coming from its ghostly mouth.</p><p style=\"text-align: justify;\"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">\"Come closer, do not be afraid\", the figure continues. \"Have a seat. I am the parish priest of Bones. Well, I was. And soon, I will be nothing at all\".</span><br></p>",
+                    "links": [
+                        {
+                            "text": "<p>Sit down</p>",
+                            "destination_scene_id": 19660,
+                            "consequences": [],
+                            "conditions": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "You step out of your hiding place and place the church relic between yourself and the creature",
+            "id": 19658,
+            "sections": [
+                {
+                    "consequences": [
+                        {
+                            "variable": "reliquia_iglesia",
+                            "update_to_value": "0"
+                        },
+                        {
+                            "variable": "reliquia_falsa",
+                            "update_to_value": "1"
+                        }
+                    ],
+                    "conditions": [],
+                    "text": "<p style=\"text-align: justify; \">Without taking your eyes off the misty figure, you pull from your pouch the rough, cracked box that holds the bone of Saint Theresa. The creature remains there, staring at you intently. If you do not act, it will. You make up your mind.</p><p style=\"text-align: justify; \"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">\"Step back!\" you shout, revealing yourself and raising the relic.</span><br></p><p style=\"text-align: justify; \">The creature opens its milky eyes wide. It seems about to step back, but stops.</p><p style=\"text-align: justify; \">\"May I ask what this is?\" it asks,&nbsp;<span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">pointing to the little box you are holding.&nbsp;</span><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">Its voice sounds deep and calm. Human.&nbsp;</span></p><p style=\"text-align: justify; \">The reaction throws you off. Words pile up in your throat.</p><p style=\"text-align: justify; \">\"It\u2019s... it\u2019s a bone of Saint Theresa!\u201d you manage to stammer. \u201cThe most sacred relic of the church!\"</p><p style=\"text-align: justify; \">You catch a fleeting mocking smirk cross the creature\u2019s lips. Then it rises and, with a swift motion, snatches the box from your hands. <span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">It opens it and unwraps the sacred bone.</span></p><p style=\"text-align: justify; \"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">\"This is a cat\u2019s femur\", it says before throwing it into the bonfire.</span></p><p style=\"text-align: justify;\"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">You gape, unable to put together any coherent sentence.</span></p><p style=\"text-align: justify; \"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">\"They have tricked you into walking into the wolf\u2019s jaws of your own accord\", says the creature, sitting down again. \"I don\u2019t blame them... they believe that this way they can appease the fog.&nbsp;</span><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">Poor devils!</span><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">&nbsp;</span><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">\". With a gesture, it indicates for you to sit. \"Don't be afraid. I am the parish priest of Bones. Well, I was. And soon, I will be nothing at all\".</span></p>",
+                    "links": [
+                        {
+                            "text": "<p>Sit down</p>",
+                            "destination_scene_id": 19660,
+                            "consequences": [],
+                            "conditions": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "You stay still",
+            "id": 19659,
+            "sections": [
+                {
+                    "consequences": [],
+                    "conditions": [],
+                    "text": "<p style=\"text-align: justify;\">You take a step back, then another, praying to melt into the darkness. The creature keeps its gaze fixed on you; you fear it can hear the frantic pounding of your heart.&nbsp;</p><p style=\"text-align: justify;\"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">Then, suddenly, somewhere out on the moor, a terrifying howl rises, and immediately afterward, the figure vanishes. </span><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">&nbsp;It leaves no trace but a heap of black clothing lying on the ground.</span></p><p style=\"text-align: justify;\">Fear roots you to the spot. <span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">&nbsp;It takes you a few minutes to gather the courage to emerge from the shadows. You examine the clothing: it is a cassock.</span></p><p style=\"text-align: justify;\">You remain for a while by the fire. The howling of the moor does not cease; you would say it is nothing more than the wind\u2019s lament, if the night were not still as ice.<span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\"><br></span></p>",
+                    "links": []
+                },
+                {
+                    "consequences": [
+                        {
+                            "variable": "motivacion_volver",
+                            "update_to_value": "1"
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "variable": "amuleto_robado",
+                            "compare_with_value": "1"
+                        }
+                    ],
+                    "text": "<p style=\"text-align: justify;\">You think of the parish priest of Bones and the words scribbled in his notebook. <i>Someone has stolen it.</i> <i>God have mercy on us!</i> He was undoubtedly referring to the heart of the guardian. Whatever it is, you sense that it holds the answer to all these phenomena that defy your reason. Perhaps you should search in Bones. Where else?</p>",
+                    "links": []
+                },
+                {
+                    "consequences": [],
+                    "conditions": [],
+                    "text": "<p style=\"text-align: justify;\"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">Not far away, you make out the irregular outline of some stones. Ruins.</span><br></p>",
+                    "links": [
+                        {
+                            "text": "<p>Explore the ruins</p>",
+                            "destination_scene_id": 19713,
+                            "consequences": [],
+                            "conditions": []
+                        },
+                        {
+                            "text": "<p>Go back to Bones</p>",
+                            "destination_scene_id": 19683,
+                            "consequences": [],
+                            "conditions": [
+                                {
+                                    "variable": "motivacion_volver",
+                                    "compare_with_value": "1"
+                                }
+                            ]
+                        },
+                        {
+                            "text": "<p>Continue along the road to the north</p>",
+                            "destination_scene_id": 19653,
+                            "consequences": [],
+                            "conditions": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "You sit down",
+            "id": 19660,
+            "sections": [
+                {
+                    "consequences": [],
+                    "conditions": [],
+                    "text": "<p style=\"text-align: justify;\"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">You take a seat and watch the priest on the other side of the flames. The black garments you saw are, indeed, a cassock, and on his throat you make out the white point of a clerical collar. </span><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">You notice how the light seems to pass through his hands and face, as if his skin lacked the substance needed to reflect it.</span></p><p style=\"text-align: justify;\"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">\"You startled me; I thought you were one of my parishioners. I don\u2019t want them to see me like this. That could shatter the little sanity they have left\".</span></p><p style=\"text-align: justify;\">As he speaks, he moves his hands, leaving a vaporous trail behind them.</p><p style=\"text-align: justify;\">\"Is it the fog that did this to you?\" you ask.</p><p style=\"text-align: justify;\">\"It didn\u2019t do it. Is <i>is</i> dong it. I\u2019m vaporizing. I\u2019m becoming... part of it\".<span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\"> His white eyes look at you helplessly. \"</span><span style=\"background-color: var(--widget-background);\">Foolish me! I trusted blindly that the Holy Cross would protect me. But this fog... </span><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">It is an evil that comes from an archaic and shadowy past. An evil that cannot be fought with modern... and hollow symbols\".</span></p>",
+                    "links": [
+                        {
+                            "text": "Do not blaspheme, Father",
+                            "destination_scene_id": 20018,
+                            "consequences": [],
+                            "conditions": []
+                        },
+                        {
+                            "text": "<p>What is... that fog?</p>",
+                            "destination_scene_id": 20019,
+                            "consequences": [],
+                            "conditions": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Knock on the houses",
+            "id": 19675,
+            "sections": [
+                {
+                    "consequences": [],
+                    "conditions": [],
+                    "text": "<p style=\"text-align: justify;\">You walk down the main street and knock on a few doors without success. The silence is so dense that you can feel your blood pulsing in your ears. Not a breeze, not a hint of life disturbs the stagnant calm of the night.</p><p style=\"text-align: justify;\">A few steps ahead, you make out a dark side alley.</p>",
+                    "links": [
+                        {
+                            "text": "<p>Try your luck on the side alley</p>",
+                            "destination_scene_id": 19676,
+                            "consequences": [],
+                            "conditions": []
+                        },
+                        {
+                            "text": "<p>Enter the church</p>",
+                            "destination_scene_id": 19517,
+                            "consequences": [
+                                {
+                                    "variable": "iglesia_explorada",
+                                    "update_to_value": "1"
+                                }
+                            ],
+                            "conditions": [
+                                {
+                                    "variable": "iglesia_explorada",
+                                    "compare_with_value": "0"
+                                },
+                                {
+                                    "variable": "posada_explorada",
+                                    "compare_with_value": "0"
+                                }
+                            ]
+                        },
+                        {
+                            "text": "<p>Enter the church</p>",
+                            "destination_scene_id": 19730,
+                            "consequences": [],
+                            "conditions": [
+                                {
+                                    "variable": "posada_explorada",
+                                    "compare_with_value": "1"
+                                }
+                            ]
+                        },
+                        {
+                            "text": "<p>Enter the inn</p>",
+                            "destination_scene_id": 19509,
+                            "consequences": [
+                                {
+                                    "variable": "posada_explorada",
+                                    "update_to_value": "1"
+                                }
+                            ],
+                            "conditions": [
+                                {
+                                    "variable": "posada_explorada",
+                                    "compare_with_value": "0"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Butcher's house",
+            "id": 19676,
+            "sections": [
+                {
+                    "consequences": [],
+                    "conditions": [],
+                    "text": "<p style=\"text-align: justify; \">Light, at last! </p><p style=\"text-align: justify; \">A flickering reddish glow escapes from the upper windows of a distant house.</p><p style=\"text-align: justify;\">The door is not locked. When you push it open, the sour stench of spoiled flesh assaults you. The light of your lantern reveals lifeless bodies hanging behind a counter stained with blotches. <span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\"></p><p>You find yourself in a butcher shop.</p></span></p><p style=\"text-align: justify;\">A narrow wooden staircase leads to the upper floor. The ceiling creaks under the footsteps of someone walking slowly, as if that someone wanted to go unnoticed.</p>",
+                    "links": [
+                        {
+                            "text": "<p>Announce your presence</p>",
+                            "destination_scene_id": 19510,
+                            "consequences": [],
+                            "conditions": []
+                        },
+                        {
+                            "text": "<p>Go upstairs to investigate</p>",
+                            "destination_scene_id": 19511,
+                            "consequences": [
+                                {
+                                    "variable": "sospechas_carnicero",
+                                    "update_to_value": "1"
+                                }
+                            ],
+                            "conditions": [
+                                {
+                                    "variable": "amuleto_robado",
+                                    "compare_with_value": "1"
+                                }
+                            ]
+                        },
+                        {
+                            "text": "<p>Go upstairs to investigate</p>",
+                            "destination_scene_id": 19511,
+                            "consequences": [],
+                            "conditions": [
+                                {
+                                    "variable": "amuleto_robado",
+                                    "compare_with_value": "0"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Show the amulet of the butcher",
+            "id": 19663,
+            "sections": [
+                {
+                    "consequences": [],
+                    "conditions": [],
+                    "text": "<p style=\"text-align: justify;\">You show the gem to the priest. Its crimson veins seem to pulse under the flickering light of the fire.</p><p style=\"text-align: justify;\">The priest opens his eyes in surprise, but weakly. His head wobbles.&nbsp;</p><p style=\"text-align: justify; \">\"That is... place it in his hand... <span style=\"color: var(--text-color); font-size: 1rem; background-color: var(--widget-background);\"><i>only</i> in his hand! But beware of the fog; the Cross is powerless against it. Now, go! Do not linger for anything!\", he says&nbsp;</span><span style=\"color: var(--text-color); font-size: 1rem; background-color: var(--widget-background);\">just before&nbsp;</span><span style=\"color: var(--text-color); font-size: 1rem; background-color: var(--widget-background);\">vaporizing into a frayed cloud of mist. </span></p><p style=\"text-align: justify; \"><span style=\"color: var(--text-color); font-size: 1rem; background-color: var(--widget-background);\">All that remains of him is an empty cassock on the floor.</span></p><p style=\"text-align: justify; \"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">Terror leaves you breathless. You touch the cassock as if the truth were not obvious. Then, you struggle to stand. There is nothing of interest around the fire, but where the glow of the flame merges with the darkness, you make out the irregular outlines of some ruins.</span></p>",
+                    "links": [
+                        {
+                            "text": "<p>Explore the ruins</p>",
+                            "destination_scene_id": 19713,
+                            "consequences": [],
+                            "conditions": []
+                        },
+                        {
+                            "text": "<p>Continue along the road to the north</p>",
+                            "destination_scene_id": 19653,
+                            "consequences": [],
+                            "conditions": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Ask where is the amulet",
+            "id": 19664,
+            "sections": [
+                {
+                    "consequences": [
+                        {
+                            "variable": "motivacion_volver",
+                            "update_to_value": "1"
+                        }
+                    ],
+                    "conditions": [],
+                    "text": "<p style=\"text-align: justify; \">The priest\u2019s glassy eyes look at you without seeing you.</p><p style=\"text-align: justify; \">\"Go back to Bones... find it... and return it to where it belongs, without lingering for anything... for anything!\" he says a moment before&nbsp;<span style=\"color: var(--text-color); font-size: 1rem; background-color: var(--widget-background);\">dissolving into a tangle of whitish rags.&nbsp;</span></p><p style=\"text-align: justify; \"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">His crumpled cassock on the floor remains as the only proof of his existence.</span></p><p style=\"text-align: justify; \"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">Terror paralyzes you. But you must pull yourself together. Stand up. </span></p><p style=\"text-align: justify; \"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">You do it.</span></p><p style=\"text-align: justify; \"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">There is nothing left in the bonfire; a little farther away, shrouded in the veil of darkness, you make out the irregular outlines of what could be ruins.</span></p><p style=\"text-align: justify; \">In the distance you hear a wail that you would like to attribute to the wind... if it were blowing.<span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\"><br></span></p>",
+                    "links": [
+                        {
+                            "text": "<p>Explore the ruins</p>",
+                            "destination_scene_id": 19713,
+                            "consequences": [],
+                            "conditions": []
+                        },
+                        {
+                            "text": "<p>Go back to Bones</p>",
+                            "destination_scene_id": 19683,
+                            "consequences": [],
+                            "conditions": []
+                        },
+                        {
+                            "text": "<p>Continue along the road to the north</p>",
+                            "destination_scene_id": 19653,
+                            "consequences": [],
+                            "conditions": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Take the wine",
+            "id": 19677,
+            "sections": [
+                {
+                    "consequences": [
+                        {
+                            "variable": "vino",
+                            "update_to_value": "1"
+                        }
+                    ],
+                    "conditions": [],
+                    "text": "<p style=\"text-align: justify;\">You grab one of the bottles and uncork it with your teeth. You take a long swig: the wine is thick, aged in flavor, and fills you with warmth.</p><p style=\"text-align: justify;\">You leave your last coins on the counter and tuck the bottle into your pouch.</p>",
+                    "links": [
+                        {
+                            "text": "<p>Go out into the street</p>",
+                            "destination_scene_id": 19556,
+                            "consequences": [],
+                            "conditions": [
+                                {
+                                    "variable": "iglesia_explorada",
+                                    "compare_with_value": "0"
+                                }
+                            ]
+                        },
+                        {
+                            "text": "<p>Go out into the street</p>",
+                            "destination_scene_id": 19730,
+                            "consequences": [],
+                            "conditions": [
+                                {
+                                    "variable": "iglesia_explorada",
+                                    "compare_with_value": "1"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Take the bread",
+            "id": 19678,
+            "sections": [
+                {
+                    "consequences": [
+                        {
+                            "variable": "pan",
+                            "update_to_value": "1"
+                        }
+                    ],
+                    "conditions": [],
+                    "text": "<p style=\"text-align: justify; \">You grab one of the large loaves of bread and leave your last coins in exchange.</p><p style=\"text-align: justify; \">You eat until you are full. The bread is dark, very coarse, but dense and nourishing. <span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">You tuck the remainder into your pouch.</span></p>",
+                    "links": [
+                        {
+                            "text": "<p>Go out into the street</p>",
+                            "destination_scene_id": 19556,
+                            "consequences": [],
+                            "conditions": [
+                                {
+                                    "variable": "iglesia_explorada",
+                                    "compare_with_value": "0"
+                                }
+                            ]
+                        },
+                        {
+                            "text": "<p>Go out into the street</p>",
+                            "destination_scene_id": 19730,
+                            "consequences": [],
+                            "conditions": [
+                                {
+                                    "variable": "iglesia_explorada",
+                                    "compare_with_value": "1"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Statue ruins church",
+            "id": 19667,
+            "sections": [
+                {
+                    "consequences": [],
+                    "conditions": [],
+                    "text": "<p style=\"text-align: justify; \"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">The statue depicts a veiled Virgin holding a bowl with both hands. Moss and lichens stain her body in a thousand shades of gray, and from the expression on her face only the orbs of serene eyes remain. On the pedestal, an inscription in Latin can still be read:</p><p style=\"text-align: justify;\"><i style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">Panis vires dat, v</i><i style=\"text-align: left; color: var(--text-color); font-size: 1rem;\">inum facit videre.</i></p><p style=\"text-align: justify;\"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">\"Bread gives strength, wine grants vision\".</span></p><p style=\"text-align: justify;\"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">The bowl she holds is empty.</span></p>",
+                    "links": [
+                        {
+                            "text": "<p>Offer bread</p>",
+                            "destination_scene_id": 19679,
+                            "consequences": [],
+                            "conditions": [
+                                {
+                                    "variable": "pan",
+                                    "compare_with_value": "1"
+                                }
+                            ]
+                        },
+                        {
+                            "text": "<p>Offer wine</p>",
+                            "destination_scene_id": 19680,
+                            "consequences": [],
+                            "conditions": [
+                                {
+                                    "variable": "vino",
+                                    "compare_with_value": "1"
+                                }
+                            ]
+                        },
+                        {
+                            "text": "<p>Examine the hollow in the wall</p>",
+                            "destination_scene_id": 19714,
+                            "consequences": [],
+                            "conditions": [
+                                {
+                                    "variable": "hueco_explorado",
+                                    "compare_with_value": "0"
+                                }
+                            ]
+                        },
+                        {
+                            "text": "<p>Go back to Bones</p>",
+                            "destination_scene_id": 19683,
+                            "consequences": [],
+                            "conditions": [
+                                {
+                                    "variable": "motivacion_volver",
+                                    "compare_with_value": "1"
+                                }
+                            ]
+                        },
+                        {
+                            "text": "<p>Continue along the road to the north</p>",
+                            "destination_scene_id": 19653,
+                            "consequences": [],
+                            "conditions": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Offer bread",
+            "id": 19679,
+            "sections": [
+                {
+                    "consequences": [
+                        {
+                            "variable": "pan",
+                            "update_to_value": "0"
+                        },
+                        {
+                            "variable": "ofrenda_pan",
+                            "update_to_value": "1"
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "variable": "dibujo_incorrecto",
+                            "compare_with_value": "0"
+                        }
+                    ],
+                    "text": "<div style=\"text-align: justify;\"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">When you place the remaining bread in the bowl, you notice a fleeting glimmer in the Virgin\u2019s eyes.</span></div>",
+                    "links": []
+                },
+                {
+                    "consequences": [
+                        {
+                            "variable": "pan",
+                            "update_to_value": "0"
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "variable": "dibujo_incorrecto",
+                            "compare_with_value": "1"
+                        }
+                    ],
+                    "text": "<p style=\"text-align: justify;\">You place the remaining bread in the bowl, but nothing happens.</p>",
+                    "links": []
+                },
+                {
+                    "consequences": [],
+                    "conditions": [],
+                    "text": "",
+                    "links": [
+                        {
+                            "text": "<p>Examine the hollow in the wall</p>",
+                            "destination_scene_id": 19714,
+                            "consequences": [],
+                            "conditions": [
+                                {
+                                    "variable": "hueco_explorado",
+                                    "compare_with_value": "0"
+                                }
+                            ]
+                        },
+                        {
+                            "text": "<p>Go back to Bones</p>",
+                            "destination_scene_id": 19683,
+                            "consequences": [],
+                            "conditions": [
+                                {
+                                    "variable": "motivacion_volver",
+                                    "compare_with_value": "1"
+                                }
+                            ]
+                        },
+                        {
+                            "text": "<p>Continue along the road to the north</p>",
+                            "destination_scene_id": 19653,
+                            "consequences": [],
+                            "conditions": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Offer wine",
+            "id": 19680,
+            "sections": [
+                {
+                    "consequences": [
+                        {
+                            "variable": "vino",
+                            "update_to_value": "0"
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "variable": "dibujo_incorrecto",
+                            "compare_with_value": "0"
+                        },
+                        {
+                            "variable": "motivacion_volver",
+                            "compare_with_value": "1"
+                        }
+                    ],
+                    "text": "<p style=\"text-align: justify;\">When you pour the remaining wine into the bowl, absolute darkness engulfs you. You realize you are in a very small space, beneath what seem to be wooden planks. The air is heavy with the stench of spoiled meat.</p><p style=\"text-align: justify;\">You hear creaks, footsteps, as if someone were walking above the planks.&nbsp;<span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">Suddenly, the planks are lifted, and a monstrous hand appears, holding a jewel that glows with a bloody radiance. You scream for help, but soon your voice </span><span style=\"color: var(--text-color); font-size: 1rem; background-color: var(--widget-background);\">&nbsp;is choked by a violent nausea. A suffocating stench of meat floods your nose and mouth. You cough, grow dizzy. You feel consciousness slipping away.</span></p><p style=\"text-align: justify;\"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">The light returns. You are on the ground amid the ruins, your cloak covered in mud&nbsp;</span><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">and your eyes flooded with tears.&nbsp;</span><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">The </span><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">small statue seems to scrutinize you with its lifeless eyes.</span></p>",
+                    "links": []
+                },
+                {
+                    "consequences": [
+                        {
+                            "variable": "vino",
+                            "update_to_value": "0"
+                        },
+                        {
+                            "variable": "motivacion_volver",
+                            "update_to_value": "1"
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "variable": "dibujo_incorrecto",
+                            "compare_with_value": "0"
+                        },
+                        {
+                            "variable": "motivacion_volver",
+                            "compare_with_value": "0"
+                        }
+                    ],
+                    "text": "<p style=\"text-align: justify;\">You pour what remains of the wine into the bowl and stare its hypnotic crimson swirls for a while.</p><p style=\"text-align: justify;\">Suddenly, you give a start when a thought is born in your mind \u2014out of nowhere, as if someone had placed it there.</p><p style=\"text-align: justify;\"><i>You must return to Bones. Find the heart of the guardian and bring it back to where it belongs.</i></p><p style=\"text-align: justify;\">You open your mouth in astonishment and look at the Virgin, as if asking for an explanation. But she only gazes at you with her timeless stone eyes.</p>",
+                    "links": []
+                },
+                {
+                    "consequences": [
+                        {
+                            "variable": "vino",
+                            "update_to_value": "0"
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "variable": "dibujo_incorrecto",
+                            "compare_with_value": "1"
+                        }
+                    ],
+                    "text": "<p style=\"text-align: justify;\">You pour the wine you have left into the bowl, but nothing happens.</p>",
+                    "links": []
+                },
+                {
+                    "consequences": [],
+                    "conditions": [],
+                    "text": "",
+                    "links": [
+                        {
+                            "text": "<p>Examine the hollow in the wall</p>",
+                            "destination_scene_id": 19714,
+                            "consequences": [],
+                            "conditions": [
+                                {
+                                    "variable": "hueco_explorado",
+                                    "compare_with_value": "0"
+                                }
+                            ]
+                        },
+                        {
+                            "text": "<p>Go back to Bones</p>",
+                            "destination_scene_id": 19683,
+                            "consequences": [],
+                            "conditions": [
+                                {
+                                    "variable": "motivacion_volver",
+                                    "compare_with_value": "1"
+                                }
+                            ]
+                        },
+                        {
+                            "text": "<p>Continue along the road to the north</p>",
+                            "destination_scene_id": 19653,
+                            "consequences": [],
+                            "conditions": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Posada",
+            "id": 19685,
+            "sections": [
+                {
+                    "consequences": [],
+                    "conditions": [],
+                    "text": "<p style=\"text-align: justify;\">The inside of the inn is a jumble of dust and ash. A quick glance is enough to confirm that the main room contains nothing but tables and heaps of rotting straw.</p><p style=\"text-align: justify;\"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">In a small adjoining room, you come across a bed of fresh straw and the remnants of an old kitchen. You search every last nook, but despite your thoroughness, you find only loaves of stale bread and a few bottles of wine, for which you have no desire for now.</span></p><p style=\"text-align: justify;\"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">You go out into the street. Bones now appears immense, stretching into a white infinity. Where to search? The church? The houses? It is too much for a pair of disoriented hands.</span></p>",
+                    "links": [
+                        {
+                            "text": "<p>The fog closes in around you</p>",
+                            "destination_scene_id": 19692,
+                            "consequences": [],
+                            "conditions": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Iglesia",
+            "id": 19686,
+            "sections": [
+                {
+                    "consequences": [],
+                    "conditions": [],
+                    "text": "<p style=\"text-align: justify; \">The church doors are shut. You pound on them with all your strength, but the wood is so thick you doubt anything could be heard on the other side. An inspection around the building reveals no other possible way in. You find a small metal door at the back, but it is as locked as the main entrance. This time, though, you hear your call echo inside \u2014yet you receive no reply.</p><p style=\"text-align: justify;\">You consider the windows, but the walls are too smooth to climb. Besides, you are certain that even if you could reach them, they would be far too narrow for you to pass through.</p><p style=\"text-align: justify;\">The only thing you can do is rest your back against the old walls and watch the slow yet inexorable spread of the fog. Bones is, simply put, far too large.</p>",
+                    "links": [
+                        {
+                            "text": "<p>The fog closes in around you</p>",
+                            "destination_scene_id": 19692,
+                            "consequences": [],
+                            "conditions": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Back to Bones",
+            "id": 19683,
+            "sections": [
+                {
+                    "consequences": [],
+                    "conditions": [],
+                    "text": "<p style=\"text-align: justify; \">You make your way back to Bones as fast as your mud-laden boots will carry you. The fog is now everywhere, a thick wall that your torch barely manages to pierce. \u201cIt\u2019s only fog\u201d, you tell yourself between gasps. \u201cIt\u2019s only fog\u201d, you repeat as you run through the white curtain, while in your ears echoes, unceasing, the maddening chorus of a thousand impossible voices.</p><p style=\"text-align: justify;\">The first houses suddenly emerge from the mist. You stop at the beginning of the main street and struggle to calm your ragged breathing. Bones is only a village, yet there are still too many houses \u2014dozens of faces watching you through their shadowed windows, seeming to mock you with mouths made of doors.</p>",
+                    "links": []
+                },
+                {
+                    "consequences": [],
+                    "conditions": [
+                        {
+                            "variable": "carnicero_sorprendido",
+                            "compare_with_value": "1"
+                        }
+                    ],
+                    "text": "<p style=\"text-align: justify; \">Although the search might be easier than it seems. The butcher\u2019s agitation when you caught him in his house, his efforts to force a smile... suspicious behavior, or merely your imagination?</p>",
+                    "links": []
+                },
+                {
+                    "consequences": [],
+                    "conditions": [],
+                    "text": "<p style=\"text-align: justify; \"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">Where will you search?</span><br></p>",
+                    "links": [
+                        {
+                            "text": "<p>At the inn</p>",
+                            "destination_scene_id": 19685,
+                            "consequences": [],
+                            "conditions": []
+                        },
+                        {
+                            "text": "<p>At the church</p>",
+                            "destination_scene_id": 19686,
+                            "consequences": [],
+                            "conditions": []
+                        },
+                        {
+                            "text": "<p>At the houses</p>",
+                            "destination_scene_id": 19687,
+                            "consequences": [],
+                            "conditions": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Houses",
+            "id": 19687,
+            "sections": [
+                {
+                    "consequences": [],
+                    "conditions": [],
+                    "text": "<p style=\"text-align: justify; \">You hurry through the streets soaked in fog. Even if you had several nights, you could not search every house.</p><p style=\"text-align: justify;\">Next to the small cemetery stands a hut with direct access to it; you assume this must be where the gravedigger lives. Right beside it, as if they depended on each other, rises a slightly grander house with a staff of Asclepius \u2014the symbol of medicine\u2014 painted above the entrance. This must be the surgeon\u2019s home, judging by the countless sharp instruments lined up on the walls that you see through the ground-floor windows. The butcher\u2019s shop is located on a side alley; its large window displays a filthy counter and a row of dismembered carcasses hanging behind it. <span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">&nbsp;At the end of this same alley stands a house surrounded by a wide strip of garden. A wooden sign hanging from a post beside the entrance path reads: <i>herbalist\u2019s shop</i>.</span></p><p style=\"text-align: justify;\">Where will you search?</p>",
+                    "links": [
+                        {
+                            "text": "<p>At the gravedigger\u2019s house</p>",
+                            "destination_scene_id": 19691,
+                            "consequences": [],
+                            "conditions": []
+                        },
+                        {
+                            "text": "<p>At the surgeon\u2019s house</p>",
+                            "destination_scene_id": 19688,
+                            "consequences": [],
+                            "conditions": []
+                        },
+                        {
+                            "text": "<p>At the butcher\u2019s house</p>",
+                            "destination_scene_id": 19689,
+                            "consequences": [],
+                            "conditions": []
+                        },
+                        {
+                            "text": "<p>At the herbalist\u2019s house</p>",
+                            "destination_scene_id": 19690,
+                            "consequences": [],
+                            "conditions": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Surgeron house",
+            "id": 19688,
+            "sections": [
+                {
+                    "consequences": [],
+                    "conditions": [],
+                    "text": "<p style=\"text-align: justify;\">The door of the surgeon\u2019s house is locked; fortunately, you manage to get in through a window.</p><p style=\"text-align: justify;\">Inside, reigns the kind of orderliness typical of someone devoted to a medical profession. Although the house is large <span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">and apparently also occupied by his family, every object seems to be in its proper place.</span><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">You proceed to inspect every corner; drawers and cabinets yield to your frantic hands, but you find nothing out of place. In the operating room, you encounter nothing more than a tidy wooden table, rows of all kinds of sharp instruments hanging on the walls, shelves filled with clean cloths, and a hearth with a metal pot resting on a pile of cold ashes.</span></p><p style=\"text-align: justify;\">You clutch your head in despair when you realize that you will never find what you are looking for. Perhaps if you had twenty people or all the time in the world it would be possible \u2014but that is not the case.</p>",
+                    "links": [
+                        {
+                            "text": "<p>The fog closes in around you</p>",
+                            "destination_scene_id": 19692,
+                            "consequences": [],
+                            "conditions": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Butcher's house",
+            "id": 19689,
+            "sections": [
+                {
+                    "consequences": [],
+                    "conditions": [],
+                    "text": "<p style=\"text-align: justify;\">When you enter the butcher\u2019s shop, you are struck by the warm, clinging stench of blood and not-so-fresh meat. You do not spend much time rummaging through the foul-smelling store: it is unlikely that anyone would hide anything in a public space. <span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">You climb the stairs two at a time and run down the hallway to the room at the far end of the upper floor. The wooden floorboards creak and wobble beneath your feet. </span></p><p style=\"text-align: justify;\"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">You sweep your lantern across the darkness, revealing the different pieces of furniture:&nbsp;</span><span style=\"color: var(--text-color); font-size: 1rem; background-color: var(--widget-background);\">a painter's easel holds a blank canvas, a bed with a straw mattress rests nearby, a heavy wardrobe leans askew against the wall, and a table bears a portrait of a young woman, her expression somewhere between sweetness and sorrow.</span></p>",
+                    "links": [
+                        {
+                            "text": "<p>Take the painting down</p>",
+                            "destination_scene_id": 19693,
+                            "consequences": [],
+                            "conditions": []
+                        },
+                        {
+                            "text": "<p>Lift the floorboards</p>",
+                            "destination_scene_id": 19694,
+                            "consequences": [],
+                            "conditions": []
+                        },
+                        {
+                            "text": "<p>Look behind the wardrobe</p>",
+                            "destination_scene_id": 19695,
+                            "consequences": [],
+                            "conditions": []
+                        },
+                        {
+                            "text": "<p>Lift the straw mattress</p>",
+                            "destination_scene_id": 19696,
+                            "consequences": [],
+                            "conditions": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Herbalist",
+            "id": 19690,
+            "sections": [
+                {
+                    "consequences": [],
+                    "conditions": [],
+                    "text": "<p style=\"text-align: justify; \">You cross the garden and check the door of the herbalist\u2019s shop. It is locked. Fortunately, at the back you find a poorly latched little door that lets you slip inside.</p><p style=\"text-align: justify; \">The door opens into a laboratory where volumes on botany, glassware, tubes, bottles, and other instruments of incomprehensible use for you are heaped in disorder. Bundles of dried plants hang from ropes stretched near the ceiling, and jars containing handfuls of leaves and powders line endless shelves. It is a small room, but due to the clutter it takes you a long time to search it. You find nothing.</p><p style=\"text-align: justify; \"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">You pause to consider whether you should search the rest of the house or perhaps try another, when you realize it does not matter. You have no idea where to look. Whatever you do, your chances of success are virtually nil.</span></p>",
+                    "links": [
+                        {
+                            "text": "<p>The fog closes in around you</p>",
+                            "destination_scene_id": 19692,
+                            "consequences": [],
+                            "conditions": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Gravedigger's house",
+            "id": 19691,
+            "sections": [
+                {
+                    "consequences": [],
+                    "conditions": [],
+                    "text": "<p style=\"text-align: justify; \">You push the gravedigger\u2019s house door, but it is firmly shut; however, you find the door leading to the cemetery open.&nbsp;</p><p style=\"text-align: justify;\">Inside the small house, the austerity of someone who lives alone prevails.<span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">&nbsp;There does not seem to be a single object without a practical purpose; no decoration, no detail that disrupts the prevailing sobriety. It does not take long for you to check the dining room and the bedroom, unsuccessfully.</span></p><p style=\"text-align: justify;\">It takes you a bit longer to search the workshop. It is filled with planks of various sizes, bags of sawdust, carpentry tools, and picks, shovels, and buckets encrusted with mud. Still, you do not find what you are looking for in this antechamber to the graveyard either.</p><p style=\"text-align: justify;\">The fruitless search has undermined your morale. You try to organize your thoughts, but ideas pile up in your head in chaotic disarray. Suddenly, Bones seems impossibly vast.</p>",
+                    "links": [
+                        {
+                            "text": "<p>The fog closes in around you</p>",
+                            "destination_scene_id": 19692,
+                            "consequences": [],
+                            "conditions": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Death without amulet",
+            "id": 19692,
+            "sections": [
+                {
+                    "consequences": [],
+                    "conditions": [],
+                    "text": "<p style=\"text-align: justify; \">The pain is brief. As your body dissolves into a frayed, tangled cloud of vapor, the ignominious wail of the fog ceases to tear at you. You rise alongside the thousand and one souls who died before; your possessions, your concerns, your worldly worries are left behind. You are fog. Now, their knowledge and their longings are yours as well.</p><p style=\"text-align: justify; \">However, your bliss is incomplete. There is an object which, placed in its rightful place, can still return you to the abject prison between worlds where you have languished for centuries.&nbsp;<span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">The heart of the guardian.</span></p><p style=\"text-align: justify; \">You join the search your sisters began. Together, you will scour the land, inch by inch, night after night, with tireless fervor; when your strength falters, the bodies you consume will restore it. You will not cease until you find it.&nbsp;</p><p style=\"text-align: justify; \"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">The heart of the guardian. </span>Until it becomes your salvation, it will remain your curse.</p>",
+                    "links": []
+                },
+                {
+                    "consequences": [],
+                    "conditions": [],
+                    "text": "<p style=\"text-align: center; \"><b style=\"color: var(--text-color); font-size: 1rem; background-color: var(--widget-background);\"><br></b></p><p style=\"text-align: center; \"><b style=\"color: var(--text-color); font-size: 1rem; background-color: var(--widget-background);\">THE END?</b><br></p><p style=\"text-align: center; \"><br></p>",
+                    "links": []
+                }
+            ]
+        },
+        {
+            "title": "Take painting down",
+            "id": 19693,
+            "sections": [
+                {
+                    "consequences": [],
+                    "conditions": [],
+                    "text": "<p style=\"text-align: justify; \">You take down the painting. Behind, you find a compartment carved into the wall containing a small burlap sack. You grab it with eager hands, as if trying to wrench it from its place. </p><p style=\"text-align: justify; \">When you open it, you are hit by disappointment.&nbsp;<span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">Inside, there is only a handful of gold coins, jingling as they slip through your fingers \u2014the butcher\u2019s savings.</span></p>",
+                    "links": []
+                },
+                {
+                    "consequences": [],
+                    "conditions": [
+                        {
+                            "variable": "desmoralizada",
+                            "compare_with_value": "1"
+                        }
+                    ],
+                    "text": "<p style=\"text-align: justify; \">Nothing that can save you; nothing that, at least, hints at where to continue your search in a village as small, and yet as vast, as Bones.<br></p>",
+                    "links": []
+                },
+                {
+                    "consequences": [],
+                    "conditions": [
+                        {
+                            "variable": "desmoralizada",
+                            "compare_with_value": "0"
+                        }
+                    ],
+                    "text": "<p style=\"text-align: justify; \"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">Yet you refuse to give up.</span><br></p>",
+                    "links": []
+                },
+                {
+                    "consequences": [],
+                    "conditions": [],
+                    "text": "",
+                    "links": [
+                        {
+                            "text": "<p>Lift the floorboards</p>",
+                            "destination_scene_id": 19694,
+                            "consequences": [],
+                            "conditions": [
+                                {
+                                    "variable": "desmoralizada",
+                                    "compare_with_value": "0"
+                                }
+                            ]
+                        },
+                        {
+                            "text": "<p>Look behind the wardrobe</p>",
+                            "destination_scene_id": 19695,
+                            "consequences": [
+                                {
+                                    "variable": "desmoralizada",
+                                    "update_to_value": "1"
+                                }
+                            ],
+                            "conditions": [
+                                {
+                                    "variable": "desmoralizada",
+                                    "compare_with_value": "0"
+                                }
+                            ]
+                        },
+                        {
+                            "text": "<p>Lift the straw mattress</p>",
+                            "destination_scene_id": 19696,
+                            "consequences": [
+                                {
+                                    "variable": "desmoralizada",
+                                    "update_to_value": "1"
+                                }
+                            ],
+                            "conditions": [
+                                {
+                                    "variable": "desmoralizada",
+                                    "compare_with_value": "0"
+                                }
+                            ]
+                        },
+                        {
+                            "text": "<p>The fog closes in around you</p>",
+                            "destination_scene_id": 19692,
+                            "consequences": [],
+                            "conditions": [
+                                {
+                                    "variable": "desmoralizada",
+                                    "compare_with_value": "1"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Lift the floorboards",
+            "id": 19694,
+            "sections": [
+                {
+                    "consequences": [
+                        {
+                            "variable": "amuleto",
+                            "update_to_value": "1"
+                        },
+                        {
+                            "variable": "amuleto_robado",
+                            "update_to_value": "0"
+                        }
+                    ],
+                    "conditions": [],
+                    "text": "<p style=\"text-align: justify;\">When you lift the floorboards, the reddish glow emanating from beneath makes you think there are burning embers underground. It takes a moment to realize that it is actually a brilliant oval gem.</p><p style=\"text-align: justify;\">You pick it up to inspect it. It is an oval as smooth as a drop of water, glowing like burning embers. It is streaked with veins of vivid red, whose radiance fills the room with a dance of light and shadow.</p><p style=\"text-align: justify;\">You know it the moment you see it. You have found the heart of the guardian!</p>",
+                    "links": [
+                        {
+                            "text": "<p>Run towards the north</p>",
+                            "destination_scene_id": 19700,
+                            "consequences": [],
+                            "conditions": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Look behind the wardrobe",
+            "id": 19695,
+            "sections": [
+                {
+                    "consequences": [],
+                    "conditions": [],
+                    "text": "<p style=\"text-align: justify; \">You push aside the heavy wardrobe. Behind it, you find half a dozen canvases \u2014obsessive repetitions of the woman from the painting, same posture, same sad expression in her eyes. They all stare at you head-on, as if pitying you.</p>",
+                    "links": []
+                },
+                {
+                    "consequences": [],
+                    "conditions": [
+                        {
+                            "variable": "desmoralizada",
+                            "compare_with_value": "1"
+                        }
+                    ],
+                    "text": "<p style=\"text-align: justify; \"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">For your futile attempts to search for something you will never find.</span><br></p>",
+                    "links": []
+                },
+                {
+                    "consequences": [],
+                    "conditions": [
+                        {
+                            "variable": "desmoralizada",
+                            "compare_with_value": "0"
+                        }
+                    ],
+                    "text": "<p style=\"text-align: justify; \"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">Yet you refuse to give up.</span><br></p>",
+                    "links": []
+                },
+                {
+                    "consequences": [],
+                    "conditions": [],
+                    "text": "",
+                    "links": [
+                        {
+                            "text": "<p>Take the painting down</p>",
+                            "destination_scene_id": 19693,
+                            "consequences": [
+                                {
+                                    "variable": "desmoralizada",
+                                    "update_to_value": "1"
+                                }
+                            ],
+                            "conditions": [
+                                {
+                                    "variable": "desmoralizada",
+                                    "compare_with_value": "0"
+                                }
+                            ]
+                        },
+                        {
+                            "text": "<p>Lift the floorboards</p>",
+                            "destination_scene_id": 19694,
+                            "consequences": [],
+                            "conditions": [
+                                {
+                                    "variable": "desmoralizada",
+                                    "compare_with_value": "0"
+                                }
+                            ]
+                        },
+                        {
+                            "text": "<p>Lift the straw mattress</p>",
+                            "destination_scene_id": 19696,
+                            "consequences": [
+                                {
+                                    "variable": "desmoralizada",
+                                    "update_to_value": "1"
+                                }
+                            ],
+                            "conditions": [
+                                {
+                                    "variable": "desmoralizada",
+                                    "compare_with_value": "0"
+                                }
+                            ]
+                        },
+                        {
+                            "text": "<p>The fog closes in around you</p>",
+                            "destination_scene_id": 19692,
+                            "consequences": [],
+                            "conditions": [
+                                {
+                                    "variable": "desmoralizada",
+                                    "compare_with_value": "1"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Look at the bed",
+            "id": 19696,
+            "sections": [
+                {
+                    "consequences": [],
+                    "conditions": [],
+                    "text": "<p style=\"text-align: justify; \">When you lift the mattress, a piece of paper falls from one of the slats of the bed frame. You pick it up. It is a photograph of the woman from the painting \u2014same pose, same expression on her face, perhaps a little more cheerful.</p>",
+                    "links": []
+                },
+                {
+                    "consequences": [],
+                    "conditions": [
+                        {
+                            "variable": "desmoralizada",
+                            "compare_with_value": "1"
+                        }
+                    ],
+                    "text": "<p style=\"text-align: justify; \"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">A face that blurs behind the veil of your despair as you realize you are stumbling blindly, and the fog spreads far faster than a single person can search.</span><br></p>",
+                    "links": []
+                },
+                {
+                    "consequences": [],
+                    "conditions": [
+                        {
+                            "variable": "desmoralizada",
+                            "compare_with_value": "0"
+                        }
+                    ],
+                    "text": "<p style=\"text-align: justify; \"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">Yet you refuse to give up.</span><br></p>",
+                    "links": []
+                },
+                {
+                    "consequences": [],
+                    "conditions": [],
+                    "text": "",
+                    "links": [
+                        {
+                            "text": "<p>Take the painting down</p>",
+                            "destination_scene_id": 19693,
+                            "consequences": [
+                                {
+                                    "variable": "desmoralizada",
+                                    "update_to_value": "1"
+                                }
+                            ],
+                            "conditions": [
+                                {
+                                    "variable": "desmoralizada",
+                                    "compare_with_value": "0"
+                                }
+                            ]
+                        },
+                        {
+                            "text": "<p>Lift the floorboards</p>",
+                            "destination_scene_id": 19694,
+                            "consequences": [],
+                            "conditions": [
+                                {
+                                    "variable": "desmoralizada",
+                                    "compare_with_value": "0"
+                                }
+                            ]
+                        },
+                        {
+                            "text": "<p>Look behind the wardrobe</p>",
+                            "destination_scene_id": 19695,
+                            "consequences": [
+                                {
+                                    "variable": "desmoralizada",
+                                    "update_to_value": "1"
+                                }
+                            ],
+                            "conditions": [
+                                {
+                                    "variable": "desmoralizada",
+                                    "compare_with_value": "0"
+                                }
+                            ]
+                        },
+                        {
+                            "text": "<p>The fog closes in around you</p>",
+                            "destination_scene_id": 19692,
+                            "consequences": [],
+                            "conditions": [
+                                {
+                                    "variable": "desmoralizada",
+                                    "compare_with_value": "1"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Lift the straw mattres",
+            "id": 19697,
+            "sections": [
+                {
+                    "consequences": [],
+                    "conditions": [],
+                    "text": "<p style=\"text-align: justify;\">When you lift the mattress, a small photograph slips from the slats of the bedframe. It shows the same woman from the portrait, though here her expression is somewhat more cheerful. A secret love of the butcher, perhaps? Or a loved one already taken by the fog?&nbsp;</p><p style=\"text-align: justify;\"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">You feel like you\u2019re snooping where you do not belong. </span>You leave the photograph in its place and walk out of the house.</p>",
+                    "links": [
+                        {
+                            "text": "<p>Take the road to the north</p>",
+                            "destination_scene_id": 19626,
+                            "consequences": [],
+                            "conditions": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Escuchas una voz",
+            "id": 19698,
+            "sections": [
+                {
+                    "consequences": [],
+                    "conditions": [],
+                    "text": "<p style=\"text-align: justify;\">You close your eyes and surrender to the inevitable. </p><p style=\"text-align: justify;\">Then a sudden wind rises, and <span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">from somewhere within the darkness of your eyelids, a serene, androgynous, and timeless voice emerges.&nbsp;:</span></p><p style=\"text-align: justify;\">\"Rise. For your offering, you must continue\".</p><p style=\"text-align: justify;\">You notice your head feels clearer. The infernal wail that was tearing at you has fallen silent. You open your eyes. <span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">&nbsp;</span><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">Your lantern makes the mud of the path glisten and casts a fragile tint to the bushes that dare to peek out from the darkness. The fog has parted and drifts in scattered shreds... for now.</span></p>",
+                    "links": [
+                        {
+                            "text": "<p>Stand up</p>",
+                            "destination_scene_id": 19701,
+                            "consequences": [],
+                            "conditions": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "You feel dizzy...",
+            "id": 19699,
+            "sections": [
+                {
+                    "consequences": [],
+                    "conditions": [],
+                    "text": "<div style=\"text-align: justify;\"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">You inhale, and the tainted air grants you one last breath of strength before you plunge into the abyss of nothingness.</span></div>",
+                    "links": [
+                        {
+                            "text": "<p>Raise the crucifix</p>",
+                            "destination_scene_id": 20263,
+                            "consequences": [],
+                            "conditions": []
+                        },
+                        {
+                            "text": "<p>Raise the relic of Saint Theresa</p>",
+                            "destination_scene_id": 20264,
+                            "consequences": [],
+                            "conditions": [
+                                {
+                                    "variable": "reliquia_iglesia",
+                                    "compare_with_value": "1"
+                                }
+                            ]
+                        },
+                        {
+                            "text": "<p>Raise the bronze cross</p>",
+                            "destination_scene_id": 19709,
+                            "consequences": [],
+                            "conditions": [
+                                {
+                                    "variable": "estaurograma",
+                                    "compare_with_value": "1"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Run towards the lagoon",
+            "id": 19700,
+            "sections": [
+                {
+                    "consequences": [],
+                    "conditions": [],
+                    "text": "<p style=\"text-align: justify; \">You step out into the street and run along the northern road, forcing your legs beyond exhaustion. The fog covers the path in solid white, and the sticky, humid air weighs heavily on your lungs. The lantern gleams in your hand, and the heart of the guardian rests in your pouch; yet its glow quickly dies in the fog, hungry for light and pregnant with the infernal voices that crowd your mind and threaten to make it explode.</p>",
+                    "links": [
+                        {
+                            "text": "<p>Press on</p>",
+                            "destination_scene_id": 19653,
+                            "consequences": [],
+                            "conditions": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Reach the milestone",
+            "id": 19701,
+            "sections": [
+                {
+                    "consequences": [],
+                    "conditions": [],
+                    "text": "<p style=\"text-align: justify; \">The night around you becomes still again. The crescent moon shines in a clear sky, and you hear nothing but the beat of your blood.</p><p style=\"text-align: justify; \">You lift your lantern to scrutinize the path; it continues until it disappears into the gloom. In the air, you detect, faintly, the putrid stench of stagnant water. To one side of the road, almost beyond the reach of your light, you make out the elongated silhouette of a milestone embedded in the ground.</p><p style=\"text-align: justify; \">Something passes in front of the moon, and its light dims for a moment. A tendril of fog.</p>",
+                    "links": [
+                        {
+                            "text": "<p>Examine the milestone</p>",
+                            "destination_scene_id": 20269,
+                            "consequences": [],
+                            "conditions": []
+                        },
+                        {
+                            "text": "<p>Continue towards the water</p>",
+                            "destination_scene_id": 20270,
+                            "consequences": [],
+                            "conditions": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Estaurograma",
+            "id": 19709,
+            "sections": [
+                {
+                    "consequences": [
+                        {
+                            "variable": "estaurograma",
+                            "update_to_value": "0"
+                        }
+                    ],
+                    "conditions": [],
+                    "text": "<p style=\"text-align: justify; \">Your hand gropes blindly in your pouch and closes around the bronze cross. With your last glimpse of will, you raise it; you open your mouth, but your voice is a choked gurgle. Finally, you collapse.&nbsp;</p><p style=\"text-align: justify; \">But the silence that follows is not that of unconsciousness.</p><p style=\"text-align: justify; \">You open your eyes. The moor is completely still; only a few tendrils of fog remain, dancing and twisting with the last breaths of an unexpected wind, which also scatters the greenish dust into which the bronze cross has crumbled.</p>",
+                    "links": []
+                },
+                {
+                    "consequences": [],
+                    "conditions": [
+                        {
+                            "variable": "amuleto",
+                            "compare_with_value": "0"
+                        },
+                        {
+                            "variable": "andar_final_orilla",
+                            "compare_with_value": "1"
+                        }
+                    ],
+                    "text": "<p><span style=\"text-align: justify;\">In this lagoon, you will find only your doom. What can you do against the incomprehensible and dark forces that pulse beneath its waters?</span><br></p>",
+                    "links": []
+                },
+                {
+                    "consequences": [],
+                    "conditions": [],
+                    "text": "",
+                    "links": [
+                        {
+                            "text": "<p>Press on</p>",
+                            "destination_scene_id": 19701,
+                            "consequences": [],
+                            "conditions": [
+                                {
+                                    "variable": "andar_final_orilla",
+                                    "compare_with_value": "0"
+                                },
+                                {
+                                    "variable": "hito_explorado",
+                                    "compare_with_value": "0"
+                                }
+                            ]
+                        },
+                        {
+                            "text": "<p>Continue towards the water</p>",
+                            "destination_scene_id": 20270,
+                            "consequences": [],
+                            "conditions": [
+                                {
+                                    "variable": "hito_explorado",
+                                    "compare_with_value": "1"
+                                }
+                            ]
+                        },
+                        {
+                            "text": "<p>Retrace your steps</p>",
+                            "destination_scene_id": 20272,
+                            "consequences": [],
+                            "conditions": [
+                                {
+                                    "variable": "amuleto",
+                                    "compare_with_value": "1"
+                                },
+                                {
+                                    "variable": "andar_final_orilla",
+                                    "compare_with_value": "1"
+                                }
+                            ]
+                        },
+                        {
+                            "text": "<p>Flee from the lagoon</p>",
+                            "destination_scene_id": 20283,
+                            "consequences": [],
+                            "conditions": [
+                                {
+                                    "variable": "andar_final_orilla",
+                                    "compare_with_value": "1"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Sand tray",
+            "id": 19713,
+            "sections": [
+                {
+                    "consequences": [],
+                    "conditions": [],
+                    "text": "<p style=\"text-align: justify; \">You traverse the ruins shrouded in an ever-thickening fog. In the distance, a constant, monotonous wail resonates, as if a wind of a thousand voices were howling across the desolation of the moor. You struggle to ignore it, because no wind blows, and the alternative is far too terrifying.</p><p style=\"text-align: justify;\">Under the light of your lantern, the ruins appear as rectangles of low walls, softened by centuries of rain. Only one building still rises above your head. You peer through the opening where long ago there must have been a door, and your heart skips a beat. </p><p style=\"text-align: justify;\">There is a child inside!</p><p style=\"text-align: justify;\"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">You sigh in relief when you realize it is only a statue, about six spans tall, located at the back of the building.</span></p><p style=\"text-align: justify;\"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">You notice that, attached to one side of the entrance, there is a tray with fine sand where someone has drawn an arch with their finger:</span></p><p></p>",
+                    "links": []
+                },
+                {
+                    "consequences": [],
+                    "conditions": [],
+                    "text": "<p style=\"text-align: justify; \"><img src=\"/ficheros/get/47506/arco.png\" class=\"note-float-left\" style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem; text-align: left; width: 25%; float: left;\"></p><p style=\"text-align: justify; \"><br></p><p style=\"text-align: justify; \"><br></p><p style=\"text-align: justify; \"><br></p><p style=\"text-align: justify; \"><br></p><p></p>",
+                    "links": []
+                },
+                {
+                    "consequences": [],
+                    "conditions": [],
+                    "text": "",
+                    "links": [
+                        {
+                            "text": "<p>Draw another arch to form a crescent</p>",
+                            "destination_scene_id": 19748,
+                            "consequences": [],
+                            "conditions": []
+                        },
+                        {
+                            "text": "<p>Draw another arch to form a seed</p>",
+                            "destination_scene_id": 19750,
+                            "consequences": [],
+                            "conditions": []
+                        },
+                        {
+                            "text": "<p>Draw another arch to form a fish</p>",
+                            "destination_scene_id": 19751,
+                            "consequences": [],
+                            "conditions": []
+                        },
+                        {
+                            "text": "<p>Enter without drawing anything</p>",
+                            "destination_scene_id": 19743,
+                            "consequences": [],
+                            "conditions": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Examine the hollow",
+            "id": 19714,
+            "sections": [
+                {
+                    "consequences": [],
+                    "conditions": [],
+                    "text": "<p style=\"text-align: justify;\">Inside the hollow, <span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">you find a small bronze cross, corroded by greenish rust and barely visible beneath the rubble. Its upper arm is shaped like a handle, which catches your attention.</span></p>",
+                    "links": []
+                },
+                {
+                    "consequences": [],
+                    "conditions": [],
+                    "text": "<p style=\"text-align: justify;\"><img src=\"/ficheros/get/47506/estaurograma_ZQ4woqv.png\" style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem; text-align: left; width: 225px;\"><br></p>",
+                    "links": []
+                },
+                {
+                    "consequences": [],
+                    "conditions": [],
+                    "text": "<p style=\"text-align: justify;\"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">You feel sorry to see it abandoned like this, and an impulse stirs to take it with you.</span><br></p>",
+                    "links": []
+                },
+                {
+                    "consequences": [],
+                    "conditions": [],
+                    "text": "",
+                    "links": [
+                        {
+                            "text": "<p>Take the cross</p>",
+                            "destination_scene_id": 19715,
+                            "consequences": [],
+                            "conditions": []
+                        },
+                        {
+                            "text": "Examine the statue",
+                            "destination_scene_id": 19667,
+                            "consequences": [],
+                            "conditions": [
+                                {
+                                    "variable": "estatua_explorada",
+                                    "compare_with_value": "0"
+                                }
+                            ]
+                        },
+                        {
+                            "text": "<p>Go back to Bones</p>",
+                            "destination_scene_id": 19683,
+                            "consequences": [],
+                            "conditions": [
+                                {
+                                    "variable": "motivacion_volver",
+                                    "compare_with_value": "1"
+                                }
+                            ]
+                        },
+                        {
+                            "text": "<p>Continue along the road to the north</p>",
+                            "destination_scene_id": 19653,
+                            "consequences": [],
+                            "conditions": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Take the cross",
+            "id": 19715,
+            "sections": [
+                {
+                    "consequences": [
+                        {
+                            "variable": "estaurograma",
+                            "update_to_value": "1"
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "variable": "pez",
+                            "compare_with_value": "1"
+                        }
+                    ],
+                    "text": "<p style=\"text-align: justify;\">You take the cross and carefully tuck it into your pouch.</p>",
+                    "links": []
+                },
+                {
+                    "consequences": [],
+                    "conditions": [
+                        {
+                            "variable": "pez",
+                            "compare_with_value": "0"
+                        }
+                    ],
+                    "text": "<p style=\"text-align: justify;\">When you take it out of the hollow, the cross crumbles, leaving nothing in your hands but greenish dust.</p>",
+                    "links": []
+                },
+                {
+                    "consequences": [],
+                    "conditions": [],
+                    "text": "",
+                    "links": [
+                        {
+                            "text": "<p>Examine the statue</p>",
+                            "destination_scene_id": 19667,
+                            "consequences": [],
+                            "conditions": [
+                                {
+                                    "variable": "estatua_explorada",
+                                    "compare_with_value": "0"
+                                }
+                            ]
+                        },
+                        {
+                            "text": "<p>Go back to Bones</p>",
+                            "destination_scene_id": 19683,
+                            "consequences": [],
+                            "conditions": [
+                                {
+                                    "variable": "motivacion_volver",
+                                    "compare_with_value": "1"
+                                }
+                            ]
+                        },
+                        {
+                            "text": "<p>Continue along the road to the north</p>",
+                            "destination_scene_id": 19653,
+                            "consequences": [],
+                            "conditions": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Cross",
+            "id": 20263,
+            "sections": [
+                {
+                    "consequences": [],
+                    "conditions": [],
+                    "text": "<div style=\"text-align: justify;\"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">With your last breath, you find the crucifix beneath your shirt. Unable to raise it, you press it against your chest as if this piece of sacred wood were your final link to this world. An old psalm forms in your mouth, which you hold onto until your consciousness disintegrates and is lost in a sea of infernal voices.</span></div>",
+                    "links": [
+                        {
+                            "text": "<p>The fog closes in around you</p>",
+                            "destination_scene_id": 19692,
+                            "consequences": [],
+                            "conditions": [
+                                {
+                                    "variable": "amuleto",
+                                    "compare_with_value": "0"
+                                }
+                            ]
+                        },
+                        {
+                            "text": "<p>The fog closes in around you</p>",
+                            "destination_scene_id": 20265,
+                            "consequences": [],
+                            "conditions": [
+                                {
+                                    "variable": "amuleto",
+                                    "compare_with_value": "1"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Relic",
+            "id": 20264,
+            "sections": [
+                {
+                    "consequences": [],
+                    "conditions": [],
+                    "text": "<p style=\"text-align: justify; \">Your hand clings to the rough little box that contains the bone of Saint Theresa, and with your last breath you pull it out of the pouch.</p><p style=\"text-align: justify; \">It is useless.</p><p style=\"text-align: justify; \">The fog continues to tighten its ghostly embrace, and its hateful wails burrow ever deeper into your mind, choking your thoughts and devouring who you are.&nbsp;<span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">Unable to hold it any longer, you let the relic fall. The little box opens against the ground, and the bone, wrapped in its tattered piece of cloth, rolls through the mud. You see it as if through a colorful haze, and your last thought is to wonder whether a rat or some other creature will consume it before it rots.</span></p>",
+                    "links": [
+                        {
+                            "text": "<p>The fog closes in around you</p>",
+                            "destination_scene_id": 19692,
+                            "consequences": [],
+                            "conditions": [
+                                {
+                                    "variable": "amuleto",
+                                    "compare_with_value": "0"
+                                }
+                            ]
+                        },
+                        {
+                            "text": "<p>The fog closes in around you</p>",
+                            "destination_scene_id": 20265,
+                            "consequences": [],
+                            "conditions": [
+                                {
+                                    "variable": "amuleto",
+                                    "compare_with_value": "1"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Investigate the door",
+            "id": 19720,
+            "sections": [
+                {
+                    "consequences": [],
+                    "conditions": [],
+                    "text": "<p style=\"text-align: justify; \">You push the door aside and use the lantern to drive back the darkness.</p><p style=\"text-align: justify;\">The room is small and apparently inhabited. At the back, you make out a bed of fresh straw, and on top of the remnants of a kitchen shelf, you find some loaves of stale bread and half a dozen opaque bottles filled with wine.</p><p style=\"text-align: justify;\">You are hungry and thirsty after a long day\u2019s march, and after all, you are in an inn. However, your honesty prevents you from taking anything without paying, and you only have coins for one of the two items.</p>",
+                    "links": [
+                        {
+                            "text": "<p>Take the bread</p>",
+                            "destination_scene_id": 19678,
+                            "consequences": [],
+                            "conditions": []
+                        },
+                        {
+                            "text": "<p>Take the wine</p>",
+                            "destination_scene_id": 19677,
+                            "consequences": [],
+                            "conditions": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Crypts",
+            "id": 19722,
+            "sections": [
+                {
+                    "consequences": [],
+                    "conditions": [],
+                    "text": "<p style=\"text-align: justify; \">You examine the stone slabs and their engravings, worn smooth by the years. Most of the crypts contain several generations of the same family. Their names, barely legible, are probably all that remains of their memory.</p><p style=\"text-align: justify; \">On the floor in front of one of the crypts, you notice the unmistakable scratches left by the slab when it was moved.</p>",
+                    "links": [
+                        {
+                            "text": "<p>Go up the bell tower</p>",
+                            "destination_scene_id": 19723,
+                            "consequences": [],
+                            "conditions": []
+                        },
+                        {
+                            "text": "<p>Search the sacristy</p>",
+                            "destination_scene_id": 19555,
+                            "consequences": [],
+                            "conditions": []
+                        },
+                        {
+                            "text": "<p>Go out into the street</p>",
+                            "destination_scene_id": 19556,
+                            "consequences": [],
+                            "conditions": [
+                                {
+                                    "variable": "posada_explorada",
+                                    "compare_with_value": "0"
+                                }
+                            ]
+                        },
+                        {
+                            "text": "<p>Go out into the street</p>",
+                            "destination_scene_id": 19730,
+                            "consequences": [],
+                            "conditions": [
+                                {
+                                    "variable": "posada_explorada",
+                                    "compare_with_value": "1"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Bell tower",
+            "id": 19723,
+            "sections": [
+                {
+                    "consequences": [],
+                    "conditions": [],
+                    "text": "<p style=\"text-align: justify; \"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">The roof of the bell tower has collapsed. The bell lies on the ground like a lifeless heap of metal surrounded by wood and stone debris.</span></p><p style=\"text-align: justify; \"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">You approach the edge of the tower and observe the rooftops of Bones</span><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">&nbsp;beneath the star-studded sky. Beyond its limits you make out a very low fog, </span><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">&nbsp;spreading its wisps like intangible arms over the moor. It seems to emanate from a specific place not far from the village. You had never seen anything like that before.</span></p><p style=\"text-align: justify; \"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">In one of the houses set back from the main street, a light </span><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">flickers.</span></p>",
+                    "links": [
+                        {
+                            "text": "Investigate the source of the fog",
+                            "destination_scene_id": 19626,
+                            "consequences": [],
+                            "conditions": []
+                        },
+                        {
+                            "text": "<p>Head towards the light</p>",
+                            "destination_scene_id": 19676,
+                            "consequences": [],
+                            "conditions": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Meet the butcher",
+            "id": 19730,
+            "sections": [
+                {
+                    "consequences": [],
+                    "conditions": [],
+                    "text": "<p style=\"text-align: justify;\">Standing in front of the church, you encounter a lean man with a long, angular face, clad in a worn jacket. In one hand he holds a lantern, in the other an iron crowbar. He looks at you with wide eyes from the depths of his sockets; then, <span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\"> he turns his gaze towards the street, where wisps of very low fog creep forward as if dragging themselves along.</span><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">&nbsp;</span></p><p style=\"text-align: justify;\"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">\"Come with me\" he says,&nbsp; \"there's fog\".</span></p><p style=\"text-align: justify;\">Without waiting for a response, he enters the church and heads towards one of the crypts.<span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">&nbsp; With a solid blow from the crowbar, he pries the slab away from the wall.</span></p><p style=\"text-align: justify;\">\"We\u2019ll talk downstairs. Please, come in! We don\u2019t have much time\".<br></p>",
+                    "links": [
+                        {
+                            "text": "<p>Follow him into the crypt</p>",
+                            "destination_scene_id": 19559,
+                            "consequences": [],
+                            "conditions": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Paleochristian church inside",
+            "id": 19743,
+            "sections": [
+                {
+                    "consequences": [],
+                    "conditions": [],
+                    "text": "<p style=\"text-align: justify; \">You stand in the center of the building, watching the fall of the fog through the collapsed roof. Despite the long abandonment and the moss piling up in the cracks, you still sense a certain solemnity in the way the walls stretch to converge on the small statue placed at the far end, opposite the entrance.</p><p style=\"text-align: justify;\"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">On one of the side walls, you notice a hollow about two spans wide, finished in an arch.</span></p>",
+                    "links": [
+                        {
+                            "text": "<p>Examine the statue</p>",
+                            "destination_scene_id": 19667,
+                            "consequences": [
+                                {
+                                    "variable": "estatua_explorada",
+                                    "update_to_value": "1"
+                                }
+                            ],
+                            "conditions": []
+                        },
+                        {
+                            "text": "<p>Examine the hollow in the wall</p>",
+                            "destination_scene_id": 19714,
+                            "consequences": [
+                                {
+                                    "variable": "hueco_explorado",
+                                    "update_to_value": "1"
+                                }
+                            ],
+                            "conditions": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Do not blaspheme!",
+            "id": 20018,
+            "sections": [
+                {
+                    "consequences": [],
+                    "conditions": [],
+                    "text": "<p style=\"text-align: justify;\"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">The priest regards you with sadness, yet with steadfast conviction.</span></p><p style=\"text-align: justify; \"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">\"I only yield to the facts. I trusted in the Cross, and the Cross failed me. God is weak in modern symbols.&nbsp;</span><span style=\"color: var(--text-color); font-size: 1rem; background-color: var(--widget-background);\">We have become obsessed with forms and have forgotten what He truly is, what truly matters\". He falls silent, as if his own words were hurting him. \"Luckily, I managed to drag myself here\".</span></p><p style=\"text-align: justify; \">\"What do you mean?\"</p><p style=\"text-align: justify; \"><span style=\"color: var(--text-color); font-size: 1rem; background-color: var(--widget-background);\">\"We are in what remains of a settlement of the earliest Christians, which centuries later became the village of Bones\" says the priest. \"Here, the fog is weaker. Something must remain of the symbols of early Christianity, remnants of a simpler, purer faith that still exerts some measure of protection. But even that will not be enough to halt the fog\u2019s advance for long\".</span></p><p style=\"text-align: justify;\"><span style=\"color: var(--text-color); font-size: 1rem; background-color: var(--widget-background);\">You would like to offer a word of comfort, but the truth revealed by his evanescent body is irrefutable. The crackling of the flames fills your silence.</span></p>",
+                    "links": [
+                        {
+                            "text": "<p>What is... that fog?</p>",
+                            "destination_scene_id": 20019,
+                            "consequences": [],
+                            "conditions": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Draw a crescent",
+            "id": 19748,
+            "sections": [
+                {
+                    "consequences": [
+                        {
+                            "variable": "dibujo_incorrecto",
+                            "update_to_value": "1"
+                        }
+                    ],
+                    "conditions": [],
+                    "text": "<p>You draw another arch to form a crescent.</p>",
+                    "links": []
+                },
+                {
+                    "consequences": [],
+                    "conditions": [],
+                    "text": "<p><img src=\"/ficheros/get/47506/luna.png\" style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem; width: 25%;\"><br></p>",
+                    "links": []
+                },
+                {
+                    "consequences": [],
+                    "conditions": [],
+                    "text": "",
+                    "links": [
+                        {
+                            "text": "<p>Enter the building</p>",
+                            "destination_scene_id": 19743,
+                            "consequences": [],
+                            "conditions": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Where that fog comes from?",
+            "id": 20019,
+            "sections": [
+                {
+                    "consequences": [],
+                    "conditions": [],
+                    "text": "<p style=\"text-align: justify;\"><span style=\"color: var(--text-color); font-size: 1rem; background-color: var(--widget-background);\">\"Souls\" answers the priest gravely.</span></p><p style=\"text-align: justify;\"><span style=\"color: var(--text-color); font-size: 1rem; background-color: var(--widget-background);\">You feel a sudden cold run through your nerves.</span></p><p style=\"text-align: justify; \"><span style=\"background-color: var(--widget-background);\">\"Have you never wondered why the village is called Bones?\" continues the priest, his eyes fixed on the fire. \"It is because of the lagoon near here, along the northern road. It is filled with skeletons. It is not a cemetery; rather, it is an unconsecrated pit where pagan peoples before Christianity cast the bodies of slaves, criminals, and all those deemed unworthy of a proper burial. In its waters are hundreds of souls trapped between two worlds, gnawed by the anger and resentment of not being able to belong to either\".&nbsp;</span></p><p style=\"text-align: justify; \">The priest speaks in broken words, as if struggling to push the air out. His body bleeds away in growing spirals of vapor.</p><p style=\"text-align: justify; \"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">\"On the shore of the lagoon there is a milestone with some symbols I strove to translate. I only managed it in part, but now that... I melt into the fog, I am also a participant in all that it is\".</span></p><p style=\"text-align: justify; \"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">His voice is little more than a murmur; </span><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">the skin, pale as paper.</span></p><p style=\"text-align: justify; \"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\"></span><span style=\"color: var(--text-color); font-size: 1rem; background-color: var(--widget-background);\"></span><span style=\"color: var(--text-color); font-size: 1rem; background-color: var(--widget-background);\">\"There is a way to rid ourselves of these tormented souls. But for me... time is running out\".</span></p>",
+                    "links": [
+                        {
+                            "text": "How can we defeat this evil?",
+                            "destination_scene_id": 20020,
+                            "consequences": [],
+                            "conditions": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Try to find the stream",
+            "id": 19736,
+            "sections": [
+                {
+                    "consequences": [],
+                    "conditions": [],
+                    "text": "<p style=\"text-align: justify;\"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">You have no trouble finding the stream. The flowing water shines like crystal under the moonlight. You crouch on the mossy bank and drink with your hands. The water is cool and tastes of clean earth.</span><br></p><p style=\"text-align: justify;\">In front of you swims a group of little fish. They scatter when you dip your hands into the water but gather again as soon as you pull them out. It reminds you of a sermon once given by the priest of your church: \"Blessed are the fish, for in them is incarnate Jesus Christ the Savior\".</p><p style=\"text-align: justify;\">You stand up, filled with renewed strength.</p>",
+                    "links": [
+                        {
+                            "text": "<p>Approach the fire</p>",
+                            "destination_scene_id": 19654,
+                            "consequences": [],
+                            "conditions": []
+                        },
+                        {
+                            "text": "<p>Continue along the road to the north</p>",
+                            "destination_scene_id": 19653,
+                            "consequences": [],
+                            "conditions": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Draw seed",
+            "id": 19750,
+            "sections": [
+                {
+                    "consequences": [
+                        {
+                            "variable": "dibujo_incorrecto",
+                            "update_to_value": "1"
+                        }
+                    ],
+                    "conditions": [],
+                    "text": "<p>You draw another arch to form a seed.</p>",
+                    "links": []
+                },
+                {
+                    "consequences": [],
+                    "conditions": [],
+                    "text": "<p><img src=\"/ficheros/get/47506/semilla.png\" style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem; width: 25%;\"><br></p>",
+                    "links": []
+                },
+                {
+                    "consequences": [],
+                    "conditions": [],
+                    "text": "",
+                    "links": [
+                        {
+                            "text": "<p>Enter the building</p>",
+                            "destination_scene_id": 19743,
+                            "consequences": [],
+                            "conditions": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Draw fish",
+            "id": 19751,
+            "sections": [
+                {
+                    "consequences": [
+                        {
+                            "variable": "pez",
+                            "update_to_value": "1"
+                        }
+                    ],
+                    "conditions": [],
+                    "text": "<p>You draw another arch to form a fish.</p>",
+                    "links": []
+                },
+                {
+                    "consequences": [],
+                    "conditions": [],
+                    "text": "<p><img src=\"/ficheros/get/47506/pez.png\" style=\"color: var(--text-color); font-size: 1rem; background-color: var(--widget-background); width: 25%;\"><br></p>",
+                    "links": []
+                },
+                {
+                    "consequences": [],
+                    "conditions": [],
+                    "text": "",
+                    "links": [
+                        {
+                            "text": "<p>Enter the building</p>",
+                            "destination_scene_id": 19743,
+                            "consequences": [],
+                            "conditions": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Tell me what I have to do!",
+            "id": 20020,
+            "sections": [
+                {
+                    "consequences": [],
+                    "conditions": [],
+                    "text": "<p style=\"text-align: justify;\">\"Along with those souls, someone else was also buried...\" the priest murmurs, \"someone sacrificed to keep them trapped between this world and the Afterlife. A sort of guardian... but he can do nothing without his heart, just as the heart can do nothing without the guardian\".</p><p style=\"text-align: justify;\"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">A muffled moan echoes somewhere across the moor.</span><br></p><p style=\"text-align: justify;\">\"The heart of the guardian?\" you ask.</p><p style=\"text-align: justify;\">\"<span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">A stone imbued with blood streaming from his heart; smooth as a droplet of water, radiant as embers\".</span></p><p style=\"text-align: justify;\"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">The priest falls silent for a moment. His face twists in a grimace of pain.</span></p><p style=\"text-align: justify;\">\"<span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">The dead... walk our world, spreading misery in their wake. It can only mean that someone has stolen the heart... </span><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">You must find it!\"</span></p>",
+                    "links": []
+                },
+                {
+                    "consequences": [],
+                    "conditions": [
+                        {
+                            "variable": "amuleto",
+                            "compare_with_value": "1"
+                        }
+                    ],
+                    "text": "<p style=\"text-align: justify;\">You recall the gem you discovered under the butcher\u2019s chamber floorboards.<br></p>",
+                    "links": []
+                },
+                {
+                    "consequences": [],
+                    "conditions": [],
+                    "text": "",
+                    "links": [
+                        {
+                            "text": "<p>Show the gem to the priest</p>",
+                            "destination_scene_id": 19663,
+                            "consequences": [],
+                            "conditions": [
+                                {
+                                    "variable": "amuleto",
+                                    "compare_with_value": "1"
+                                }
+                            ]
+                        },
+                        {
+                            "text": "<p>Where can I find it?</p>",
+                            "destination_scene_id": 19664,
+                            "consequences": [],
+                            "conditions": [
+                                {
+                                    "variable": "amuleto",
+                                    "compare_with_value": "0"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Death with amulet",
+            "id": 20265,
+            "sections": [
+                {
+                    "consequences": [],
+                    "conditions": [],
+                    "text": "<p style=\"text-align: justify; \">The pain is brief. Your body quickly breaks down into countless vaporous threads, fusing with the fog. <span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">The last thing you see with your mortal eyes is the heart of the guardian bursting into a thousand tiny embers.</span><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">&nbsp;You should feel sorrow, but you do not. All your concerns, desires, and pains are meaningless in comparison to what you have become. </span></p><p style=\"text-align: justify; \"><span style=\"color: var(--text-color); font-size: 1rem; background-color: var(--widget-background);\">You join the renegades, those who died rejected; their bitter souls are now your sisters. </span><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">You belong to an immortal entity </span><span style=\"color: var(--text-color); font-size: 1rem; background-color: var(--widget-background);\">whose sole threat \u2014the object that might have bound you again to nonexistence between the living and the dead\u2014 has crumbled. </span></p><p style=\"text-align: justify; \"><span style=\"color: var(--text-color); font-size: 1rem; background-color: var(--widget-background);\">You are free. You are all free. And thanks to you, unstoppable.</span></p>",
+                    "links": []
+                },
+                {
+                    "consequences": [],
+                    "conditions": [],
+                    "text": "<p style=\"text-align: center; \"><b style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\"><br></b></p><p style=\"text-align: center; \"><b style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">THE END</b></p><p style=\"text-align: center; \"><br></p>",
+                    "links": []
+                }
+            ]
+        },
+        {
+            "title": "Examine the milestone",
+            "id": 20269,
+            "sections": [
+                {
+                    "consequences": [
+                        {
+                            "variable": "hito_explorado",
+                            "update_to_value": "1"
+                        }
+                    ],
+                    "conditions": [],
+                    "text": "<p style=\"text-align: justify; \">You approach the milestone. You can tell at first glance that it has been there for a very long time.</p><p style=\"text-align: justify;\"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">Moss and lichen cover its weathered surface, </span>and although its base is roughly square, wind and rain have worn away the upper portion, stripping it of any symmetry. You inspect the stone for some kind of inscription, though you doubt you will be able to see anything beneath the thick growth that covers it.</p><p style=\"text-align: justify;\">Then you realize that someone has scrapped away an entire face of the marker to reveal the symbols hidden beneath the lichens. You bring your latern closer to try to read them, but they are not written in any alphabet you recognize. You try, in vain, to make sense of them \u2014until the fog returns, blurring the symbols once more, and its dreadful wail strikes you again.</p><p style=\"text-align: justify;\">Seized by sudden panic, you run away \u2014but you do not get far. Each of the thousand voices of the fog drives a dagger into your brain. <span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">You collapse into the mud, clutching your head as if that gesture could hold it together; you try to scream, but only wisps of vapor escape your mouth. Like smoke without fire, your body vanishes, and your mind shatters along with it.</span></p>",
+                    "links": [
+                        {
+                            "text": "<p>Raise the crucifix</p>",
+                            "destination_scene_id": 20263,
+                            "consequences": [],
+                            "conditions": []
+                        },
+                        {
+                            "text": "<p>Raise the relic of Saint Theresa</p>",
+                            "destination_scene_id": 20264,
+                            "consequences": [],
+                            "conditions": [
+                                {
+                                    "variable": "reliquia_iglesia",
+                                    "compare_with_value": "1"
+                                }
+                            ]
+                        },
+                        {
+                            "text": "<p>Raise the bronze cross</p>",
+                            "destination_scene_id": 19709,
+                            "consequences": [],
+                            "conditions": [
+                                {
+                                    "variable": "estaurograma",
+                                    "compare_with_value": "1"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Continue towards the water",
+            "id": 20270,
+            "sections": [
+                {
+                    "consequences": [],
+                    "conditions": [],
+                    "text": "<p style=\"text-align: justify; \">You arrive at a still, dark lagoon; its waters seem to stretch endlessly into the black depths of the night. <span style=\"color: var(--text-color); font-size: 1rem; background-color: var(--widget-background);\">Along the shore, clusters of black algae pile up; you cannot tell whether they are alive or dead. </span><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\"></span><span style=\"color: var(--text-color); font-size: 1rem; background-color: var(--widget-background);\">The stench of decay is almost unbearable. </span><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">Not even the withered shrubs of the moor dare to grow here.</span></p><p style=\"text-align: justify; \">You bring the lantern close to the water, but it rejects your light like a basalt mirror. The only thing you manage to see are shreds of fog crawling across the black surface, extending their twisted fingers towards you.</p>",
+                    "links": [
+                        {
+                            "text": "<p>Throw the gem into the water</p>",
+                            "destination_scene_id": 20271,
+                            "consequences": [],
+                            "conditions": [
+                                {
+                                    "variable": "amuleto",
+                                    "compare_with_value": "1"
+                                }
+                            ]
+                        },
+                        {
+                            "text": "<p>Continue walking along the shore</p>",
+                            "destination_scene_id": 20272,
+                            "consequences": [],
+                            "conditions": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Throw gem into water",
+            "id": 20271,
+            "sections": [
+                {
+                    "consequences": [],
+                    "conditions": [],
+                    "text": "<p style=\"text-align: justify; \">The heart of the guardian glows in your hand like a lighthouse in the middle of an ocean of darkness. You throw it with all your strength into the center of the lagoon; the gem cuts through the blackness like a comet, until it finally sinks with a splash somewhere in the darkness.</p><p style=\"text-align: justify; \">You wait in silence. For a moment, it seems as if the waters glimmer with a faint reddish hue, but that is all. The fog continues to thicken, drawing its tendrils closer to you. Not far away this time, its hateful wail echoes again.</p>",
+                    "links": [
+                        {
+                            "text": "<p>The fog closes in around you</p>",
+                            "destination_scene_id": 20265,
+                            "consequences": [],
+                            "conditions": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Lagoon shore",
+            "id": 20272,
+            "sections": [
+                {
+                    "consequences": [],
+                    "conditions": [],
+                    "text": "<p style=\"text-align: justify; \">You walk along the shore avoiding the repulsive piles of decay. Algae crunch, dry, beneath your soles. It seems the water level is lower than it used to be.</p><p style=\"text-align: justify; \">The fog has risen like a miasma, floating around you and snagging its tendrils on your clothing. <span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">It is not very thick yet, but its ominous moan already echoes through the darkness. You cover one of your ears with a hand; with the other, however, you must hold the lantern.</span></p><p style=\"text-align: justify; \">Then you notice a pale structure rising from the darkness that floods the lagoon, just a stone\u2019s throw from the shore. If you wanted to investigate it, you would have to enter the water.</p>",
+                    "links": [
+                        {
+                            "text": "<p>Investigate the structure</p>",
+                            "destination_scene_id": 20273,
+                            "consequences": [],
+                            "conditions": []
+                        },
+                        {
+                            "text": "<p>Continue walking along the shore</p>",
+                            "destination_scene_id": 20274,
+                            "consequences": [],
+                            "conditions": [
+                                {
+                                    "variable": "andar_final_orilla",
+                                    "compare_with_value": "0"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Burrow",
+            "id": 20273,
+            "sections": [
+                {
+                    "consequences": [],
+                    "conditions": [],
+                    "text": "<p style=\"text-align: justify;\">You wade into the murky, foul-smelling waters, sinking ankle-deep into the filthy mat of algae and mud that covers the bottom.&nbsp;<span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">Fortunately, the lagoon is not deep, </span><span style=\"color: var(--text-color); font-size: 1rem; background-color: var(--widget-background);\">and when you reach your goal, the water barely reaches your waist.</span></p><p style=\"text-align: justify; \">You sweep your light over the structure, revealing that it is an elongated mound, built from pale stones that clearly do not belong to the lagoon. Water stains and tufts of algae hanging everywhere show that it had been submerged.</p><p style=\"text-align: justify; \">Someone has moved one of the three slabs that covered the mound. Inside, half-buried in the mud, rests a skeleton with one hand placed on its chest.</p>",
+                    "links": [
+                        {
+                            "text": "<p>Place the gem in the hand of the skeleton</p>",
+                            "destination_scene_id": 20276,
+                            "consequences": [],
+                            "conditions": [
+                                {
+                                    "variable": "amuleto",
+                                    "compare_with_value": "1"
+                                }
+                            ]
+                        },
+                        {
+                            "text": "<p>Turn back and continue walking along the shore</p>",
+                            "destination_scene_id": 20274,
+                            "consequences": [],
+                            "conditions": [
+                                {
+                                    "variable": "andar_final_orilla",
+                                    "compare_with_value": "0"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Continue walking along the shore",
+            "id": 20274,
+            "sections": [
+                {
+                    "consequences": [
+                        {
+                            "variable": "andar_final_orilla",
+                            "update_to_value": "1"
+                        }
+                    ],
+                    "conditions": [],
+                    "text": "<p style=\"text-align: justify; \">You continue walking along the shore of the lagoon, though you do not get far.</p><p style=\"text-align: justify; \">Shrill screams, deep moans, wails, laughter, shrieks \u2014a pandemonium of voices pounds in your skull like a sack of stones. You cannot see, you cannot feel; the voices fill you, overwhelm you. You scream and shake your head in a vain attempt to drive them away. You fall face-first into the mud; your hand, guided by the last remnants of consciousness, reaches for salvation.</p>",
+                    "links": [
+                        {
+                            "text": "<p>Raise the crucifix</p>",
+                            "destination_scene_id": 20263,
+                            "consequences": [],
+                            "conditions": []
+                        },
+                        {
+                            "text": "<p>Raise the relic of Saint Theresa</p>",
+                            "destination_scene_id": 20264,
+                            "consequences": [],
+                            "conditions": [
+                                {
+                                    "variable": "reliquia_iglesia",
+                                    "compare_with_value": "1"
+                                }
+                            ]
+                        },
+                        {
+                            "text": "<p>Raise the bronze cross</p>",
+                            "destination_scene_id": 19709,
+                            "consequences": [],
+                            "conditions": [
+                                {
+                                    "variable": "estaurograma",
+                                    "compare_with_value": "1"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Place gem in skeleton's hand",
+            "id": 20276,
+            "sections": [
+                {
+                    "consequences": [],
+                    "conditions": [],
+                    "text": "<p style=\"text-align: justify;\">You pull the heart of the guardian from your pouch; you feel the gem warm in your hand, its veins seeming to flow like crimson rivers beneath its polished surface.</p><p style=\"text-align: justify; \">You place it, trembling, in the skeleton\u2019s hand. Just as you let go, you hear a creak of bones. Has the skeleton <i>moved?</i></p><p style=\"text-align: justify; \">But there is no time for pondering. Suddenly, a blinding scarlet explosion erupts from the mound and spreads across the lagoon, bathing the night in blood-red light. Then, the wind \u2014a brutal suction force\u2014 pulls the fog back to the limbo where it belongs; the shreds whip past you at dizzying speed, their cries no longer laments, but screams of rage. </p><p style=\"text-align: justify; \">You cover your ears, yet you still feel as if your head is about to explode. Fortunately, it all ends quickly.</p><p style=\"text-align: justify; \">The night shines cold and clear once more. In the fresh air, there is no trace of the putrid stench that had been rising from the lagoon. You replace the slabs over the mound and retrieve the lantern from the water. You had dropped it when your hand instinctively clutched the crucifix.</p>",
+                    "links": []
+                },
+                {
+                    "consequences": [],
+                    "conditions": [
+                        {
+                            "variable": "reliquia_falsa",
+                            "compare_with_value": "1"
+                        }
+                    ],
+                    "text": "<p style=\"text-align: justify;\">You wonder whether you should return to Bones, even though the villagers had decided to send you to certain death. You know they acted out of fear and a desire to protect their lives and those of their families, yet the last thing you want is to face <span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">them again. </span></p><p style=\"text-align: justify;\">You have returned the heart to its rightful place. If it is ever stolen again, the consequences will be a just punishment for their greed. For you, a long journey lies ahead, and you carry with you the certainty of having done what was right.</p><p style=\"text-align: justify;\">So, without wasting another moment, you wring out your soaked clothes as best you can and set off, letting the moon guide you.</p><p style=\"text-align: justify;\">Perhaps now you will find the right path.</p><p><i>WELL DONE!</i></p>",
+                    "links": []
+                },
+                {
+                    "consequences": [],
+                    "conditions": [
+                        {
+                            "variable": "reliquia_falsa",
+                            "compare_with_value": "0"
+                        }
+                    ],
+                    "text": "<p><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">You make your way back to Bones, shivering in your soaked clothes, to warn the villagers to seal the mound. No one, ever again, must disturb the rest of the dead. </p><p>You will accept, if offered, a warm bowl of broth.<span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\"> Afterwards, you continue on your way.</span></p><p><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">Perhaps now you will find the right path.</span></p><p><i>WELL DONE!</i></p><p></p>",
+                    "links": []
+                },
+                {
+                    "consequences": [],
+                    "conditions": [],
+                    "text": "<p style=\"text-align: center; \"><b style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\"><br></b></p><p style=\"text-align: center; \"><b style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">THE END</b></p><p style=\"text-align: center; \"><br></p>",
+                    "links": []
+                }
+            ]
+        },
+        {
+            "title": "Flee from the lagoon",
+            "id": 20283,
+            "sections": [
+                {
+                    "consequences": [],
+                    "conditions": [],
+                    "text": "<p style=\"text-align: justify;\"><span style=\"color: var(--text-color); font-size: 1rem; background-color: var(--widget-background);\">You break into a run with no particular direction, driven only by the desire to leave this infamous quagmire behind. Your lantern jingles ahead of you like the light of a ship on a foggy sea; only the thuds of your footsteps bear witness that you are not falling into a bottomless void.&nbsp;</span><span style=\"color: var(--text-color); font-size: 1rem; background-color: var(--widget-background);\">But the mist never ends; it seems to stretch to match the pace of your steps.</span><br></p><p style=\"text-align: justify;\"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">There is no way to escape it, nor its screams.</span></p>",
+                    "links": [
+                        {
+                            "text": "The fog closes in around you",
+                            "destination_scene_id": 19692,
+                            "consequences": [],
+                            "conditions": [
+                                {
+                                    "variable": "amuleto",
+                                    "compare_with_value": "0"
+                                }
+                            ]
+                        },
+                        {
+                            "text": "<pThe fog closes in around you</p>",
+                            "destination_scene_id": 20265,
+                            "consequences": [],
+                            "conditions": [
+                                {
+                                    "variable": "amuleto",
+                                    "compare_with_value": "1"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
