@@ -10,7 +10,7 @@ import re
 
 def read_json(path):
 
-    with open(path, 'r') as file:       #open json in read ('r') mode.
+    with open(path, "r") as file:       #open json in read ('r') mode.
         jsonfile = json.load(file)
     return jsonfile
 
@@ -19,31 +19,31 @@ def get_scenes(jsonfile, formatted=False):
 
     if formatted:
         format_kivy_all (jsonfile)
-    return jsonfile ['escenas']
+    return jsonfile ["scenes"]
 
 
 def format_kivy_all(jsonfile):
 
-    for scene in jsonfile['escenas']:
+    for scene in jsonfile["scenes"]:
 
-        for text in scene['textos']:
-            if text['texto'][:2] != '<p': #some text does not have new paragraph tag. Must be added
-                text['texto'] = '<p>'+ text['texto'] + '</p>'
-            text['texto'] = format_kivy (text['texto'])
+        for section in scene["sections"]:
+            if section["text"][:2] != "<p":  # some text does not have new paragraph tag. Must be added
+                section["text"] = "<p>"+ section["text"] + "</p>"
+            section["text"] = format_kivy(section["text"])
 
-            for link in text['enlaces']:
-                link['texto'] = re.sub(r'<[^>]*>', '', link['texto'])
+            for link in section["links"]:
+                link["text"] = re.sub(r'<[^>]*>', '', link["text"])
 
     return jsonfile
 
 def get_intro(scenes, id_only = False):
 
-    links = get_all_links(scenes)
+    links = get_all_destinations(scenes)
 
     for scene in scenes:
-        if scene['id'] not in links:
+        if scene["id"] not in links:
             if id_only:
-                return scene['id']
+                return scene["id"]
             else:
                 return scene
 
@@ -56,14 +56,14 @@ def get_variables(scenes):
     variables: dict = {}
 
     for scene in scenes:
-        for text in scene ['textos']:
-            for condition in text['condiciones']:
-                variables.update({condition['variable']: 0})
+        for text in scene["sections"]:
+            for condition in text["conditions"]:
+                variables.update({condition["variable"]: 0})
 
-        for text in scene ['textos']:
-            for link in text ['enlaces']:
-                for condition in link ['condiciones']:
-                    variables.update({condition['variable']: 0})
+        for text in scene["sections"]:
+            for link in text ["links"]:
+                for condition in link ["conditions"]:
+                    variables.update({condition["variable"]: 0})
 
     return variables
 
@@ -79,34 +79,34 @@ def compare_conditions(variables, conditions):
 def get_conditions(item):
 
     item_conditions: dict = {}
-    for condition in item['condiciones']:
-        item_conditions.update({condition['variable']: int(condition['valorComparar'])})
+    for condition in item["conditions"]:
+        item_conditions.update({condition["variable"]: int(condition["compare_with_value"])})
     return item_conditions
 
 
 def get_consequences(item):
 
     item_consequences: dict = {}
-    for consequence in item['consecuencias']:
-        item_consequences.update({consequence['variable']: int(consequence['valor'])})
+    for consequence in item["consequences"]:
+        item_consequences.update({consequence["variable"]: int(consequence["update_to_value"])})
     return item_consequences
 
 
 ######################################### TEXT ################################################
 
 
-def get_text(scene):
+def get_sections(scene):
     
-    texts: list = []
-    for text in scene ['textos']:
-        texts.append(text)
-    return texts
+    sections: list = []
+    for section in scene["sections"]:
+        sections.append(section)
+    return sections
 
 
 def format_kivy(text):  # default 0, buttons do not pass index so /n/n are not removed
 
     #CHECK FOR IMAGE
-    if text.find('<img src=') != -1:  # if text has a image tag (text.find returns -1 if not found)
+    if text.find("<img src=") != -1:  # if text has an image tag (text.find returns -1 if not found)
         clean_text = get_image(text)  # get_image() will delete any text not part of the tag
         return clean_text
 
@@ -148,20 +148,20 @@ def format_kivy(text):  # default 0, buttons do not pass index so /n/n are not r
 
 def get_image(text):
 
-    pattern = r'/([^/]+\.(?:png|jpeg|jpg))'     #images as .png or .jpeg are supported
+    pattern = r'/([^/]+\.(?:png|jpeg|jpg))'  # images as .png or .jpeg are supported
     match = re.search(pattern, text)
         
     if match:
         image_name = match.group(1)
-        return '[$image]' + image_name
+        return "[$image]" + image_name
 
 
 def align(text):
     
-    if text [:9] == '[$center]':
-        alignment = 'center'
+    if text [:9] == "[$center]":
+        alignment = "center"
     else:
-        alignment = 'left'
+        alignment = "left"
     text = re.sub(r'\[\$center\]', '', text)  # removes any [$center] tag that accidentally is the text
     return [text, alignment]
 
@@ -169,31 +169,16 @@ def align(text):
 ###################################################### LINKS #########################################
 
 
-def get_all_links(scenes):
+def get_all_destinations(scenes) -> set[int]:
 
     links = set()
     for scene in scenes:
-        for text in scene ['textos']:
-            for link in text ['enlaces']:
-                links.add(link ['destinoExito'])
+        for section in scene["sections"]:
+            for link in section["links"]:
+                links.add(link["destination_scene_id"])
     return links
 
 
-def get_links(text):
+def get_links(section):
 
-    links: list = []
-        
-    for link in text['enlaces']:
-        links.append(link)
-
-    return links
-
-
-def get_links_fates(text):
-
-    links: dict = {}
-    
-    for link in text ['enlaces']:
-        links.update({link['texto']: link['destinoExito']})
-
-    return links    
+    return [link for link in section["links"]]

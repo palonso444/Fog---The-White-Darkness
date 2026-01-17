@@ -27,11 +27,11 @@ source.include_exts = py,kv,json,ttf,png
 source.exclude_exts = spec
 
 # (list) List of directory to exclude (leave empty to not exclude anything)
-source.exclude_dirs = tests, bin, venv
+source.exclude_dirs = tests,bin,venv,legacy
 
 # (list) List of exclusions using pattern matching
 # Do not prefix with './'
-source.exclude_patterns = saved_game.json
+source.exclude_patterns = saved_game.json,json_formatter.py
 
 # (str) Application versioning (method 1)
 version = 2.5

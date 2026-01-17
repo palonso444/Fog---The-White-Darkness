@@ -17,19 +17,19 @@ def get_resource_path(relative_path: str) -> LiteralString | str | bytes:
     :param relative_path: relative path to the game file
     :return: the path to the resources
     """
-    if getattr(sys, 'frozen', False) and hasattr(sys, '_MEIPASS'):
+    if getattr(sys, 'frozen', False) and hasattr(sys, "_MEIPASS"):
         base_path = sys._MEIPASS
     else:
         base_path = path.abspath(".")
     return path.join(base_path, relative_path)
 
-LabelBase.register(name = 'Vollkorn',
-                   fn_regular= get_resource_path('fonts/Vollkorn-Regular.ttf'),
-                   fn_italic=get_resource_path('fonts/Vollkorn-Italic.ttf'))
-LabelBase.register(name = 'CreteRound',
-                   fn_regular= get_resource_path('fonts/CreteRound-Regular.ttf'))
-LabelBase.register(name = 'Chiller',
-                   fn_regular= get_resource_path('fonts/Chiller.ttf'))
+LabelBase.register(name = "Vollkorn",
+                   fn_regular= get_resource_path("fonts/Vollkorn-Regular.ttf"),
+                   fn_italic=get_resource_path("fonts/Vollkorn-Italic.ttf"))
+LabelBase.register(name = "CreteRound",
+                   fn_regular= get_resource_path("fonts/CreteRound-Regular.ttf"))
+LabelBase.register(name = "Chiller",
+                   fn_regular= get_resource_path("fonts/Chiller.ttf"))
 
 class FogApp(App):
     """
@@ -85,7 +85,7 @@ class FogApp(App):
         :return: scene
         """
         for scene in self.scenes:
-            if scene['id'] == scene_id:
+            if scene["id"] == scene_id:
                 return scene
 
     def reset_variables(self) -> None:
@@ -133,7 +133,7 @@ class FogApp(App):
         :return: None
         """
         self.story = json_utils.read_json(get_resource_path(rel_path))
-        self.title = self.story["titulo"]
+        self.title = self.story["title"]
         self.scenes = json_utils.get_scenes(self.story,
                                             formatted=True)  # removes html tags and introduces kivy markups
         self.variables = json_utils.get_variables(self.scenes)
@@ -186,20 +186,20 @@ class FogApp(App):
         :return: None
         """
         layout = wdg.GameTextImageLayout()
-        game_obj: dict = json_utils.get_text(self.current_scene)
+        sections: dict = json_utils.get_sections(self.current_scene)
 
-        for obj in game_obj:
-            conditions: dict = json_utils.get_conditions(obj)
+        for section in sections:
+            conditions: dict = json_utils.get_conditions(section)
 
             if json_utils.compare_conditions(self.variables, conditions):
 
-                if obj["texto"][:8] == "[$image]":  # if image
-                    game_resource: wdg.ImageLayout = self._assemble_gameimage(img_path="pics/" + obj["texto"][8:])
+                if section["text"][:8] == "[$image]":  # if image
+                    game_resource: wdg.ImageLayout = self._assemble_gameimage(img_path="pics/" + section["text"][8:])
 
                 else:  # if text
-                    game_resource: wdg.GameTextLabel = self._assemble_gametext(json_utils.align(obj["texto"]))
+                    game_resource: wdg.GameTextLabel = self._assemble_gametext(json_utils.align(section["text"]))
                 
-                consequences: dict = json_utils.get_consequences(obj)  # consequences checked for both texts and images
+                consequences: dict = json_utils.get_consequences(section)  # consequences checked for both texts and images
                 self.variables.update(consequences)
                 layout.add_widget(game_resource)
 
@@ -212,7 +212,7 @@ class FogApp(App):
         :return: None
         """
         layout = wdg.GameButtonLayout()
-        game_obj: dict = json_utils.get_text(self.current_scene)
+        game_obj: dict = json_utils.get_sections(self.current_scene)
         links: list[dict] = json_utils.get_links(game_obj[-1])  # links are always found in last index of game_obj
 
         if len(links) == 0:  # if no links (end game)
@@ -224,8 +224,8 @@ class FogApp(App):
             conditions:dict = json_utils.get_conditions(link)
 
             if json_utils.compare_conditions(self.variables, conditions):    #place button if conditions are met
-                gamebutton: wdg.GameButton = self._assemble_gamebutton(text=link["texto"],
-                                                                   fate=link["destinoExito"],
+                gamebutton: wdg.GameButton = self._assemble_gamebutton(text=link["text"],
+                                                                   destination_scene_id=link["destination_scene_id"],
                                                                    consequences=json_utils.get_consequences(link))
                 layout.add_widget(gamebutton)
 
@@ -239,7 +239,7 @@ class FogApp(App):
         :return: None
         """
         self.variables.update(button.consequences)
-        self.current_scene: dict = self.get_scene(int(button.fate))
+        self.current_scene: dict = self.get_scene(int(button.destination_scene_id))
         self.save_game()
         self.show_gamescreen(self.in_game_transition_time)
 
@@ -263,15 +263,15 @@ class FogApp(App):
         """
         return wdg.GameTextLabel(text=game_obj_section[0], halign=game_obj_section[1])
 
-    def _assemble_gamebutton(self, text: str, fate: int, consequences: dict) -> wdg.GameButton:
+    def _assemble_gamebutton(self, text: str, destination_scene_id: int, consequences: dict) -> wdg.GameButton:
         """
         Assembles a GameButton and leaves it ready to place in the ButtonLayout
         :param text: text of the GameButton
-        :param fate: section id where GameButton leads when pressed
+        :param destination_scene_id: section id where GameButton leads when pressed
         :param consequences: consequences of the pressing of the GameButton
         :return: GameButton instance
         """
-        gamebutton = wdg.GameButton(text=text, fate=fate, consequences=consequences)
+        gamebutton = wdg.GameButton(text=text, destination_scene_id=destination_scene_id, consequences=consequences)
         gamebutton.bind(on_release=self.on_gamebutton_release)
         return gamebutton
 
