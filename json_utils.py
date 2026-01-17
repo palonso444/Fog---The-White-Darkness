@@ -56,12 +56,12 @@ def get_variables(scenes):
     variables: dict = {}
 
     for scene in scenes:
-        for text in scene["sections"]:
-            for condition in text["conditions"]:
+        for section in scene["sections"]:
+            for condition in section["conditions"]:
                 variables.update({condition["variable"]: 0})
 
-        for text in scene["sections"]:
-            for link in text ["links"]:
+        for section in scene["sections"]:
+            for link in section["links"]:
                 for condition in link ["conditions"]:
                     variables.update({condition["variable"]: 0})
 
