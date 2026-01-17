@@ -120,9 +120,9 @@ class GameButton(BaseButton):
     """
     Buttons displayed during the game, not in the Menus
     """
-    def __init__(self, fate: int, consequences: dict, **kwargs):
+    def __init__(self, destination_scene_id: int, consequences: dict, **kwargs):
         super().__init__(**kwargs)
-        self.fate: int = fate
+        self.destination_scene_id: int = destination_scene_id
         self.consequences: dict = consequences
 
 class MenuButton(BaseButton):
