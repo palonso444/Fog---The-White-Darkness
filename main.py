@@ -84,6 +84,7 @@ class FogApp(App):
         """
         if self.current_soundtrack is not None:
             self.current_soundtrack.stop()
+            self.current_soundtrack.unload()
         if next_soundtrack is not None:
             self.current_soundtrack = SoundLoader.load(f"soundtracks/{next_soundtrack}")
             self.current_soundtrack.loop = True
