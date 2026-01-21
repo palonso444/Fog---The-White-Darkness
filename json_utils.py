@@ -51,7 +51,7 @@ def get_intro(scenes, id_only = False):
 ################################ VARIABLES ###############################
 
 
-def get_variables(scenes):
+def get_variables(scenes) -> dict[str,int]:
 
     variables: dict = {}
 
@@ -68,39 +68,23 @@ def get_variables(scenes):
     return variables
 
 
-def compare_conditions(variables, conditions):
-
-    return all(
-        key not in conditions or conditions[key] == variables[key]
-        for key in variables
-    )
+def compare_conditions(variables, conditions) -> bool:
+    return all(key not in conditions or conditions[key] == variables[key] for key in variables)
 
 
-def get_conditions(item):
-
-    item_conditions: dict = {}
-    for condition in item["conditions"]:
-        item_conditions.update({condition["variable"]: int(condition["compare_with_value"])})
-    return item_conditions
+def get_conditions(item) -> dict[str,int]:
+    return {condition["variable"]: int(condition["compare_with_value"]) for condition in item["conditions"]}
 
 
-def get_consequences(item):
-
-    item_consequences: dict = {}
-    for consequence in item["consequences"]:
-        item_consequences.update({consequence["variable"]: int(consequence["update_to_value"])})
-    return item_consequences
+def get_consequences(item) -> dict[str,int]:
+    return {consequence["variable"]: int(consequence["update_to_value"]) for consequence in item["consequences"]}
 
 
 ######################################### TEXT ################################################
 
 
-def get_sections(scene):
-    
-    sections: list = []
-    for section in scene["sections"]:
-        sections.append(section)
-    return sections
+def get_sections(scene) -> list[dict]:
+    return list(scene["sections"])
 
 
 def format_kivy(text):  # default 0, buttons do not pass index so /n/n are not removed
@@ -170,15 +154,9 @@ def align(text):
 
 
 def get_all_destinations(scenes) -> set[int]:
-
-    links = set()
-    for scene in scenes:
-        for section in scene["sections"]:
-            for link in section["links"]:
-                links.add(link["destination_scene_id"])
-    return links
+    return {link["destination_scene_id"] for scene in scenes
+            for section in scene["sections"] for link in section["links"]}
 
 
-def get_links(section):
-
-    return [link for link in section["links"]]
+def get_links(section) -> list[dict]:
+    return list(section["links"])
