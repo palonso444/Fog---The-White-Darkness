@@ -37,7 +37,7 @@ class FogApp(App):
     """
     Class defining the game
     """
-    soundtrack = StringProperty(None, allownone = True)
+    soundtrack_name = StringProperty(None, allownone = True)
 
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
@@ -47,8 +47,10 @@ class FogApp(App):
         self.title: Optional[str] = None
         self.scenes: Optional[list[dict]] = None
         self.variables: Optional[dict[str,int]] = None
-        self.current_scene: Optional[dict] = None
-        self.current_soundtrack: Optional[Sound] = None
+        self.scene: Optional[dict] = None
+        self.soundtrack: Optional[Sound] = None
+        # event is triggered by calling play_soundtrack() or stop_soundtrack(), never directly
+        self.bind(soundtrack_name=self._on_soundtrack_name)
 
         self.sm: Optional[ScreenManager] = None
         self.start_game_transition_time: float = 1.4  # transition duration to the first screen of the game
@@ -75,20 +77,41 @@ class FogApp(App):
         self.sm.add_widget(wdg.LanguageMenu(name="current_screen"))
         self.sm.current = "current_screen"
 
-    def on_soundtrack(self, fog_app:App, next_soundtrack:Optional[str]) -> None:
+    def _on_soundtrack_name(self, fog_app:App, next_soundtrack_name:Optional[str]) -> None:
         """
         Plays soundtrack or stops it according to the passed name
         :param fog_app: instance of the app
-        :param next_soundtrack: soundtrack to be played. If None, soundtracks stops
+        :param next_soundtrack_name: soundtrack to be played. If None, soundtracks stops
         :return: None
         """
-        if self.current_soundtrack is not None:
-            self.current_soundtrack.stop()
-            self.current_soundtrack.unload()
-        if next_soundtrack is not None:
-            self.current_soundtrack = SoundLoader.load(f"soundtracks/{next_soundtrack}")
-            self.current_soundtrack.loop = True
-            self.current_soundtrack.play()
+        if self.soundtrack is not None:
+            self.soundtrack.stop()
+            self.soundtrack.unload()
+        if next_soundtrack_name is not None:
+            if next_soundtrack_name.endswith("--in-loop"):
+                self.soundtrack = SoundLoader.load(f"soundtracks/{next_soundtrack_name[:-9]}")  # remove loop label
+            else:
+                self.soundtrack = SoundLoader.load(f"soundtracks/{next_soundtrack_name}")
+            self.soundtrack.loop = True if next_soundtrack_name.endswith("--in-loop") else False
+            self.soundtrack.play()
+
+    def play_soundtrack(self, loop:bool) -> None:
+        """
+        Starts playing a soundtrack
+        :param loop: boolean indicating of soundtrack must play in loop
+        :return: None
+        """
+        soundtrack_name = self.scene["soundtrack"]  # soundtracks must be in soundtracks/ directory
+        if loop:
+            soundtrack_name = f"{soundtrack_name}--in-loop"
+        self.soundtrack_name = soundtrack_name
+
+    def stop_soundtrack(self) -> None:
+        """
+        Stops the soundtrack
+        :return:
+        """
+        self.soundtrack_name = None
 
     @property
     def check_if_saved_game(self)->bool:
@@ -121,7 +144,7 @@ class FogApp(App):
         :return: None
         """
         game_state: dict = {"variables": self.variables,
-                            "current_scene_id": self.current_scene["id"]}
+                            "current_scene_id": self.scene["id"]}
         with open("saved_game.json", "w") as f:
             dump(game_state, f, indent=4)
 
@@ -143,8 +166,8 @@ class FogApp(App):
             game_state: dict = load(f)
 
         self.variables = game_state["variables"]
-        self.current_scene = self.get_scene(game_state["current_scene_id"])
-        self.setup_soundtrack()
+        self.scene = self.get_scene(game_state["current_scene_id"])
+        self.play_soundtrack(loop=True)
         self.show_gamescreen(self.start_game_transition_time)
 
     def setup_game(self, rel_path: str) -> None:
@@ -159,20 +182,13 @@ class FogApp(App):
                                             formatted=True)  # removes html tags and introduces kivy markups
         self.variables = json_utils.get_variables(self.scenes)
 
-    def setup_soundtrack(self) -> None:
-        """
-        Sets up the soundtrack
-        :return:
-        """
-        self.soundtrack = self.current_scene["soundtrack"]
-
     def start_game(self) -> None:
         """
         Sets up App attributes and generates the first screen of the game
         :return: None
         """
-        self.current_scene = json_utils.get_intro(self.scenes)
-        self.setup_soundtrack()
+        self.scene = json_utils.get_intro(self.scenes)
+        self.play_soundtrack(loop=True)
         self.show_gamescreen(self.start_game_transition_time)
 
     def show_start_menu(self) -> None:
@@ -215,7 +231,7 @@ class FogApp(App):
         :return: None
         """
         layout = wdg.GameTextImageLayout()
-        sections: dict = json_utils.get_sections(self.current_scene)
+        sections: dict = json_utils.get_sections(self.scene)
 
         for section in sections:
             conditions: dict = json_utils.get_conditions(section)
@@ -241,7 +257,7 @@ class FogApp(App):
         :return: None
         """
         layout = wdg.GameButtonLayout()
-        game_obj: list[dict] = json_utils.get_sections(self.current_scene)
+        game_obj: list[dict] = json_utils.get_sections(self.scene)
         links: list[dict] = json_utils.get_links(game_obj[-1])  # links are always found in last index of game_obj
 
         if len(links) == 0:  # if no links (end game)
@@ -268,8 +284,8 @@ class FogApp(App):
         :return: None
         """
         self.variables.update(button.consequences)
-        self.current_scene: dict = self.get_scene(int(button.destination_scene_id))
-        self.setup_soundtrack()
+        self.scene: dict = self.get_scene(int(button.destination_scene_id))
+        self.play_soundtrack(loop=True)
         self.save_game()
         self.show_gamescreen(self.in_game_transition_time)
 
