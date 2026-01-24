@@ -88,10 +88,7 @@ class FogApp(App):
             self.soundtrack.stop()
             self.soundtrack.unload()
         if next_soundtrack_name is not None:
-            if next_soundtrack_name.endswith("--in-loop"):
-                self.soundtrack = SoundLoader.load(f"soundtracks/{next_soundtrack_name[:-9]}")  # remove loop label
-            else:
-                self.soundtrack = SoundLoader.load(f"soundtracks/{next_soundtrack_name}")
+            self.soundtrack = SoundLoader.load(f"soundtracks/{next_soundtrack_name.removesuffix("--in-loop")}")
             self.soundtrack.loop = True if next_soundtrack_name.endswith("--in-loop") else False
             self.soundtrack.play()
 
