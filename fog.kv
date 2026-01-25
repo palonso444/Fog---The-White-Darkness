@@ -113,10 +113,12 @@
                 on_release:
                     app.language = "english"
                     app.setup_game("languages/Fog.json")
+                    app.play_soundtrack("opening.mp3", loop=False)
                     app.show_start_menu()
             MenuButton:
                 text: "Español"
                 on_release:
                     app.language = "spanish"
                     app.setup_game("languages/Niebla.json")
+                    app.play_soundtrack("opening.mp3", loop=False)
                     app.show_start_menu()
