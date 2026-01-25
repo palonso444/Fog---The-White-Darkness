@@ -18,7 +18,8 @@
                         }
                     ]
                 }
-            ]
+            ],
+            "soundtrack": "bones.mp3"
         },
         {
             "title": "Enter the inn",
@@ -59,7 +60,8 @@
                         }
                     ]
                 }
-            ]
+            ],
+            "soundtrack": "bones.mp3"
         },
         {
             "title": "Announce your presence",
@@ -78,7 +80,8 @@
                         }
                     ]
                 }
-            ]
+            ],
+            "soundtrack": "bones.mp3"
         },
         {
             "title": "Subir",
@@ -102,7 +105,8 @@
                         }
                     ]
                 }
-            ]
+            ],
+            "soundtrack": "bones.mp3"
         },
         {
             "title": "Accompany him to the church",
@@ -121,7 +125,8 @@
                         }
                     ]
                 }
-            ]
+            ],
+            "soundtrack": "bones.mp3"
         },
         {
             "title": "Iglesia",
@@ -174,7 +179,8 @@
                         }
                     ]
                 }
-            ]
+            ],
+            "soundtrack": "church.mp3"
         },
         {
             "title": "Sacristy",
@@ -226,7 +232,8 @@
                         }
                     ]
                 }
-            ]
+            ],
+            "soundtrack": "church.mp3"
         },
         {
             "title": "Main street",
@@ -277,7 +284,8 @@
                         }
                     ]
                 }
-            ]
+            ],
+            "soundtrack": "bones.mp3"
         },
         {
             "title": "You enter the crypt",
@@ -302,7 +310,8 @@
                         }
                     ]
                 }
-            ]
+            ],
+            "soundtrack": "church.mp3"
         },
         {
             "title": "Help",
@@ -349,7 +358,8 @@
                         }
                     ]
                 }
-            ]
+            ],
+            "soundtrack": "church.mp3"
         },
         {
             "title": "Let us stay here. This is the house of God, and His presence is strong. Let us pray to drive away all evil.",
@@ -379,7 +389,8 @@
                         }
                     ]
                 }
-            ]
+            ],
+            "soundtrack": "church.mp3"
         },
         {
             "title": "We must stay. And pray. Prayer is a powerful invocation, and if it comes from our united voices, its power will destroy any evil.",
@@ -398,7 +409,8 @@
                         }
                     ]
                 }
-            ]
+            ],
+            "soundtrack": "church.mp3"
         },
         {
             "title": "Regain consciousness...",
@@ -417,7 +429,8 @@
                         }
                     ]
                 }
-            ]
+            ],
+            "soundtrack": "lagoon.mp3"
         },
         {
             "title": "Take the swamp road",
@@ -448,7 +461,8 @@
                         }
                     ]
                 }
-            ]
+            ],
+            "soundtrack": "moor.mp3"
         },
         {
             "title": "Head for the butcher's house",
@@ -485,7 +499,8 @@
                         }
                     ]
                 }
-            ]
+            ],
+            "soundtrack": "bones.mp3"
         },
         {
             "title": "Take the painting down",
@@ -504,7 +519,8 @@
                         }
                     ]
                 }
-            ]
+            ],
+            "soundtrack": "bones.mp3"
         },
         {
             "title": "Lift the floorboards",
@@ -532,7 +548,8 @@
                         }
                     ]
                 }
-            ]
+            ],
+            "soundtrack": "bones.mp3"
         },
         {
             "title": "Look behind the wardrobe",
@@ -551,7 +568,8 @@
                         }
                     ]
                 }
-            ]
+            ],
+            "soundtrack": "bones.mp3"
         },
         {
             "title": "Continue towards the swamp",
@@ -586,7 +604,8 @@
                         }
                     ]
                 }
-            ]
+            ],
+            "soundtrack": "lagoon.mp3"
         },
         {
             "title": "Investigate the fire",
@@ -611,7 +630,8 @@
                         }
                     ]
                 }
-            ]
+            ],
+            "soundtrack": "moor.mp3"
         },
         {
             "title": "Extinguish the lantern and approach stealthily",
@@ -647,7 +667,8 @@
                         }
                     ]
                 }
-            ]
+            ],
+            "soundtrack": "moor.mp3"
         },
         {
             "title": "You continue with your lantern lit",
@@ -672,7 +693,8 @@
                         }
                     ]
                 }
-            ]
+            ],
+            "soundtrack": "moor.mp3"
         },
         {
             "title": "You leave your hiding place and hold the cross between yourself and the creature",
@@ -691,7 +713,8 @@
                         }
                     ]
                 }
-            ]
+            ],
+            "soundtrack": "moor.mp3"
         },
         {
             "title": "You step out of your hiding place and place the church relic between yourself and the creature",
@@ -719,7 +742,8 @@
                         }
                     ]
                 }
-            ]
+            ],
+            "soundtrack": "moor.mp3"
         },
         {
             "title": "You stay still",
@@ -777,7 +801,8 @@
                         }
                     ]
                 }
-            ]
+            ],
+            "soundtrack": "moor.mp3"
         },
         {
             "title": "You sit down",
@@ -802,7 +827,8 @@
                         }
                     ]
                 }
-            ]
+            ],
+            "soundtrack": "moor.mp3"
         },
         {
             "title": "Knock on the houses",
@@ -868,7 +894,8 @@
                         }
                     ]
                 }
-            ]
+            ],
+            "soundtrack": "bones.mp3"
         },
         {
             "title": "Butcher's house",
@@ -914,7 +941,8 @@
                         }
                     ]
                 }
-            ]
+            ],
+            "soundtrack": "bones.mp3"
         },
         {
             "title": "Show the amulet of the butcher",
@@ -939,7 +967,8 @@
                         }
                     ]
                 }
-            ]
+            ],
+            "soundtrack": "moor.mp3"
         },
         {
             "title": "Ask where is the amulet",
@@ -975,7 +1004,8 @@
                         }
                     ]
                 }
-            ]
+            ],
+            "soundtrack": "moor.mp3"
         },
         {
             "title": "Take the wine",
@@ -1015,7 +1045,8 @@
                         }
                     ]
                 }
-            ]
+            ],
+            "soundtrack": "bones.mp3"
         },
         {
             "title": "Take the bread",
@@ -1055,7 +1086,8 @@
                         }
                     ]
                 }
-            ]
+            ],
+            "soundtrack": "bones.mp3"
         },
         {
             "title": "Statue ruins church",
@@ -1118,7 +1150,8 @@
                         }
                     ]
                 }
-            ]
+            ],
+            "soundtrack": "ruins.mp3"
         },
         {
             "title": "Offer bread",
@@ -1195,7 +1228,8 @@
                         }
                     ]
                 }
-            ]
+            ],
+            "soundtrack": "ruins.mp3"
         },
         {
             "title": "Offer wine",
@@ -1296,7 +1330,8 @@
                         }
                     ]
                 }
-            ]
+            ],
+            "soundtrack": "ruins.mp3"
         },
         {
             "title": "Posada",
@@ -1315,7 +1350,8 @@
                         }
                     ]
                 }
-            ]
+            ],
+            "soundtrack": "bones.mp3"
         },
         {
             "title": "Iglesia",
@@ -1334,7 +1370,8 @@
                         }
                     ]
                 }
-            ]
+            ],
+            "soundtrack": "bones.mp3"
         },
         {
             "title": "Back to Bones",
@@ -1382,7 +1419,8 @@
                         }
                     ]
                 }
-            ]
+            ],
+            "soundtrack": "moor.mp3"
         },
         {
             "title": "Houses",
@@ -1419,7 +1457,8 @@
                         }
                     ]
                 }
-            ]
+            ],
+            "soundtrack": "bones.mp3"
         },
         {
             "title": "Surgeron house",
@@ -1438,7 +1477,8 @@
                         }
                     ]
                 }
-            ]
+            ],
+            "soundtrack": "bones.mp3"
         },
         {
             "title": "Butcher's house",
@@ -1475,7 +1515,8 @@
                         }
                     ]
                 }
-            ]
+            ],
+            "soundtrack": "bones.mp3"
         },
         {
             "title": "Herbalist",
@@ -1494,7 +1535,8 @@
                         }
                     ]
                 }
-            ]
+            ],
+            "soundtrack": "bones.mp3"
         },
         {
             "title": "Gravedigger's house",
@@ -1513,7 +1555,8 @@
                         }
                     ]
                 }
-            ]
+            ],
+            "soundtrack": "bones.mp3"
         },
         {
             "title": "Death without amulet",
@@ -1531,7 +1574,8 @@
                     "text": "<p style=\"text-align: center; \"><b style=\"color: var(--text-color); font-size: 1rem; background-color: var(--widget-background);\"><br></b></p><p style=\"text-align: center; \"><b style=\"color: var(--text-color); font-size: 1rem; background-color: var(--widget-background);\">THE END?</b><br></p><p style=\"text-align: center; \"><br></p>",
                     "links": []
                 }
-            ]
+            ],
+            "soundtrack": "lagoon.mp3"
         },
         {
             "title": "Take painting down",
@@ -1626,7 +1670,8 @@
                         }
                     ]
                 }
-            ]
+            ],
+            "soundtrack": "bones.mp3"
         },
         {
             "title": "Lift the floorboards",
@@ -1654,7 +1699,8 @@
                         }
                     ]
                 }
-            ]
+            ],
+            "soundtrack": "bones.mp3"
         },
         {
             "title": "Look behind the wardrobe",
@@ -1749,7 +1795,8 @@
                         }
                     ]
                 }
-            ]
+            ],
+            "soundtrack": "bones.mp3"
         },
         {
             "title": "Look at the bed",
@@ -1844,7 +1891,8 @@
                         }
                     ]
                 }
-            ]
+            ],
+            "soundtrack": "bones.mp3"
         },
         {
             "title": "Lift the straw mattres",
@@ -1863,7 +1911,8 @@
                         }
                     ]
                 }
-            ]
+            ],
+            "soundtrack": "bones.mp3"
         },
         {
             "title": "Escuchas una voz",
@@ -1882,7 +1931,8 @@
                         }
                     ]
                 }
-            ]
+            ],
+            "soundtrack": "moor.mp3"
         },
         {
             "title": "You feel dizzy...",
@@ -1923,7 +1973,8 @@
                         }
                     ]
                 }
-            ]
+            ],
+            "soundtrack": "lagoon.mp3"
         },
         {
             "title": "Run towards the lagoon",
@@ -1942,7 +1993,8 @@
                         }
                     ]
                 }
-            ]
+            ],
+            "soundtrack": "lagoon.mp3"
         },
         {
             "title": "Reach the milestone",
@@ -1967,7 +2019,8 @@
                         }
                     ]
                 }
-            ]
+            ],
+            "soundtrack": "moor.mp3"
         },
         {
             "title": "Estaurograma",
@@ -2058,7 +2111,8 @@
                         }
                     ]
                 }
-            ]
+            ],
+            "soundtrack": "moor.mp3"
         },
         {
             "title": "Sand tray",
@@ -2107,7 +2161,8 @@
                         }
                     ]
                 }
-            ]
+            ],
+            "soundtrack": "ruins.mp3"
         },
         {
             "title": "Examine the hollow",
@@ -2172,7 +2227,8 @@
                         }
                     ]
                 }
-            ]
+            ],
+            "soundtrack": "ruins.mp3"
         },
         {
             "title": "Take the cross",
@@ -2240,7 +2296,8 @@
                         }
                     ]
                 }
-            ]
+            ],
+            "soundtrack": "ruins.mp3"
         },
         {
             "title": "Cross",
@@ -2275,7 +2332,8 @@
                         }
                     ]
                 }
-            ]
+            ],
+            "soundtrack": "lagoon.mp3"
         },
         {
             "title": "Relic",
@@ -2310,7 +2368,8 @@
                         }
                     ]
                 }
-            ]
+            ],
+            "soundtrack": "lagoon.mp3"
         },
         {
             "title": "Investigate the door",
@@ -2335,7 +2394,8 @@
                         }
                     ]
                 }
-            ]
+            ],
+            "soundtrack": "bones.mp3"
         },
         {
             "title": "Crypts",
@@ -2382,7 +2442,8 @@
                         }
                     ]
                 }
-            ]
+            ],
+            "soundtrack": "church.mp3"
         },
         {
             "title": "Bell tower",
@@ -2407,7 +2468,8 @@
                         }
                     ]
                 }
-            ]
+            ],
+            "soundtrack": "bones.mp3"
         },
         {
             "title": "Meet the butcher",
@@ -2426,7 +2488,8 @@
                         }
                     ]
                 }
-            ]
+            ],
+            "soundtrack": "bones.mp3"
         },
         {
             "title": "Paleochristian church inside",
@@ -2461,7 +2524,8 @@
                         }
                     ]
                 }
-            ]
+            ],
+            "soundtrack": "ruins.mp3"
         },
         {
             "title": "Do not blaspheme!",
@@ -2480,7 +2544,8 @@
                         }
                     ]
                 }
-            ]
+            ],
+            "soundtrack": "moor.mp3"
         },
         {
             "title": "Draw a crescent",
@@ -2516,7 +2581,8 @@
                         }
                     ]
                 }
-            ]
+            ],
+            "soundtrack": "ruins.mp3"
         },
         {
             "title": "Where that fog comes from?",
@@ -2535,7 +2601,8 @@
                         }
                     ]
                 }
-            ]
+            ],
+            "soundtrack": "moor.mp3"
         },
         {
             "title": "Try to find the stream",
@@ -2544,7 +2611,7 @@
                 {
                     "consequences": [],
                     "conditions": [],
-                    "text": "<p style=\"text-align: justify;\"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">You have no trouble finding the stream. The flowing water shines like crystal under the moonlight. You crouch on the mossy bank and drink with your hands. The water is cool and tastes of clean earth.</span><br></p><p style=\"text-align: justify;\">In front of you swims a group of little fish. They scatter when you dip your hands into the water but gather again as soon as you pull them out. It reminds you of a sermon once given by the priest of your church: \"Blessed are the fish, for in them is incarnate Jesus Christ the Savior\".</p><p style=\"text-align: justify;\">You stand up, filled with renewed strength.</p>",
+                    "text": "<p style=\"text-align: justify;\"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">You have no trouble finding the stream. The flowing water shines like crystal under the moonlight. You crouch on the mossy bank and drink with your hands. The water is cool and tastes of clean earth.</span><br></p><p style=\"text-align: justify;\">In front of you swims a group of little fish. They scatter when you dip your hands into the water but gather again as soon as you pull them out. It reminds you of a sermon once given by the priest of your church:\n\n<i>Blessed are the fish, for in them is incarnate Jesus Christ the Savior.</i></p><p style=\"text-align: justify;\">You stand up, filled with renewed strength.</p>",
                     "links": [
                         {
                             "text": "<p>Approach the fire</p>",
@@ -2560,7 +2627,8 @@
                         }
                     ]
                 }
-            ]
+            ],
+            "soundtrack": "river.mp3"
         },
         {
             "title": "Draw seed",
@@ -2596,7 +2664,8 @@
                         }
                     ]
                 }
-            ]
+            ],
+            "soundtrack": "ruins.mp3"
         },
         {
             "title": "Draw fish",
@@ -2632,7 +2701,8 @@
                         }
                     ]
                 }
-            ]
+            ],
+            "soundtrack": "ruins.mp3"
         },
         {
             "title": "Tell me what I have to do!",
@@ -2684,7 +2754,8 @@
                         }
                     ]
                 }
-            ]
+            ],
+            "soundtrack": "moor.mp3"
         },
         {
             "title": "Death with amulet",
@@ -2702,7 +2773,8 @@
                     "text": "<p style=\"text-align: center; \"><b style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\"><br></b></p><p style=\"text-align: center; \"><b style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">THE END</b></p><p style=\"text-align: center; \"><br></p>",
                     "links": []
                 }
-            ]
+            ],
+            "soundtrack": "lagoon.mp3"
         },
         {
             "title": "Examine the milestone",
@@ -2748,7 +2820,8 @@
                         }
                     ]
                 }
-            ]
+            ],
+            "soundtrack": "lagoon.mp3"
         },
         {
             "title": "Continue towards the water",
@@ -2778,7 +2851,8 @@
                         }
                     ]
                 }
-            ]
+            ],
+            "soundtrack": "lagoon.mp3"
         },
         {
             "title": "Throw gem into water",
@@ -2797,7 +2871,8 @@
                         }
                     ]
                 }
-            ]
+            ],
+            "soundtrack": "lagoon.mp3"
         },
         {
             "title": "Lagoon shore",
@@ -2827,7 +2902,8 @@
                         }
                     ]
                 }
-            ]
+            ],
+            "soundtrack": "lagoon.mp3"
         },
         {
             "title": "Burrow",
@@ -2862,7 +2938,8 @@
                         }
                     ]
                 }
-            ]
+            ],
+            "soundtrack": "lagoon.mp3"
         },
         {
             "title": "Continue walking along the shore",
@@ -2908,7 +2985,8 @@
                         }
                     ]
                 }
-            ]
+            ],
+            "soundtrack": "lagoon.mp3"
         },
         {
             "title": "Place gem in skeleton's hand",
@@ -2948,7 +3026,8 @@
                     "text": "<p style=\"text-align: center; \"><b style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\"><br></b></p><p style=\"text-align: center; \"><b style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">THE END</b></p><p style=\"text-align: center; \"><br></p>",
                     "links": []
                 }
-            ]
+            ],
+            "soundtrack": "moor.mp3"
         },
         {
             "title": "Flee from the lagoon",
@@ -2983,7 +3062,8 @@
                         }
                     ]
                 }
-            ]
+            ],
+            "soundtrack": "lagoon.mp3"
         }
     ]
 }

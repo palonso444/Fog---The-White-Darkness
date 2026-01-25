@@ -1,9 +1,9 @@
 import json
 
-with open("languages/Niebla_legacy.json", "r") as file:
+with open("languages/Fog.json", "r") as file:
     data = json.load(file)
 
-keys_to_delete = ["frames", "sinopsis", "observaciones", "control", "tipo"]
+"""keys_to_delete = ["frames", "sinopsis", "observaciones", "control", "tipo"]
 keys_to_delete_esc = ["codigo", "estado", "control", "tipo"]
 keys_to_delete_textos = ["test", "ancho", "posicion", "titulo"]
 keys_to_delete_enlaces = ["ancho", "extra", "frame", "destinoFallo", "posicion", "siempreVisible", "test"]
@@ -59,7 +59,10 @@ for escena in data["escenas"]:
             enlace["consecuencias"] = [
                 {k: v for k, v in cons.items() if k not in keys_to_delete_enl_cons}
                 for cons in enlace["consecuencias"]
-            ]
+            ]"""
 
-with open("languages/Niebla.json", "w") as file2:
+for scene in data["scenes"]:
+    scene["soundtracks"] = "bones.mp3"
+
+with open("languages/Fog.json", "w") as file2:
     json.dump(data, file2, indent=4)
