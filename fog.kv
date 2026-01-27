@@ -1,6 +1,7 @@
 #:import StartGameButton widgets.StartGameButton
 #:import ContinueGameButton widgets.ContinueGameButton
 
+
 <BaseButtonLayout>:
     orientation: "vertical"
     spacing: "10dp"  # space between widgets
@@ -18,6 +19,9 @@
     valign: "middle"
     halign: "left"
 
+<RootLayout>
+    orientation: "vertical"
+
 <TitleLayout>:
     orientation: "vertical"
     padding: "0dp", "70dp","0dp","0dp"
@@ -31,6 +35,11 @@
     font_size: "150sp"
     opacity: 0.0  # starts invisible and fades in
     text: app.title
+
+<InterfaceLayout>
+    size_hint_y: 0.1
+    ToggleButton:
+        text: "music button"
 
 <ScreenLayout>:  # main layout of the screen. Contains TextLayout and ButtonLayout and it is embedded in the ScrollView
     orientation: "vertical"

@@ -62,6 +62,12 @@ class GameImage(Image):
     """
     pass
 
+class RootLayout(BoxLayout):
+    """
+    Root layout for all the app
+    """
+    pass
+
 class StartMenuLayout(BoxLayout):
     """
     General layout for StartMenu
@@ -77,6 +83,12 @@ class TitleLayout(BoxLayout):
 class StartMenuButtonLayout(BaseButtonLayout):
     """
     Layout for buttons of StartMenu
+    """
+    pass
+
+class InterfaceLayout(BoxLayout):
+    """
+    Layout for game interface buttons
     """
     pass
 
@@ -231,12 +243,13 @@ class StartMenu(Screen):
         self.button_layout.add_widget(CopyrightLabel())
 
 class GameScreen(Screen):  # defined in the kv file
-    """
-    Class defining the Screen showing the game, consisting of a ScreenLayout embedded in an ScrollView
-    """
+
+    #Class defining the Screen showing the game, consisting of a ScreenLayout embedded in an ScrollView
+
     def __init__(self,**kwargs):
         super().__init__(**kwargs)
         self.layout: ScreenLayout = ScreenLayout()  # contains text and button layouts added by place_text() and place_buttons()
         scroll: ScrollView = ScrollView()
         scroll.add_widget(self.layout)
         self.add_widget(scroll)
+

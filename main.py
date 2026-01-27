@@ -9,10 +9,12 @@ from kivy.core.text import LabelBase
 from kivy.properties import StringProperty
 from kivy.uix.screenmanager import ScreenManager, FadeTransition
 from kivy.core.audio import SoundLoader, Sound
+from uix.boxlayout import BoxLayout
 
 import json_utils
 import widgets as wdg
 from audio_volumes import get_volume
+
 
 def get_resource_path(relative_path: str) -> LiteralString | str | bytes:
     """
@@ -43,6 +45,7 @@ class FogApp(App):
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
         self.game_filename: Optional[str] = None
+        self.root_layout: Optional[wdg.RootLayout] = None
         self.language: Optional[str] = None
         self.story: Optional[dict] = None
         self.title: Optional[str] = None
@@ -58,8 +61,10 @@ class FogApp(App):
         self.in_game_transition_time: float = 0.4  # transition duration between screens during game
 
     def build(self) -> ScreenManager:
+        self.root_layout = wdg.RootLayout()
         self.sm = ScreenManager(transition=FadeTransition())
-        return self.sm
+        self.root_layout.add_widget(self.sm)
+        return self.root_layout
 
     def on_start(self) -> None:
         """
@@ -194,9 +199,15 @@ class FogApp(App):
         Sets up App attributes and generates the first screen of the game
         :return: None
         """
+        self.add_interface()
         self.scene = json_utils.get_intro(self.scenes)
         self.play_soundtrack(self.get_soundtrack_name(), loop=True)
         self.show_gamescreen(self.start_game_transition_time)
+
+    def add_interface(self)->None:
+        self.root_layout.remove_widget(self.sm)
+        self.root_layout.add_widget(wdg.InterfaceLayout())
+        self.root_layout.add_widget(self.sm)
 
     def show_start_menu(self) -> None:
         """
@@ -238,7 +249,7 @@ class FogApp(App):
         :return: None
         """
         layout = wdg.GameTextImageLayout()
-        sections: dict = json_utils.get_sections(self.scene)
+        sections: list[dict] = json_utils.get_sections(self.scene)
 
         for section in sections:
             conditions: dict = json_utils.get_conditions(section)
