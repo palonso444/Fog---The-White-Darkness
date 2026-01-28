@@ -9,10 +9,11 @@ from kivy.core.text import LabelBase
 from kivy.properties import StringProperty
 from kivy.uix.screenmanager import ScreenManager, FadeTransition
 from kivy.core.audio import SoundLoader, Sound
-from uix.boxlayout import BoxLayout
+
 
 import json_utils
 import widgets as wdg
+import c_exceptions as exc
 from audio_volumes import get_volume
 
 
@@ -66,6 +67,43 @@ class FogApp(App):
         self.root_layout.add_widget(self.sm)
         return self.root_layout
 
+    def get_interface_bar(self) -> wdg.InterfaceLayout:
+        """
+        Gets the Interface, raises error if not present
+        :return: the interface
+        :raises: TypeError if the interface is missing
+        """
+        if len(self.sm.children) < 1 or not(isinstance(self.sm.children[0], wdg.InterfaceLayout)):
+            raise exc.MissingWidgetError("InterfaceLayout not present in ScreenManager")
+        return self.sm.children[0]
+
+    def get_gamescreen(self) -> wdg.GameScreen:
+        """
+        Gets the GameScreen, raises error if not present
+        :return: the interface
+        :raises: TypeError if the interface is missing
+        """
+        if len(self.sm.children) < 2 or not(isinstance(self.sm.children[1], wdg.GameScreen)):
+            raise exc.MissingWidgetError("GameScreen not present in ScreenManager")
+        return self.sm.children[1]
+
+    def get_soundtrack_name(self) -> str:
+        """
+        Gets the name of the soundtrack of the current scene
+        :return: the name of the soundtrack
+        """
+        return self.scene["soundtrack"]
+
+    def get_scene(self, scene_id:int) -> dict:
+        """
+        Gets the scene with the passed id from App.scenes
+        :param scene_id: id of the scene to get
+        :return: scene
+        """
+        for scene in self.scenes:
+            if scene["id"] == scene_id:
+                return scene
+
     def on_start(self) -> None:
         """
         Schedules app launch in 1 second to avoid black screen issue during app launching on Android.
@@ -100,13 +138,6 @@ class FogApp(App):
             self.soundtrack.loop = True if next_soundtrack_name.endswith("--in-loop") else False
             self.soundtrack.play()
 
-    def get_soundtrack_name(self) -> str:
-        """
-        Gets the name of the soundtrack of the current scene
-        :return: the name of the soundtrack
-        """
-        return self.scene["soundtrack"]
-
     def play_soundtrack(self, soundtrack_name: str, loop:bool) -> None:
         """
         Starts playing a soundtrack
@@ -132,16 +163,6 @@ class FogApp(App):
         :return: True if saved game, else False
         """
         return path.exists("saved_game.json")
-
-    def get_scene(self, scene_id:int) -> dict:
-        """
-        Gets the scene with the passed id from App.scenes
-        :param scene_id: id of the scene to get
-        :return: scene
-        """
-        for scene in self.scenes:
-            if scene["id"] == scene_id:
-                return scene
 
     def reset_variables(self) -> None:
         """
@@ -180,7 +201,8 @@ class FogApp(App):
         self.variables = game_state["variables"]
         self.scene = self.get_scene(game_state["current_scene_id"])
         self.play_soundtrack(self.get_soundtrack_name(), loop=True)
-        self.show_gamescreen(self.start_game_transition_time)
+        self.show_interface_bar()
+        self.show_gamescreen(self.start_game_transition_time, height_adj=0.91)
 
     def setup_game(self, rel_path: str) -> None:
         """
@@ -199,12 +221,16 @@ class FogApp(App):
         Sets up App attributes and generates the first screen of the game
         :return: None
         """
-        self.add_interface()
         self.scene = json_utils.get_intro(self.scenes)
         self.play_soundtrack(self.get_soundtrack_name(), loop=True)
-        self.show_gamescreen(self.start_game_transition_time)
+        self.show_interface_bar()
+        self.show_gamescreen(self.start_game_transition_time, height_adj=0.91)
 
-    def add_interface(self)->None:
+    def show_interface_bar(self) -> None:
+        """
+        Adds the interface button bar on top of the screen
+        :return: None
+        """
         self.root_layout.remove_widget(self.sm)
         self.root_layout.add_widget(wdg.InterfaceLayout())
         self.root_layout.add_widget(self.sm)
@@ -217,13 +243,15 @@ class FogApp(App):
         self.sm.remove_widget(self.sm.get_screen("current_screen"))
         self.sm.add_widget(wdg.StartMenu(name="current_screen"))
 
-    def show_gamescreen(self, transition_duration: float) -> None:
+    def show_gamescreen(self, transition_duration: float, height_adj: Optional[float] = None) -> None:
         """
         Assembles the next game screen and displays it
         :param transition_duration: duration in seconds of the transition
+        :param height_adj: height adjusting factor (from 0 to 1) to avoid collision of GamesScreen
+        with interfaces when fading in
         :return: None
         """
-        next_screen = wdg.GameScreen(name="next_screen")
+        next_screen = wdg.GameScreen(name="next_screen", height_adj=height_adj)
         self.place_text_and_images(next_screen)
         self.place_gamebuttons(next_screen)
         self._transition_screen(next_screen, transition_duration)
