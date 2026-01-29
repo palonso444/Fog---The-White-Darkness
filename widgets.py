@@ -246,23 +246,23 @@ class GameScreen(Screen):  # defined in the kv file
     """
     Class defining the Screen showing the game, consisting of a ScreenLayout embedded in an ScrollView
     """
-    def __init__(self, height_adj: Optional[float], **kwargs):
+    def __init__(self, height_subtract: Optional[float], **kwargs):
         super().__init__(**kwargs)
-        self.height_adj: Optional[float] = height_adj
+        self.height_subtract: Optional[float] = height_subtract
         self.layout: ScreenLayout = ScreenLayout()  # contains text and button layouts added by place_text() and place_buttons()
         scroll: ScrollView = ScrollView()
         scroll.add_widget(self.layout)
         self.add_widget(scroll)
 
-        if self.height_adj is not None:
-            self.bind(on_pre_enter=self._adjust_height)
+        if self.height_subtract is not None:
+            self.bind(on_pre_enter=self._subtract_height)
 
-    def _adjust_height(self, *args) -> None:
+    def _subtract_height(self, *args) -> None:
         """
         Adjust the height of the GameScreen before FadingTransition starts to avoid interference with the upper
         interface bar
         :param args: Added for consistency, nothing is actually passed
         :return: None
         """
-        self.height *= self.height_adj
+        self.height -= self.height_subtract / 1.83  # adjusting factor not sure the reason why
 

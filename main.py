@@ -73,9 +73,9 @@ class FogApp(App):
         :return: the interface
         :raises: TypeError if the interface is missing
         """
-        if len(self.sm.children) < 1 or not(isinstance(self.sm.children[0], wdg.InterfaceLayout)):
-            raise exc.MissingWidgetError("InterfaceLayout not present in ScreenManager")
-        return self.sm.children[0]
+        if len(self.root_layout.children) != 2 or not(isinstance(self.root_layout.children[1], wdg.InterfaceLayout)):
+            raise exc.MissingWidgetError("InterfaceLayout not correctly added in RootLayout")
+        return self.root_layout.children[1]
 
     def get_gamescreen(self) -> wdg.GameScreen:
         """
@@ -83,9 +83,9 @@ class FogApp(App):
         :return: the interface
         :raises: TypeError if the interface is missing
         """
-        if len(self.sm.children) < 2 or not(isinstance(self.sm.children[1], wdg.GameScreen)):
-            raise exc.MissingWidgetError("GameScreen not present in ScreenManager")
-        return self.sm.children[1]
+        if len(self.sm.children) != 1 or not(isinstance(self.sm.children[0], wdg.GameScreen)):
+            raise exc.MissingWidgetError("GameScreen not correctly added present in ScreenManager")
+        return self.sm.children[0]
 
     def get_soundtrack_name(self) -> str:
         """
@@ -202,7 +202,7 @@ class FogApp(App):
         self.scene = self.get_scene(game_state["current_scene_id"])
         self.play_soundtrack(self.get_soundtrack_name(), loop=True)
         self.show_interface_bar()
-        self.show_gamescreen(self.start_game_transition_time, height_adj=0.91)
+        self.show_gamescreen(self.start_game_transition_time, height_subtract=self.get_interface_bar().height)
 
     def setup_game(self, rel_path: str) -> None:
         """
@@ -224,7 +224,7 @@ class FogApp(App):
         self.scene = json_utils.get_intro(self.scenes)
         self.play_soundtrack(self.get_soundtrack_name(), loop=True)
         self.show_interface_bar()
-        self.show_gamescreen(self.start_game_transition_time, height_adj=0.91)
+        self.show_gamescreen(self.start_game_transition_time, height_subtract=self.get_interface_bar().height)
 
     def show_interface_bar(self) -> None:
         """
@@ -243,15 +243,14 @@ class FogApp(App):
         self.sm.remove_widget(self.sm.get_screen("current_screen"))
         self.sm.add_widget(wdg.StartMenu(name="current_screen"))
 
-    def show_gamescreen(self, transition_duration: float, height_adj: Optional[float] = None) -> None:
+    def show_gamescreen(self, transition_duration: float, height_subtract: Optional[float] = None) -> None:
         """
         Assembles the next game screen and displays it
         :param transition_duration: duration in seconds of the transition
-        :param height_adj: height adjusting factor (from 0 to 1) to avoid collision of GamesScreen
-        with interfaces when fading in
+        :param height_subtract: height to subtract to avoid collision of GamesScren with interfaces when fading in
         :return: None
         """
-        next_screen = wdg.GameScreen(name="next_screen", height_adj=height_adj)
+        next_screen = wdg.GameScreen(name="next_screen", height_subtract=height_subtract)
         self.place_text_and_images(next_screen)
         self.place_gamebuttons(next_screen)
         self._transition_screen(next_screen, transition_duration)
