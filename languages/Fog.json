@@ -19,7 +19,8 @@
                     ]
                 }
             ],
-            "soundtrack": "bones.mp3"
+            "soundtrack": "bones.mp3",
+            "location": "The path"
         },
         {
             "title": "Enter the inn",
@@ -61,7 +62,8 @@
                     ]
                 }
             ],
-            "soundtrack": "bones.mp3"
+            "soundtrack": "bones.mp3",
+            "location": "The inn"
         },
         {
             "title": "Announce your presence",
@@ -81,7 +83,8 @@
                     ]
                 }
             ],
-            "soundtrack": "bones.mp3"
+            "soundtrack": "bones.mp3",
+            "location": "The lit house"
         },
         {
             "title": "Subir",
@@ -106,7 +109,8 @@
                     ]
                 }
             ],
-            "soundtrack": "bones.mp3"
+            "soundtrack": "bones.mp3",
+            "location": "The lit house"
         },
         {
             "title": "Accompany him to the church",
@@ -126,7 +130,8 @@
                     ]
                 }
             ],
-            "soundtrack": "bones.mp3"
+            "soundtrack": "bones.mp3",
+            "location": "Bones"
         },
         {
             "title": "Iglesia",
@@ -180,7 +185,8 @@
                     ]
                 }
             ],
-            "soundtrack": "church.mp3"
+            "soundtrack": "church.mp3",
+            "location": "The church"
         },
         {
             "title": "Sacristy",
@@ -233,7 +239,8 @@
                     ]
                 }
             ],
-            "soundtrack": "church.mp3"
+            "soundtrack": "church.mp3",
+            "location": "The sacristy"
         },
         {
             "title": "Main street",
@@ -285,7 +292,8 @@
                     ]
                 }
             ],
-            "soundtrack": "bones.mp3"
+            "soundtrack": "bones.mp3",
+            "location": "Bones"
         },
         {
             "title": "You enter the crypt",
@@ -311,7 +319,8 @@
                     ]
                 }
             ],
-            "soundtrack": "church.mp3"
+            "soundtrack": "church.mp3",
+            "location": "The crypt"
         },
         {
             "title": "Help",
@@ -359,7 +368,8 @@
                     ]
                 }
             ],
-            "soundtrack": "church.mp3"
+            "soundtrack": "church.mp3",
+            "location": "The crypt"
         },
         {
             "title": "Let us stay here. This is the house of God, and His presence is strong. Let us pray to drive away all evil.",
@@ -390,7 +400,8 @@
                     ]
                 }
             ],
-            "soundtrack": "church.mp3"
+            "soundtrack": "church.mp3",
+            "location": "The crypt"
         },
         {
             "title": "We must stay. And pray. Prayer is a powerful invocation, and if it comes from our united voices, its power will destroy any evil.",
@@ -410,7 +421,8 @@
                     ]
                 }
             ],
-            "soundtrack": "church.mp3"
+            "soundtrack": "church.mp3",
+            "location": "The crypt"
         },
         {
             "title": "Regain consciousness...",
@@ -430,7 +442,8 @@
                     ]
                 }
             ],
-            "soundtrack": "lagoon.mp3"
+            "soundtrack": "lagoon.mp3",
+            "location": "Somewhere..."
         },
         {
             "title": "Take the swamp road",
@@ -462,7 +475,8 @@
                     ]
                 }
             ],
-            "soundtrack": "moor.mp3"
+            "soundtrack": "moor.mp3",
+            "location": "The moor"
         },
         {
             "title": "Head for the butcher's house",
@@ -500,7 +514,8 @@
                     ]
                 }
             ],
-            "soundtrack": "bones.mp3"
+            "soundtrack": "bones.mp3",
+            "location": "The butcher's house"
         },
         {
             "title": "Take the painting down",
@@ -520,7 +535,8 @@
                     ]
                 }
             ],
-            "soundtrack": "bones.mp3"
+            "soundtrack": "bones.mp3",
+            "location": "The butcher's house"
         },
         {
             "title": "Lift the floorboards",
@@ -549,7 +565,8 @@
                     ]
                 }
             ],
-            "soundtrack": "bones.mp3"
+            "soundtrack": "bones.mp3",
+            "location": "The butcher's house"
         },
         {
             "title": "Look behind the wardrobe",
@@ -569,7 +586,8 @@
                     ]
                 }
             ],
-            "soundtrack": "bones.mp3"
+            "soundtrack": "bones.mp3",
+            "location": "The butcher's house"
         },
         {
             "title": "Continue towards the swamp",
@@ -605,7 +623,8 @@
                     ]
                 }
             ],
-            "soundtrack": "lagoon.mp3"
+            "soundtrack": "lagoon.mp3",
+            "location": "The moor"
         },
         {
             "title": "Investigate the fire",
@@ -631,7 +650,8 @@
                     ]
                 }
             ],
-            "soundtrack": "moor.mp3"
+            "soundtrack": "moor.mp3",
+            "location": "The moor"
         },
         {
             "title": "Extinguish the lantern and approach stealthily",
@@ -668,7 +688,8 @@
                     ]
                 }
             ],
-            "soundtrack": "moor.mp3"
+            "soundtrack": "moor.mp3",
+            "location": "The moor"
         },
         {
             "title": "You continue with your lantern lit",
@@ -694,7 +715,8 @@
                     ]
                 }
             ],
-            "soundtrack": "moor.mp3"
+            "soundtrack": "moor.mp3",
+            "location": "The moor"
         },
         {
             "title": "You leave your hiding place and hold the cross between yourself and the creature",
@@ -714,7 +736,8 @@
                     ]
                 }
             ],
-            "soundtrack": "moor.mp3"
+            "soundtrack": "moor.mp3",
+            "location": "The moor"
         },
         {
             "title": "You step out of your hiding place and place the church relic between yourself and the creature",
@@ -743,7 +766,8 @@
                     ]
                 }
             ],
-            "soundtrack": "moor.mp3"
+            "soundtrack": "moor.mp3",
+            "location": "The moor"
         },
         {
             "title": "You stay still",
@@ -802,7 +826,8 @@
                     ]
                 }
             ],
-            "soundtrack": "moor.mp3"
+            "soundtrack": "moor.mp3",
+            "location": "The moor"
         },
         {
             "title": "You sit down",
@@ -828,7 +853,8 @@
                     ]
                 }
             ],
-            "soundtrack": "moor.mp3"
+            "soundtrack": "moor.mp3",
+            "location": "The bonfire"
         },
         {
             "title": "Knock on the houses",
@@ -895,7 +921,8 @@
                     ]
                 }
             ],
-            "soundtrack": "bones.mp3"
+            "soundtrack": "bones.mp3",
+            "location": "Bones"
         },
         {
             "title": "Butcher's house",
@@ -942,7 +969,8 @@
                     ]
                 }
             ],
-            "soundtrack": "bones.mp3"
+            "soundtrack": "bones.mp3",
+            "location": "The lit house"
         },
         {
             "title": "Show the amulet of the butcher",
@@ -968,7 +996,8 @@
                     ]
                 }
             ],
-            "soundtrack": "moor.mp3"
+            "soundtrack": "moor.mp3",
+            "location": "The bonfire"
         },
         {
             "title": "Ask where is the amulet",
@@ -1005,7 +1034,8 @@
                     ]
                 }
             ],
-            "soundtrack": "moor.mp3"
+            "soundtrack": "moor.mp3",
+            "location": "The bonfire"
         },
         {
             "title": "Take the wine",
@@ -1046,7 +1076,8 @@
                     ]
                 }
             ],
-            "soundtrack": "bones.mp3"
+            "soundtrack": "bones.mp3",
+            "location": "The inn"
         },
         {
             "title": "Take the bread",
@@ -1087,7 +1118,8 @@
                     ]
                 }
             ],
-            "soundtrack": "bones.mp3"
+            "soundtrack": "bones.mp3",
+            "location": "The inn"
         },
         {
             "title": "Statue ruins church",
@@ -1151,7 +1183,8 @@
                     ]
                 }
             ],
-            "soundtrack": "ruins.mp3"
+            "soundtrack": "ruins.mp3",
+            "location": "The ruins"
         },
         {
             "title": "Offer bread",
@@ -1229,7 +1262,8 @@
                     ]
                 }
             ],
-            "soundtrack": "ruins.mp3"
+            "soundtrack": "ruins.mp3",
+            "location": "The ruins"
         },
         {
             "title": "Offer wine",
@@ -1331,7 +1365,8 @@
                     ]
                 }
             ],
-            "soundtrack": "ruins.mp3"
+            "soundtrack": "ruins.mp3",
+            "location": "The ruins"
         },
         {
             "title": "Posada",
@@ -1351,7 +1386,8 @@
                     ]
                 }
             ],
-            "soundtrack": "bones.mp3"
+            "soundtrack": "bones.mp3",
+            "location": "The inn"
         },
         {
             "title": "Iglesia",
@@ -1371,7 +1407,8 @@
                     ]
                 }
             ],
-            "soundtrack": "bones.mp3"
+            "soundtrack": "bones.mp3",
+            "location": "The church"
         },
         {
             "title": "Back to Bones",
@@ -1420,7 +1457,8 @@
                     ]
                 }
             ],
-            "soundtrack": "moor.mp3"
+            "soundtrack": "moor.mp3",
+            "location": "Bones"
         },
         {
             "title": "Houses",
@@ -1458,7 +1496,8 @@
                     ]
                 }
             ],
-            "soundtrack": "bones.mp3"
+            "soundtrack": "bones.mp3",
+            "location": "Bones"
         },
         {
             "title": "Surgeron house",
@@ -1478,7 +1517,8 @@
                     ]
                 }
             ],
-            "soundtrack": "bones.mp3"
+            "soundtrack": "bones.mp3",
+            "location": "The surgeon's house"
         },
         {
             "title": "Butcher's house",
@@ -1516,7 +1556,8 @@
                     ]
                 }
             ],
-            "soundtrack": "bones.mp3"
+            "soundtrack": "bones.mp3",
+            "location": "The butcher's house"
         },
         {
             "title": "Herbalist",
@@ -1536,7 +1577,8 @@
                     ]
                 }
             ],
-            "soundtrack": "bones.mp3"
+            "soundtrack": "bones.mp3",
+            "location": "The herbalist's house"
         },
         {
             "title": "Gravedigger's house",
@@ -1556,7 +1598,8 @@
                     ]
                 }
             ],
-            "soundtrack": "bones.mp3"
+            "soundtrack": "bones.mp3",
+            "location": "The gravedigger's house"
         },
         {
             "title": "Death without amulet",
@@ -1575,7 +1618,8 @@
                     "links": []
                 }
             ],
-            "soundtrack": "lagoon.mp3"
+            "soundtrack": "lagoon.mp3",
+            "location": "Somewhere..."
         },
         {
             "title": "Take painting down",
@@ -1671,7 +1715,8 @@
                     ]
                 }
             ],
-            "soundtrack": "bones.mp3"
+            "soundtrack": "bones.mp3",
+            "location": "The butcher's house"
         },
         {
             "title": "Lift the floorboards",
@@ -1700,7 +1745,8 @@
                     ]
                 }
             ],
-            "soundtrack": "bones.mp3"
+            "soundtrack": "bones.mp3",
+            "location": "The butcher's house"
         },
         {
             "title": "Look behind the wardrobe",
@@ -1796,7 +1842,8 @@
                     ]
                 }
             ],
-            "soundtrack": "bones.mp3"
+            "soundtrack": "bones.mp3",
+            "location": "The butcher's house"
         },
         {
             "title": "Look at the bed",
@@ -1892,7 +1939,8 @@
                     ]
                 }
             ],
-            "soundtrack": "bones.mp3"
+            "soundtrack": "bones.mp3",
+            "location": "The butcher's house"
         },
         {
             "title": "Lift the straw mattres",
@@ -1912,7 +1960,8 @@
                     ]
                 }
             ],
-            "soundtrack": "bones.mp3"
+            "soundtrack": "bones.mp3",
+            "location": "bones"
         },
         {
             "title": "Escuchas una voz",
@@ -1932,7 +1981,8 @@
                     ]
                 }
             ],
-            "soundtrack": "moor.mp3"
+            "soundtrack": "moor.mp3",
+            "location": "The butcher's house"
         },
         {
             "title": "You feel dizzy...",
@@ -1974,7 +2024,8 @@
                     ]
                 }
             ],
-            "soundtrack": "lagoon.mp3"
+            "soundtrack": "lagoon.mp3",
+            "location": "The moor"
         },
         {
             "title": "Run towards the lagoon",
@@ -1994,7 +2045,8 @@
                     ]
                 }
             ],
-            "soundtrack": "lagoon.mp3"
+            "soundtrack": "lagoon.mp3",
+            "location": "The moor"
         },
         {
             "title": "Reach the milestone",
@@ -2020,7 +2072,8 @@
                     ]
                 }
             ],
-            "soundtrack": "moor.mp3"
+            "soundtrack": "moor.mp3",
+            "location": "The moor"
         },
         {
             "title": "Estaurograma",
@@ -2112,7 +2165,8 @@
                     ]
                 }
             ],
-            "soundtrack": "moor.mp3"
+            "soundtrack": "moor.mp3",
+            "location": "Somewhere..."
         },
         {
             "title": "Sand tray",
@@ -2162,7 +2216,8 @@
                     ]
                 }
             ],
-            "soundtrack": "ruins.mp3"
+            "soundtrack": "ruins.mp3",
+            "location": "The ruins"
         },
         {
             "title": "Examine the hollow",
@@ -2228,7 +2283,8 @@
                     ]
                 }
             ],
-            "soundtrack": "ruins.mp3"
+            "soundtrack": "ruins.mp3",
+            "location": "The ruins"
         },
         {
             "title": "Take the cross",
@@ -2297,7 +2353,8 @@
                     ]
                 }
             ],
-            "soundtrack": "ruins.mp3"
+            "soundtrack": "ruins.mp3",
+            "location": "The ruins"
         },
         {
             "title": "Cross",
@@ -2333,7 +2390,8 @@
                     ]
                 }
             ],
-            "soundtrack": "lagoon.mp3"
+            "soundtrack": "lagoon.mp3",
+            "location": "Somewhere..."
         },
         {
             "title": "Relic",
@@ -2369,7 +2427,8 @@
                     ]
                 }
             ],
-            "soundtrack": "lagoon.mp3"
+            "soundtrack": "lagoon.mp3",
+            "location": "Somewhere..."
         },
         {
             "title": "Investigate the door",
@@ -2395,7 +2454,8 @@
                     ]
                 }
             ],
-            "soundtrack": "bones.mp3"
+            "soundtrack": "bones.mp3",
+            "location": "The inn"
         },
         {
             "title": "Crypts",
@@ -2443,7 +2503,8 @@
                     ]
                 }
             ],
-            "soundtrack": "church.mp3"
+            "soundtrack": "church.mp3",
+            "location": "The church"
         },
         {
             "title": "Bell tower",
@@ -2469,7 +2530,8 @@
                     ]
                 }
             ],
-            "soundtrack": "bones.mp3"
+            "soundtrack": "bones.mp3",
+            "location": "The bell tower"
         },
         {
             "title": "Meet the butcher",
@@ -2489,7 +2551,8 @@
                     ]
                 }
             ],
-            "soundtrack": "bones.mp3"
+            "soundtrack": "bones.mp3",
+            "location": "Bones"
         },
         {
             "title": "Paleochristian church inside",
@@ -2525,7 +2588,8 @@
                     ]
                 }
             ],
-            "soundtrack": "ruins.mp3"
+            "soundtrack": "ruins.mp3",
+            "location": "The ruins"
         },
         {
             "title": "Do not blaspheme!",
@@ -2545,7 +2609,8 @@
                     ]
                 }
             ],
-            "soundtrack": "moor.mp3"
+            "soundtrack": "moor.mp3",
+            "location": "The bonfire"
         },
         {
             "title": "Draw a crescent",
@@ -2582,7 +2647,8 @@
                     ]
                 }
             ],
-            "soundtrack": "ruins.mp3"
+            "soundtrack": "ruins.mp3",
+            "location": "The ruins"
         },
         {
             "title": "Where that fog comes from?",
@@ -2602,7 +2668,8 @@
                     ]
                 }
             ],
-            "soundtrack": "moor.mp3"
+            "soundtrack": "moor.mp3",
+            "location": "The bonfire"
         },
         {
             "title": "Try to find the stream",
@@ -2628,7 +2695,8 @@
                     ]
                 }
             ],
-            "soundtrack": "river.mp3"
+            "soundtrack": "river.mp3",
+            "location": "The river"
         },
         {
             "title": "Draw seed",
@@ -2665,7 +2733,8 @@
                     ]
                 }
             ],
-            "soundtrack": "ruins.mp3"
+            "soundtrack": "ruins.mp3",
+            "location": "The ruins"
         },
         {
             "title": "Draw fish",
@@ -2702,7 +2771,8 @@
                     ]
                 }
             ],
-            "soundtrack": "ruins.mp3"
+            "soundtrack": "ruins.mp3",
+            "location": "The ruins"
         },
         {
             "title": "Tell me what I have to do!",
@@ -2755,7 +2825,8 @@
                     ]
                 }
             ],
-            "soundtrack": "moor.mp3"
+            "soundtrack": "moor.mp3",
+            "location": "The bonfire"
         },
         {
             "title": "Death with amulet",
@@ -2774,7 +2845,8 @@
                     "links": []
                 }
             ],
-            "soundtrack": "lagoon.mp3"
+            "soundtrack": "lagoon.mp3",
+            "location": "Somewhere..."
         },
         {
             "title": "Examine the milestone",
@@ -2821,7 +2893,8 @@
                     ]
                 }
             ],
-            "soundtrack": "lagoon.mp3"
+            "soundtrack": "lagoon.mp3",
+            "location": "The milestone"
         },
         {
             "title": "Continue towards the water",
@@ -2852,7 +2925,8 @@
                     ]
                 }
             ],
-            "soundtrack": "lagoon.mp3"
+            "soundtrack": "lagoon.mp3",
+            "location": "The lagoon"
         },
         {
             "title": "Throw gem into water",
@@ -2872,7 +2946,8 @@
                     ]
                 }
             ],
-            "soundtrack": "lagoon.mp3"
+            "soundtrack": "lagoon.mp3",
+            "location": "The lagoon"
         },
         {
             "title": "Lagoon shore",
@@ -2903,7 +2978,8 @@
                     ]
                 }
             ],
-            "soundtrack": "lagoon.mp3"
+            "soundtrack": "lagoon.mp3",
+            "location": "The lagoon"
         },
         {
             "title": "Burrow",
@@ -2939,7 +3015,8 @@
                     ]
                 }
             ],
-            "soundtrack": "lagoon.mp3"
+            "soundtrack": "lagoon.mp3",
+            "location": "The burrow"
         },
         {
             "title": "Continue walking along the shore",
@@ -2986,7 +3063,8 @@
                     ]
                 }
             ],
-            "soundtrack": "lagoon.mp3"
+            "soundtrack": "lagoon.mp3",
+            "location": "The lagoon"
         },
         {
             "title": "Place gem in skeleton's hand",
@@ -3027,7 +3105,8 @@
                     "links": []
                 }
             ],
-            "soundtrack": "moor.mp3"
+            "soundtrack": "moor.mp3",
+            "location": "The burrow"
         },
         {
             "title": "Flee from the lagoon",
@@ -3063,7 +3142,8 @@
                     ]
                 }
             ],
-            "soundtrack": "lagoon.mp3"
+            "soundtrack": "lagoon.mp3",
+            "location": "The lagoon"
         }
     ]
 }

@@ -19,7 +19,8 @@
                     ]
                 }
             ],
-            "soundtrack": "bones.mp3"
+            "soundtrack": "bones.mp3",
+            "location": "El camino"
         },
         {
             "title": "Entrar en la posada",
@@ -61,7 +62,8 @@
                     ]
                 }
             ],
-            "soundtrack": "bones.mp3"
+            "soundtrack": "bones.mp3",
+            "location": "La posada"
         },
         {
             "title": "Anunciar tu presencia",
@@ -81,7 +83,8 @@
                     ]
                 }
             ],
-            "soundtrack": "bones.mp3"
+            "soundtrack": "bones.mp3",
+            "location": "La casa iluminada"
         },
         {
             "title": "Subir",
@@ -106,7 +109,8 @@
                     ]
                 }
             ],
-            "soundtrack": "bones.mp3"
+            "soundtrack": "bones.mp3",
+            "location": "La casa iluminada"
         },
         {
             "title": "Le acompa\u00f1as a la capilla",
@@ -126,7 +130,8 @@
                     ]
                 }
             ],
-            "soundtrack": "bones.mp3"
+            "soundtrack": "bones.mp3",
+            "location": "Huesos"
         },
         {
             "title": "Iglesia",
@@ -180,10 +185,11 @@
                     ]
                 }
             ],
-            "soundtrack": "church.mp3"
+            "soundtrack": "church.mp3",
+            "location": "La iglesia"
         },
         {
-            "title": "Sagristia",
+            "title": "Sacristia",
             "id": 19555,
             "sections": [
                 {
@@ -233,7 +239,8 @@
                     ]
                 }
             ],
-            "soundtrack": "church.mp3"
+            "soundtrack": "church.mp3",
+            "location": "La sacristía"
         },
         {
             "title": "Calle principal pueblo",
@@ -285,7 +292,8 @@
                     ]
                 }
             ],
-            "soundtrack": "bones.mp3"
+            "soundtrack": "bones.mp3",
+            "location": "Huesos"
         },
         {
             "title": "Entras en la cripta",
@@ -311,7 +319,8 @@
                     ]
                 }
             ],
-            "soundtrack": "church.mp3"
+            "soundtrack": "church.mp3",
+            "location": "La cripta"
         },
         {
             "title": "Ayudar",
@@ -359,7 +368,8 @@
                     ]
                 }
             ],
-            "soundtrack": "church.mp3"
+            "soundtrack": "church.mp3",
+            "location": "La cripta"
         },
         {
             "title": "Qued\u00e9monos aqu\u00ed. Es la cada de Dios y Su presencia es fuerte. Oremos para ahuyentar todo mal.",
@@ -390,7 +400,8 @@
                     ]
                 }
             ],
-            "soundtrack": "church.mp3"
+            "soundtrack": "church.mp3",
+            "location": "La cripta"
         },
         {
             "title": "Debemos quedarnos. Y orar. La oraci\u00f3n es una poderosa invocaci\u00f3n, y si proviene de nuestras bocas unidas su poder destruir\u00e1 a cualquier mal.",
@@ -410,7 +421,8 @@
                     ]
                 }
             ],
-            "soundtrack": "church.mp3"
+            "soundtrack": "church.mp3",
+            "location": "La cripta"
         },
         {
             "title": "Recuperas la conciencia...",
@@ -430,7 +442,8 @@
                     ]
                 }
             ],
-            "soundtrack": "lagoon.mp3"
+            "soundtrack": "lagoon.mp3",
+            "location": "En algún lugar..."
         },
         {
             "title": "Ir por el camino del pantano",
@@ -462,7 +475,8 @@
                     ]
                 }
             ],
-            "soundtrack": "moor.mp3"
+            "soundtrack": "moor.mp3",
+            "location": "El páramo"
         },
         {
             "title": "Ir a casa del carnicero",
@@ -500,7 +514,8 @@
                     ]
                 }
             ],
-            "soundtrack": "bones.mp3"
+            "soundtrack": "bones.mp3",
+            "location": "La casa del carnicero"
         },
         {
             "title": "Descuelgas el cuadro",
@@ -520,7 +535,8 @@
                     ]
                 }
             ],
-            "soundtrack": "bones.mp3"
+            "soundtrack": "bones.mp3",
+            "location": "La casa del carnicero"
         },
         {
             "title": "Levantas tablones suelo",
@@ -549,7 +565,8 @@
                     ]
                 }
             ],
-            "soundtrack": "bones.mp3"
+            "soundtrack": "bones.mp3",
+            "location": "La casa del carnicero"
         },
         {
             "title": "Miras detr\u00e1s del armario",
@@ -569,7 +586,8 @@
                     ]
                 }
             ],
-            "soundtrack": "bones.mp3"
+            "soundtrack": "bones.mp3",
+            "location": "La casa del carnicero"
         },
         {
             "title": "Continuas hacia el pantano",
@@ -605,7 +623,8 @@
                     ]
                 }
             ],
-            "soundtrack": "lagoon.mp3"
+            "soundtrack": "lagoon.mp3",
+            "location": "El páramo"
         },
         {
             "title": "Te desv\u00edas para investigar la lumbre",
@@ -631,7 +650,8 @@
                     ]
                 }
             ],
-            "soundtrack": "moor.mp3"
+            "soundtrack": "moor.mp3",
+            "location": "El páramo"
         },
         {
             "title": "Apagas la linterna y te acercas con sigilo",
@@ -668,7 +688,8 @@
                     ]
                 }
             ],
-            "soundtrack": "moor.mp3"
+            "soundtrack": "moor.mp3",
+            "location": "El páramo"
         },
         {
             "title": "Continuas con la linterna encendida para darte a conocer",
@@ -694,7 +715,8 @@
                     ]
                 }
             ],
-            "soundtrack": "moor.mp3"
+            "soundtrack": "moor.mp3",
+            "location": "El páramo"
         },
         {
             "title": "Sales de tu escondite e interpones la cruz entre la criatura y tu",
@@ -714,7 +736,8 @@
                     ]
                 }
             ],
-            "soundtrack": "moor.mp3"
+            "soundtrack": "moor.mp3",
+            "location": "El páramo"
         },
         {
             "title": "Sales de tu escondite e interpones la rel\u00edquia de la iglesia entre la criatura y tu",
@@ -743,7 +766,8 @@
                     ]
                 }
             ],
-            "soundtrack": "moor.mp3"
+            "soundtrack": "moor.mp3",
+            "location": "El páramo"
         },
         {
             "title": "Permaneces imm\u00f3bil",
@@ -802,7 +826,8 @@
                     ]
                 }
             ],
-            "soundtrack": "moor.mp3"
+            "soundtrack": "moor.mp3",
+            "location": "El páramo"
         },
         {
             "title": "Te sientas",
@@ -828,7 +853,8 @@
                     ]
                 }
             ],
-            "soundtrack": "moor.mp3"
+            "soundtrack": "moor.mp3",
+            "location": "La hoguera"
         },
         {
             "title": "Llamar a las casas",
@@ -895,7 +921,8 @@
                     ]
                 }
             ],
-            "soundtrack": "bones.mp3"
+            "soundtrack": "bones.mp3",
+            "location": "Huesos"
         },
         {
             "title": "Casa del carnicero",
@@ -942,7 +969,8 @@
                     ]
                 }
             ],
-            "soundtrack": "bones.mp3"
+            "soundtrack": "bones.mp3",
+            "location": "La casa iluminada"
         },
         {
             "title": "Le muestras el amuleto del posadero",
@@ -968,7 +996,8 @@
                     ]
                 }
             ],
-            "soundtrack": "moor.mp3"
+            "soundtrack": "moor.mp3",
+            "location": "La hoguera"
         },
         {
             "title": "Le preguntas d\u00f3nde puede estar el amuleto",
@@ -1005,7 +1034,8 @@
                     ]
                 }
             ],
-            "soundtrack": "moor.mp3"
+            "soundtrack": "moor.mp3",
+            "location": "La hoguera"
         },
         {
             "title": "Tomar el vino",
@@ -1046,7 +1076,8 @@
                     ]
                 }
             ],
-            "soundtrack": "bones.mp3"
+            "soundtrack": "bones.mp3",
+            "location": "La posada"
         },
         {
             "title": "Tomar el pan",
@@ -1087,7 +1118,8 @@
                     ]
                 }
             ],
-            "soundtrack": "bones.mp3"
+            "soundtrack": "bones.mp3",
+            "location": "La posada"
         },
         {
             "title": "Estatua iglesia paleocristiana",
@@ -1096,7 +1128,7 @@
                 {
                     "consequences": [],
                     "conditions": [],
-                    "text": "<p style=\"text-align: justify; \"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">La estatua representa una virgen cubierta por un velo y sosteniendo un cuenco con las dos manos. Musgo y l\u00edquenes manchan su cuerpo con mil tonos de gris y de la expresi\u00f3n del rostro s\u00f3lo quedan los orbes de unos ojos serenos. En el</span>&nbsp;pedestal todav\u00eda puede leerse una inscripci\u00f3n en lat\u00edn:</p><p style=\"text-align: justify;\"><i style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">Panis vires dat, v</i><i style=\"text-align: left; color: var(--text-color); font-size: 1rem;\">inum facit videre.</i></p><p style=\"text-align: justify;\"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">\"El pan da fuerza, el vino da visión\".</span></p><p style=\"text-align: justify;\"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">El cuenco que sostiene est\u00e1 vac\u00edo.</span></p>",
+                    "text": "<p style=\"text-align: justify; \"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">La estatua representa una virgen cubierta por un velo y sosteniendo un cuenco con las dos manos. Musgo y l\u00edquenes manchan su cuerpo con mil tonos de gris y de la expresi\u00f3n del rostro s\u00f3lo quedan los orbes de unos ojos serenos. En el</span>&nbsp;pedestal todav\u00eda puede leerse una inscripci\u00f3n en lat\u00edn:</p><p style=\"text-align: justify;\"><i style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">Panis vires dat, v</i><i style=\"text-align: left; color: var(--text-color); font-size: 1rem;\">inum facit videre.</i></p><p style=\"text-align: justify;\"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">\"El pan da fuerza, el vino da visi\u00f3n\".</span></p><p style=\"text-align: justify;\"><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">El cuenco que sostiene est\u00e1 vac\u00edo.</span></p>",
                     "links": [
                         {
                             "text": "<p>Le ofreces pan</p>",
@@ -1151,7 +1183,8 @@
                     ]
                 }
             ],
-            "soundtrack": "ruins.mp3"
+            "soundtrack": "ruins.mp3",
+            "location": "La ruinas"
         },
         {
             "title": "Dar pan como ofrenda",
@@ -1229,7 +1262,8 @@
                     ]
                 }
             ],
-            "soundtrack": "ruins.mp3"
+            "soundtrack": "ruins.mp3",
+            "location": "La ruinas"
         },
         {
             "title": "Dar vino como ofrenda",
@@ -1331,7 +1365,8 @@
                     ]
                 }
             ],
-            "soundtrack": "ruins.mp3"
+            "soundtrack": "ruins.mp3",
+            "location": "La ruinas"
         },
         {
             "title": "Posada",
@@ -1351,7 +1386,8 @@
                     ]
                 }
             ],
-            "soundtrack": "bones.mp3"
+            "soundtrack": "bones.mp3",
+            "location": "La posada"
         },
         {
             "title": "Iglesia",
@@ -1371,7 +1407,8 @@
                     ]
                 }
             ],
-            "soundtrack": "bones.mp3"
+            "soundtrack": "bones.mp3",
+            "location": "La iglesia"
         },
         {
             "title": "Volver a Huesos",
@@ -1420,7 +1457,8 @@
                     ]
                 }
             ],
-            "soundtrack": "moor.mp3"
+            "soundtrack": "moor.mp3",
+            "location": "Huesos"
         },
         {
             "title": "Casas",
@@ -1458,7 +1496,8 @@
                     ]
                 }
             ],
-            "soundtrack": "bones.mp3"
+            "soundtrack": "bones.mp3",
+            "location": "Huesos"
         },
         {
             "title": "Casa del cirujano",
@@ -1478,7 +1517,8 @@
                     ]
                 }
             ],
-            "soundtrack": "bones.mp3"
+            "soundtrack": "bones.mp3",
+            "location": "La casa del cirujano"
         },
         {
             "title": "Casa del carnicero",
@@ -1516,7 +1556,8 @@
                     ]
                 }
             ],
-            "soundtrack": "bones.mp3"
+            "soundtrack": "bones.mp3",
+            "location": "La casa del carnicero"
         },
         {
             "title": "Casa del herbolario",
@@ -1536,10 +1577,11 @@
                     ]
                 }
             ],
-            "soundtrack": "bones.mp3"
+            "soundtrack": "bones.mp3",
+            "location": "La casa del herbolario"
         },
         {
-            "title": "Casa del sepultero",
+            "title": "Casa del sepulturero",
             "id": 19691,
             "sections": [
                 {
@@ -1556,7 +1598,8 @@
                     ]
                 }
             ],
-            "soundtrack": "bones.mp3"
+            "soundtrack": "bones.mp3",
+            "location": "La casa del sepulturero"
         },
         {
             "title": "Muerte sin amuleto",
@@ -1575,7 +1618,8 @@
                     "links": []
                 }
             ],
-            "soundtrack": "lagoon.mp3"
+            "soundtrack": "lagoon.mp3",
+            "location": "En algún lugar..."
         },
         {
             "title": "Descolgar el cuadro",
@@ -1671,7 +1715,8 @@
                     ]
                 }
             ],
-            "soundtrack": "bones.mp3"
+            "soundtrack": "bones.mp3",
+            "location": "La casa del carnicero"
         },
         {
             "title": "Levantar las maderas del suelo",
@@ -1700,7 +1745,8 @@
                     ]
                 }
             ],
-            "soundtrack": "bones.mp3"
+            "soundtrack": "bones.mp3",
+            "location": "La casa del carnicero"
         },
         {
             "title": "Miras detr\u00e1s del armario",
@@ -1796,7 +1842,8 @@
                     ]
                 }
             ],
-            "soundtrack": "bones.mp3"
+            "soundtrack": "bones.mp3",
+            "location": "La casa del carnicero"
         },
         {
             "title": "Miras en el lecho",
@@ -1892,7 +1939,8 @@
                     ]
                 }
             ],
-            "soundtrack": "bones.mp3"
+            "soundtrack": "bones.mp3",
+            "location": "La casa del carnicero"
         },
         {
             "title": "Miras entre la paja del lecho",
@@ -1912,7 +1960,8 @@
                     ]
                 }
             ],
-            "soundtrack": "bones.mp3"
+            "soundtrack": "bones.mp3",
+            "location": "La casa del carnicero"
         },
         {
             "title": "Escuchas una voz",
@@ -1932,7 +1981,8 @@
                     ]
                 }
             ],
-            "soundtrack": "moor.mp3"
+            "soundtrack": "moor.mp3",
+            "location": "La casa del carnicero"
         },
         {
             "title": "Se te nubla la vista...",
@@ -1974,7 +2024,8 @@
                     ]
                 }
             ],
-            "soundtrack": "lagoon.mp3"
+            "soundtrack": "lagoon.mp3",
+            "location": "El páramo"
         },
         {
             "title": "Corres hacia el pantano",
@@ -1994,7 +2045,8 @@
                     ]
                 }
             ],
-            "soundtrack": "lagoon.mp3"
+            "soundtrack": "lagoon.mp3",
+            "location": "El páramo"
         },
         {
             "title": "Llegas al hito",
@@ -2020,7 +2072,8 @@
                     ]
                 }
             ],
-            "soundtrack": "moor.mp3"
+            "soundtrack": "moor.mp3",
+            "location": "El páramo"
         },
         {
             "title": "Estaurograma",
@@ -2112,7 +2165,8 @@
                     ]
                 }
             ],
-            "soundtrack": "moor.mp3"
+            "soundtrack": "moor.mp3",
+            "location": "En algún lugar..."
         },
         {
             "title": "Bandeja de arena",
@@ -2162,7 +2216,8 @@
                     ]
                 }
             ],
-            "soundtrack": "ruins.mp3"
+            "soundtrack": "ruins.mp3",
+            "location": "Las ruinas"
         },
         {
             "title": "Examinas el hueco",
@@ -2228,7 +2283,8 @@
                     ]
                 }
             ],
-            "soundtrack": "ruins.mp3"
+            "soundtrack": "ruins.mp3",
+            "location": "Las ruinas"
         },
         {
             "title": "Te llevas la cruz",
@@ -2297,7 +2353,8 @@
                     ]
                 }
             ],
-            "soundtrack": "ruins.mp3"
+            "soundtrack": "ruins.mp3",
+            "location": "Las ruinas"
         },
         {
             "title": "Cruz",
@@ -2333,7 +2390,8 @@
                     ]
                 }
             ],
-            "soundtrack": "lagoon.mp3"
+            "soundtrack": "lagoon.mp3",
+            "location": "En algún lugar..."
         },
         {
             "title": "Rel\u00edquia",
@@ -2369,7 +2427,8 @@
                     ]
                 }
             ],
-            "soundtrack": "lagoon.mp3"
+            "soundtrack": "lagoon.mp3",
+            "location": "En algún lugar..."
         },
         {
             "title": "Investigar la puerta",
@@ -2395,7 +2454,8 @@
                     ]
                 }
             ],
-            "soundtrack": "bones.mp3"
+            "soundtrack": "bones.mp3",
+            "location": "La posada"
         },
         {
             "title": "Criptas",
@@ -2443,7 +2503,8 @@
                     ]
                 }
             ],
-            "soundtrack": "church.mp3"
+            "soundtrack": "church.mp3",
+            "location": "La iglesia"
         },
         {
             "title": "Campanario",
@@ -2469,7 +2530,8 @@
                     ]
                 }
             ],
-            "soundtrack": "bones.mp3"
+            "soundtrack": "bones.mp3",
+            "location": "El campanario"
         },
         {
             "title": "Encuentro con carnicero",
@@ -2489,7 +2551,8 @@
                     ]
                 }
             ],
-            "soundtrack": "bones.mp3"
+            "soundtrack": "bones.mp3",
+            "location": "Huesos"
         },
         {
             "title": "Iglesia paleocristiana interior",
@@ -2525,7 +2588,8 @@
                     ]
                 }
             ],
-            "soundtrack": "ruins.mp3"
+            "soundtrack": "ruins.mp3",
+            "location": "Las ruinas"
         },
         {
             "title": "No blasfeme Padre!",
@@ -2545,7 +2609,8 @@
                     ]
                 }
             ],
-            "soundtrack": "moor.mp3"
+            "soundtrack": "moor.mp3",
+            "location": "La hoguera"
         },
         {
             "title": "Dibujas media luna",
@@ -2582,7 +2647,8 @@
                     ]
                 }
             ],
-            "soundtrack": "ruins.mp3"
+            "soundtrack": "ruins.mp3",
+            "location": "Las ruinas"
         },
         {
             "title": "\u00bfDe d\u00f3nde viene esa niebla?",
@@ -2602,7 +2668,8 @@
                     ]
                 }
             ],
-            "soundtrack": "moor.mp3"
+            "soundtrack": "moor.mp3",
+            "location": "La hoguera"
         },
         {
             "title": "Tratar de encontrar el r\u00edo",
@@ -2628,7 +2695,8 @@
                     ]
                 }
             ],
-            "soundtrack": "river.mp3"
+            "soundtrack": "river.mp3",
+            "location": "El río"
         },
         {
             "title": "Dibujas semilla",
@@ -2665,7 +2733,8 @@
                     ]
                 }
             ],
-            "soundtrack": "ruins.mp3"
+            "soundtrack": "ruins.mp3",
+            "location": "Las ruinas"
         },
         {
             "title": "Dibujas pez",
@@ -2702,7 +2771,8 @@
                     ]
                 }
             ],
-            "soundtrack": "ruins.mp3"
+            "soundtrack": "ruins.mp3",
+            "location": "Las ruinas"
         },
         {
             "title": "\u00a1D\u00edgame lo que tengo que hacer!",
@@ -2755,7 +2825,8 @@
                     ]
                 }
             ],
-            "soundtrack": "moor.mp3"
+            "soundtrack": "moor.mp3",
+            "location": "La hoguera"
         },
         {
             "title": "Muerte con amuleto",
@@ -2774,7 +2845,8 @@
                     "links": []
                 }
             ],
-            "soundtrack": "lagoon.mp3"
+            "soundtrack": "lagoon.mp3",
+            "location": "En algún lugar..."
         },
         {
             "title": "Investigas el hito",
@@ -2821,7 +2893,8 @@
                     ]
                 }
             ],
-            "soundtrack": "lagoon.mp3"
+            "soundtrack": "lagoon.mp3",
+            "location": "El hito"
         },
         {
             "title": "Continuas hacia el agua",
@@ -2852,7 +2925,8 @@
                     ]
                 }
             ],
-            "soundtrack": "lagoon.mp3"
+            "soundtrack": "lagoon.mp3",
+            "location": "La laguna"
         },
         {
             "title": "Arrojas la gema al agua",
@@ -2872,7 +2946,8 @@
                     ]
                 }
             ],
-            "soundtrack": "lagoon.mp3"
+            "soundtrack": "lagoon.mp3",
+            "location": "La laguna"
         },
         {
             "title": "Orilla laguna",
@@ -2903,7 +2978,8 @@
                     ]
                 }
             ],
-            "soundtrack": "lagoon.mp3"
+            "soundtrack": "lagoon.mp3",
+            "location": "La laguna"
         },
         {
             "title": "Tumulo",
@@ -2939,7 +3015,8 @@
                     ]
                 }
             ],
-            "soundtrack": "lagoon.mp3"
+            "soundtrack": "lagoon.mp3",
+            "location": "El túmulo"
         },
         {
             "title": "Continuas andando por la orilla",
@@ -2986,7 +3063,8 @@
                     ]
                 }
             ],
-            "soundtrack": "lagoon.mp3"
+            "soundtrack": "lagoon.mp3",
+            "location": "La laguna"
         },
         {
             "title": "Depositas la gema encima del esqueleto",
@@ -3027,7 +3105,8 @@
                     "links": []
                 }
             ],
-            "soundtrack": "moor.mp3"
+            "soundtrack": "moor.mp3",
+            "location": "El túmulo"
         },
         {
             "title": "Huyes de la laguna",
@@ -3063,7 +3142,8 @@
                     ]
                 }
             ],
-            "soundtrack": "lagoon.mp3"
+            "soundtrack": "lagoon.mp3",
+            "location": "La laguna"
         }
     ]
 }

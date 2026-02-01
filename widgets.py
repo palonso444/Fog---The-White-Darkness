@@ -7,6 +7,7 @@ from kivy.uix.button import Button
 from kivy.uix.image import Image
 from kivy.uix.screenmanager import Screen
 from kivy.animation import Animation
+from kivy.uix.togglebutton import ToggleButton
 
 
 # ALL EMPTY CLASSES ARE DEFINED IN THE KV FILE. THE OTHERS MAY BE EXTENDED THERE AS WELL
@@ -30,7 +31,8 @@ class FadingMixin:
     """
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
-        self.on_fading_complete = None
+        self.opacity: float = 0.0  # starts invisible and fades in
+
         if getattr(self, "duration", None) is None:
             raise AttributeError("All FadingMixin child classes must define 'duration' attribute "
                                  "before calling super()")
@@ -56,9 +58,43 @@ class TitleLabel(FadingMixin, Label):
         self.on_fading_complete = on_fading_complete
         self._fade_in(self.duration)
 
+class InterfaceLayout(FadingMixin, BoxLayout):
+    """
+    Special layout for game interface buttons. Fades in when placed on the screen
+    """
+    def __init__(self, on_fading_complete: Optional[callable] = None, **kwargs):
+        self.duration: float = 0.8  # must be defined before super() to avoid AttributeError
+        super().__init__(**kwargs)
+        self.on_fading_complete = on_fading_complete
+
+    def on_pos(self, instance, pos_value) -> None:
+        self._fade_in(self.duration)
+
+    def set_localtionlabel_text(self, text: str) -> None:
+        """
+        Sets the text of the LocaltionLabel
+        :param text: text to set
+        :return: None
+        """
+        if not isinstance(self.children[1], LocationLabel):
+            raise TypeError(f"Incorrect InterfaceLayout child type: {type(self.children[1])}")
+        self.children[1].text = text
+
 class GameImage(Image):
     """
     Displays in-game images
+    """
+    pass
+
+class RootLayout(BoxLayout):
+    """
+    Root layout for all the app
+    """
+    pass
+
+class Spacer(Label):
+    """
+    An empty label to act as spacer
     """
     pass
 
@@ -110,9 +146,21 @@ class GameTextLabel(Label):
     """
     pass
 
+class LocationLabel(Label):
+    """
+    Label for displaying the location of each scene during the game
+    """
+    pass
+
 class CopyrightLabel(Label):
     """
     Label for displaying copyright message at StartMenu
+    """
+    pass
+
+class MusicButton(ToggleButton):
+    """
+    ToggleButton for switching music on and off
     """
     pass
 
@@ -234,9 +282,22 @@ class GameScreen(Screen):  # defined in the kv file
     """
     Class defining the Screen showing the game, consisting of a ScreenLayout embedded in an ScrollView
     """
-    def __init__(self,**kwargs):
+    def __init__(self, height_subtract: Optional[float], **kwargs):
         super().__init__(**kwargs)
+        self.height_subtract: Optional[float] = height_subtract
         self.layout: ScreenLayout = ScreenLayout()  # contains text and button layouts added by place_text() and place_buttons()
         scroll: ScrollView = ScrollView()
         scroll.add_widget(self.layout)
         self.add_widget(scroll)
+
+        if self.height_subtract is not None:
+            self.bind(on_pre_enter=self._subtract_height)
+
+    def _subtract_height(self, *args) -> None:
+        """
+        Adjust the height of the GameScreen before FadingTransition starts to avoid interference with the upper
+        interface bar
+        :param args: Added for consistency, nothing is actually passed
+        :return: None
+        """
+        self.height -= self.height_subtract / 1.83  # adjusting factor not sure the reason why

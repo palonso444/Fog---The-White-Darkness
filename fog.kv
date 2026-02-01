@@ -1,6 +1,7 @@
 #:import StartGameButton widgets.StartGameButton
 #:import ContinueGameButton widgets.ContinueGameButton
 
+
 <BaseButtonLayout>:
     orientation: "vertical"
     spacing: "10dp"  # space between widgets
@@ -18,6 +19,9 @@
     valign: "middle"
     halign: "left"
 
+<RootLayout>
+    orientation: "vertical"
+
 <TitleLayout>:
     orientation: "vertical"
     padding: "0dp", "70dp","0dp","0dp"
@@ -29,8 +33,38 @@
     font_name: "Chiller"
     halign: "center"
     font_size: "150sp"
-    opacity: 0.0  # starts invisible and fades in
     text: app.title
+
+<LocationLabel>
+    text_size: self.size
+    halign: "left"
+    valign: "center"
+    font_name: "CreteRound"
+    font_size: "25sp"
+
+<MusicButton>
+    size_hint: None, None
+    size: "60dp","60dp"
+    background_color: 1, 1, 1, 0.20
+    Image:
+        source: "musicbutton.png"
+        size: root.size
+        center_x: root.center_x
+        center_y: root.center_y
+
+<InterfaceLayout>
+    size_hint_y: 0.20
+    padding: "25dp", "10dp","25dp","15dp"
+    canvas:
+        Color:
+            rgba: 1, 1, 1, 0.5
+        Line:
+            points: self.x, self.y, self.right, self.y  # whole layout width
+            width: 1.25
+    LocationLabel:
+    MusicButton:
+        state: "down"
+        on_state: app.soundtrack.play() if self.state == "down" else app.soundtrack.stop()
 
 <ScreenLayout>:  # main layout of the screen. Contains TextLayout and ButtonLayout and it is embedded in the ScrollView
     orientation: "vertical"
@@ -39,7 +73,7 @@
 
 <GameTextImageLayout>:  # layout for organizing text and images (GameTextLabel and ImageLayout)
     orientation: "vertical"
-    padding: "25dp", "50dp","25dp","40dp"
+    padding: "25dp", "45dp","25dp","40dp"
     size_hint: 1, None
     height: self.minimum_height
 
