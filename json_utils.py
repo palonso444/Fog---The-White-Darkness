@@ -1,5 +1,4 @@
 
-
 ##################################################################################################################
 ##                                    FUNCTIONS TO READ JSON FILES FROM AUTOROL 3.0                            ##
 ##################################################################################################################
@@ -7,20 +6,17 @@
 import json
 import re
 
-
 def read_json(path):
 
     with open(path, "r") as file:       #open json in read ('r') mode.
         jsonfile = json.load(file)
     return jsonfile
 
-
 def get_scenes(jsonfile, formatted=False):
 
     if formatted:
         format_kivy_all (jsonfile)
     return jsonfile ["scenes"]
-
 
 def format_kivy_all(jsonfile):
 
@@ -47,9 +43,7 @@ def get_intro(scenes, id_only = False):
             else:
                 return scene
 
-
 ################################ VARIABLES ###############################
-
 
 def get_variables(scenes) -> dict[str,int]:
 
@@ -67,7 +61,6 @@ def get_variables(scenes) -> dict[str,int]:
 
     return variables
 
-
 def compare_conditions(variables, conditions) -> bool:
     return all(key not in conditions or conditions[key] == variables[key] for key in variables)
 
@@ -79,9 +72,7 @@ def get_conditions(item) -> dict[str,int]:
 def get_consequences(item) -> dict[str,int]:
     return {consequence["variable"]: int(consequence["update_to_value"]) for consequence in item["consequences"]}
 
-
 ######################################### TEXT ################################################
-
 
 def get_sections(scene) -> list[dict]:
     return list(scene["sections"])
@@ -129,7 +120,6 @@ def format_kivy(text):  # default 0, buttons do not pass index so /n/n are not r
 
     return clean_text
 
-
 def get_image(text):
 
     pattern = r'/([^/]+\.(?:png|jpeg|jpg))'  # images as .png or .jpeg are supported
@@ -138,7 +128,6 @@ def get_image(text):
     if match:
         image_name = match.group(1)
         return "[$image]" + image_name
-
 
 def align(text):
     
@@ -149,9 +138,7 @@ def align(text):
     text = re.sub(r'\[\$center\]', '', text)  # removes any [$center] tag that accidentally is the text
     return [text, alignment]
 
-
 ###################################################### LINKS #########################################
-
 
 def get_all_destinations(scenes) -> set[int]:
     return {link["destination_scene_id"] for scene in scenes

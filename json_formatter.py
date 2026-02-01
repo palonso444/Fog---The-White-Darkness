@@ -1,6 +1,6 @@
 import json
 
-with open("languages/Fog.json", "r") as file:
+with open("languages/Niebla.json", "r") as file:
     data = json.load(file)
 
 """keys_to_delete = ["frames", "sinopsis", "observaciones", "control", "tipo"]
@@ -62,7 +62,7 @@ for escena in data["escenas"]:
             ]"""
 
 for scene in data["scenes"]:
-    scene["soundtracks"] = "bones.mp3"
+    scene["location"] = "bones"
 
-with open("languages/Fog.json", "w") as file2:
+with open("languages/Niebla.json", "w") as file2:
     json.dump(data, file2, indent=4)
