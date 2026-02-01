@@ -92,12 +92,6 @@ class RootLayout(BoxLayout):
     """
     pass
 
-class Spacer(Label):
-    """
-    An empty label to act as spacer
-    """
-    pass
-
 class StartMenuLayout(BoxLayout):
     """
     General layout for StartMenu

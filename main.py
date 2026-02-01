@@ -219,7 +219,6 @@ class FogApp(App):
         """
         self.root_layout.remove_widget(self.sm)
         self.root_layout.add_widget(self.interface)
-        self.root_layout.add_widget(wdg.Spacer(size_hint_y = 0.05))
         self.root_layout.add_widget(self.sm)
 
     def remove_interface_bar(self) -> None:
