@@ -3073,39 +3073,18 @@
                 {
                     "consequences": [],
                     "conditions": [],
-                    "text": "<p style=\"text-align: justify; \">Extraes del zurr\u00f3n el coraz\u00f3n del guardi\u00e1n; sientes la gema c\u00e1lida en tu mano y sus vetas parecen fluir como r\u00edos carmes\u00edes bajo su superficie pulida.</p><p style=\"text-align: justify; \">La depositas, temblando, en la mano del esqueleto, bajo el lodo. Justo cuando la sueltas escuchas un crujir de huesos. El esqueleto <i>\u00bfse ha movido?</i></p><p style=\"text-align: justify; \">Pero no tienes tiempo para cavilaciones. De repente una cegadora deflagraci\u00f3n escarlata estalla en el t\u00famulo y se expande por la laguna, iluminando la noche de sangre. Despu\u00e9s, el viento. Una brutal fuerza de succi\u00f3n devuelve la niebla al limbo donde pertenece; los jirones pasan por tu lado a velocidad vertiginosa, sus gritos no son lamentos ahora, sino chillidos de rabia. </p><p style=\"text-align: justify; \">Te tapas los o\u00eddos pero a\u00fan as\u00ed sientes que la cabeza te va a estallar. Por suerte, todo acaba r\u00e1pido.</p><p style=\"text-align: justify; \">La noche vuelve a brillar fr\u00eda y limpia. En el aire fresco no hay rastro del hedor putrefacto que emanaba de la laguna. Recolocas las losas encima del t\u00famulo y recoges la linterna del agua. La soltaste cuando tu mano prefiri\u00f3 aferrarse al crucifijo.</p>",
-                    "links": []
-                },
-                {
-                    "consequences": [],
-                    "conditions": [
+                    "text": "<p style=\"text-align: justify; \">Extraes del zurr\u00f3n el coraz\u00f3n del guardi\u00e1n; sientes la gema c\u00e1lida en tu mano y sus vetas parecen fluir como r\u00edos carmes\u00edes bajo su superficie pulida.</p><p style=\"text-align: justify; \">La depositas, temblando, en la mano del esqueleto, bajo el lodo. Justo cuando la sueltas escuchas un crujir de huesos. El esqueleto <i>\u00bfse ha movido?</i></p><p style=\"text-align: justify; \">Pero no tienes tiempo para cavilaciones. De repente una cegadora deflagraci\u00f3n escarlata estalla en el t\u00famulo y se expande por la laguna, iluminando la noche de sangre. Despu\u00e9s, el viento. Una brutal fuerza de succi\u00f3n devuelve la niebla al limbo donde pertenece; los jirones pasan por tu lado a velocidad vertiginosa, sus gritos no son lamentos ahora, sino chillidos de rabia que amenazan con hacer estallar tu cabeza.</p>",
+                    "links": [
                         {
-                            "variable": "reliquia_falsa",
-                            "compare_with_value": "1"
+                            "text": "<p>Te tapas los oídos</p>",
+                            "destination_scene_id": 30283,
+                            "consequences": [],
+                            "conditions": []
                         }
-                    ],
-                    "text": "<p style=\"text-align: justify;\">Te planteas si deber\u00edas volver a Huesos a pesar de que los lugare\u00f1os decidieron mandarte a una muerte segura. Sabes que obraron impelidos por el miedo y el af\u00e1n de proteger su vida y la de sus familias, pero a\u00fan as\u00ed lo \u00faltimo que deseas es<span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">&nbsp;encontrarte de nuevo con ellos.</span></p><p style=\"text-align: justify;\">Has devuelto el coraz\u00f3n a su lugar. Si vuelven a robarlo, las consecuencias ser\u00e1n un justo castigo para su avaricia. A ti te queda un largo camino por delante y te llevas la certeza de haber obrado bien.</p><p style=\"text-align: justify;\">As\u00ed que, sin perder ni un instante m\u00e1s, escurres como puedes tus ropas empapadas y emprendes la marcha dej\u00e1ndote guiar por la luna.</p><p style=\"text-align: justify;\">Tal vez ahora encuentres el camino correcto.</p><p><i>\u00a1BIEN HECHO!</i></p>",
-                    "links": []
-                },
-                {
-                    "consequences": [],
-                    "conditions": [
-                        {
-                            "variable": "reliquia_falsa",
-                            "compare_with_value": "0"
-                        }
-                    ],
-                    "text": "<p><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">Deshaces el trecho hasta Huesos, tiritando bajo tus ropas empapadas, para</span>\u00a0avisar a los lugare\u00f1os de que sellen el t\u00famulo. Nadie, nunca m\u00e1s, debe perturbar el descanso de los muertos. </p><p>Aceptar\u00e1s, si te lo ofrecen, un taz\u00f3n de caldo para entrar tu calor.\u00a0<span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">Despu\u00e9s, seguir\u00e1s tu camino.</span></p><p><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">Tal vez ahora encuentres el correcto.</span></p><p><i>\u00a1BIEN HECHO!</i></p><p></p>",
-                    "links": []
-                },
-                {
-                    "consequences": [],
-                    "conditions": [],
-                    "text": "<p style=\"text-align: center; \"><b style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\"><br></b></p><p style=\"text-align: center; \"><b style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">FIN</b></p><p style=\"text-align: center; \"><br></p>",
-                    "links": []
+                    ]
                 }
             ],
-            "soundtrack": "moor.mp3",
+            "soundtrack": "lagoon.mp3",
             "location": "El túmulo"
         },
         {
@@ -3144,6 +3123,48 @@
             ],
             "soundtrack": "lagoon.mp3",
             "location": "La laguna"
+        },
+        {
+            "title": "Victoria",
+            "id": 30283,
+            "sections": [
+                {
+                    "consequences": [],
+                    "conditions": [],
+                    "text": "<p style=\"text-align: justify; \">Por suerte, todo acaba rápido.</p><p style=\"text-align: justify; \">La noche vuelve a brillar fría y limpia. En el aire fresco no queda rastro del hedor putrefacto que emanaba de la laguna. Recolocas las losas encima del túmulo y recoges la linterna del agua. La soltaste cuando tu mano prefirió aferrarse al crucifijo.</p>",
+                    "links": []
+                },
+                {
+                    "consequences": [],
+                    "conditions": [
+                        {
+                            "variable": "reliquia_falsa",
+                            "compare_with_value": "1"
+                        }
+                    ],
+                    "text": "<p style=\"text-align: justify;\">Te planteas si deberías volver a Huesos a pesar de que los lugareños decidieron mandarte a una muerte segura. Sabes que obraron impelidos por el miedo y el afán de proteger su vida y la de sus familias, pero aún así lo último que deseas es<span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">&nbsp;encontrarte de nuevo con ellos.</span></p><p style=\"text-align: justify;\">Has devuelto el corazón a su lugar. Si vuelven a robarlo, las consecuencias serán un justo castigo para su avaricia. A ti te queda un largo camino por delante y te llevas la certeza de haber obrado bien.</p><p style=\"text-align: justify;\">Así que, sin perder ni un instante más, escurres como puedes tus ropas empapadas y emprendes la marcha dejándote guiar por la luna.</p><p style=\"text-align: justify;\">Tal vez ahora encuentres el camino correcto.</p><p><i>¡BIEN HECHO!</i></p>",
+                    "links": []
+                },
+                {
+                    "consequences": [],
+                    "conditions": [
+                        {
+                            "variable": "reliquia_falsa",
+                            "compare_with_value": "0"
+                        }
+                    ],
+                    "text": "<p><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">Deshaces el trecho hasta Huesos, tiritando bajo tus ropas empapadas, para </span>avisar a los lugareños de que sellen el túmulo. Nadie, nunca más, debe perturbar el descanso de los muertos. </p><p>Aceptarás, si te lo ofrecen, un tazón de caldo para entrar tu calor. <span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">Después, seguirás tu camino.</span></p><p><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">Tal vez ahora encuentres el correcto.</span></p><p><i>¡BIEN HECHO!</i></p>",
+                    "links": []
+                },
+                {
+                    "consequences": [],
+                    "conditions": [],
+                    "text": "<p style=\"text-align: center; \"><b style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\"><br></b></p><p style=\"text-align: center; \"><b style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">FIN</b></p><p style=\"text-align: center; \"><br></p>",
+                    "links": []
+                }
+            ],
+            "soundtrack": "moor.mp3",
+            "location": "Una noche clara"
         }
     ]
 }

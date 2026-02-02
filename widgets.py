@@ -70,7 +70,7 @@ class InterfaceLayout(FadingMixin, BoxLayout):
     def on_pos(self, instance, pos_value) -> None:
         self._fade_in(self.duration)
 
-    def set_localtionlabel_text(self, text: str) -> None:
+    def update_locationlabel(self, text: str) -> None:
         """
         Sets the text of the LocaltionLabel
         :param text: text to set
