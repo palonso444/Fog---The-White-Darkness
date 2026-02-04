@@ -5,7 +5,8 @@ AUDIO_VOLUMES = {
     "moor.mp3": 0.4,
     "opening.mp3": 1.0,
     "river.mp3": 0.11,
-    "ruins.mp3": 0.85,
+    "ruins.mp3": 0.6,
+    "victory.mp3": 0.12
 }
 
 def get_volume(audio_name: str) -> float:

@@ -1982,7 +1982,7 @@
                 }
             ],
             "soundtrack": "moor.mp3",
-            "location": "The butcher's house"
+            "location": "Somewhere..."
         },
         {
             "title": "You feel dizzy...",
@@ -3073,39 +3073,18 @@
                 {
                     "consequences": [],
                     "conditions": [],
-                    "text": "<p style=\"text-align: justify;\">You pull the heart of the guardian from your pouch; you feel the gem warm in your hand, its veins seeming to flow like crimson rivers beneath its polished surface.</p><p style=\"text-align: justify; \">You place it, trembling, in the skeleton\u2019s hand. Just as you let go, you hear a creak of bones. Has the skeleton <i>moved?</i></p><p style=\"text-align: justify; \">But there is no time for pondering. Suddenly, a blinding scarlet explosion erupts from the mound and spreads across the lagoon, bathing the night in blood-red light. Then, the wind \u2014a brutal suction force\u2014 pulls the fog back to the limbo where it belongs; the shreds whip past you at dizzying speed, their cries no longer laments, but screams of rage. </p><p style=\"text-align: justify; \">You cover your ears, yet you still feel as if your head is about to explode. Fortunately, it all ends quickly.</p><p style=\"text-align: justify; \">The night shines cold and clear once more. In the fresh air, there is no trace of the putrid stench that had been rising from the lagoon. You replace the slabs over the mound and retrieve the lantern from the water. You had dropped it when your hand instinctively clutched the crucifix.</p>",
-                    "links": []
-                },
-                {
-                    "consequences": [],
-                    "conditions": [
+                    "text": "<p style=\"text-align: justify;\">You pull the heart of the guardian from your pouch; you feel the gem warm in your hand, its veins seeming to flow like crimson rivers beneath its polished surface.</p><p style=\"text-align: justify; \">You place it, trembling, in the skeleton\u2019s hand. Just as you let go, you hear a creak of bones. Has the skeleton <i>moved?</i></p><p style=\"text-align: justify; \">But there is no time for pondering. Suddenly, a blinding scarlet explosion erupts from the mound and spreads across the lagoon, bathing the night in blood-red light. Then, the wind \u2014a brutal suction force\u2014 pulls the fog back to the limbo where it belongs; the shreds whip past you at dizzying speed, their cries no longer laments, but screams of rage which make you feel as if your head is about to explode.</p>",
+                    "links": [
                         {
-                            "variable": "reliquia_falsa",
-                            "compare_with_value": "1"
+                            "text": "<p>You cover your ears</p>",
+                            "destination_scene_id": 30283,
+                            "consequences": [],
+                            "conditions": []
                         }
-                    ],
-                    "text": "<p style=\"text-align: justify;\">You wonder whether you should return to Bones, even though the villagers had decided to send you to certain death. You know they acted out of fear and a desire to protect their lives and those of their families, yet the last thing you want is to face <span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">them again. </span></p><p style=\"text-align: justify;\">You have returned the heart to its rightful place. If it is ever stolen again, the consequences will be a just punishment for their greed. For you, a long journey lies ahead, and you carry with you the certainty of having done what was right.</p><p style=\"text-align: justify;\">So, without wasting another moment, you wring out your soaked clothes as best you can and set off, letting the moon guide you.</p><p style=\"text-align: justify;\">Perhaps now you will find the right path.</p><p><i>WELL DONE!</i></p>",
-                    "links": []
-                },
-                {
-                    "consequences": [],
-                    "conditions": [
-                        {
-                            "variable": "reliquia_falsa",
-                            "compare_with_value": "0"
-                        }
-                    ],
-                    "text": "<p><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">You make your way back to Bones, shivering in your soaked clothes, to warn the villagers to seal the mound. No one, ever again, must disturb the rest of the dead. </p><p>You will accept, if offered, a warm bowl of broth.<span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\"> Afterwards, you continue on your way.</span></p><p><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">Perhaps now you will find the right path.</span></p><p><i>WELL DONE!</i></p><p></p>",
-                    "links": []
-                },
-                {
-                    "consequences": [],
-                    "conditions": [],
-                    "text": "<p style=\"text-align: center; \"><b style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\"><br></b></p><p style=\"text-align: center; \"><b style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">THE END</b></p><p style=\"text-align: center; \"><br></p>",
-                    "links": []
+                    ]
                 }
             ],
-            "soundtrack": "moor.mp3",
+            "soundtrack": "lagoon.mp3",
             "location": "The burrow"
         },
         {
@@ -3144,6 +3123,48 @@
             ],
             "soundtrack": "lagoon.mp3",
             "location": "The lagoon"
+        },
+        {
+            "title": "Victory",
+            "id": 30283,
+            "sections": [
+                {
+                    "consequences": [],
+                    "conditions": [],
+                    "text": "<p style=\"text-align: justify; \">Fortunately, it all ends quickly.</p><p>The night shines cold and clear once more. In the fresh air, there is no trace of the putrid stench that had been rising from the lagoon. You replace the slabs over the mound and retrieve the lantern from the water. You had dropped it when your hand instinctively clutched the crucifix.</p>",
+                    "links": []
+                },
+                {
+                    "consequences": [],
+                    "conditions": [
+                        {
+                            "variable": "reliquia_falsa",
+                            "compare_with_value": "1"
+                        }
+                    ],
+                    "text": "<p style=\"text-align: justify;\">You wonder whether you should return to Bones, even though the villagers had decided to send you to certain death. You know they acted out of fear and a desire to protect their lives and those of their families, yet the last thing you want is to face <span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">them again. </span></p><p style=\"text-align: justify;\">You have returned the heart to its rightful place. If it is ever stolen again, the consequences will be a just punishment for their greed. For you, a long journey lies ahead, and you carry with you the certainty of having done what was right.</p><p style=\"text-align: justify;\">So, without wasting another moment, you wring out your soaked clothes as best you can and set off, letting the moon guide you.</p><p style=\"text-align: justify;\">Perhaps now you will find the right path.</p><p><i>WELL DONE!</i></p>",
+                    "links": []
+                },
+                {
+                    "consequences": [],
+                    "conditions": [
+                        {
+                            "variable": "reliquia_falsa",
+                            "compare_with_value": "0"
+                        }
+                    ],
+                    "text": "<p><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">You make your way back to Bones, shivering in your soaked clothes, to warn the villagers to seal the mound. No one, ever again, must disturb the rest of the dead. </p><p>You will accept, if offered, a warm bowl of broth.<span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\"> Afterwards, you continue on your way.</span></p><p><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">Perhaps now you will find the right path.</span></p><p><i>WELL DONE!</i></p>",
+                    "links": []
+                },
+                {
+                    "consequences": [],
+                    "conditions": [],
+                    "text": "<p style=\"text-align: center; \"><b style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\"><br></b></p><p style=\"text-align: center; \"><b style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">THE END</b></p><p style=\"text-align: center; \"><br></p>",
+                    "links": []
+                }
+            ],
+            "soundtrack": "victory.mp3",
+            "location": "A clear night"
         }
     ]
 }

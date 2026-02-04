@@ -208,7 +208,7 @@ class FogApp(App):
         :return: None
         """
         self.play_soundtrack(self.get_soundtrack_name(), loop=True)
-        self.interface.set_localtionlabel_text(self.get_scene_location())
+        self.interface.update_locationlabel(self.get_scene_location())
         self.show_interface_bar()
         self.show_gamescreen(self.start_game_transition_time, height_subtract=self.interface.height)
 
@@ -325,7 +325,7 @@ class FogApp(App):
         self.scene: dict = self.get_scene(button.destination_scene_id)
         self.play_soundtrack(self.get_soundtrack_name(), loop=True)
         self.save_game()
-        self.interface.set_localtionlabel_text(self.get_scene_location())
+        self.interface.update_locationlabel(self.get_scene_location())
         self.show_gamescreen(self.in_game_transition_time)
 
     def on_startmenubutton_release(self, button: wdg.GameButton) -> None:
