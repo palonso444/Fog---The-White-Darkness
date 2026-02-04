@@ -1982,7 +1982,7 @@
                 }
             ],
             "soundtrack": "moor.mp3",
-            "location": "The butcher's house"
+            "location": "Somewhere..."
         },
         {
             "title": "You feel dizzy...",
@@ -3163,7 +3163,7 @@
                     "links": []
                 }
             ],
-            "soundtrack": "moor.mp3",
+            "soundtrack": "victory.mp3",
             "location": "A clear night"
         }
     ]
