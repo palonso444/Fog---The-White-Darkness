@@ -146,12 +146,6 @@ class LocationLabel(Label):
     """
     pass
 
-class CopyrightLabel(Label):
-    """
-    Label for displaying copyright message at StartMenu
-    """
-    pass
-
 class MusicButton(ToggleButton):
     """
     ToggleButton for switching music on and off
@@ -220,6 +214,23 @@ class ContinueGameButton(MenuButton):
             case _:
                 raise ValueError(f"Invalid language argument '{language}'")
 
+class AboutTheGameButton(MenuButton):
+    """
+    Button leading to AboutTheGameScreen
+    """
+    @staticmethod
+    def get_text(language: str) -> str:
+        """
+        See parent method docstring
+        """
+        match language:
+            case "english":
+                return "About the game"
+            case "spanish":
+                return "Acerca del juego"
+            case _:
+                raise ValueError(f"Invalid language argument '{language}'")
+
 class StartMenuButton(MenuButton):
     """
     Button leading to StartMenu
@@ -247,6 +258,12 @@ class LanguageMenu(Screen):
     """
     pass
 
+class AboutTheGameScreen(Screen):
+    """
+    Screen displaying stuff about the game, music credits and so
+    """
+    pass
+
 class StartMenu(Screen):
     """
     Screen displaying the game start menu
@@ -270,7 +287,7 @@ class StartMenu(Screen):
         """
         self.button_layout.add_widget(StartGameButton())
         self.button_layout.add_widget(ContinueGameButton())
-        self.button_layout.add_widget(CopyrightLabel())
+        self.button_layout.add_widget(AboutTheGameButton())
 
 class GameScreen(Screen):  # defined in the kv file
     """

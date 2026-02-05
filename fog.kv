@@ -1,5 +1,6 @@
 #:import StartGameButton widgets.StartGameButton
 #:import ContinueGameButton widgets.ContinueGameButton
+#:import StartMenuButton widgets.StartMenuButton
 
 
 <BaseButtonLayout>:
@@ -28,7 +29,7 @@
     padding: "0dp", "70dp","0dp","0dp"
 
 <StartMenuButtonLayout>:
-    padding: "0dp", "150dp","0dp","0dp"
+    padding: "0dp", "120dp","0dp","30dp"
 
 <TitleLabel>:  # displays the title of the game
     font_name: "Chiller"
@@ -116,21 +117,19 @@
 
 <StartGameButton>
     text: self.get_text(app.language)
-    size_hint: 1, 0.4
+    size_hint: 1, 0.25
     on_release: app.start_game()
 
 <ContinueGameButton>
     disabled: False if app.check_if_saved_game else True
     text: self.get_text(app.language)
-    size_hint: 1, 0.4
-    on_release:
-        app.load_game()
+    size_hint: 1, 0.25
+    on_release: app.load_game()
 
-<CopyrightLabel>
-    font_name: "Vollkorn"
-    font_size: "15sp"
-    text: "(c) AppsBrivalles 2025"
-    size_hint: 1, 0.2
+<AboutTheGameButton>
+    text: self.get_text(app.language)
+    size_hint: 1, 0.25
+    on_release: app.show_about_the_game_screen()
 
 <LanguageMenu>
     BoxLayout:
@@ -157,3 +156,28 @@
                     app.setup_game("languages/Niebla.json")
                     app.play_soundtrack("opening.mp3", loop=False)
                     app.show_start_menu()
+
+<AboutTheGameScreen>:
+    ScrollView:
+        BoxLayout:
+            orientation: "vertical"
+            size_hint_y: None
+            height: self.minimum_height
+            spacing: "80dp"
+            Label:
+                padding: "15dp", "50dp","15dp","0dp"
+                font_name: "Vollkorn"
+                font_size: "23 sp"
+                halign: "center"
+                text_size: self.width, None
+                height: self.texture_size[1]
+                text:
+                    "Fog - The White Darkness\n\nWritten and programmed by Pol Alonso Pernas\n\n" \
+                    "All music is free to use and downloaded from pixabay.com\n\n" \
+                    "Please drop a review!\n\n\n(c)AppsBrivalles 2025"
+                size_hint_y: None
+            MenuButton:
+                font_size: "22 sp"
+                text: "Main menu"
+                height: "60dp"
+                on_release: app.show_start_menu()
