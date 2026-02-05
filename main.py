@@ -236,6 +236,14 @@ class FogApp(App):
         self.sm.remove_widget(self.sm.get_screen("current_screen"))
         self.sm.add_widget(wdg.StartMenu(name="current_screen"))
 
+    def show_about_the_game_screen(self) -> None:
+        """
+        Assembles the about the game screen and displays it
+        :return: None
+        """
+        self.sm.remove_widget(self.sm.get_screen("current_screen"))
+        self.sm.add_widget(wdg.AboutTheGameScreen(name="current_screen"))
+
     def show_gamescreen(self, transition_duration: float, height_subtract: Optional[float] = None) -> None:
         """
         Assembles the next game screen and displays it
