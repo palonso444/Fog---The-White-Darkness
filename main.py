@@ -210,7 +210,7 @@ class FogApp(App):
         self.play_soundtrack(self.get_soundtrack_name(), loop=True)
         self.interface.update_locationlabel(self.get_scene_location())
         self.show_interface_bar()
-        self.show_gamescreen(self.start_game_transition_time, height_subtract=self.interface.height)
+        self.show_gamescreen(self.start_game_transition_time, adapt_height=True)
 
     def show_interface_bar(self) -> None:
         """
@@ -244,14 +244,14 @@ class FogApp(App):
         self.sm.remove_widget(self.sm.get_screen("current_screen"))
         self.sm.add_widget(wdg.AboutTheGameScreen(name="current_screen"))
 
-    def show_gamescreen(self, transition_duration: float, height_subtract: Optional[float] = None) -> None:
+    def show_gamescreen(self, transition_duration: float, adapt_height: bool = False) -> None:
         """
         Assembles the next game screen and displays it
         :param transition_duration: duration in seconds of the transition
-        :param height_subtract: height to subtract to avoid collision of GamesScren with interfaces when fading in
+        :param adapt_height: if True, height is scaled according to GameScreen.height_mod before fading in
         :return: None
         """
-        next_screen = wdg.GameScreen(name="next_screen", height_subtract=height_subtract)
+        next_screen = wdg.GameScreen(name="next_screen", adapt_height=adapt_height)
         self.place_text_and_images(next_screen)
         self.place_gamebuttons(next_screen)
         self._transition_screen(next_screen, transition_duration)
