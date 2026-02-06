@@ -18,13 +18,13 @@ package.domain = com.appsbrivalles
 source.dir = .
 
 # (list) Source files to include (leave empty to include all the files)
-source.include_exts = py,kv,json,ttf,png
+source.include_exts = py,kv,json,ttf,png,mp3
 
 # (list) List of inclusions using pattern matching
 #source.include_patterns = assets/*,images/*.png
 
 # (list) Source files to exclude (leave empty to not exclude anything)
-source.exclude_exts = spec
+source.exclude_exts = spec,md
 
 # (list) List of directory to exclude (leave empty to not exclude anything)
 source.exclude_dirs = tests,bin,venv,legacy
@@ -34,7 +34,7 @@ source.exclude_dirs = tests,bin,venv,legacy
 source.exclude_patterns = saved_game.json,json_formatter.py
 
 # (str) Application versioning (method 1)
-version = 2.5
+version = 3.0
 
 # (str) Application versioning (method 2)
 # version.regex = __version__ = ['"](.*)['"]

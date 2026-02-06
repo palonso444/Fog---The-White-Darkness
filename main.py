@@ -94,11 +94,11 @@ class FogApp(App):
 
     def on_start(self) -> None:
         """
-        Schedules app launch in 1 second to avoid black screen issue during app launching on Android.
+        Schedules app launch some time ahead to avoid black screen issue during app launching on Android.
         See the following GitHub issue for more info: https://github.com/kivy/python-for-android/issues/2720
         :return: None
         """
-        Clock.schedule_once(self._launch_app, 1)
+        Clock.schedule_once(self._launch_app, 2)
 
     def _launch_app(self, dt) -> None:
         """

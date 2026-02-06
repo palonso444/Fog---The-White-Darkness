@@ -3153,7 +3153,7 @@
                             "compare_with_value": "0"
                         }
                     ],
-                    "text": "<p><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">You make your way back to Bones, shivering in your soaked clothes, to warn the villagers to seal the mound. No one, ever again, must disturb the rest of the dead. </p><p>You will accept, if offered, a warm bowl of broth.<span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\"> Afterwards, you continue on your way.</span></p><p><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">Perhaps now you will find the right path.</span></p><p><i>WELL DONE!</i></p>",
+                    "text": "<p><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">You make your way back to Bones, shivering in your soaked clothes, to warn the villagers to seal the mound. No one, ever again, must disturb the rest of the dead. </p><p>You will accept, if offered, a warm bowl of broth.<span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\"> Afterwards, you will continue on your way.</span></p><p><span style=\"background-color: var(--widget-background); color: var(--text-color); font-size: 1rem;\">Perhaps now you will find the right path.</span></p><p><i>WELL DONE!</i></p>",
                     "links": []
                 },
                 {

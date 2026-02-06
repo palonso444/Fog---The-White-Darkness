@@ -13,7 +13,7 @@
     font_name: "CreteRound"
     font_size: "20sp"
     padding: "25dp", "17dp", "25dp", "17dp"
-    background_color: 1, 1, 1, 0.4
+    background_color: 1, 1, 1, 0.3
     size_hint: 1, None
     height: self.texture_size[1] if self.adapt_to_text_height else self.height
     text_size: self.width, None  # needed to align the text in Buttons. No y_hint to make it adapt to te text
@@ -56,7 +56,7 @@
 
 <InterfaceLayout>
     size_hint_y: 0.20
-    padding: "25dp", "10dp","25dp","15dp"
+    padding: "25dp", "40dp","25dp","15dp"
     canvas:
         Color:
             rgba: 1, 1, 1, 0.5
@@ -106,7 +106,7 @@
     font_size: "27sp"
     size_hint_y: None
     halign: "center"
-    height: "80dp"
+    height: "60dp"
 
 <StartMenuButton>:
     adapt_to_text_height: True
