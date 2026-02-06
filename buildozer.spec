@@ -34,7 +34,7 @@ source.exclude_dirs = tests,bin,venv,legacy
 source.exclude_patterns = saved_game.json,json_formatter.py
 
 # (str) Application versioning (method 1)
-version = 3.0
+version = 3.1
 
 # (str) Application versioning (method 2)
 # version.regex = __version__ = ['"](.*)['"]
