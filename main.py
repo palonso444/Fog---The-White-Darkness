@@ -1,18 +1,19 @@
 from os import path, remove
 import sys
-from typing import Optional, LiteralString
+from typing import Optional, LiteralString, Type
 from json import dump, load
 
 from kivy.app import App
 from kivy.clock import Clock
 from kivy.core.text import LabelBase
 from kivy.properties import StringProperty
-from kivy.uix.screenmanager import ScreenManager, FadeTransition
+from kivy.uix.screenmanager import ScreenManager, FadeTransition, Screen
 from kivy.core.audio import SoundLoader, Sound
 
 import json_utils
 import widgets as wdg
-from audio_volumes import get_volume
+from audio_names_volumes import get_volume, get_audio_names
+from widgets import StartMenu
 
 
 def get_resource_path(relative_path: str) -> LiteralString | str | bytes:
@@ -39,7 +40,7 @@ class FogApp(App):
     """
     Class defining the game
     """
-    soundtrack_name = StringProperty(None, allownone=True)
+    next_soundtrack = StringProperty(None, allownone=True)
 
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
@@ -51,9 +52,10 @@ class FogApp(App):
         self.scenes: Optional[list[dict]] = None
         self.variables: Optional[dict[str,int]] = None
         self.scene: Optional[dict] = None
-        self.soundtrack: Optional[Sound] = None
+        self.soundtracks: Optional[dict[str,Sound]] = None
+        self.soundtrack: Optional[str] = None  # soundtrack name currently playing
         # event is triggered by calling wrapper methods, never directly
-        self.bind(soundtrack_name=self._on_soundtrack_name)
+        self.bind(next_soundtrack=self._on_next_soundtrack)
 
         self.sm: Optional[ScreenManager] = None
         self.interface: Optional[wdg.InterfaceLayout] = None
@@ -62,13 +64,14 @@ class FogApp(App):
 
 
     def build(self) -> ScreenManager:
+        self.soundtracks = {key: None for key in get_audio_names()}
         self.root_layout = wdg.RootLayout()
         self.interface = wdg.InterfaceLayout()
         self.sm = ScreenManager(transition=FadeTransition())
         self.root_layout.add_widget(self.sm)
         return self.root_layout
 
-    def get_soundtrack_name(self) -> str:
+    def get_scene_soundtrack(self) -> str:
         """
         Gets the name of the soundtrack of the current scene
         :return: the name of the soundtrack
@@ -100,6 +103,15 @@ class FogApp(App):
         """
         Clock.schedule_once(self._launch_app, 2)
 
+    def _load_soundtracks(self) -> None:
+        """
+        Loads all soundtracks at once so app is not slowed down at runtime
+        :return: None
+        """
+        for key in self.soundtracks.keys():
+            self.soundtracks[key] = SoundLoader.load(f"soundtracks/{key}")
+            self.soundtracks[key].volume = get_volume(key)
+
     def _launch_app(self, dt) -> None:
         """
         This delayed start ensures no frozen black screen when launching the app
@@ -109,48 +121,39 @@ class FogApp(App):
         self.sm.add_widget(wdg.LanguageMenu(name="current_screen"))
         self.sm.current = "current_screen"
 
-    def _on_soundtrack_name(self, fog_app:App, next_soundtrack_name:Optional[str]) -> None:
+    def _on_next_soundtrack(self, fog_app:App, next_soundtrack_name:Optional[str]) -> None:
         """
         Stops previous soundtrack (if any) and plays next one
         :param fog_app: instance of the app
         :param next_soundtrack_name: soundtrack to be played
         :return: None
         """
-        if self.soundtrack is not None:
-            self.soundtrack.stop()
-            self.soundtrack.unload()
-        if self.soundtrack_on:
+        if self.soundtrack is not None:  # if a soundtrack is currently playing
+            self.soundtracks[self.soundtrack].stop()
+            self.soundtrack = None
+        if self.next_soundtrack is not None:  # if soundtracks are not muted
             nst_name = next_soundtrack_name.removesuffix("--in-loop")
-            self.soundtrack = SoundLoader.load(f"soundtracks/{nst_name}")
-            self.soundtrack.volume = get_volume(nst_name)
-            self.soundtrack.loop = True if next_soundtrack_name.endswith("--in-loop") else False
-            self.soundtrack.play()
+            self.soundtracks[nst_name].loop = True if next_soundtrack_name.endswith("--in-loop") else False
+            self.soundtrack = nst_name
+            self.soundtracks[nst_name].play()
 
-    def play_soundtrack(self, soundtrack_name: str, loop:bool) -> None:
+    def play_soundtrack(self, next_soundtrack: str, loop:bool) -> None:
         """
         Starts playing a soundtrack
-        :param soundtrack_name: name of the soundtrack to play. Must be in soundtracks/ directory
+        :param next_soundtrack: name of the soundtrack to play. Must be in soundtracks/ directory
         :param loop: boolean indicating of soundtrack must play in loop
         :return: None
         """
         if loop:
-            soundtrack_name = f"{soundtrack_name}--in-loop"
-        self.soundtrack_name = soundtrack_name
+            next_soundtrack = f"{next_soundtrack}--in-loop"
+        self.next_soundtrack = next_soundtrack
 
     def stop_soundtrack(self) -> None:
         """
         Stops the current soundtrack
         :return: None
         """
-        self.soundtrack_name = None
-
-    @property
-    def soundtrack_on(self) -> bool:
-        """
-        Property returning True if a soundtrack is currently playing
-        :return: True if a soundtrack is playing, False otherwise
-        """
-        return self.soundtrack_name is not None
+        self.next_soundtrack = None
 
     @property
     def check_if_saved_game(self)->bool:
@@ -192,11 +195,24 @@ class FogApp(App):
         :param rel_path: relative path to the JSON containing the game
         :return: None
         """
+        self.show_screen(wdg.LoadingScreen)
         self.story = json_utils.read_json(get_resource_path(rel_path))
         self.title = self.story["title"]
         self.scenes = json_utils.get_scenes(self.story,
                                             formatted=True)  # removes html tags and introduces kivy markups
         self.variables = json_utils.get_variables(self.scenes)
+        Clock.schedule_once(self._finish_setup, 0)  # scheduled to the next frame
+
+    def _finish_setup(self, dt) -> None:
+        """
+        This part of the setup is scheduled to the next frame so LoadingScreen can be shown before calling
+        FogApp._load_soundtracks() (very heavy process that blocks the app).
+        :param dt: delta time
+        :return: None
+        """
+        self._load_soundtracks()
+        self.play_soundtrack("opening.mp3", loop=False)
+        self.show_screen(StartMenu)
 
     def start_game(self) -> None:
         """
@@ -223,7 +239,7 @@ class FogApp(App):
         Launches the game and shows the first screen
         :return: None
         """
-        self.play_soundtrack(self.get_soundtrack_name(), loop=True)
+        self.play_soundtrack(self.get_scene_soundtrack(), loop=True)
         self.interface.update_locationlabel(self.get_scene_location())
         self.show_interface_bar()
         self.show_gamescreen(self.start_game_transition_time, adapt_height=True)
@@ -243,22 +259,15 @@ class FogApp(App):
         :return: None
         """
         self.root_layout.remove_widget(self.interface)
+        self.interface.pos = [-1,-1]  # needed to trigger on_pos if game starts again
 
-    def show_start_menu(self) -> None:
+    def show_screen(self, screen_cls: Type[Screen]) -> None:
         """
-        Assembles the game start menu and displays it
-        :return: None
+        Replaces the current screen with a new one without transitions.
+        :param screen_cls: Screen class to instantiate (e.g. StartMenu)
         """
         self.sm.remove_widget(self.sm.get_screen("current_screen"))
-        self.sm.add_widget(wdg.StartMenu(name="current_screen"))
-
-    def show_about_the_game_screen(self) -> None:
-        """
-        Assembles the about the game screen and displays it
-        :return: None
-        """
-        self.sm.remove_widget(self.sm.get_screen("current_screen"))
-        self.sm.add_widget(wdg.AboutTheGameScreen(name="current_screen"))
+        self.sm.add_widget(screen_cls(name="current_screen"))
 
     def show_gamescreen(self, transition_duration: float, adapt_height: bool = False) -> None:
         """
@@ -347,8 +356,8 @@ class FogApp(App):
         """
         self.variables.update(button.consequences)
         self.scene: dict = self.get_scene(button.destination_scene_id)
-        if self.soundtrack_on:
-            self.play_soundtrack(self.get_soundtrack_name(), loop=True)
+        if self.next_soundtrack is not None:
+            self.play_soundtrack(self.get_scene_soundtrack(), loop=True)
         self.save_game()
         self.interface.update_locationlabel(self.get_scene_location())
         self.show_gamescreen(self.in_game_transition_time)
@@ -364,7 +373,7 @@ class FogApp(App):
         self.reset_variables()
         self.delete_saved_game()
         self.play_soundtrack("opening.mp3", loop=False)
-        self.show_start_menu()
+        self.show_screen(wdg.StartMenu)
 
     @staticmethod
     def _assemble_gametext(game_obj_section: dict) -> wdg.GameTextLabel:
