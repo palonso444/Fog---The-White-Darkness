@@ -24,6 +24,12 @@ class BaseButton(Button):
     """
     pass
 
+class LoadingScreen(Screen):
+    """
+    Screen to show when game is setting up
+    """
+    pass
+
 class FadingMixin:
     """
     Mixin class that adds fading capabilities to Widget subclasses.
@@ -67,8 +73,17 @@ class InterfaceLayout(FadingMixin, BoxLayout):
         super().__init__(**kwargs)
         self.on_fading_complete = on_fading_complete
 
-    def on_pos(self, instance, pos_value) -> None:
-        self._fade_in(self.duration)
+    def on_pos(self, instance, pos_value: list) -> None:
+        """
+        Triggered when Inteface is added or removed of ScreenManager
+        :param instance: InterfaceLaout instance
+        :param pos_value: position value
+        :return: None
+        """
+        self.opacity = 0.0  # reset initial opacity to 0 before fading in
+        if pos_value != [-1,-1]:
+            self.children[0].state = "down"  # MusicButton always shows up pressed
+            self._fade_in(self.duration)
 
     def update_locationlabel(self, text: str) -> None:
         """

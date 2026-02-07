@@ -1,4 +1,4 @@
-AUDIO_VOLUMES = {
+AUDIO_NAMES_VOLUMES = {
     "bones.mp3": 0.5,
     "church.mp3": 1.0,
     "lagoon.mp3": 0.25,
@@ -10,4 +10,7 @@ AUDIO_VOLUMES = {
 }
 
 def get_volume(audio_name: str) -> float:
-    return AUDIO_VOLUMES[audio_name]
+    return AUDIO_NAMES_VOLUMES[audio_name]
+
+def get_audio_names() -> list[str]:
+    return list(AUDIO_NAMES_VOLUMES.keys())
