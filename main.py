@@ -39,7 +39,7 @@ class FogApp(App):
     """
     Class defining the game
     """
-    soundtrack_name = StringProperty(None)
+    soundtrack_name = StringProperty(None, allownone=True)
 
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
@@ -52,7 +52,7 @@ class FogApp(App):
         self.variables: Optional[dict[str,int]] = None
         self.scene: Optional[dict] = None
         self.soundtrack: Optional[Sound] = None
-        # event is triggered by calling play_soundtrack(), never directly
+        # event is triggered by calling wrapper methods, never directly
         self.bind(soundtrack_name=self._on_soundtrack_name)
 
         self.sm: Optional[ScreenManager] = None
@@ -119,11 +119,12 @@ class FogApp(App):
         if self.soundtrack is not None:
             self.soundtrack.stop()
             self.soundtrack.unload()
-        nst_name = next_soundtrack_name.removesuffix("--in-loop")
-        self.soundtrack = SoundLoader.load(f"soundtracks/{nst_name}")
-        self.soundtrack.volume = get_volume(nst_name)
-        self.soundtrack.loop = True if next_soundtrack_name.endswith("--in-loop") else False
-        self.soundtrack.play()
+        if self.soundtrack_on:
+            nst_name = next_soundtrack_name.removesuffix("--in-loop")
+            self.soundtrack = SoundLoader.load(f"soundtracks/{nst_name}")
+            self.soundtrack.volume = get_volume(nst_name)
+            self.soundtrack.loop = True if next_soundtrack_name.endswith("--in-loop") else False
+            self.soundtrack.play()
 
     def play_soundtrack(self, soundtrack_name: str, loop:bool) -> None:
         """
@@ -135,6 +136,21 @@ class FogApp(App):
         if loop:
             soundtrack_name = f"{soundtrack_name}--in-loop"
         self.soundtrack_name = soundtrack_name
+
+    def stop_soundtrack(self) -> None:
+        """
+        Stops the current soundtrack
+        :return: None
+        """
+        self.soundtrack_name = None
+
+    @property
+    def soundtrack_on(self) -> bool:
+        """
+        Property returning True if a soundtrack is currently playing
+        :return: True if a soundtrack is playing, False otherwise
+        """
+        return self.soundtrack_name is not None
 
     @property
     def check_if_saved_game(self)->bool:
@@ -331,7 +347,8 @@ class FogApp(App):
         """
         self.variables.update(button.consequences)
         self.scene: dict = self.get_scene(button.destination_scene_id)
-        self.play_soundtrack(self.get_soundtrack_name(), loop=True)
+        if self.soundtrack_on:
+            self.play_soundtrack(self.get_soundtrack_name(), loop=True)
         self.save_game()
         self.interface.update_locationlabel(self.get_scene_location())
         self.show_gamescreen(self.in_game_transition_time)

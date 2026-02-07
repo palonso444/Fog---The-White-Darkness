@@ -55,7 +55,7 @@
         center_y: root.center_y
 
 <InterfaceLayout>
-    size_hint_y: 0.20
+    size_hint_y: 0.2
     padding: "25dp", "40dp","25dp","15dp"
     canvas:
         Color:
@@ -66,7 +66,7 @@
     LocationLabel:
     MusicButton:
         state: "down"
-        on_state: app.soundtrack.play() if self.state == "down" else app.soundtrack.stop()
+        on_state: app.play_soundtrack(app.get_soundtrack_name(), loop=True) if self.state == "down" else app.stop_soundtrack()
 
 <ScreenLayout>:  # main layout of the screen. Contains TextLayout and ButtonLayout and it is embedded in the ScrollView
     orientation: "vertical"
@@ -174,7 +174,7 @@
                 text:
                     "Fog - The White Darkness\n\nWritten and programmed by Pol Alonso Pernas\n\n" \
                     "All music is free to use and downloaded from pixabay.com\n\n" \
-                    "Please drop a review in the Play Store!\n\n\n(c)AppsBrivalles 2025"
+                    "Please drop a review in the Play Store!\n\n\n(c) AppsBrivalles 2026"
                 size_hint_y: None
             MenuButton:
                 font_size: "22 sp"
