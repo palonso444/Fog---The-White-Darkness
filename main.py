@@ -13,7 +13,6 @@ from kivy.core.audio import SoundLoader, Sound
 import json_utils
 import widgets as wdg
 from audio_names_volumes import get_volume, get_audio_names
-from widgets import StartMenu
 
 
 def get_resource_path(relative_path: str) -> LiteralString | str | bytes:
@@ -212,7 +211,7 @@ class FogApp(App):
         """
         self._load_soundtracks()
         self.play_soundtrack("opening.mp3", loop=False)
-        self.show_screen(StartMenu)
+        self.show_screen(wdg.StartMenu)
 
     def start_game(self) -> None:
         """
