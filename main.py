@@ -102,15 +102,6 @@ class FogApp(App):
         """
         Clock.schedule_once(self._launch_app, 2)
 
-    def _load_soundtracks(self) -> None:
-        """
-        Loads all soundtracks at once so app is not slowed down at runtime
-        :return: None
-        """
-        for key in self.soundtracks.keys():
-            self.soundtracks[key] = SoundLoader.load(f"soundtracks/{key}")
-            self.soundtracks[key].volume = get_volume(key)
-
     def _launch_app(self, dt) -> None:
         """
         This delayed start ensures no frozen black screen when launching the app
@@ -119,6 +110,15 @@ class FogApp(App):
         """
         self.sm.add_widget(wdg.LanguageMenu(name="current_screen"))
         self.sm.current = "current_screen"
+
+    def _load_soundtracks(self) -> None:
+        """
+        Loads all soundtracks at once so app is not slowed down at runtime
+        :return: None
+        """
+        for key in self.soundtracks.keys():
+            self.soundtracks[key] = SoundLoader.load(f"soundtracks/{key}")
+            self.soundtracks[key].volume = get_volume(key)
 
     def _on_next_soundtrack(self, fog_app:App, next_soundtrack_name:Optional[str]) -> None:
         """
@@ -153,6 +153,14 @@ class FogApp(App):
         :return: None
         """
         self.next_soundtrack = None
+
+    @property
+    def soundtrack_on_and_changed(self) -> bool:
+        """
+        Checks if the soundtrack changed
+        :return: True if new scene soundtrack is different from current soundtrack, False otherwise
+        """
+        return self.soundtrack is not None and self.soundtrack != self.get_scene_soundtrack()
 
     @property
     def check_if_saved_game(self)->bool:
@@ -355,7 +363,7 @@ class FogApp(App):
         """
         self.variables.update(button.consequences)
         self.scene: dict = self.get_scene(button.destination_scene_id)
-        if self.next_soundtrack is not None:
+        if self.soundtrack_on_and_changed:
             self.play_soundtrack(self.get_scene_soundtrack(), loop=True)
         self.save_game()
         self.interface.update_locationlabel(self.get_scene_location())
