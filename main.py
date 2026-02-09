@@ -113,7 +113,7 @@ class FogApp(App):
 
     def _load_soundtracks(self) -> None:
         """
-        Loads all soundtracks at once so app is not slowed down at runtime
+        Loads all soundtracks at once so app is not slowed down at runtime. Soundtracks are in soundtracks/ folder
         :return: None
         """
         for key in self.soundtracks.keys():
@@ -130,37 +130,22 @@ class FogApp(App):
         if self.soundtrack is not None:  # if a soundtrack is currently playing
             self.soundtracks[self.soundtrack].stop()
             self.soundtrack = None
-        if self.next_soundtrack is not None:  # if soundtracks are not muted
+        if self.next_soundtrack is not None:
             nst_name = next_soundtrack_name.removesuffix("--in-loop")
             self.soundtracks[nst_name].loop = True if next_soundtrack_name.endswith("--in-loop") else False
             self.soundtrack = nst_name
             self.soundtracks[nst_name].play()
 
-    def play_soundtrack(self, next_soundtrack: str, loop:bool) -> None:
+    def update_soundtrack(self, next_soundtrack: Optional[str], loop:bool) -> None:
         """
-        Starts playing a soundtrack
+        Updates the soundtrack, pass None to stop it or the name of a soundtrack file to play it.
         :param next_soundtrack: name of the soundtrack to play. Must be in soundtracks/ directory
         :param loop: boolean indicating of soundtrack must play in loop
         :return: None
         """
-        if loop:
+        if next_soundtrack is not None and loop:
             next_soundtrack = f"{next_soundtrack}--in-loop"
         self.next_soundtrack = next_soundtrack
-
-    def stop_soundtrack(self) -> None:
-        """
-        Stops the current soundtrack
-        :return: None
-        """
-        self.next_soundtrack = None
-
-    @property
-    def soundtrack_on_and_changed(self) -> bool:
-        """
-        Checks if the soundtrack changed
-        :return: True if new scene soundtrack is different from current soundtrack, False otherwise
-        """
-        return self.soundtrack is not None and self.soundtrack != self.get_scene_soundtrack()
 
     @property
     def check_if_saved_game(self)->bool:
@@ -218,7 +203,7 @@ class FogApp(App):
         :return: None
         """
         self._load_soundtracks()
-        self.play_soundtrack("opening.mp3", loop=False)
+        self.update_soundtrack("opening.mp3", loop=False)
         self.show_screen(wdg.StartMenu)
 
     def start_game(self) -> None:
@@ -246,7 +231,7 @@ class FogApp(App):
         Launches the game and shows the first screen
         :return: None
         """
-        self.play_soundtrack(self.get_scene_soundtrack(), loop=True)
+        self.update_soundtrack(self.get_scene_soundtrack(), loop=True)
         self.interface.update_locationlabel(self.get_scene_location())
         self.show_interface_bar()
         self.show_gamescreen(self.start_game_transition_time, adapt_height=True)
@@ -363,8 +348,8 @@ class FogApp(App):
         """
         self.variables.update(button.consequences)
         self.scene: dict = self.get_scene(button.destination_scene_id)
-        if self.soundtrack_on_and_changed:
-            self.play_soundtrack(self.get_scene_soundtrack(), loop=True)
+        if self.soundtrack is not None:
+            self.update_soundtrack(self.get_scene_soundtrack(), loop=True)
         self.save_game()
         self.interface.update_locationlabel(self.get_scene_location())
         self.show_gamescreen(self.in_game_transition_time)
@@ -379,7 +364,7 @@ class FogApp(App):
         self.remove_interface_bar()
         self.reset_variables()
         self.delete_saved_game()
-        self.play_soundtrack("opening.mp3", loop=False)
+        self.update_soundtrack("opening.mp3", loop=False)
         self.show_screen(wdg.StartMenu)
 
     @staticmethod

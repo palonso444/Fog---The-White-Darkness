@@ -68,7 +68,7 @@
     LocationLabel:
     MusicButton:
         #state: "down" if app.soundtrack is not None else "normal"
-        on_state: app.play_soundtrack(app.get_scene_soundtrack(), loop=True) if self.state == "down" else app.stop_soundtrack()
+        on_state: app.update_soundtrack(app.get_scene_soundtrack(), loop=True) if self.state == "down" else app.update_soundtrack(None, loop=False)
 
 <ScreenLayout>:  # main layout of the screen. Contains TextLayout and ButtonLayout and it is embedded in the ScrollView
     orientation: "vertical"
