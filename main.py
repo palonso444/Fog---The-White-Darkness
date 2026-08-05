@@ -117,7 +117,7 @@ class FogApp(App):
         :return: None
         """
         for key in self.soundtracks.keys():
-            self.soundtracks[key] = SoundLoader.load(f"soundtracks/{key}")
+            self.soundtracks[key] = SoundLoader.load(get_resource_path(f"soundtracks/{key}"))
             self.soundtracks[key].volume = get_volume(key)
 
     def _on_next_soundtrack(self, fog_app:App, next_soundtrack_name:Optional[str]) -> None:
