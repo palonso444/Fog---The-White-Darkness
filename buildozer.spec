@@ -42,7 +42,7 @@ version = 3.3
 
 # (list) Application requirements
 # comma separated e.g. requirements = sqlite3,kivy
-requirements = kivy,python3
+requirements = kivy==2.3.0,python3
 
 # (str) Custom source folders for requirements
 # Sets custom source for any requirements with recipes
@@ -329,7 +329,7 @@ android.release_artifact = aab
 #p4a.fork = kivy
 
 # (str) python-for-android branch to use, defaults to master
-# p4a.branch = develop
+p4a.branch = v2024.01.21
 
 # (str) python-for-android specific commit to use, defaults to HEAD, must be within p4a.branch
 #p4a.commit = HEAD
