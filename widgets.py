@@ -64,6 +64,22 @@ class TitleLabel(FadingMixin, Label):
         self.on_fading_complete = on_fading_complete
         self._fade_in(self.duration)
 
+class LoadingLabel(Label):
+    """
+    Label to show while loading stuff
+    """
+    @staticmethod
+    def get_text(language:str) -> str:
+        match language:
+            case "english":
+                return "Loading..."
+            case "catalan":
+                return "Carregant..."
+            case "spanish":
+                return "Cargando..."
+            case _:
+                raise ValueError(f"Invalid language argument '{language}'")
+
 class InterfaceLayout(FadingMixin, BoxLayout):
     """
     Special layout for game interface buttons. Fades in when placed on the screen
@@ -207,6 +223,8 @@ class StartGameButton(MenuButton):
         match language:
             case "english":
                 return "Start"
+            case "catalan":
+                return "Comença"
             case "spanish":
                 return "Empezar"
             case _:
@@ -224,6 +242,8 @@ class ContinueGameButton(MenuButton):
         match language:
             case "english":
                 return "Continue"
+            case "catalan":
+                return "Continua"
             case "spanish":
                 return "Continuar"
             case _:
@@ -241,6 +261,8 @@ class AboutTheGameButton(MenuButton):
         match language:
             case "english":
                 return "About the game"
+            case "catalan":
+                return "Sobre el joc"
             case "spanish":
                 return "Acerca del juego"
             case _:
@@ -262,6 +284,8 @@ class StartMenuButton(MenuButton):
         match language:
             case "english":
                 return "Restart"
+            case "catalan":
+                return "Torna a començar"
             case "spanish":
                 return "Volver a empezar"
             case _:
