@@ -9,7 +9,7 @@
 <BaseButtonLayout>:
     orientation: "vertical"
     spacing: "10dp"  # space between widgets
-    padding: "0dp", "0dp","0dp","55dp"
+    padding: "0dp", "0dp","0dp","30dp"
 
 <BaseButton>:
     adapt_to_text_height: True
@@ -135,10 +135,10 @@
     on_release: app.show_screen(AboutTheGameScreen)
 
 <LoadingScreen>:
-    Label:
+    LoadingLabel:
         font_name: "Vollkorn"
         font_size: "30sp"
-        text: "Loading..." if app.language == "english" else "Cargando..."
+        text: self.get_text(app.language)
 
 <LanguageMenu>
     BoxLayout:
@@ -156,6 +156,11 @@
                 on_release:
                     app.language = "english"
                     app.setup_game("languages/Fog.json")
+            MenuButton:
+                text: "Català"
+                on_release:
+                    app.language = "catalan"
+                    app.setup_game("languages/Neula.json")
             MenuButton:
                 text: "Español"
                 on_release:
